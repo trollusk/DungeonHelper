@@ -5,6 +5,7 @@
 --worldmap filters
 ZO_CreateStringId("DH_FILTER_BOSSES", "|t18:18:esoui/art/icons/poi/poi_groupboss_complete.dds|t Dungeon Bosses I")
 ZO_CreateStringId("DH_FILTER_BOSSES_OTHER", "|t18:18:esoui/art/icons/poi/poi_groupboss_incomplete.dds|t Dungeon Bosses II")
+ZO_CreateStringId("DH_FILTER_HINTS", "|t18:18:esoui/art/icons/poi/poi_areaofinterest_complete.dds|t Dungeon Hints")
 
 
 
@@ -26,30 +27,30 @@ local DHLocalizedData = {
 	
 							---- Fungal Grotto I ----
 		["fungalgrotto_base"] = {
-			{[[Tazkad the Packmaster
+			["tazkad"] = {[[Tazkad the Packmaster
 (Fungal Grotto I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			{[[Warchief Ozazai
+			["ozazai"] = {[[Warchief Ozazai
 (Fungal Grotto I)]], [[Mechanics:
 - When targeted by his beam AoE, step away from the group and block.
 ]]},
 
-			{[[Broodbirther
+			["broodbirther"] = {[[Broodbirther
 (Fungal Grotto I)]], [[Mechanics:
 - Kill adds first.
 ]]},
 
-			{[[Clatterclaw
+			["clatterclaw"] = {[[Clatterclaw
 (Fungal Grotto I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			{[[Kra'gh The Dreugh King
+			["kra'gh"] = {[[Kra'gh The Dreugh King
 (Fungal Grotto I)
-Last Boss]], [[Hard Mode:
-- Scroll of Glorious Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+- Scroll of Glorious Battle.|r
 
 Mechanics:
 - Do not get hit by the boss's growing circle PBAoE. When you see it charging, GET BACK.
@@ -66,32 +67,32 @@ Mechanics:
 							---- Spindleclutch I ----
 		["spindleclutch_base"] = {
 						
-			{[[Spindlekin
+			["spindlekin"] = {[[Spindlekin
 (Spindleclutch I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			{[[Swarm Mother
+			["swam_mother"] = {[[Swarm Mother
 (Spindleclutch I)]], [[Mechanics:
 - Boss will occasionally jump to random members.
 - To make this less annoying, DPS/healer should stay close behind her, so she doesn't go far.
 ]]},
 
-			{[[Cerise the Widow-Maker
+			["cerise"] = {[[Cerise the Widow-Maker
 (Spindleclutch I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 ]]},
 
-			{[[Big Rabbu
+			["rabbu"] = {[[Big Rabbu
 (Spindleclutch I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 - Tank be sure to taunt boss first, he hits hard.
 ]]},
 
-			{[[The Whisperer
+			["whisperer"] = {[[The Whisperer
 (Spindleclutch I)
-Last Boss]], [[Hard Mode:
-- Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+- Scroll of Glorious Battle.|r
 
 Mechanics:
 - Adds can be pulled and killed before aggroing the boss.
@@ -134,8 +135,8 @@ Mechanics:
 
 			{[[High Kinlord Rilis
 (Banished Cells I)
-Last Boss]], [[Hard Mode:
-- Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+- Scroll of Glorious Battle.|r
 
 Mechanics:
 - Pull him to one of the far corners of the room.
@@ -177,8 +178,8 @@ Mechanics:
 
 			{[[Sentinel of Rkugamz
 (Darkshade Caverns I)
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -214,8 +215,8 @@ Last Boss]], [[Hard Mode:
 
 			{[[Canonreeve Oraneth
 (Elden Hollow I)
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -229,30 +230,30 @@ Last Boss]], [[Hard Mode:
 
 							----Wayrest Sewers I ----
 		["wayrestsewers_base"] = {
-			{[[Slimecrew
+			["slimecraw"] = {[[Slimecrew
 (Wayrest Sewers I)]], [[
 ]]},
 
-			{[[Investigator Garron
+			["garron"] = {[[Investigator Garron
 (Wayrest Sewers I)]], [[
 ]]},
 
-			{[[Uulgarg the Hungry
+			["uulgarg"] = {[[Uulgarg the Hungry
 (Wayrest Sewers I)]], [[
 ]]},
 
-			{[[Rat Whisperer
+			["whisperer"] = {[[Rat Whisperer
 (Wayrest Sewers I)]], [[
 ]]},
 
-			{[[Valaine Pallingare
+			["valaine"] = {[[Valaine Pallingare
 (Wayrest Sewers I)]], [[
 ]]},
 
-			{[[Allene Pallingare
+			["allene"] = {[[Allene Pallingare
 (Wayrest Sewers I)
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -288,8 +289,8 @@ Last Boss]], [[Hard Mode:
 
 			{[[Razor Master Erthas
 (City of Ash I)
-Last Boss]], [[Hard Mode: 
-- Scroll of Glorious Battle.
+Last Boss]], [[|cffcc66Hard Mode: 
+- Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -325,8 +326,8 @@ Last Boss]], [[Hard Mode:
 
 			{[[Ilambris Twins - Zaven & Athor
 (Crypt of Hearts I)
-Last Boss]], [[Hard Mode: 
-- Scroll of Glorious Battle.
+Last Boss]], [[|cffcc66Hard Mode: 
+- Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -355,8 +356,8 @@ Last Boss]], [[Hard Mode:
 ]]},
 
 			{[[Sellstrix the Lamia Queen
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -386,8 +387,8 @@ Last Boss]], [[Hard Mode:
 },
 		["direfrostkeepsummit_base"] = {
 			{[[Drodda the Icereach
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -410,8 +411,8 @@ Last Boss]], [[Hard Mode:
 },
 		["frvfrstvlt04_base"] = {
 			{[[The Stonekeeper
-Last Boss]], [[Hard Mode:
-- Little button on the left, before the boss platform.
+Last Boss]], [[|cffcc66Hard Mode:
+- Little button on the left, before the boss platform.|r
 ]]},
 },
 
@@ -431,8 +432,8 @@ Last Boss]], [[Hard Mode:
 ]]},
 
 			{[[Stormreeve Neidir
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r 
 ]]},
 },
 		["tempestislandswcave_base"] = {
@@ -468,8 +469,8 @@ Last Boss]], [[Hard Mode:
 },
 		["eyeschamber_base"] = {
 			{[[Guardian Constructs
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -513,8 +514,8 @@ Last Boss]], [[Hard Mode:
 },
 		["blackhearthavenarea4_base"] = {
 			{[[Captain Blackheart
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -548,8 +549,8 @@ Last Boss]], [[Hard Mode:
 },
 		["blessedcrucible6_base"] = {
 			{[[Lava Queen
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -578,8 +579,8 @@ Last Boss]], [[Hard Mode:
 ]]},
 
 			{[[Selene
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 ]]},
 },
 
@@ -615,8 +616,8 @@ Last Boss]], [[Hard Mode:
 },
 		["vaultsofmadness2_base"] = {
 			{[[Mad Architect
-Last Boss]], [[Hard Mode:
--Scroll of Glorius Battle.
+Last Boss]], [[|cffcc66Hard Mode:
+-Scroll of Glorious Battle.|r
 
 ]]},
 },
@@ -649,8 +650,8 @@ Last Boss]], [[Hard Mode:
 ]]},
 
 			{[[Lord Warden Dusk
-Last Boss]], [[Hard Mode:
-- Warden's Tome. (Scroll)
+Last Boss]], [[|cffcc66Hard Mode:
+- Warden's Tome. (Scroll)|r
 ]]},
 },
 
@@ -670,8 +671,8 @@ Last Boss]], [[Hard Mode:
 },
 		["wgtpinnacleboss_base"] = {
 			{[[Molag Kena
-Last Boss]], [[Hard Mode:
-- Obelisk Tome. (Scroll)
+Last Boss]], [[|cffcc66Hard Mode:
+- Obelisk Tome. (Scroll)|r
 ]]},
 },
 	
@@ -771,8 +772,8 @@ local DHLocalizedDataOther = {
 
 			{[[Vila Tharen
 (Fungal Grotto II)
-Last Boss]], [[Hard Mode:
-- Do not use Two-Blade's bubble.
+Last Boss]], [[|cffcc66Hard Mode:
+- Do not use Two-Blade's bubble.|r
 
 Mechanics:
 - Ranged attacks recomended.
@@ -812,8 +813,8 @@ Mechanics:
 
 			{[[Vorenor Winterbourne
 (Spindleclutch II)
-Last Boss]], [[Hard Mode:
-- Do not let any of the sacrifices die.
+Last Boss]], [[|cffcc66Hard Mode:
+- Do not let any of the sacrifices die.|r
 
 ]]},
 },
@@ -847,8 +848,8 @@ Last Boss]], [[Hard Mode:
 
 			{[[High Kinlord Rilis
 (Banished Cells II)
-Last Boss]], [[Hard mode:
-- Leave 3 or more Daedroth alive until Rilis dies.
+Last Boss]], [[|cffcc66Hard mode:
+- Leave 3 or more Daedroth alive until Rilis dies.|r
 ]]},
 },
 
@@ -881,8 +882,8 @@ Last Boss]], [[Hard mode:
 
 			{[[Engine Guardian
 (Darkshade Caverns II)
-Last Boss]], [[Hard Mode:
-- Don't touch the levers.
+Last Boss]], [[|cffcc66Hard Mode:
+- Don't touch the levers.|r
 
 ]]},
 },
@@ -917,8 +918,8 @@ Last Boss]], [[Hard Mode:
 			
 			{[[Bogdan the Nightflame
 (Elden Hollow II)
-Last Boss]], [[Hard Mode:
-- The Opus of Torment. (Scroll)
+Last Boss]], [[|cffcc66Hard Mode:
+- The Opus of Torment. (Scroll)|r
 ]]},
 },
 
@@ -929,33 +930,33 @@ Last Boss]], [[Hard Mode:
 
 	["stormhaven"] = {
 		["wayrestsewers_base"] = {
-			{[[Malubeth the Scourger
+			["malubeth"] = {[[Malubeth the Scourger
 (Wayrest Sewers II)]], [[Mechanics:
 -Occasionally the boss turns purple and resistant to damage, while draining the life of a random person. 
 -TWO players need to interact with the altars on both sides of the room to stop this.
 ]]},
 
-			{[[Uulgarg the Risen
+			["uulgarg"] = {[[Uulgarg the Risen
 (Wayrest Sewers II)]], [[
 ]]},
 
-			{[[Skull Reaper
+			["reaper"] = {[[Skull Reaper
 (Wayrest Sewers II)]], [[
 ]]},
 
-			{[[Garron the Returned
+			["garron"] = {[[Garron the Returned
 (Wayrest Sewers II)]], [[
 ]]},
 
-			{[[The Lost One
+			["lost_one"] = {[[The Lost One
 (Wayrest Sewers II)]], [[
 ]]},
 
-			{[[Allene Pallingare & Varaine Pallingare
+			["pallingares"] = {[[Allene Pallingare & Varaine Pallingare
 (Wayrest Sewers II)
-Last Boss]], [[Hard Mode:
+Last Boss]], [[|cffcc66Hard Mode:
 - Kill at least 15 zombies during the fight.
-(Pull zombies from the sides and hallway to the west.)
+(Pull zombies from the sides and hallway to the west.)|r
 
 ]]},
 },
@@ -996,9 +997,9 @@ Last Boss]], [[Hard Mode:
 
 			{[[Valkyn Skoria
 (City of Ash II)
-Last Boss]], [[Hard Mode:
+Last Boss]], [[|cffcc66Hard Mode:
 - Frigid Tome. (Scroll)
-(This destroys 2 of the pads, leaving only 3.)
+(This destroys 2 of the pads, leaving only 3.)|r
 
 ]]},
 },
@@ -1011,33 +1012,33 @@ Last Boss]], [[Hard Mode:
 
 	["rivenspire"] = {
 		["cryptofhearts_base"] = {
-			{[[Ibelgast
+			["ibelgast"] = {[[Ibelgast
 (Crypt of Hearts II)]], [[
 ]]},
 
-			{[[Ruzozuzalpamaz
+            ["ruzozuzalpamaz"] = {[[Ruzozuzalpamaz
 (Crypt of Hearts II)]], [[
 ]]},
 
-			{[[Illambris Amalgam
+	        ["ilambris"] = {[[Illambris Amalgam
 (Crypt of Hearts II)]], [[
 ]]},
 
-			{[[Mezeluth
+            ["mezeluth"] = {[[Mezeluth
 (Crypt of Hearts II)]], [[
 ]]},
 },
 		["cryptofheartsheroic_base"] = {
-			{[[Chamber Guardian
+			["guardian"] = {[[Chamber Guardian
 (Crypt of Hearts II)]], [[
 ]]},
 },
 		["cryptofheartsheroicboss_0"] = {
-			{[[Nerien'eth
+			["nerien'eth"] = {[[Nerien'eth
 (Crypt of Hearts II)
-Last Boss]], [[Hard Mode: 
+Last Boss]], [[|cffcc66Hard Mode: 
 - Leave 4 ghosts alive until Nerien'th reaches for the sword at 35% HP.
-- They die fairly easily, so have tank kite them away from the boss.
+- They die fairly easily, so have tank kite them away from the boss.|r
 ]]},
 },
 
@@ -1048,14 +1049,31 @@ Last Boss]], [[Hard Mode:
 }	-- End Version II Dungeons
 
 
+local DHLocalizedHintData = {
+    ["stonefalls"] = {
+        ["balsunn_presenttown01_map"] = {
+            ["totem_puzzle"] = {"Totem Puzzle", "Solve to get a group damage buff for the rest of the dungeon."},
+        },
+    },
+}   -- end hints
+
+
+-- each of these functions returns a tuple: TITLE, description
+
 function DH_GetLocalizedData(zone, subzone, bossId)
-	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "number" and DHLocalizedData[zone] and DHLocalizedData[zone][subzone] and DHLocalizedData[zone][subzone][bossId] then
+	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedData[zone] and DHLocalizedData[zone][subzone] and DHLocalizedData[zone][subzone][bossId] then
 		return DHLocalizedData[zone][subzone][bossId][1], DHLocalizedData[zone][subzone][bossId][2]
 	end
 end
 
 function DH_GetLocalizedDataOther (zone, subzone, bossId)
-	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "number" and DHLocalizedDataOther[zone] and DHLocalizedDataOther[zone][subzone] and DHLocalizedDataOther[zone][subzone][bossId] then
+	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedDataOther[zone] and DHLocalizedDataOther[zone][subzone] and DHLocalizedDataOther[zone][subzone][bossId] then
 		return DHLocalizedDataOther[zone][subzone][bossId][1], DHLocalizedDataOther[zone][subzone][bossId][2]
+	end	
+end
+
+function DH_GetLocalizedHintData (zone, subzone, hintId)
+	if type(zone) == "string" and type(subzone) == "string" and type(hintId) == "string" and DHLocalizedHintData[zone] and DHLocalizedHintData[zone][subzone] and DHLocalizedHintData[zone][subzone][hintId] then
+		return DHLocalizedHintData[zone][subzone][hintId][1], DHLocalizedHintData[zone][subzone][hintId][2]
 	end	
 end
