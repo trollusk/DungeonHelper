@@ -3,9 +3,9 @@
 ---------------------------------------
 
 --worldmap filters
-ZO_CreateStringId("DH_FILTER_BOSSES", "|t18:18:esoui/art/icons/poi/poi_groupboss_complete.dds|t Dungeon Bosses I")
+ZO_CreateStringId("DH_FILTER_BOSSES", "|t18:18:esoui/art/icons/poi/poi_groupboss_complete.dds|t Dungeon/Trial/Arena Bosses")
 ZO_CreateStringId("DH_FILTER_BOSSES_OTHER", "|t18:18:esoui/art/icons/poi/poi_groupboss_incomplete.dds|t Dungeon Bosses II")
-ZO_CreateStringId("DH_FILTER_HINTS", "|t18:18:esoui/art/icons/poi/poi_areaofinterest_complete.dds|t Dungeon Hints")
+ZO_CreateStringId("DH_FILTER_HINTS", "|t18:18:esoui/art/icons/poi/poi_areaofinterest_complete.dds|t Dungeon/Trial/Arena Hints")
 
 
 
@@ -53,11 +53,35 @@ Last Boss]], [[|cffcc66Hard Mode:
 - Scroll of Glorious Battle.|r
 
 Mechanics:
-- Do not get hit by the boss's growing circle PBAoE. When you see it charging, GET BACK.
+- When he channels Lightning Field (large ground AoE), get out of the way or you will die.
+- Lunging Strike will kill non-tanks if they are not blocking.
 ]]},
-},
-
-
+},  -- end Fungal Grotto I
+        ---- Bal Sunnar (DLC) ----
+    ["balsunn_presenttown01_map"] = {       -- first map
+        ["kovan"] = {[[Kovan Giryon]], [[]]}, 
+    },
+    ["balsunn_b1_map"] = {
+    },
+    ["balsunn_b2_map"] = {
+    },
+    ["balsunn_b2trans_map"] = {
+    },
+    ["balsunn_b3_map"] = {
+    },
+    ["balsunn_b3trans_map"] = {
+    },
+    ["balsunn_caves_map"] = {
+        ["roksa"] = {[[Roksa the Warped]], [[]]},
+    },
+    ["balsunn_deidric_map"] = {
+        ["lladi"] = {[[Lladi Telvanni]], [[]]},
+    },
+    ["balsunn_futuretown01_map"] = {
+    },
+    ["balsunn_pasttown01_map"] = {
+    },
+                
 },	-- End Stonefalls
 
 
@@ -100,7 +124,44 @@ Mechanics:
 - DPS/healers should spread out behind/beside her so it's easier to see who she is looking at.
 ]]},
 },
+                ---- Red Petal Bastion (DLC) ----
+    ["rpb_map_ext001"] = {
+        ["wraith_of_crows"] = {[[Wraith of Crows]], [[Mechanics:
+- Nothing special.]]},
+        ["rogerain"] = {[[Rogerain the Sly]], [[|cffcc66Hard Mode:
+- Yes (?scroll)|r
 
+Mechanics:
+- He will periodically turn one player into a goat. This can't be avoided.
+- As the goat, run around and collect sweetrolls to buff the group (increased healing, damage, and ultimate generation).]]},
+        ["spider_daedra"] = {[[Spider Daedra]], [[Mechanics:
+- Nothing special.]]},
+        ["artifact_bearers"] = {[[Eliam Merick, Ihudir, and Liramindrel]], [[|cffcc66Hard Mode:
+- Yes (?scroll)
+- Archer will maintain a shield on the boss which greatly reduces the damage he takes.
+- When the archer and fighter re-enter the fight at 30% health, they will both be invulnerable, so must be managed by taunting.|r
+
+Mechanics:
+- If players get too far from the boss he will jump at them. This is a one-shot unless dodged.
+- At 80% health the archer joins the fight. At 50%, the melee fighter joins. At 30%, both re-enter the fight.]]},
+        ["twilight"] = {[[Grievous Twilight]], [[Mechanics:
+- He will sometimes cast meteors (dodgeable) from the sky at each player simultaneously. Keep spread out for this reason.]]}, 
+        ["thierric"] = {[[Prior Thierric Sarazen]], [[|cffcc66Hard Mode:
+- Yes (?scroll)|r
+
+Mechanics:
+- Adds spawn in during the fight, these must be dealt with (including taunting) or the group will be overwhelmed.
+- Teleport Spike: when he teleports across the room and starts channeling, he MUST be interrupted or he will one-shot kill a random player.]]},
+    },
+    ["rpb_map_int001"] = {
+    },
+    ["rpb_map_int002"] = {
+    },
+    ["rpb_map_int003"] = {
+    },
+    ["rpb_map_secret001"] = {
+    },
+                    
 
 },	-- End Glenumbra
 
@@ -110,30 +171,30 @@ Mechanics:
 	
 							---- Banished Cells I ----
 		["thebanishedcells_base"] = {
-			{[[Cell Haunter
+			["haunter"] = {[[Cell Haunter
 (Banished Cells I)]], [[Mechanics:
 - Boss has a beam drain/leeching attack targeted on a random member, it is not interruptable.
 - If you are targeted, either block or heal through it.
 ]]},
 
-			{[[Shadowrend
+			["shadowrend"] = {[[Shadowrend
 (Banished Cells I)]], [[Mechanics:
 - Stay fairly close to him to avoid his jump attack.
 - If anyone does get too far away from him, he will jump and pin them. Interrupt him to save them.
 - Kill the shadow version fast when he spawns it.
 ]]},
 
-			{[[Angata the Clanfear handler
+			["angata"] = {[[Angata the Clanfear handler
 (Banished Cells I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 ]]},
 
-			{[[Skeletal Destroyer
+			["skeletal_destroyer"] = {[[Skeletal Destroyer
 (Banished Cells I)]], [[Mechanics:
 - Kill scamps before focusing on the boss.
 ]]},
 
-			{[[High Kinlord Rilis
+			["rilis"] = {[[High Kinlord Rilis
 (Banished Cells I)
 Last Boss]], [[|cffcc66Hard Mode:
 - Scroll of Glorious Battle.|r
@@ -156,35 +217,65 @@ Mechanics:
 	
 							----Darkshade Caverns I	----
 		["darkshadecaverns_base"] = {
-			{[[Head Shepherd Neloren
-(Darkshade Caverns I)]], [[
+			["neloren"] = {[[Head Shepherd Neloren
+(Darkshade Caverns I)]], [[Mechanics:
+- Heals herself a lot unless interrupted.
 ]]},
 
-			{[[Foreman Llothan
-(Darkshade Caverns I)]], [[
+			["llothan"] = {[[Foreman Llothan
+(Darkshade Caverns I)]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			{[[The Hive Lord
-(Darkshade Caverns I)]], [[
+			["hive_lord"] = {[[The Hive Lord
+(Darkshade Caverns I)]], [[Mechanics:
+- |c00ff00Stay close:|r if players get too far from the boss, he will jump at them for huge damage. Many of his mechanics are designed to trick you into running away.
+- His ground pound can be interrupted.
 ]]},
 
-			{[[Cavern Patriarch
-(Darkshade Caverns I)]], [[
+			["patriarch"] = {[[Cavern Patriarch
+(Darkshade Caverns I)]], [[Mechanics:
+- Nothing notable, an easy boss.
 ]]},
 
-			{[[Cutting Sphere
-(Darkshade Caverns I)]], [[
+			["cutting_sphere"] = {[[Cutting Sphere
+(Darkshade Caverns I)]], [[Mechanics:
+- His spin attack needs to be blocked by the tank, it will kill non-tanks.
 ]]},
 
-			{[[Sentinel of Rkugamz
-(Darkshade Caverns I)
-Last Boss]], [[|cffcc66Hard Mode:
+			["sentinel"] = {[[Sentinel of Rkugamz]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
-]]},
+Mechanics:
+- Decapitate: must be blocked by the tank, or they will be one-shot.
+- Spin: directed at a random player. Likely fatal if you are caught because it also applies a snare. The target should kite the boss carefully during this attack, avoiding the other players.]]},
 },
 
-
+            ---- The Cauldron (DLC) ----
+    ["cauldronmapboss1"] = {
+        ["oxblood"] = {[[Oxblood the Depraved]], [[]]}, 
+        ["viccia"] = {[[Taskmaster Viccia]], [[]]},
+        ["molten_guardian"] = {[[Molten Guardian]], [[]]}, 
+        ["rescue"] = {[[Rescue Lyranth!]], [[]]}, 
+        ["zaudrus"] = {[[Baron Zaudrus]], [[]]}, 
+    },
+    ["cauldronmapboss2"] = {
+    },
+    ["cauldronmapboss3"] = {
+    },
+    ["cauldronmapboss4"] = {
+    },
+    ["cauldronmapboss5"] = {
+    },
+    ["cauldronmaplava"] = {
+    },
+    ["cauldronmapslav2"] = {
+    },
+    ["cauldronmapstart"] = {
+    },
+    ["cauldronmaptempl"] = {
+    },
+                    
 },	-- End Deshaan
 
 
@@ -193,34 +284,53 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 							----Elden Hollow I ----
 		["eldenhollow_base"] = {
-			{[[ Ahash gra-Mal
+			["ahash"] = {[[ Ahash gra-Mal
 (Elden Hollow I)]], [[
 ]]},
 
-			{[[Ancient Spriggan
+			["ancient_spriggan"] = {[[Ancient Spriggan
 (Elden Hollow I)]], [[
 ]]},
 
-			{[[Chokethorn
+			["chokethorn"] = {[[Chokethorn
 (Elden Hollow I)]], [[
 ]]},
 
-			{[[Nenesh gro-Mal
+			["nenesh"] = {[[Nenesh gro-Mal
 (Elden Hollow I)]], [[
 ]]},
 
-			{[[Leafseether
+			["leafseether"] = {[[Leafseether
 (Elden Hollow I)]], [[
 ]]},
 
-			{[[Canonreeve Oraneth
+			["oraneth"] = {[[Canonreeve Oraneth
 (Elden Hollow I)
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
 ]]},
 },
-
+            ---- Lair of Maarselok ----
+    ["maarscave1_base"] = {
+        ["selene"] = {[[Selene's Claws and Selene's Fangs]], [[]]}, 
+        ["lurcher"] = {[[Azureblight Lurcher]], [[]]}, 
+        ["cancroid"] = {[[Azurblight Cancroid]], [[]]}, 
+        ["maarselok"] = {[[Maarselok]], [[]]}, 
+        ["maarselok_final"] = {[[Maarselok (Final Battle)]], [[]]},
+    },
+    ["maarsmap04_base"] = {
+    },
+    ["maarsmap05_base"] = {
+    },
+    ["maarsmap06_base"] = {
+    },
+    ["maarsoutsidemap001_base"] = {
+    },
+    ["maarsoutsidemap003_base"] = {
+    },
+                    
+                    
 
 },	-- End Grahtwood
 
@@ -257,7 +367,21 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 ]]},
 },
-
+                ---- Scalecaller Peak (DLC) ----
+    ["scalecaller001_base"] = {
+        ["orzun_rinaerus"] = {[[Orzun the Foul-Smelling and Rinaerus the Rancid]], [[]]},
+        ["doyemish"] = {[[Doyemish Ironheart]], [[]]},
+        ["aldis"] = {[[Matriarch Aldis]], [[]]},
+        ["mortieu"] = {[[Plague Concocter Mortieu]], [[]]},
+        ["zaan"] = {[[Zaan the Scalecaller]], [[]]},
+    },
+    ["scalecaller002_base"] = {
+    },
+    ["scalecaller003_base"] = {
+    },
+    ["scalecaller004_base"] = {
+    },
+                    
 
 },	-- End Stormhaven
 		
@@ -267,27 +391,27 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							----City of Ash I ----
 		["cityofashmain_base"] = {
-			{[[Infernal Guardian
+			["guardian"] = {[[Infernal Guardian
 (City of Ash I)]], [[
 ]]},
 
-			{[[Golor the Banekin Handler
+			["golor"] = {[[Golor the Banekin Handler
 (City of Ash I)]], [[
 ]]},
 
-			{[[Warden of the Shrine
+			["warden"] = {[[Warden of the Shrine
 (City of Ash I)]], [[
 ]]},
 
-			{[[Dark Ember
+			["dark_ember"] = {[[Dark Ember
 (City of Ash I)]], [[
 ]]},
 
-			{[[Rothariel Flameheart
+			["rothariel"] = {[[Rothariel Flameheart
 (City of Ash I)]], [[
 ]]},
 
-			{[[Razor Master Erthas
+			["erthas"] = {[[Razor Master Erthas
 (City of Ash I)
 Last Boss]], [[|cffcc66Hard Mode: 
 - Scroll of Glorious Battle.|r
@@ -295,6 +419,15 @@ Last Boss]], [[|cffcc66Hard Mode:
 ]]},
 },
 
+                ---- March of Sacrifices (DLC) ----
+    ["marchodsacrifices_base"] = {
+        ["sisters"] = {[[Wyrd Sisters]], [[]]}, 
+        ["aghaedh"] = {[[Aghaedh of the Solstice]], [[]]}, 
+        ["dagrund"] = {[[Dagrund the Bulky]], [[]]}, 
+        ["tarcyr"] = {[[Tarcyr]], [[]]}, 
+        ["balorgh"] = {[[Balorgh]], [[]]},
+    },
+                    
 
 },	-- End Greenshade
 
@@ -304,33 +437,41 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							----Crypt of Hearts I ----
 		["cryptofhearts_base"] = {
-			{[[The Mage Master
+			["mage_master"] = {[[The Mage Master
 (Crypt of Hearts I)]], [[
 ]]},
 
-			{[[Archmaster Siniel
+			["siniel"] = {[[Archmaster Siniel
 (Crypt of Hearts I)]], [[
 ]]},
 
-			{[[Death's Leviathan
+			["leviathan"] = {[[Death's Leviathan
 (Crypt of Hearts I)]], [[
 ]]},
 
-			{[[Uulkar Bonehand
+			["uulkar"] = {[[Uulkar Bonehand
 (Crypt of Hearts I)]], [[
 ]]},
 
-			{[[Dogas The Berserker
+			["dogas"] = {[[Dogas The Berserker
 (Crypt of Hearts I)]], [[
 ]]},
 
-			{[[Ilambris Twins - Zaven & Athor
+			["ilambris"] = {[[Ilambris Twins - Zaven & Athor
 (Crypt of Hearts I)
 Last Boss]], [[|cffcc66Hard Mode: 
 - Scroll of Glorious Battle.|r
 ]]},
 },
 
+    ["lostshipyard_map001"] = {
+        ["maiden"] = {[[Lost Maiden]], [[]]},
+        ["bradiggan"] = {[[Foreman Bradiggan]], [[ ]]},
+        ["axeman"] = {[[Shrouded Axeman]], [[ ]]},
+        ["nazaray"] = {[[Nazaray]], [[]]},
+        ["sailor"] = {[[Storm-Cursed Sailor]], [[]]},
+        ["numirril"] = {[[Captain Numirril]], [[]]},
+    },
 
 },	-- End Rivenspire
 
@@ -340,27 +481,57 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 							---- Arx Corinium ----
 		["arxcorinium_base"] = {
-			{[[Fanged Menace]], [[
+			["fanged_menace"] = {[[Fanged Menace]], [[
 ]]},
 
-			{[[Ganakton the Tempest]], [[
+			["ganakton"] = {[[Ganakton the Tempest]], [[
 ]]},
 
-			{[[Silkenia the Songstress]], [[
+			["silkenia"] = {[[Silkenia the Songstress]], [[
 ]]},
 
-			{[[Matron Ixniaa]], [[
+			["ixniaa"] = {[[Matron Ixniaa]], [[
 ]]},
 
-			{[[Ancient Lurcher]], [[
+			["lurcher"] = {[[Ancient Lurcher]], [[
 ]]},
 
-			{[[Sellstrix the Lamia Queen
+			["sellistrix"] = {[[Sellstrix the Lamia Queen
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 ]]},
 },
-
+                            ---- Ruins of Mazzatun (DLC) ----
+    ["mazzatunext_base"] = {
+        ["zatzu"] = {[[Zatzu]], [[]]},
+        ["chudan"] = {[[Mighty Chudan]], [[]]},
+        ["xalnur"] = {[[Xal-Nur the Slayer]], [[]]},
+        ["kanesh"] = {[[Tree-Minder Ka-Nesh]], [[]]},
+    },
+    ["mazzatunint001_base"] = {
+    },
+    ["mazzatunint002_base"] = {
+    },
+    ["mazzatunint003_base"] = {
+    },
+                        
+                        ---- Cradle of Shadows (DLC) ----
+    ["ui_cradleofshadowsint_001_base"] = {
+        ["sithera"] = {[[Sithera]], [[]]},
+    },
+    ["ui_cradleofshadowsint_002_base"] = {
+        ["khephidaen"] = {[[Khephidaen the Spiderkith]], [[]]},
+    },
+    ["ui_cradleofshadowsint_003_base"] = {
+        ["votary"] = {[[Votary of Velidreth]], [[]]},
+    },
+    ["ui_cradleofshadowsint_004_base"] = {
+        ["dranos"] = {[[Dranos Velandor]], [[]]},
+    },
+    ["ui_cradleofshadowsint_005_base"] = {
+        ["velidreth"] = {[[Velidreth]], [[]]},
+    },
+                    
 
 },	-- End Shadowfen
 	
@@ -370,23 +541,23 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Direfrost Keep ----
 		["direfrostkeep_base"] = {
-			{[[Teethnasher the Frostbound]], [[
+			["teethgnasher"] = {[[Teethnasher the Frostbound]], [[
 ]]},
 
-			{[[Keeper of the Flame]], [[
+			["keeper"] = {[[Keeper of the Flame]], [[
 ]]},
 
-			{[[Drodda's Dreadlord]], [[
+			["dreadlord"] = {[[Drodda's Dreadlord]], [[
 ]]},
 
-			{[[Drodda's Apprentice]], [[
+			["apprentice"] = {[[Drodda's Apprentice]], [[
 ]]},
 
-			{[[Iceheart]], [[
+			["iceheart"] = {[[Iceheart]], [[
 ]]},
 },
 		["direfrostkeepsummit_base"] = {
-			{[[Drodda the Icereach
+			["drodda"] = {[[Drodda the Icereach
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 ]]},
@@ -395,22 +566,22 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Frostvault ----
 		["frvfrstvlt01_base"] = {
-			{[[Icestalker Troll]], [[
+			["troll"] = {[[Icestalker Troll]], [[
 ]]},
 },
 		["frvfrstvlt03_base"] = {
-			{[[Warlord Tzogvin]], [[
+			["tzogvin"] = {[[Warlord Tzogvin]], [[
 ]]},
 
-			{[[Vault Protector]], [[
+			["protector"] = {[[Vault Protector]], [[
 ]]},
 },
 		["frvfrstvlt02_base"] = {
-			{[[Rizzuk Bonechill]], [[
+			["rizzuk"] = {[[Rizzuk Bonechill]], [[
 ]]},
 },
 		["frvfrstvlt04_base"] = {
-			{[[The Stonekeeper
+			["stonekeeper"] = {[[The Stonekeeper
 Last Boss]], [[|cffcc66Hard Mode:
 - Little button on the left, before the boss platform.|r
 ]]},
@@ -425,27 +596,27 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Tempest Island ----
 		["tempestisland_base"] = {
-			{[[Valaran Stormcaller]], [[
+			["valaran"] = {[[Valaran Stormcaller]], [[
 ]]},
 
-			{[[Stormfist]], [[
+			["stormfist"] = {[[Stormfist]], [[
 ]]},
 
-			{[[Stormreeve Neidir
+			["neidir"] = {[[Stormreeve Neidir
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r 
 ]]},
 },
 		["tempestislandswcave_base"] = {
-			{[[Sonolia the Matriarch]], [[
+			["sonolia"] = {[[Sonolia the Matriarch]], [[
 ]]},
 },
 		["tempestislandncave_base"] = {
-			{[[Yalorasse the Speaker]], [[
+			["yalorasse"] = {[[Yalorasse the Speaker]], [[
 ]]},
 },
 		["tempestislandsecave_base"] = {
-			{[[Commodore Ohmamil]], [[
+			["ohmamil"] = {[[Commodore Ohmamil]], [[
 ]]},
 },
 
@@ -458,24 +629,24 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 							---- Volenfell (Part 1) ----
 		["volenfell_base"] = {
-			{[[Desert Lion]], [[
+			["desert_lion"] = {[[Desert Lion]], [[
 ]]},
 
-			{[[Quintus Verres & Monsterous Gargoyle]], [[
+			["quintus_verres"] = {[[Quintus Verres & Monsterous Gargoyle]], [[
 ]]},
 
-			{[[Tremorscale]], [[
+			["tremorscale"] = {[[Tremorscale]], [[
 ]]},
 },
 		["eyeschamber_base"] = {
-			{[[Guardian Constructs
+			["constructs"] = {[[Guardian Constructs
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
 ]]},
 },
 		["volenfell_pledge"] = {
-			{[[Boilbite]], [[
+			["boilbite"] = {[[Boilbite]], [[
 ]]},
 },
 
@@ -488,38 +659,71 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Volenfell (Part 2) ----
 		["the_guardians"] = {
-			{[[Unstable Construct]], [[
+			["unstable_construct"] = {[[Unstable Construct]], [[
 ]]},
 },
 
 
 							---- Blackheart Haven ----
 		["blackhearthavenarea1_base"] = {
-			{[[Iron-Heel]], [[
+			["ironheel"] = {[[Iron-Heel]], [[
 ]]},
 },
 		["blackhearthavenarea2_base"] = {
-			{[[Atarus]], [[
+			["atarus"] = {[[Atarus]], [[
 ]]},
 },
 		["blackhearthavenarea3_base"] = {
-			{[[First Mate Wavecutter]], [[
+			["wavecutter"] = {[[First Mate Wavecutter]], [[
 ]]},
 
-			{[[Roost Mother]], [[
+			["roost_mother"] = {[[Roost Mother]], [[
 ]]},
 
-			{[[Hollow Heart]], [[
+			["hollow_heart"] = {[[Hollow Heart]], [[
 ]]},
 },
 		["blackhearthavenarea4_base"] = {
-			{[[Captain Blackheart
+			["blackheart"] = {[[Captain Blackheart
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 ]]},
 },
 
-
+                        ---- Fang Lair (DLC) ----
+    ["fanglairext_base"] = {
+        ["lizabet"] = {[[Lizabet Charnis]], [[]]},
+        ["menagerie"] = {[[Cadaverous Menagerie]], [[]]},
+        ["caluurion"] = {[[Caluurion]], [[]]},
+        ["ulfnor_sabina"] = {[[Ulfnor and Sabina Cedus]], [[]]},
+        ["thurvokun"] = {[[Thurvokun and Orryn the Black]], [[]]},
+    },
+                        ---- Unhallowed Grave (DLC) ----
+    ["unhallowedgravemap001"] = {
+        ["hakgrym"] = {[[Hakgrym the Howler]], [[]]},
+    },
+    ["unhallowedgravemap001b"] = {
+        ["keeper"] = {[[Keeper of the Kiln]], [[]]},
+        ["aegis"] = {[[Eternal Aegis]], [[]]},
+        ["voria"] = {[[Voria the Heart-Thief]], [[]]},
+    },
+    ["unhallowedgravemap001c"] = {
+        ["ondagore"] = {[[Ondagore the Mad]], [[]]},
+        ["masterpiece"] = {[[Voria's Masterpiece]], [[]]},
+    },
+    ["unhallowedgravemap002"] = {
+    },
+    ["unhallowedgravemap003"] = {
+    },
+    ["unhallowedgravemap004"] = {
+        ["nabor"] = {[[Nabor the Forgotten]], [[]]},
+    },
+    ["unhallowedgravemap005"] = {
+        ["kjalnar"] = {[[Kjalnar Tombskald]], [[]]},
+    },
+    ["unhallowedgravesecret2map"] = {
+    },
+                    
 },	-- End Bangkorai
 	
 
@@ -528,27 +732,27 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 							---- Blessed Crucible ----
 		["blessedcrucible1_base"] = {
-			{[[Grunt the Clever]], [[
+			["grunt"] = {[[Grunt the Clever]], [[
 ]]},
 },
 		["blessedcrucible2_base"] = {
-			{[[The Pack]], [[
+			["the_pack"] = {[[The Pack]], [[
 ]]},
 },
 		["blessedcrucible3_base"] = {
-			{[[Teranya the Faceless]], [[
+			["teranya"] = {[[Teranya the Faceless]], [[
 ]]},
 },
 		["blessedcrucible4_base"] = {
-			{[[Beast Army: Beetles & Singer & Troll King]], [[
+			["beast_army"] = {[[Beast Army: Beetles & Singer & Troll King]], [[
 ]]},
 },
 		["blessedcrucible5_base"] = {
-			{[[Captain Thoran]], [[
+			["thoran"] = {[[Captain Thoran]], [[
 ]]},
 },
 		["blessedcrucible6_base"] = {
-			{[[Lava Queen
+			["lava_queen"] = {[[Lava Queen
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 ]]},
@@ -563,27 +767,53 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Selene's Web ----
 		["selenesweb_base"] = {
-			{[[Treethane Keminn]], [[
+			["keminn"] = {[[Treethane Keminn]], [[
 ]]},
 
-			{[[Longclaw]], [[
+			["longclaw"] = {[[Longclaw]], [[
 ]]},
 
-			{[[Queen Aklayah]], [[
+			["aklayah"] = {[[Queen Aklayah]], [[
 ]]},
 
-			{[[Foulhide]], [[
+			["foulhide"] = {[[Foulhide]], [[
 ]]},
 
-			{[[Mennir Many-Legs]], [[
+			["mennir"] = {[[Mennir Many-Legs]], [[
 ]]},
 
-			{[[Selene
+			["selene"] = {[[Selene
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 ]]},
 },
 
+						---- Moon Hunter Keep (DLC) ----
+    ["mhkmoonhunterkeep_base"] = {
+        ["melitus"] = {[[Jailer Melitus]], [[]]},
+        ["guardian"] = {[[Hedge Maze Guardian]], [[]]},
+    },
+    ["mhkmoonhunterkeep2_base"] = {
+        ["mylenne"] = {[[Mylenne Moon-Caller]], [[]]},
+        ["ernarde"] = {[[Archivist Ernarde]], [[]]},
+    },
+    ["mhkmoonhunterkeep3_base"] = {
+        ["vykosa"] = {[[Vykosa the Ascendant]], [[]]},
+    },
+    
+                        ---- Maw of Lorkhaj (TRIAL) ----
+    ["maw_of_lorkaj_base"] = {
+        ["zhajhassa"] = {[[Zhaj'hassa The Forgotten]], [[]]},
+        ["twins"] = {[[Vashai and S'kinrai - The Twins]], [[]]},
+        ["rakkhat"] = {[[Rakkhat]], [[]]},
+    },
+    ["mawlorkajhall_base"] = {
+    },
+    ["mawlorkajsevenriddles_base"] = {
+    },
+    ["mawlorkajsuthaysanctuary_base"] = {
+    },
+                    
 
 },	-- End Reaper's March
 
@@ -593,29 +823,29 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Vaults of Madness ----
 		["vaultsofmadness1_base"] = {
-			{[[Cursed One]], [[
+			["cursed_one"] = {[[Cursed One]], [[
 ]]},
 					
-			{[[Ulguna Soul-Reaver]], [[
+			["ulguna"] = {[[Ulguna Soul-Reaver]], [[
 ]]},
 
-			{[[Death Hand]], [[
+			["death_hand"] = {[[Death Hand]], [[
 ]]},
 
-			{[[Grothdarr]], [[
+			["grothdarr"] = {[[Grothdarr]], [[
 ]]},
 
-			{[[Archearaizur]], [[
+			["archearaizur"] = {[[Archearaizur]], [[
 ]]},
 
-			{[[Ancient One]], [[
+			["ancient_one"] = {[[Ancient One]], [[
 ]]},
 
-			{[[Iskra the Omen]], [[
+			["iskra"] = {[[Iskra the Omen]], [[
 ]]},
 },
 		["vaultsofmadness2_base"] = {
-			{[[Mad Architect
+			["architect"] = {[[Mad Architect
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
@@ -631,25 +861,25 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Imperial City Prison ----
 		["imperialprisondunint01_base"] = {
-			{[[Overfiend]], [[
+			["overfiend"] = {[[Overfiend]], [[
 ]]},
 },
 		["imperialprisondunint02_base"] = {
-			{[[Ibomez The Flesh Sculptor]], [[
+			["ibomez"] = {[[Ibomez The Flesh Sculptor]], [[
 ]]},
 },
 		["imperialprisondunint03_base"] = {
-			{[[Gravelight Sentry]], [[
+			["sentry"] = {[[Gravelight Sentry]], [[
 ]]},
 
-			{[[Flesh Abomination]], [[
+			["abomination"] = {[[Flesh Abomination]], [[
 ]]},
 },
 		["imperialprisondunint04_base"] = {
-			{[[Lord Wardens Bodyguards]], [[
+			["bodyguards"] = {[[Lord Wardens Bodyguards]], [[
 ]]},
 
-			{[[Lord Warden Dusk
+			["lord_warden"] = {[[Lord Warden Dusk
 Last Boss]], [[|cffcc66Hard Mode:
 - Warden's Tome. (Scroll)|r
 ]]},
@@ -658,19 +888,19 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- White-Gold Tower ----
 		["wgtimperialthroneroom_base"] = {
-			{[[The Adjudicator]], [[
+			["adjudicator"] = {[[The Adjudicator]], [[
 ]]},
 },
 		["wgtlibrarymain_base"] = {
-			{[[Micella Carlinus, Otho Numida & Cordius Pontifio]], [[
+			["micella"] = {[[Micella Carlinus, Otho Numida & Cordius Pontifio]], [[
 ]]},
 },
 		["wgtvoid1_base"] = {
-			{[[The Planar Inhibitor]], [[
+			["inhibitor"] = {[[The Planar Inhibitor]], [[
 ]]},
 },
 		["wgtpinnacleboss_base"] = {
-			{[[Molag Kena
+			["molag_kena"] = {[[Molag Kena
 Last Boss]], [[|cffcc66Hard Mode:
 - Obelisk Tome. (Scroll)|r
 ]]},
@@ -680,47 +910,500 @@ Last Boss]], [[|cffcc66Hard Mode:
 },	-- End Cyrodiil
 
 	
-	
-							
-							---- Ruins of Mazzatun ----
-							
-							
-							---- Cradle of Shadows ----
-							
-							
-							---- Falkreath Hold ----
-							
-							
-							---- Bloodroot Forge ----
-							
-							
-							---- Fang Lair ----
-							
-							
-							---- Scalecaller Peak ----
-							
-							
-							---- March of Sacrifices ----
-							
-							
-							---- Moon Hunter Keep ----
-							
-							
-							---- Depths of Malatar ----
-							
-							
-							---- Lair of Maarselok ----
-							
-							
-							---- Moongrave Fane ----
-							
-							
-							---- Unhallowed Grave ----
-							
-							
-							---- Icereach ----
 
-	
+    -- start Craglorn
+	["craglorn"] = {
+        ---- Falkreath Hold ----
+    ["falkreathsdemise_b_base"] = {
+        ["morrigh"] = {[[Morrigh Bullblood]], [[]]},
+        ["mammoth"] = {[[Siege Mammoth]], [[]]},
+        ["cernunnon"] = {[[Cernunnon]], [[]]},
+        ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[]]},
+        ["domihaus"] = {[[Domihaus]], [[]]},
+    },
+    ["falkreathsdemise_i_base"] = {
+    },
+    ["falkreathsdemise_base"] = {
+    },
+
+
+            ---- Bloodroot Forge ----
+    ["bloodrootext1_base"] = {
+        ["mathgamain"] = {[[Mathgamain]], [[]]},
+        ["caillaoife"] = {[[Caillaoife]], [[]]},
+        ["stoneheart"] = {[[Stoneheart]], [[]]},
+        ["galchobhar"] = {[[Galchobhar]], [[]]},
+        ["gherig"] = {[[Gherig Bullblood]], [[]]},
+        ["earthgore"] = {[[Earthgore Amalgam]], [[]]},
+    },
+    ["bloodrootint1_base"] = {
+    },
+    ["bloodrootint2_base"] = {
+    },
+
+            ---- Hel Ra Citadel (TRIAL) ----
+    ["helracitadel_base"] = {
+        ["ra_kotu"] = {[[Ra Kotu]], [[]]},
+        ["rokdun"] = {[[Yokeda Rok'dun]], [[]]},
+        ["kai"] = {[[Yokeda Kai]], [[]]},
+        ["warrior"] = {[[The Warrior]], [[]]},
+    },
+    ["helracitadelentry_base"] = {
+    },
+    ["helracitadelhallofwarrior_base"] = {
+    },
+
+            ---- Aetherian Archive (TRIAL) ----
+    ["aetherianarchivebottom_base"] = {
+        ["storm_atronach"] = {[[Lightning Storm Atronach]], [[]]},
+        ["stone_atronach"] = {[[Foundation Stone Atronach]], [[]]},
+        ["varlariel"] = {[[Varlariel]], [[]]},
+        ["mage"] = {[[The Mage]], [[]]},
+    },
+    ["aetherianarchiveend_base"] = {
+    },
+    ["aetherianarchiveislanda_base"] = {
+    },
+    ["aetherianarchiveislandb_base"] = {
+    },
+    ["aetherianarchiveislandc_base"] = {
+    },
+    ["aetherianarchivemiddle_base"] = {
+    },
+
+            ---- Sanctum Ophidia (TRIAL) ----
+    ["trl_so_map01_base"] = {
+        ["manticora"] = {[[Possessed Manticora]], [[]]},
+        ["stonebreaker"] = {[[Stonebreaker]], [[]]},
+        ["ozara"] = {[[Ozara]], [[]]},
+        ["serpent"] = {[[The Serpent]], [[]]},
+    },
+    ["trl_so_map02_base"] = {
+    },
+    ["trl_so_map03_base"] = {
+    },
+    ["trl_so_map04_base"] = {
+    },
+
+            ---- Dragonstar Arena (GROUP ARENA) ----
+    ["dragonstararena01_base"] = {
+        ["marculd"] = {[[Champion Marculd]], [[]]},
+    },
+    ["dragonstararena02_base"] = {
+        ["yavin_katti"] = {[[Yavin Frost-Skin and Katti Ice-Turner]], [[]]},
+    },
+    ["dragonstararena03_base"] = {
+        ["naktah_shilia"] = {[[Nak'tah and Shilia]], [[]]},
+    },
+    ["dragonstararena04_base"] = {
+        ["knight"] = {[[Earthen Heart Knight]], [[]]},
+    },
+    ["dragonstararena05_base"] = {
+        ["anala"] = {[[Anal'a Tu'wha]], [[]]},
+    },
+    ["dragonstararena06_base"] = {
+        ["pishna"] = {[[Pishna Longshot]], [[]]},
+    },
+    ["dragonstararena07_base"] = {
+        ["mage_knight"] = {[[Dark Mage and Shadow Knight]], [[]]},
+    },
+    ["dragonstararena08_base"] = {
+        ["mavus"] = {[[Mavus Talnarith]], [[]]},
+    },
+    ["dragonstararena09_base"] = {
+        ["thisa"] = {[[Vampire Lord Thisa]], [[]]},
+    },
+    ["dragonstararena10_base"] = {
+        ["hiath"] = {[[Hiath the Battlemaster]], [[]]},
+    },
+    ["dragonstararena09crypt_base"] = {
+    },
+    ["dragonstararenavault_base"] = {
+    },
+},	-- end Craglorn					
+        
+        
+-- start Gold Coast
+["darkbrotherhood"] = {
+        ---- Depths of Malatar (DLC) ----
+["domdepthsofmal_base"] = {
+    ["maw"] = {[[The Scavenging Maw]], [[]]},
+    ["weeping"] = {[[The Weeping Woman]], [[]]},
+    ["dark_orb"] = {[[The Dark Orb]], [[]]},
+    ["narilmor"] = {[[King Narilmor]], [[]]},
+    ["blades"] = {[[Symphony of Blades]], [[]]},
+},
+["domdepthsofmal2_base"] = {
+},
+["domdepthsofmal3_base"] = {
+},
+["domdepthsofmal4_base"] = {
+},
+["domdepthsofmal5_base"] = {
+},
+
+        ---- Black Drake Villa (DLC) ----
+["bdvilla_boss3map"] = {
+    ["zeal"] = {[[Avatar of Zeal]], [[]]},
+    ["kinras"] = {[[Kinras Ironeye]], [[]]},
+    ["vigor"] = {[[Avatar of Vigor]], [[]]},
+    ["fortitude"] = {[[Avatar of Fortitude]], [[]]},
+    ["geminus"] = {[[Captain Geminus]], [[]]},
+    ["encratis"] = {[[Pyroturge Encratis]], [[]]},
+    ["aksalaz"] = {[[Sentinel Aksalaz]], [[]]},
+},
+["bdvilla_map2ext2"] = {
+},
+["bdvilla_map3ext1"] = {
+},
+["bdvilla_map3int1"] = {
+},
+["bdvilla_mapsecret1"] = {
+},
+["bdvilla_mapsecret2"] = {
+},
+["bdvilla_mapsecret3"] = {
+},
+},	-- end Gold Coast	
+
+
+-- start Northern Elsweyr
+["elsweyr"] = {							
+        ---- Sunspire (TRIAL) ----
+["sunspirehall001_base"] = {
+    ["lokkestiiz"] = {[[Lokkestiiz]], [[]]},
+    ["yolnahkriin"] = {[[Yolnahkriin]], [[]]},
+    ["nahviintaas"] = {[[Nahviintaas]], [[]]},
+},
+["sunspirehall002_base"] = {
+},
+["sunspirehall003_base"] = {
+},
+["sunspirehall004_base"] = {
+},
+["sunspireoverworld_base"] = {
+},
+["sunspireroom001_base"] = {
+},
+["sunspireroom002_base"] = {
+},
+},  -- end Northern Elsweyr
+
+
+-- start Southern Elsweyr
+["southernelsweyr"] = {							
+        ---- Moongrave Fane (DLC) (actually located in Northern zone) ----
+["moongravesection1_base"] = {
+    ["ruins"] = {[[The Risen Ruins]], [[]]},
+    ["drozakar"] = {[[Dro'zakar]], [[]]},
+    ["kujo"] = {[[Kujo Kethba]], [[]]},
+    ["nisaazda"] = {[[Nisaazda]], [[]]},
+    ["grundwulf"] = {[[Grundwulf]], [[]]},
+},
+},  -- end Southern Elsweyr
+
+
+-- start Wrothgar
+["wrothgar"] = {							
+        ---- Icereach (DLC) ----
+["icereachpart1"] = {
+    ["kjarg"] = {[[Kjarg the Tuskscraper]], [[]]},
+    ["skelga"] = {[[Sister Skelga]], [[]]},
+    ["vearogh"] = {[[Vearogh The Shambler]], [[]]},
+},
+["icereachpart2"] = {
+    ["revenant"] = {[[Stormborn Revenant]], [[]]},
+    ["ciannait"] = {[[Mother Ciannait]], [[]]},
+},
+        ---- Maelstrom Arena (SOLO ARENA) ----
+["arenasclockwork2_base"] = {
+    ["maxus"] = {[[Maxus the Many]], [[]]},
+    ["centurion"] = {[[Centurion Champion]], [[]]},
+    ["lamia"] = {[[Lamia Queen]], [[]]},
+    ["guardian"] = {[[The Control Guardian]], [[]]},
+    ["runa"] = {[[Matriarch Runa]], [[]]},
+    ["atrocity"] = {[[Champion of Atrocity]], [[]]},
+    ["behemoth"] = {[[Argonian Behemoth]], [[]]},
+    ["tephra"] = {[[Valkyn Tephra]], [[]]},
+    ["solkyn"] = {[[Voriak Solkyn]], [[]]},
+},
+["arenasclockworkint_base"] = {
+},
+["arenaslavacaveinterior_base"] = {
+},
+["arenaslobbyexterior_base"] = {
+},
+["arenasmephalaexterior_base"] = {
+},
+["arenasmurkmirecaveint_base"] = {
+},
+["arenasmurkmireexterior_base"] = {
+},
+["arenasoblivionexterior_base"] = {
+},
+["arenasshiveringisles_base"] = {
+},
+["arenaswrothgarexterior_base"] = {
+},
+},  -- end Wrothgar
+
+
+-- start Vvardenfell
+["vvardenfell"] = {							
+        ---- Halls of Fabrication (TRIAL) ----
+["hofabriccaves_base"] = {
+    ["fabricants"] = {[[Hunter-Killer Fabricants]], [[]]},
+    ["factotum"] = {[[The Pinnacle Factotum]], [[]]},
+    ["archcustodian"] = {[[The Archcustodian]], [[]]},
+    ["committee"] = {[[The Refabrication Committee]], [[]]},
+    ["assembly"] = {[[The Assembly General]], [[]]},
+},
+["hofabrichall1_base"] = {
+},
+["hofabricloop_base"] = {
+},
+["hofabricboss3_base"] = {
+},
+["hofabricext1_base"] = {
+},
+["hofabrichall2_base"] = {
+},
+},  -- end Vvardenfell
+
+
+-- start Clockwork City
+["clockwork"] = {							
+        ---- Asylum Sanctorium (TRIAL) ----
+["asylumsanctorum001_base"] = {
+    ["llothis"] = {[[Saint Llothis the Pious]], [[]]},
+    ["felms"] = {[[Saint Felms the Bold]], [[]]},
+    ["olms"] = {[[Saint Olms the Just]], [[]]},
+},
+["asylumsanctorum002_base"] = {
+},
+},  -- end Clockwork City
+
+
+-- start Murkmire
+["murkmire"] = {							
+---- Blackrose Prison (GROUP ARENA) ----
+["blackroseprison01_base"] = {
+    ["ennodius"] = {[[Battlemage Ennodius]], [[]]},
+    ["tames_the_beast"] = {[[Tames-The-Beast]], [[]]},
+    ["minara"] = {[[Lady Minara]], [[]]},
+    ["three_bosses"] = {[[Ennodius, Minara and Tames-The-Beast]], [[]]},
+    ["drakeeh"] = {[[Drakeeh the Unchained]], [[]]},
+},
+},  -- end Murkmire
+
+
+-- start Western Skyrim
+["skyrim"] = {							
+        ---- Castle Thorn (DLC) ----
+["castlethorn_int_01"] = {
+    ["twilight"] = {[[Blood Twilight]], [[]]},
+},
+["castlethorn_int_02"] = {
+},
+["castlethorn_int_03"] = {
+    ["lady_thorn"] = {[[Lady Thorn]], [[]]},
+},
+["castlethornmap_001"] = {
+    ["tindulra"] = {[[Dread Tindulra]], [[]]},
+    ["vaduroth"] = {[[Vaduroth]], [[]]},
+    ["talfyg"] = {[[Talfyg]], [[]]},
+},
+
+        ---- Stone Garden (DLC) ----
+["stonegarden01"] = {
+    ["kraglen"] = {[[Exarch Kraglen]], [[]]},
+},
+["stonegarden02"] = {
+    ["behemoth"] = {[[Stone Behemoth]], [[]]},
+},
+["stonegarden02b"] = {
+},
+["stonegarden03"] = {
+    ["arkasis"] = {[[Arkasis the Mad Alchemist]], [[]]},
+},
+["stonegarden03b"] = {
+},
+        ---- Kyne's Aegis (TRIAL) ----
+["kynesaegisboss3floor001"] = {
+    ["yandir"] = {[[Yandir the Butcher]], [[]]},
+    ["vrol"] = {[[Captain Vrol]], [[]]},
+    ["falgravn"] = {[[Lord Falgravn]], [[]]},
+},
+["kynesaegisboss3floor002"] = {
+},
+["kynesaegisboss3floor003"] = {
+},
+["kynesaegismap001"] = {
+},
+},  -- end Western Skyrim	
+
+
+-- start The Reach
+["reach"] = {							
+        ---- Vateshran Hollows (SOLO ARENA) ----
+["vateshranrites01"] = {
+},
+["vateshranrites01a"] = {
+},
+["vateshranritesmap02"] = {
+    ["shade"] = {[[Shade of the Grove]], [[]]},
+    ["keeper"] = {[[Leptfire Keeper]], [[]]},
+    ["rahdgarak"] = {[[Rahdgarak]], [[]]},
+},
+["vateshranritesmap03"] = {
+    ["magma_queen"] = {[[Magma Queen]], [[]]},
+    ["metron"] = {[[Mynar Metron]], [[]]},
+    ["pyrelord"] = {[[The Pyrelord]], [[]]},
+},
+["vateshranritesmap04"] = {
+    ["zakuryn"] = {[[Zakuryn the Sculptor]], [[]]},
+    ["xobutar"] = {[[Xobutar of His Deep Graces]], [[]]},
+    ["iozuzzunth"] = {[[Iozuzzunth]], [[]]},
+},
+["vateshranritesmap05"] = {
+    ["maebroogha"] = {[[Maebroogha The Void Lich]], [[]]},
+},
+},  -- end The Reach
+
+
+-- start Blackwood
+["blackwood"] = {
+---- The Dread Cellar (DLC) ----
+["tdc_map_boss3rooms_001"] = {
+    ["purgator"] = {[[Purgator]], [[]]},
+    ["broodlord"] = {[[Scorion Broodlord]], [[]]},
+    ["undertaker"] = {[[Undertaker]], [[]]},
+    ["cyronin"] = {[[Cyronin Artellian]], [[]]},
+    ["warden"] = {[[Grim Warden]], [[]]},
+    ["magma_incarnate"] = {[[Magma Incarnate]], [[]]},
+},
+["tdc_map_inside_001"] = {
+},
+["tdc_map_outside_001"] = {
+},
+["tdc_map_secret_001"] = {
+},
+["tdc_map_secrethall_001"] = {
+},
+["tdc_map_secrethall_002"] = {
+},
+["tdc_map_secrethall_003"] = {
+},
+
+---- Rockgrove (TRIAL) ----
+["rg_map_inside_001"] = {
+    ["oaxiltso"] = {[[Oaxiltso]], [[]]},
+    ["bahsei"] = {[[Flame-Herald Bahsei]], [[]]},
+    ["xalvakka"] = {[[Xalvakka]], [[]]},
+},
+["u30_rg_map_outside_001"] = {
+},
+["u30_rg_map_outside_002"] = {
+},
+},  -- end Blackwood
+
+
+-- start Summerset
+["summerset"] = {							
+        ---- Coral Aerie (DLC) ----
+["coralaerie_b1_001"] = {
+    ["sword_guardian"] = {[[Sword Guardian]], [[]]},
+    ["maligalig"] = {[[Maligalig]], [[]]},
+    ["staff_guardian"] = {[[Staff Guardian]], [[]]},
+    ["szarzo"] = {[[S'zarzo the Bulwark]], [[]]},
+    ["sarydil"] = {[[Sarydil]], [[]]},
+    ["shield_guardian"] = {[[Shield Guardian]], [[]]},
+    ["varallion"] = {[[Varallion]], [[]]},
+    ["zbaza"] = {[[Z'baza]], [[]]},
+},
+["coralaerie_b2_001"] = {
+},
+["coralaerie_beach_001"] = {
+},
+["coralaerie_mbwave_001"] = {
+},
+["coralaerieaerie_001"] = {
+},
+["coralaerieb3_001"] = {
+},
+["coralaeriesecretmap001"] = {
+},
+
+        ---- Cloudrest (TRIAL) ----
+["cloudresttrial_base"] = {
+    ["siroria_silaeda"] = {[[Shades of Siroria and Silaeda]], [[]]},
+    ["relequen_belanaril"] = {[[Shades of Relequen and Belanaril]], [[]]},
+    ["galenwe_falarielle"] = {[[Shades of Galenwe and Falarielle]], [[]]},
+    ["zmaja"] = {[[Z'Maja]], [[]]},
+},
+},  -- end Summerset
+
+
+-- start High Isle
+["systres"] = {							
+        ---- Earthen Root Enclave (DLC) ----
+["ere_insidemap01"] = {
+    ["scaled_roots"] = {[[Scaled Roots]], [[]]},
+    ["corrupt_stone"] = {[[Corruption of Stone]], [[]]},
+    ["lutea"] = {[[Lutea]], [[]]},
+    ["corrupt_root"] = {[[Corruption of Root]], [[]]},
+    ["jodoro"] = {[[Jodoro]], [[]]},
+    ["devyric"] = {[[Archdruid Devyric]], [[]]},
+},
+["ere_outsidemap01"] = {
+},
+["ere_outsidemap02"] = {
+},
+        ---- Graven Deep (DLC) ----
+["gravendeep_dropbott_map"] = {
+},
+["gravendeep_droptop_map"] = {
+},
+["gravendeep_island_map"] = {
+    ["mzugru"] = {[[Mzugru, the Security Drone]], [[]]},
+    ["gatekeeper"] = {[[The Euphotic Gatekeeper]], [[]]},
+    ["xzyviian"] = {[[Xzyviian, Defense Crawler]], [[]]},
+    ["varzunon"] = {[[Varzunon]], [[]]},
+    ["chralzak"] = {[[Chralzak, Sphere 9402-A]], [[]]},
+    ["zelvraak"] = {[[Zelvraak the Unbreathing]], [[]]},
+},
+["gravendeep_section2_map"] = {
+},
+["gravendeep_section3_map"] = {
+},
+["gravendeep_secret1_map"] = {
+},
+
+        ---- Dreadsail Reef (TRIAL) ----
+["dsr_b2_map"] = {
+    ["lylanar_turlassil"] = {[[Lylannar and Turlassil]], [[]]},
+    ["reef_guardian"] = {[[Reef Guardian]], [[]]},
+    ["bow_breaker"] = {[[Bow Breaker]], [[]]},
+    ["sail_ripper"] = {[[Sail Ripper]], [[]]},
+    ["taleria"] = {[[Tideborn Taleria]], [[]]},
+},
+["dsr_b2under_map"] = {
+},
+["dsr_b3_map"] = {
+},
+["dsr_beach_01"] = {
+},
+["dsr_boss1_map"] = {
+},
+["dsr_doors_map"] = {
+},
+["dsr_e_map"] = {
+},
+["dsr_w_map"] = {
+},
+
+},  -- end High Isle
+
 
 
 } 	-- End Normal/DLC Dungons
@@ -738,39 +1421,39 @@ local DHLocalizedDataOther = {
 	
 	["stonefalls"] = {
 		["fungalgrotto_base"] = {
-			{[[Mephala's Fang
+			["fang"] = {[[Mephala's Fang
 (Fungal Grotto II)]], [[Mechanics:
 - The boss will place persistent poison circles under several members feet. Move out of them quickly.
 - To avoid filling the whole room with poison, it is easiest to stack(healer/dps) and move as a group when poisons are placed.
 - Tank can stay still and just eat the poison, while keeping the boss faced away from the group.
 ]]},
 
-			{[[Gaymne Bandu
+			["gaymne"] = {[[Gaymne Bandu
 (Fungal Grotto II)]], [[Mechanics:
 - When tethered to another group member with a purple beam, run away from each other to break it.
 - When someone gets pinned, focus kill ONE of the four shadows to save them.
 ]]},
 
-			{[[Ciirenas the Shepherd
+			["ciirenas"] = {[[Ciirenas the Shepherd
 (Fungal Grotto II)]], [[Mechanics:
 - DO NOT KILL THE SPIDERS. Focus on the boss only. Killing the spiders greatly increases her defense.
 - Spiders ignore taunt, they will attack whoever she marks. If the spiders are on you, drag them away from the group so they do not get hit by AoEs.
 ]]},
 
-			{[[Spawn of Mephala
+			["spawn"] = {[[Spawn of Mephala
 (Fungal Grotto II)]], [[Mechanics:
 - Survivable DPS stand on the portal side of the room. Whoever is closest gets pulled in, then needs to kill spiders inside to get back out.
 - Kite beam attack away from others until it explodes.
 ]]},
 
-			{[[Reggr Dark-Down
+			["reggr"] = {[[Reggr Dark-Down
 (Fungal Grotto II)]], [[Mechanics:
 - Trash on the sides can be completely avoided, just pull him onto the middle of the stairs.
 - Boss will drain MP excessively. Stamina heals are very helpful!
 - Don't forget to click the Obsidian Husk after the fight.
 ]]},
 
-			{[[Vila Tharen
+			["vila"] = {[[Vila Tharen
 (Fungal Grotto II)
 Last Boss]], [[|cffcc66Hard Mode:
 - Do not use Two-Blade's bubble.|r
@@ -779,7 +1462,7 @@ Mechanics:
 - Ranged attacks recomended.
 - Boss will teleport 3 times in a row to random group members, each time placing an expanding black hole on the ground. 
 - To deal with this, stay grouped up closely so all 3 black holes are placed on top of each other, then once all are placed, move to the other side of the room.
-- Periotically, boss will attach beams to each member and do a massive HP draining attack. Block and heal through it for Hard Mode.
+- Periodically, boss will attach beams to each member and do a massive HP draining attack. Block and heal through it for Hard Mode.
 ]]},
 },
 
@@ -791,27 +1474,27 @@ Mechanics:
 	["glenumbra"] = {
 		["spindleclutch_base"] = {
 						
-			{[[Mad Mortine
+			["mortine"] = {[[Mad Mortine
 (Spindleclutch II)]], [[
 ]]},
 					
-			{[[Bloodspawn
+			["bloodspawn"] = {[[Bloodspawn
 (Spindleclutch II)]], [[
 ]]},
 
-			{[[Praxin Douare
+			["praxin"] = {[[Praxin Douare
 (Spindleclutch II)]], [[
 ]]},
 
-			{[[Flesh Atronach Trio
+			["atronach_trio"] = {[[Flesh Atronach Trio
 (Spindleclutch II)]], [[
 ]]},
 
-			{[[Urvan Veleth
+			["urvan"] = {[[Urvan Veleth
 (Spindleclutch II)]], [[
 ]]},
 
-			{[[Vorenor Winterbourne
+			["vorenor"] = {[[Vorenor Winterbourne
 (Spindleclutch II)
 Last Boss]], [[|cffcc66Hard Mode:
 - Do not let any of the sacrifices die.|r
@@ -826,30 +1509,38 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 	["auridon"] = {
 		["thebanishedcells_base"] = {
-			{[[Keeper Areldur
-(Banished Cells II)]], [[
+			["areldur"] = {[[Keeper Areldur
+(Banished Cells II)]], [[Mechanics:
+- Flame atronachs explode for AoE damage on death.
+- Flame Wheel: this must be avoided as it will one-shot a healer or DPS.
 ]]},
 
-			{[[Maw of the Infernal
-(Banished Cells II)]], [[
+			["maw"] = {[[Maw of the Infernal]], [[Mechanics:
+- Bite attack creates an area of flame on the ground which is permanent until the boss is killed. Therefore if the fight drags on too long the entire room can fill with fire. The tank should keep the boss still as much as possible, so that all the fire areas are stacked in few spots.
 ]]},
 
-			{[[Keeper Voranil
-(Banished Cells II)]], [[
+			["voranil"] = {[[Keeper Voranil
+(Banished Cells II)]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			{[[Keeper Imiril
-(Banished Cells II)]], [[
+			["imiril"] = {[[Keeper Imiril
+(Banished Cells II)]], [[Mechanics:
+- Repeatedly disappears into a blue orb. A wave of adds will spawn, along with 2 orbs. Then the boss reappears, causing large AoE damage.
+- The adds must be dealt with or they will overwhelm the group.
 ]]},
 
-			{[[Sister Vera and Sister Sihna
-(Banished Cells II)]], [[
+			["sisters"] = {[[Sister Vera and Sister Sihna
+(Banished Cells II)]], [[Mechanics:
+- Destroy the "feasts" (healing orbs) before they reach the bosses.
 ]]},
 
-			{[[High Kinlord Rilis
-(Banished Cells II)
-Last Boss]], [[|cffcc66Hard mode:
+			["rilis"] = {[[High Kinlord Rilis]], [[|cffcc66Hard mode:
 - Leave 3 or more Daedroth alive until Rilis dies.|r
+
+Mechanics:
+- Destroy the "feasts" (healing orbs) before they reach the boss.
+- When he puts you in a levitation bubble, as soon as you land run to the rune with matching colour (red or blue). 
 ]]},
 },
 
@@ -860,31 +1551,39 @@ Last Boss]], [[|cffcc66Hard mode:
 
 	["deshaan"] = {
 		["darkshadecaverns_base"] = {
-			{[[The Fallen Foreman
-(Darkshade Caverns II)]], [[
+			["foreman"] = {[[The Fallen Foreman]], [[Mechanics:
+- Spinning Flames: a "wall" of flame slowly rotates around him. Easily avoided, but can wipe the group if ignored.
 ]]},
 
-			{[[Transmuted Hive Lord
-(Darkshade Caverns II)]], [[
+			["hive_lord"] = {[[Transmuted Hive Lord]], [[Mechanics:
+- Scribs: interrupt these or they will pin (stun) players and drain their resources. Don't bother killing them as they will respawn.
+- Slam: at low health the boss gains a damage shield and starts slamming the ground, damaging all players regardless of distance. This continues until enough damage is done to destroy the shield. Can be a problem for low-DPS groups.
 ]]},
 
-			{[[Transmuted Alit 
-(Darkshade Caverns II)]], [[
+			["alit"] = {[[Transmuted Alit]], [[Mechanics:
+- Three bosses. When killed each Alit will revive after a delay, as long at least one of them is still alive. Therefore try to damage them "evenly".
 ]]},
 
-			{[[Grubull the Transmuted
-(Darkshade Caverns II)]], [[
+			["grubull"] = {[[Grubull the Transmuted]], [[Mechanics:
+- While he is airborne, he has a Lightning Shield which blocks 90% of damage and reflects all projectile damage back at the attacker!
+- The only way to damage him is to kill the adds. Each time an add is killed, the boss is hit by a "charge". Once enough adds have been killed the boss will sit on the ground for 10 seconds, this is when he can be damaged.
+- Larger Netch adds hit hard - they must be taunted, or their attacks blocked.
 ]]},
 
-			{[[Dwarven Gauntlet
-(Darkshade Caverns II)]], [[
+			["garrison"] = {[[Engine Garrison]], [[Mechanics:
+- Don't pull enemies all at once or you will be overwhelmed.
+- Spider mechs create a lightning bubble which will boost the damage of other enemies.
 ]]},
 
-			{[[Engine Guardian
-(Darkshade Caverns II)
-Last Boss]], [[|cffcc66Hard Mode:
-- Don't touch the levers.|r
+			["guardian"] = {[[Engine Guardian]], [[|cffcc66Hard Mode:
+- Active by default, deactivated if any of the levers in the room are pulled.|r
 
+Mechanics:
+- Moves continuously. Taunting doesn't alter its behaviour.
+- Switches randomly between 3 phases: Poison, Fire and Lightning.
+- Poison: deals AoE damage throughout the room. Pulling one of the levers will remove all poison, but also deactivate Hard Mode.
+- Fire: projects a huge flamethrower. Stay far from the boss.
+- Lightning: zaps nearby players, again stay far from the boss. Three spheres will spawn - these must be taunted and killed, or they will overwhelm the group.
 ]]},
 },
 
@@ -895,28 +1594,28 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 	["grahtwood"] = {
 		["eldenhollow_base"] = {
-			{[[Dubroze the Infestor
+			["dubroze"] = {[[Dubroze the Infestor
 (Elden Hollow II)]], [[
 ]]},
 
-			{[[Dark Root
+			["dark_root"] = {[[Dark Root
 (Elden Hollow II)]], [[
 ]]},
 
-			{[[Azura the Frightener
+			["azura"] = {[[Azura the Frightener
 (Elden Hollow II)]], [[
 ]]},
 
-			{[[Shadow Guard
+			["shadow_guard"] = {[[Shadow Guard
 (Elden Hollow II)]], [[
 ]]},
 },
 		["eldenhollowheroic1_base"] = {
-			{[[Murklight
+			["murklight"] = {[[Murklight
 (Elden Hollow II)]], [[
 ]]},
 			
-			{[[Bogdan the Nightflame
+			["bogdan"] = {[[Bogdan the Nightflame
 (Elden Hollow II)
 Last Boss]], [[|cffcc66Hard Mode:
 - The Opus of Torment. (Scroll)|r
@@ -968,34 +1667,34 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 	["greenshade"] = {
 		["vetcirtyash01_base"] = {
-			{[[Xivilai Rukan
+			["rukan"] = {[[Xivilai Rukan
 (City of Ash II)]], [[
 ]]},
 },
 		["vetcirtyash02_base"] = {
-			{[[Urata The Legion
+			["urata"] = {[[Urata The Legion
 (City of Ash II)]], [[
 ]]},
 
-			{[[Horvantud The Fire Maw
+			["horvantud"] = {[[Horvantud The Fire Maw
 (City of Ash II)]], [[
 ]]},
 },
 		["vetcirtyash03_base"] = {
-			{[[Ash Titan
+			["ash_titan"] = {[[Ash Titan
 (City of Ash II)]], [[
 ]]},
 },
 		["vetcirtyash04_base"] = {
-			{[[Xivilai Boltaic
+			["boltaic"] = {[[Xivilai Boltaic
 (City of Ash II)]], [[
 ]]},
 
-			{[[Xivilai Fulminator
+			["fulminator"] = {[[Xivilai Fulminator
 (City of Ash II)]], [[
 ]]},
 
-			{[[Valkyn Skoria
+			["valkyn_skoria"] = {[[Valkyn Skoria
 (City of Ash II)
 Last Boss]], [[|cffcc66Hard Mode:
 - Frigid Tome. (Scroll)
@@ -1062,18 +1761,24 @@ local DHLocalizedHintData = {
 
 function DH_GetLocalizedData(zone, subzone, bossId)
 	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedData[zone] and DHLocalizedData[zone][subzone] and DHLocalizedData[zone][subzone][bossId] then
-		return DHLocalizedData[zone][subzone][bossId][1], DHLocalizedData[zone][subzone][bossId][2]
-	end
+		return {DHLocalizedData[zone][subzone][bossId][1], DHLocalizedData[zone][subzone][bossId][2]}
+	else
+        return {tostring(bossId), "Localized data not found"}
+    end
 end
 
 function DH_GetLocalizedDataOther (zone, subzone, bossId)
 	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedDataOther[zone] and DHLocalizedDataOther[zone][subzone] and DHLocalizedDataOther[zone][subzone][bossId] then
-		return DHLocalizedDataOther[zone][subzone][bossId][1], DHLocalizedDataOther[zone][subzone][bossId][2]
+		return {DHLocalizedDataOther[zone][subzone][bossId][1], DHLocalizedDataOther[zone][subzone][bossId][2]}
+	else
+        return {tostring(bossId), "Localized data not found"}
 	end	
 end
 
 function DH_GetLocalizedHintData (zone, subzone, hintId)
 	if type(zone) == "string" and type(subzone) == "string" and type(hintId) == "string" and DHLocalizedHintData[zone] and DHLocalizedHintData[zone][subzone] and DHLocalizedHintData[zone][subzone][hintId] then
-		return DHLocalizedHintData[zone][subzone][hintId][1], DHLocalizedHintData[zone][subzone][hintId][2]
+		return {DHLocalizedHintData[zone][subzone][hintId][1], DHLocalizedHintData[zone][subzone][hintId][2]}
+	else
+        return {tostring(hintId), "Localized data not found"}
 	end	
 end
