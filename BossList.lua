@@ -103,7 +103,7 @@ local DHData = {
 			{0.707000, 0.729000, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "hive_lord")}, -- The Hive Lord
 			{0.503703, 0.675308, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "patriarch")}, -- Cavern Patriarch
 			{0.439506, 0.570370, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "cutting_sphere")}, -- Cutting Sphere
-			{0.535000, 0.876000, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "sentinel")}, -- Sentinel of Rkugamz
+			{0.535000, 0.876000, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "sentinel"), "FINAL"}, -- Sentinel of Rkugamz
 		},
 
         					---- The Cauldron (DLC) ----
