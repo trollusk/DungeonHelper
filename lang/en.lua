@@ -2,12 +2,6 @@
 -- English Localization ------------------
 ---------------------------------------
 
---worldmap filters
-ZO_CreateStringId("DH_FILTER_BOSSES", "|t18:18:esoui/art/icons/poi/poi_groupboss_complete.dds|t Dungeon/Trial/Arena Bosses")
-ZO_CreateStringId("DH_FILTER_BOSSES_OTHER", "|t18:18:esoui/art/icons/poi/poi_groupboss_incomplete.dds|t Dungeon Bosses II")
-ZO_CreateStringId("DH_FILTER_HINTS", "|t18:18:esoui/art/icons/poi/poi_areaofinterest_complete.dds|t Dungeon/Trial/Arena Hints")
-
-
 
 local function TColor(color, text) -- Wraps the color tags with the passed color around the given text.
 	local cText = "|c"..tostring(color)..tostring(text).."|r"
@@ -25,29 +19,30 @@ local DHLocalizedData = {
 	-- Start Stonefalls
 	["stonefalls"] = {
 	
-							---- Fungal Grotto I ----
+							---- Fungal Grotto I & II ----
 		["fungalgrotto_base"] = {
-			["tazkad"] = {[[Tazkad the Packmaster
+            -- Fungal Grotto I
+			["I_tazkad"] = {[[Tazkad the Packmaster
 (Fungal Grotto I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			["ozazai"] = {[[Warchief Ozazai
+			["I_ozazai"] = {[[Warchief Ozazai
 (Fungal Grotto I)]], [[Mechanics:
 - When targeted by his beam AoE, step away from the group and block.
 ]]},
 
-			["broodbirther"] = {[[Broodbirther
+			["I_broodbirther"] = {[[Broodbirther
 (Fungal Grotto I)]], [[Mechanics:
 - Kill adds first.
 ]]},
 
-			["clatterclaw"] = {[[Clatterclaw
+			["I_clatterclaw"] = {[[Clatterclaw
 (Fungal Grotto I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			["kra'gh"] = {[[Kra'gh The Dreugh King
+			["I_kra'gh"] = {[[Kra'gh The Dreugh King
 (Fungal Grotto I)
 Last Boss]], [[|cffcc66Hard Mode:
 - Scroll of Glorious Battle.|r
@@ -56,10 +51,58 @@ Mechanics:
 - When he channels Lightning Field (large ground AoE), get out of the way or you will die.
 - Lunging Strike will kill non-tanks if they are not blocking.
 ]]},
-},  -- end Fungal Grotto I
+                -- Fungal Grotto II
+["II_fang"] = {[[Mephala's Fang
+(Fungal Grotto II)]], [[Mechanics:
+- The boss will place persistent poison circles under several members feet. Move out of them quickly.
+- To avoid filling the whole room with poison, it is easiest to stack(healer/dps) and move as a group when poisons are placed.
+- Tank can stay still and just eat the poison, while keeping the boss faced away from the group.
+]]},
+
+			["II_gaymne"] = {[[Gaymne Bandu
+(Fungal Grotto II)]], [[Mechanics:
+- When tethered to another group member with a purple beam, run away from each other to break it.
+- When someone gets pinned, focus kill ONE of the four shadows to save them.
+]]},
+
+			["II_ciirenas"] = {[[Ciirenas the Shepherd
+(Fungal Grotto II)]], [[Mechanics:
+- DO NOT KILL THE SPIDERS. Focus on the boss only. Killing the spiders greatly increases her defense.
+- Spiders ignore taunt, they will attack whoever she marks. If the spiders are on you, drag them away from the group so they do not get hit by AoEs.
+]]},
+
+			["II_spawn"] = {[[Spawn of Mephala
+(Fungal Grotto II)]], [[Mechanics:
+- Survivable DPS stand on the portal side of the room. Whoever is closest gets pulled in, then needs to kill spiders inside to get back out.
+- Kite beam attack away from others until it explodes.
+]]},
+
+			["II_reggr"] = {[[Reggr Dark-Down
+(Fungal Grotto II)]], [[Mechanics:
+- Trash on the sides can be completely avoided, just pull him onto the middle of the stairs.
+- Boss will drain MP excessively. Stamina heals are very helpful!
+- Don't forget to click the Obsidian Husk after the fight.
+]]},
+
+			["II_vila"] = {[[Vila Tharen
+(Fungal Grotto II)
+Last Boss]], [[|cffcc66Hard Mode:
+- Do not use Two-Blade's bubble.|r
+
+Mechanics:
+- Ranged attacks recomended.
+- Boss will teleport 3 times in a row to random group members, each time placing an expanding black hole on the ground. 
+- To deal with this, stay grouped up closely so all 3 black holes are placed on top of each other, then once all are placed, move to the other side of the room.
+- Periodically, boss will attach beams to each member and do a massive HP draining attack. Block and heal through it for Hard Mode.
+]]},
+},  -- end Fungal Grotto I & II
         ---- Bal Sunnar (DLC) ----
     ["balsunn_presenttown01_map"] = {       -- first map
-        ["kovan"] = {[[Kovan Giryon]], [[]]}, 
+        ["kovan"] = {[[Kovan Giryon]], [[Mechanics:
+- He teleports around, leaving a poison AoE behind, and also summons poison AoEs under players. Keep spread out to avoid stacking AoEs.]]}, 
+        ["urvel"] = {[[Urvel Drath]], [[Mechanics:
+- Nothing notable.
+- Defeating him bestows the |c00FF00Ancestral Vitality|r group buff.]]},
     },
     ["balsunn_b1_map"] = {
     },
@@ -72,10 +115,17 @@ Mechanics:
     ["balsunn_b3trans_map"] = {
     },
     ["balsunn_caves_map"] = {
-        ["roksa"] = {[[Roksa the Warped]], [[]]},
+        ["roksa"] = {[[Roksa the Warped]], [[Mechanics:
+- Summons orbs which will kill players if ignored.
+- At 70% and 40%, fires a beam at the aggroed player, who must block and heal to survive.]]},
     },
     ["balsunn_deidric_map"] = {
-        ["lladi"] = {[[Lladi Telvanni]], [[]]},
+        ["lladi"] = {[[Lladi Telvanni]], [[|cffcc66Hard Mode:
+- Yes|r
+
+Mechanics:
+- Summons skeevers who apply a fatal debuff if they manage to reach the targeted player.
+- While she is invulnerable, the minions she spawns can be "frozen" by activating the Shards of Time.]]},
     },
     ["balsunn_futuretown01_map"] = {
     },
@@ -88,32 +138,32 @@ Mechanics:
 	-- Start Glenumbra
 	["glenumbra"] = {
 	
-							---- Spindleclutch I ----
+							---- Spindleclutch I & II ----
 		["spindleclutch_base"] = {
-						
-			["spindlekin"] = {[[Spindlekin
+			-- Spindleclutch I
+			["I_spindlekin"] = {[[Spindlekin
 (Spindleclutch I)]], [[Mechanics:
 - Nothing special.
 ]]},
 
-			["swam_mother"] = {[[Swarm Mother
+			["I_swam_mother"] = {[[Swarm Mother
 (Spindleclutch I)]], [[Mechanics:
 - Boss will occasionally jump to random members.
 - To make this less annoying, DPS/healer should stay close behind her, so she doesn't go far.
 ]]},
 
-			["cerise"] = {[[Cerise the Widow-Maker
+			["I_cerise"] = {[[Cerise the Widow-Maker
 (Spindleclutch I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 ]]},
 
-			["rabbu"] = {[[Big Rabbu
+			["I_rabbu"] = {[[Big Rabbu
 (Spindleclutch I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 - Tank be sure to taunt boss first, he hits hard.
 ]]},
 
-			["whisperer"] = {[[The Whisperer
+			["I_whisperer"] = {[[The Whisperer
 (Spindleclutch I)
 Last Boss]], [[|cffcc66Hard Mode:
 - Scroll of Glorious Battle.|r
@@ -123,7 +173,34 @@ Mechanics:
 - When she turns to look at you, DODGE or you will be feared, and probably killed.
 - DPS/healers should spread out behind/beside her so it's easier to see who she is looking at.
 ]]},
-},
+            -- Spindleclutch II
+			["II_mortine"] = {[[Mad Mortine
+(Spindleclutch II)]], [[
+]]},
+					
+			["II_bloodspawn"] = {[[Bloodspawn
+(Spindleclutch II)]], [[
+]]},
+
+			["II_praxin"] = {[[Praxin Douare
+(Spindleclutch II)]], [[
+]]},
+
+			["II_atronach_trio"] = {[[Flesh Atronach Trio
+(Spindleclutch II)]], [[
+]]},
+
+			["II_urvan"] = {[[Urvan Veleth
+(Spindleclutch II)]], [[
+]]},
+
+			["II_vorenor"] = {[[Vorenor Winterbourne
+(Spindleclutch II)
+Last Boss]], [[|cffcc66Hard Mode:
+- Do not let any of the sacrifices die.|r
+
+]]},
+},  -- end Spindleclutch I & II
                 ---- Red Petal Bastion (DLC) ----
     ["rpb_map_ext001"] = {
         ["wraith_of_crows"] = {[[Wraith of Crows]], [[Mechanics:
@@ -169,32 +246,33 @@ Mechanics:
 	-- Start Auridon
 	["auridon"] = {
 	
-							---- Banished Cells I ----
+							---- Banished Cells I & II ----
 		["thebanishedcells_base"] = {
-			["haunter"] = {[[Cell Haunter
+            -- Banished Cells I
+			["I_haunter"] = {[[Cell Haunter
 (Banished Cells I)]], [[Mechanics:
 - Boss has a beam drain/leeching attack targeted on a random member, it is not interruptable.
 - If you are targeted, either block or heal through it.
 ]]},
 
-			["shadowrend"] = {[[Shadowrend
+			["I_shadowrend"] = {[[Shadowrend
 (Banished Cells I)]], [[Mechanics:
 - Stay fairly close to him to avoid his jump attack.
 - If anyone does get too far away from him, he will jump and pin them. Interrupt him to save them.
 - Kill the shadow version fast when he spawns it.
 ]]},
 
-			["angata"] = {[[Angata the Clanfear handler
+			["I_angata"] = {[[Angata the Clanfear handler
 (Banished Cells I)]], [[Mechanics:
 - Big pull, lots of adds, nothing special.
 ]]},
 
-			["skeletal_destroyer"] = {[[Skeletal Destroyer
+			["I_skeletal_destroyer"] = {[[Skeletal Destroyer
 (Banished Cells I)]], [[Mechanics:
 - Kill scamps before focusing on the boss.
 ]]},
 
-			["rilis"] = {[[High Kinlord Rilis
+			["I_rilis"] = {[[High Kinlord Rilis
 (Banished Cells I)
 Last Boss]], [[|cffcc66Hard Mode:
 - Scroll of Glorious Battle.|r
@@ -206,7 +284,41 @@ Mechanics:
 - After Ghost Fire and every heavy attack, he will Magic Bolt a random member.
 - Block after each one to be safe in case you are the target!
 ]]},
-},
+            -- Banished Cells II
+			["II_areldur"] = {[[Keeper Areldur
+(Banished Cells II)]], [[Mechanics:
+- Flame atronachs explode for AoE damage on death.
+- Flame Wheel: this must be avoided as it will one-shot a healer or DPS.
+]]},
+
+			["II_maw"] = {[[Maw of the Infernal]], [[Mechanics:
+- Bite attack creates an area of flame on the ground which is permanent until the boss is killed. Therefore if the fight drags on too long the entire room can fill with fire. The tank should keep the boss still as much as possible, so that all the fire areas are stacked in few spots.
+]]},
+
+			["II_voranil"] = {[[Keeper Voranil
+(Banished Cells II)]], [[Mechanics:
+- Nothing notable.
+]]},
+
+			["II_imiril"] = {[[Keeper Imiril
+(Banished Cells II)]], [[Mechanics:
+- Repeatedly disappears into a blue orb. A wave of adds will spawn, along with 2 orbs. Then the boss reappears, causing large AoE damage.
+- The adds must be dealt with or they will overwhelm the group.
+]]},
+
+			["II_sisters"] = {[[Sister Vera and Sister Sihna
+(Banished Cells II)]], [[Mechanics:
+- Destroy the "feasts" (healing orbs) before they reach the bosses.
+]]},
+
+			["II_rilis"] = {[[High Kinlord Rilis]], [[|cffcc66Hard mode:
+- Leave 3 or more Daedroth alive until Rilis dies.|r
+
+Mechanics:
+- Destroy the "feasts" (healing orbs) before they reach the boss.
+- When he puts you in a levitation bubble, as soon as you land run to the rune with matching colour (red or blue). 
+]]},
+}, -- End Banished Cells I & II
 
 
 },	-- End Auridon
@@ -217,47 +329,79 @@ Mechanics:
 	
 							----Darkshade Caverns I	----
 		["darkshadecaverns_base"] = {
-			["neloren"] = {[[Head Shepherd Neloren
+            -- Darkshade Caverns I
+			["I_neloren"] = {[[Head Shepherd Neloren
 (Darkshade Caverns I)]], [[Mechanics:
 - Heals herself a lot unless interrupted.
 ]]},
 
-			["llothan"] = {[[Foreman Llothan
+			["I_llothan"] = {[[Foreman Llothan
 (Darkshade Caverns I)]], [[Mechanics:
 - Nothing notable.
 ]]},
 
-			["hive_lord"] = {[[The Hive Lord
+			["I_hive_lord"] = {[[The Hive Lord
 (Darkshade Caverns I)]], [[Mechanics:
 - |c00ff00Stay close:|r if players get too far from the boss, he will jump at them for huge damage. Many of his mechanics are designed to trick you into running away.
 - His ground pound can be interrupted.
 ]]},
 
-			["patriarch"] = {[[Cavern Patriarch
+			["I_patriarch"] = {[[Cavern Patriarch
 (Darkshade Caverns I)]], [[Mechanics:
 - Nothing notable, an easy boss.
 ]]},
 
-			["cutting_sphere"] = {[[Cutting Sphere
+			["I_cutting_sphere"] = {[[Cutting Sphere
 (Darkshade Caverns I)]], [[Mechanics:
 - His spin attack needs to be blocked by the tank, it will kill non-tanks.
 ]]},
 
-			["sentinel"] = {[[Sentinel of Rkugamz]], [[|cffcc66Hard Mode:
+			["I_sentinel"] = {[[Sentinel of Rkugamz]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
 Mechanics:
 - Decapitate: must be blocked by the tank, or they will be one-shot.
-- Spin: directed at a random player. Likely fatal if you are caught because it also applies a snare. The target should kite the boss carefully during this attack, avoiding the other players.]]},
-},
+- Spin: directed at a random player. Likely fatal if you are caught because it also applies a snare. The target should kite the boss carefully during this attack, avoiding the other players.
+]]},
+["II_foreman"] = {[[The Fallen Foreman]], [[Mechanics:
+- Spinning Flames: a "wall" of flame slowly rotates around him. Easily avoided, but can wipe the group if ignored.
+]]},
+
+            -- Darkshade Caverns II
+			["II_hive_lord"] = {[[Transmuted Hive Lord]], [[Mechanics:
+- Scribs: interrupt these or they will pin (stun) players and drain their resources. Don't bother killing them as they will respawn.
+- Slam: at low health the boss gains a damage shield and starts slamming the ground, damaging all players regardless of distance. This continues until enough damage is done to destroy the shield. Can be a problem for low-DPS groups.
+]]},
+
+			["II_alit"] = {[[Transmuted Alit]], [[Mechanics:
+- Three bosses. When killed each Alit will revive after a delay, as long at least one of them is still alive. Therefore try to damage them "evenly".
+]]},
+
+			["II_grubull"] = {[[Grubull the Transmuted]], [[Mechanics:
+- While he is airborne, he has a Lightning Shield which blocks 90% of damage and reflects all projectile damage back at the attacker!
+- The only way to damage him is to kill the adds. Each time an add is killed, the boss is hit by a "charge". Once enough adds have been killed the boss will sit on the ground for 10 seconds, this is when he can be damaged.
+- Larger Netch adds hit hard - they must be taunted, or their attacks blocked.
+]]},
+
+			["II_garrison"] = {[[Engine Garrison]], [[Mechanics:
+- Don't pull enemies all at once or you will be overwhelmed.
+- Spider mechs create a lightning bubble which will boost the damage of other enemies.
+]]},
+
+			["II_guardian"] = {[[Engine Guardian]], [[|cffcc66Hard Mode:
+- Active by default, deactivated if any of the levers in the room are pulled.|r
+
+Mechanics:
+- Moves continuously. Taunting doesn't alter its behaviour.
+- Switches randomly between 3 phases: Poison, Fire and Lightning.
+- Poison: deals AoE damage throughout the room. Pulling one of the levers will remove all poison, but also deactivate Hard Mode.
+- Fire: projects a huge flamethrower. Stay far from the boss.
+- Lightning: zaps nearby players, again stay far from the boss. Three spheres will spawn - these must be taunted and killed, or they will overwhelm the group.
+]]},
+},  -- end Darkshade Caverns I & II
 
             ---- The Cauldron (DLC) ----
     ["cauldronmapboss1"] = {
-        ["oxblood"] = {[[Oxblood the Depraved]], [[]]}, 
-        ["viccia"] = {[[Taskmaster Viccia]], [[]]},
-        ["molten_guardian"] = {[[Molten Guardian]], [[]]}, 
-        ["rescue"] = {[[Rescue Lyranth!]], [[]]}, 
-        ["zaudrus"] = {[[Baron Zaudrus]], [[]]}, 
     },
     ["cauldronmapboss2"] = {
     },
@@ -265,8 +409,38 @@ Mechanics:
     },
     ["cauldronmapboss4"] = {
     },
+
     ["cauldronmapboss5"] = {
+
+        ["oxblood"] = {[[Oxblood the Depraved]], [[Mechanics:
+- His fart move is good for a laugh.]]}, 
+
+        ["viccia"] = {[[Taskmaster Viccia]], [[Mechanics:
+- She will sometimes pull the farthest player to her. If this pulls the player through a lightning floor AoE, they will likely die. If you are not near the boss, move whenever there is a lightning AoE between you and her.
+- She will channel an (interruptable) lightning strike at a far away player, this will usually one-shot a non-tank.
+- Deal with the adds she spawns at 75/50/25% health to avoid getting overwhelmed.]]},
+
+        ["molten_guardian"] = {[[Molten Guardian]], [[Mechanics:
+- Occasionally teleports, every time he does this 2 adds spawn. Deal with them to avoid being overwhelmed with adds.
+- Below 25% health, the boss teleports and spawns adds very frequently.
+- Every time the boss or an add hits a player with a fireball attack, a different debuff gets applied. Avoid the fireballs!
+- When he channels with his hand on the ground, a fire AoE is placed under each player. |c00FF00Spread out|r to avoid stacking, and interrupt him ASAP or the group will wipe. ]]}, 
+
+        ["rescue"] = {[[Rescue Lyranth!]], [[Mechanics:
+- Use the oil/fuel synergy to link each conduit to the centre structure. Lightning will strike, destroying the conduit and spawning adds.
+- The archer adds hit with very strong DOT attacks. Kill them quickly, or they will even manage to kill the tank.]]}, 
+
+        ["zaudrus"] = {[[Baron Zaudrus]], [[|cffcc66Hard Mode:
+- Yes|r
+        
+Mechanics:
+- His cone attack will attach a lightning AoE to each player caught in the cone. |c00FF00Spread out|r to avoid stacking damage.
+- His rotating fire walls are instantly fatal. At 50% health he spawns 2 walls, at 25% health 4 walls.
+- When he spawns boulders these can block you from evading the fire walls.
+- Each boulder will spawn an add if it is killed by the fire walls or by player damage.
+- Interact with the ghostly blue khajiit to get a synergy that gives you very high damage versus the adds. If you attack boulders while the synergy is active, blue atronachs will spawn and help you!]]}, 
     },
+
     ["cauldronmaplava"] = {
     },
     ["cauldronmapslav2"] = {
@@ -284,40 +458,106 @@ Mechanics:
 	
 							----Elden Hollow I ----
 		["eldenhollow_base"] = {
-			["ahash"] = {[[ Ahash gra-Mal
-(Elden Hollow I)]], [[
+            -- Elden Hollow I
+			["I_akash"] = {[[ Akash gra-Mal
+(Elden Hollow I)]], [[Mechanics:
+- |c00FF00Stay close:|r if players move to far from the boss, she will jump on them.
 ]]},
 
-			["ancient_spriggan"] = {[[Ancient Spriggan
-(Elden Hollow I)]], [[
+			["I_ancient_spriggan"] = {[[Ancient Spriggan
+(Elden Hollow I)]], [[Mechanics:
+- Nothing notable, an easy boss.
 ]]},
 
-			["chokethorn"] = {[[Chokethorn
-(Elden Hollow I)]], [[
+			["I_chokethorn"] = {[[Chokethorn
+(Elden Hollow I)]], [[Mechanics:
+- |c00FF00Stay close:|r if you move too far from the boss, it will yank you towards it, incapacitating you for a few seconds.
+- Small stranglers will continually spawn around the periphery, and heal the boss using healing beams. These can cause problems for a low-DPS group if they are not dealt with.
 ]]},
 
-			["nenesh"] = {[[Nenesh gro-Mal
-(Elden Hollow I)]], [[
+			["I_nenesh"] = {[[Nenesh gro-Mal
+(Elden Hollow I)]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["leafseether"] = {[[Leafseether
-(Elden Hollow I)]], [[
+			["I_leafseether"] = {[[Leafseether
+(Elden Hollow I)]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["oraneth"] = {[[Canonreeve Oraneth
+			["I_oraneth"] = {[[Canonreeve Oraneth
 (Elden Hollow I)
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
+Mechanics:
+- Poison bolt (channeled): this targets a random player, regardless of taunts. It must be dodged, or it will deal very high damage.
+]]},
+            -- Elden Hollow II
+			["II_dubroze"] = {[[Dubroze the Infestor
+(Elden Hollow II)]], [[
+]]},
+
+			["II_dark_root"] = {[[Dark Root
+(Elden Hollow II)]], [[
+]]},
+
+			["II_azura"] = {[[Azura the Frightener
+(Elden Hollow II)]], [[
+]]},
+
+			["II_shadow_guard"] = {[[Shadow Guard
+(Elden Hollow II)]], [[
 ]]},
 },
+["eldenhollowheroic1_base"] = {
+    ["II_murklight"] = {[[Murklight
+(Elden Hollow II)]], [[
+]]},
+    
+    ["II_bogdan"] = {[[Bogdan the Nightflame
+(Elden Hollow II)
+Last Boss]], [[|cffcc66Hard Mode:
+- The Opus of Torment. (Scroll)|r
+]]},
+},
+
             ---- Lair of Maarselok ----
     ["maarscave1_base"] = {
-        ["selene"] = {[[Selene's Claws and Selene's Fangs]], [[]]}, 
-        ["lurcher"] = {[[Azureblight Lurcher]], [[]]}, 
-        ["cancroid"] = {[[Azurblight Cancroid]], [[]]}, 
-        ["maarselok"] = {[[Maarselok]], [[]]}, 
-        ["maarselok_final"] = {[[Maarselok (Final Battle)]], [[]]},
+        ["selene"] = {[[Selene's Claws and Selene's Fangs]], [[Mechanics:
+- Non-tanks: Both the bear's and spider's heavy attacks will one-shot you unless you |c00ff00dodge|r. Blocking will not save you.
+- The spider spawns once the bear is killed. - |c00FF00Stand back|r while it spawns to avoid being targeted by a heavy attack.
+- The spider will continually spawn spiderlings, which will overwhelm the group unless dealt with.
+- If caught in Selene's poison cone attack, stay still and block. The effect will follow you and damage other players if you move.
+- When Selene teleports and starts channeling, she must be - |c00FF00interrupted|r or the group will wipe.]]}, 
+        ["lurcher"] = {[[Azureblight Lurcher]], [[Mechanics:
+- Must be reduced to 0 health three times.
+- During his 0% health immune phase, certain adds must be killed before he will emerge again.
+- If the boss touches Maarselok's breath trail, it will become stronger.
+- Non-tanks: the boss' heavy attack will one-shot you unless you - |c00FF00dodge|r (not block).]]}, 
+        ["cancroid"] = {[[Azurblight Cancroid]], [[Mechanics:
+- Tank: you must taunt the lurcher add at all times.
+- Every time the lurcher stomps, a damaging blue circle will remain on the ground until the fight is over.
+- Tank: after each stomp, you must move the lurcher out of the blue circle.
+- When the lurcher dies, it drops a seed and instantly spawns a new lurcher who will heavy attack immediately.
+- Someone must grab the seed, move to the blue circle around the tree, and use the synergy to throw the seed at the tree. This will remove the tree's shield for 20 seconds, allowing you to damage it.
+- Stranglers spawn around the periphery of the room. These will overwhelm the group unless dealt with.]]}, 
+        ["maarselok"] = {[[Maarselok]], [[
+- |c00FF00Everyone:|r prevent hoarvors from reaching Selene, as they will stun her and prolong the fight. They will explode if you stand next to them.
+- When Maarselok shouts Fus Ro Dah, block to avoid being stunned and hurled across the room.
+- Stranglers will continually spawn and attack the spiders. Stranglers must be killed to allow spiders to reach Maarselok.
+- Once enough spiders have damaged Maarselok, he descends for 20 seconds. This is when he can be damaged.
+        ]]}, 
+        ["maarselok_final"] = {[[Maarselok (Final Battle)]], [[|cffcc66Hard Mode:
+- Selene joins the fight as an enemy, with the same mechanics as in her boss fight.
+- When Selene's shield is depleted, a seed spawns somewhere in the room. The 3 non-tanks must each synergize with the seed. Each player will see one of the three pads in the room light up (coordinate as the lit pad may not be the same for all players!). All players must go and cleanse on the pad which is lit up for the MAJORITY of players.
+- Players who die get encased in roots, and cannot be resurrected until the roots are destroyed.|r
+
+        Mechanics:
+- His fire breath is a one-shot unless dodged or blocked.
+- Do not stand outside his wings, as a flap will one-shot you unless blocked.
+- Adds will spawn throughout the fight. Deal with them or be overwhelmed.
+- Non hard mode only: the boss can curse players, who have 20 seconds to cleanse or a lurcher will spawn.]]},
     },
     ["maarsmap04_base"] = {
     },
@@ -338,32 +578,64 @@ Last Boss]], [[|cffcc66Hard Mode:
 	-- Start Stormhaven
 	["stormhaven"] = {
 
-							----Wayrest Sewers I ----
+							----Wayrest Sewers I & II ----
 		["wayrestsewers_base"] = {
-			["slimecraw"] = {[[Slimecrew
+            -- Wayrest Sewers I
+			["I_slimecraw"] = {[[Slimecrew
+(Wayrest Sewers I)]], [[Mechanics:
+- Nothing notable.
+]]},
+
+			["I_garron"] = {[[Investigator Garron
 (Wayrest Sewers I)]], [[
 ]]},
 
-			["garron"] = {[[Investigator Garron
+			["I_uulgarg"] = {[[Uulgarg the Hungry
 (Wayrest Sewers I)]], [[
 ]]},
 
-			["uulgarg"] = {[[Uulgarg the Hungry
+			["I_whisperer"] = {[[Rat Whisperer
 (Wayrest Sewers I)]], [[
 ]]},
 
-			["whisperer"] = {[[Rat Whisperer
+			["I_valaine"] = {[[Valaine Pallingare
 (Wayrest Sewers I)]], [[
 ]]},
 
-			["valaine"] = {[[Valaine Pallingare
-(Wayrest Sewers I)]], [[
-]]},
-
-			["allene"] = {[[Allene Pallingare
+			["I_allene"] = {[[Allene Pallingare
 (Wayrest Sewers I)
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
+
+]]},
+            -- Wayrest Sewers II
+			["II_malubeth"] = {[[Malubeth the Scourger
+(Wayrest Sewers II)]], [[Mechanics:
+-Occasionally the boss turns purple and resistant to damage, while draining the life of a random person. 
+-TWO players need to interact with the altars on both sides of the room to stop this.
+]]},
+
+			["II_uulgarg"] = {[[Uulgarg the Risen
+(Wayrest Sewers II)]], [[
+]]},
+
+			["II_reaper"] = {[[Skull Reaper
+(Wayrest Sewers II)]], [[
+]]},
+
+			["II_garron"] = {[[Garron the Returned
+(Wayrest Sewers II)]], [[
+]]},
+
+			["II_lost_one"] = {[[The Lost One
+(Wayrest Sewers II)]], [[
+]]},
+
+			["II_pallingares"] = {[[Allene Pallingare & Varaine Pallingare
+(Wayrest Sewers II)
+Last Boss]], [[|cffcc66Hard Mode:
+- Kill at least 15 zombies during the fight.
+(Pull zombies from the sides and hallway to the west.)|r
 
 ]]},
 },
@@ -371,9 +643,9 @@ Last Boss]], [[|cffcc66Hard Mode:
     ["scalecaller001_base"] = {
         ["orzun_rinaerus"] = {[[Orzun the Foul-Smelling and Rinaerus the Rancid]], [[]]},
         ["doyemish"] = {[[Doyemish Ironheart]], [[]]},
-        ["aldis"] = {[[Matriarch Aldis]], [[]]},
-        ["mortieu"] = {[[Plague Concocter Mortieu]], [[]]},
-        ["zaan"] = {[[Zaan the Scalecaller]], [[]]},
+        ["aldis"] = {[[Matriarch Aldis]], [[This is a PUG killer secret boss.]]},
+        ["mortieu"] = {[[Plague Concocter Mortieu]], [[This is a boss.]]},
+        ["zaan"] = {[[Zaan the Scalecaller]], [[This is a final boss.]]},
     },
     ["scalecaller002_base"] = {
     },
@@ -391,34 +663,54 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							----City of Ash I ----
 		["cityofashmain_base"] = {
-			["guardian"] = {[[Infernal Guardian
+			["I_guardian"] = {[[Infernal Guardian
 (City of Ash I)]], [[
 ]]},
 
-			["golor"] = {[[Golor the Banekin Handler
+			["I_golor"] = {[[Golor the Banekin Handler
 (City of Ash I)]], [[
 ]]},
 
-			["warden"] = {[[Warden of the Shrine
+			["I_warden"] = {[[Warden of the Shrine
 (City of Ash I)]], [[
 ]]},
 
-			["dark_ember"] = {[[Dark Ember
+			["I_dark_ember"] = {[[Dark Ember
 (City of Ash I)]], [[
 ]]},
 
-			["rothariel"] = {[[Rothariel Flameheart
+			["I_rothariel"] = {[[Rothariel Flameheart
 (City of Ash I)]], [[
 ]]},
 
-			["erthas"] = {[[Razor Master Erthas
+			["I_erthas"] = {[[Razor Master Erthas
 (City of Ash I)
 Last Boss]], [[|cffcc66Hard Mode: 
 - Scroll of Glorious Battle.|r
 
 ]]},
 },
-
+                ----City of Ash II (different maps)----
+    ["vetcirtyash01_base"] = {
+        ["II_rukan"] = {[[Xivilai Rukan]], [[]]},
+        },
+    ["vetcirtyash02_base"] = {
+        ["II_urata"] = {[[Urata The Legion]], [[]]},
+        
+        ["II_horvantud"] = {[[Horvantud The Fire Maw]], [[]]},
+        },
+    ["vetcirtyash03_base"] = {
+        ["II_ash_titan"] = {[[Ash Titan]], [[]]},
+        },
+    ["vetcirtyash04_base"] = {
+        ["II_boltaic"] = {[[Xivilai Boltaic]], [[]]},
+        ["II_fulminator"] = {[[Xivilai Fulminator]], [[]]},
+        ["II_valkyn_skoria"] = {[[Valkyn Skoria]], [[|cffcc66Hard Mode:
+        - Frigid Tome. (Scroll)
+        (This destroys 2 of the pads, leaving only 3.)|r
+        
+        ]]},
+    }, 
                 ---- March of Sacrifices (DLC) ----
     ["marchodsacrifices_base"] = {
         ["sisters"] = {[[Wyrd Sisters]], [[]]}, 
@@ -437,40 +729,94 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							----Crypt of Hearts I ----
 		["cryptofhearts_base"] = {
-			["mage_master"] = {[[The Mage Master
+            -- Crypt of Hearts I
+			["I_mage_master"] = {[[The Mage Master
 (Crypt of Hearts I)]], [[
 ]]},
 
-			["siniel"] = {[[Archmaster Siniel
+			["I_siniel"] = {[[Archmaster Siniel
 (Crypt of Hearts I)]], [[
 ]]},
 
-			["leviathan"] = {[[Death's Leviathan
+			["I_leviathan"] = {[[Death's Leviathan
 (Crypt of Hearts I)]], [[
 ]]},
 
-			["uulkar"] = {[[Uulkar Bonehand
+			["I_uulkar"] = {[[Uulkar Bonehand
 (Crypt of Hearts I)]], [[
 ]]},
 
-			["dogas"] = {[[Dogas The Berserker
+			["I_dogas"] = {[[Dogas The Berserker
 (Crypt of Hearts I)]], [[
 ]]},
 
-			["ilambris"] = {[[Ilambris Twins - Zaven & Athor
+			["I_ilambris"] = {[[Ilambris Twins - Zaven & Athor
 (Crypt of Hearts I)
 Last Boss]], [[|cffcc66Hard Mode: 
 - Scroll of Glorious Battle.|r
 ]]},
+            -- Crypt of Hearts II
+			["II_ibelgast"] = {[[Ibelgast
+(Crypt of Hearts II)]], [[
+]]},
+
+            ["II_ruzozuzalpamaz"] = {[[Ruzozuzalpamaz
+(Crypt of Hearts II)]], [[
+]]},
+
+	        ["II_ilambris"] = {[[Illambris Amalgam
+(Crypt of Hearts II)]], [[
+]]},
+
+            ["II_mezeluth"] = {[[Mezeluth
+(Crypt of Hearts II)]], [[
+]]},
+},
+["cryptofheartsheroic_base"] = {
+    ["II_guardian"] = {[[Chamber Guardian
+(Crypt of Hearts II)]], [[
+]]},
+},
+["cryptofheartsheroicboss_0"] = {
+    ["II_nerien'eth"] = {[[Nerien'eth
+(Crypt of Hearts II)
+Last Boss]], [[|cffcc66Hard Mode: 
+- Leave 4 ghosts alive until Nerien'th reaches for the sword at 35% HP.
+- They die fairly easily, so have tank kite them away from the boss.|r
+]]},
 },
 
     ["lostshipyard_map001"] = {
-        ["maiden"] = {[[Lost Maiden]], [[]]},
-        ["bradiggan"] = {[[Foreman Bradiggan]], [[ ]]},
-        ["axeman"] = {[[Shrouded Axeman]], [[ ]]},
-        ["nazaray"] = {[[Nazaray]], [[]]},
-        ["sailor"] = {[[Storm-Cursed Sailor]], [[]]},
-        ["numirril"] = {[[Captain Numirril]], [[]]},
+        ["maiden"] = {[[Lost Maiden]], [[Mechanics:
+- Nothing notable.
+]]},
+        ["bradiggan"] = {[[Foreman Bradiggan]], [[|cffcc66Hard Mode:
+- The bomb mechanic is doubled when the boss returns at 30% health.|r
+
+Mechanics:
+- When he charges up a big AoE, it will fire 4 AoEs in random directions. Dodge or avoid these, as if you are hit, 4 more AoEs will emanate from you.
+- After charging he spawns ghost adds who drain resources and cannot be taunted. 
+- Flame Shaper adds must be interrupted.
+- At 60% and 30% health, the boss will disappear and a flesh abomination will spawn. The abomination puts an AoE on each player - spread out to avoid stacking. Once the abomination is killed, the boss will return.
+- When the boss returns at 60% health he will place a bomb on a random player. Exactly one other player must stand in the AoE; any more or fewer, and affected players will die.]]},
+        ["axeman"] = {[[Shrouded Axeman]], [[Mechanics:
+- He spawns two exploding dogs. Their explosions must be blocked or dodged.
+- The boss will vanish and 4 lightning adds will spawn, they will channel damage until interrupted (they cannot be killed). ]]},
+        ["nazaray"] = {[[Nazaray]], [[|cffcc66Hard Mode:
+- The "roots" phase is much harder and functions as a DPS check.|r  
+
+Mechanics:
+- Lurcher will spawn at 70% health.
+- Strangler adds spawn during the fight, deal with them to prevent the tank being stulled or pulled.
+- The boss will summon a purple ground AoE, if she stands inside this she will be immune to damage, so move her out.
+- Roots: periodically the boss will slam her staff and roots will spread in 3 directions. In each direction an add will spawn. If they are not quickly killed they will cause a cone-shaped explosion.]]},
+        ["sailor"] = {[[Storm-Cursed Sailor]], [[Mechanics:
+- The boss will affect one player with lightning. Do not run around as this will damage other players.
+- Block when he is teleporting around.]]},
+        ["numirril"] = {[[Captain Numirril]], [[Mechanics:
+- After he charges he will spin and project water AoEs. Avoid them or you will die.
+- At 85% health he will disappear and a flesh abomination will spawn, along with waves which cross the room. Avoid the waves or you will get a stacking water AoE.
+- At 40% health, another abomination spawns, but the boss remains in the fight.]]},
     },
 
 },	-- End Rivenspire
@@ -481,32 +827,53 @@ Last Boss]], [[|cffcc66Hard Mode:
 	
 							---- Arx Corinium ----
 		["arxcorinium_base"] = {
-			["fanged_menace"] = {[[Fanged Menace]], [[
+			["fanged_menace"] = {[[Fanged Menace]], [[Mechanics:
+- When the boss coils up and produces a large floor AoE, keep out of it: the boss will be healed by players standing in it.
 ]]},
 
-			["ganakton"] = {[[Ganakton the Tempest]], [[
+			["ganakton"] = {[[Ganakton the Tempest]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["silkenia"] = {[[Silkenia the Songstress]], [[
+			["silkenia"] = {[[Silkenia the Songstress]], [[Mechanics:
+- While she screams, stay inside the shield created by her pet snake.
 ]]},
 
-			["ixniaa"] = {[[Matron Ixniaa]], [[
+			["ixniaa"] = {[[Matron Ixniaa]], [[Mechanics:
+- Every 10 seconds she calls a lightning strike on a random player. Keep out of the "inner" ground circle when this happens or you are likely to be one-shot.
 ]]},
 
-			["lurcher"] = {[[Ancient Lurcher]], [[
+			["lurcher"] = {[[Ancient Lurcher]], [[Mechanics:
+- Nothing notable.
 ]]},
 
 			["sellistrix"] = {[[Sellstrix the Lamia Queen
 Last Boss]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
+
+Mechanics:
+- Tank: keep her on an island (not in the water) at all times. If she touches the water she sends electricity through it to damage all players standing in water.
+- Move into the water when she calls down lightning strikes.
+- Keep close, or she will charge at you.
 ]]},
 },
                             ---- Ruins of Mazzatun (DLC) ----
     ["mazzatunext_base"] = {
-        ["zatzu"] = {[[Zatzu]], [[]]},
-        ["chudan"] = {[[Mighty Chudan]], [[]]},
-        ["xalnur"] = {[[Xal-Nur the Slayer]], [[]]},
-        ["kanesh"] = {[[Tree-Minder Ka-Nesh]], [[]]},
+        ["zatzu"] = {[[Zatzu]], [[Mechanics:
+- When he leaps into the air, he will land causing an AoE from which several projectiles will fire. Move away and block when this happens.
+- Block when he is channeling and pelting you with falling rocks. If you are knocked over and then hit by another rock, it can be lethal.
+        ]]},
+        ["chudan"] = {[[Mighty Chudan]], [[Mechanics:
+- Haj-Mota and archer adds will continually spawn, they must be dealt with or they will overwhelm the group.
+- When he places a lightning AoE on a player, they should run to the shielded Argonian enemy, then dodge when Chudan erupts out of the ground. If times right this will kill the Argonian.]]},
+        ["xalnur"] = {[[Xal-Nur the Slayer]], [[Mechanics:
+- At three points during the fight, the boss will become invulnerable and adds will enter the room. Kill ONE of the slavers, releasing their Wammasu to attack the adds.
+- His invulnerable phase is ended by picking up his "Spit" and carrying it to the water geyser in one corner of the room.]]},
+        ["kanesh"] = {[[Tree-Minder Ka-Nesh]], [[Mechanics:
+- Whenever a totem spawns, it must be killed ASAP as it will continually drain player resources.
+- At 70% health, she becomes invulnerable and summons Chudan's ghost to fight you.
+- At 50% health, she becomes invulnerable and summons Xal-Nur's ghost to fight you.
+- Once each ghost is killed (and once more at 30%), the boss re-enters the fight and curses one player (unless she is taunted). One statue will light up, but this is only visible to non-cursed players. They should all move to the lit statue, to guide the cursed player there. Then the cursed player destroys the statue.]]},
     },
     ["mazzatunint001_base"] = {
     },
@@ -1412,372 +1779,30 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 -----------------------------------------------------------------------------------
 
--------------------------------- Version II Dungeons -------------------------------
-
-local DHLocalizedDataOther = {
-
-
--------------------------------- Fungal Grotto II START --------------------------------
-	
-	["stonefalls"] = {
-		["fungalgrotto_base"] = {
-			["fang"] = {[[Mephala's Fang
-(Fungal Grotto II)]], [[Mechanics:
-- The boss will place persistent poison circles under several members feet. Move out of them quickly.
-- To avoid filling the whole room with poison, it is easiest to stack(healer/dps) and move as a group when poisons are placed.
-- Tank can stay still and just eat the poison, while keeping the boss faced away from the group.
-]]},
-
-			["gaymne"] = {[[Gaymne Bandu
-(Fungal Grotto II)]], [[Mechanics:
-- When tethered to another group member with a purple beam, run away from each other to break it.
-- When someone gets pinned, focus kill ONE of the four shadows to save them.
-]]},
-
-			["ciirenas"] = {[[Ciirenas the Shepherd
-(Fungal Grotto II)]], [[Mechanics:
-- DO NOT KILL THE SPIDERS. Focus on the boss only. Killing the spiders greatly increases her defense.
-- Spiders ignore taunt, they will attack whoever she marks. If the spiders are on you, drag them away from the group so they do not get hit by AoEs.
-]]},
-
-			["spawn"] = {[[Spawn of Mephala
-(Fungal Grotto II)]], [[Mechanics:
-- Survivable DPS stand on the portal side of the room. Whoever is closest gets pulled in, then needs to kill spiders inside to get back out.
-- Kite beam attack away from others until it explodes.
-]]},
-
-			["reggr"] = {[[Reggr Dark-Down
-(Fungal Grotto II)]], [[Mechanics:
-- Trash on the sides can be completely avoided, just pull him onto the middle of the stairs.
-- Boss will drain MP excessively. Stamina heals are very helpful!
-- Don't forget to click the Obsidian Husk after the fight.
-]]},
-
-			["vila"] = {[[Vila Tharen
-(Fungal Grotto II)
-Last Boss]], [[|cffcc66Hard Mode:
-- Do not use Two-Blade's bubble.|r
-
-Mechanics:
-- Ranged attacks recomended.
-- Boss will teleport 3 times in a row to random group members, each time placing an expanding black hole on the ground. 
-- To deal with this, stay grouped up closely so all 3 black holes are placed on top of each other, then once all are placed, move to the other side of the room.
-- Periodically, boss will attach beams to each member and do a massive HP draining attack. Block and heal through it for Hard Mode.
-]]},
-},
-
-},
-
-
--------------------------------- Spindleclutch II START -----------------------------
-
-	["glenumbra"] = {
-		["spindleclutch_base"] = {
-						
-			["mortine"] = {[[Mad Mortine
-(Spindleclutch II)]], [[
-]]},
-					
-			["bloodspawn"] = {[[Bloodspawn
-(Spindleclutch II)]], [[
-]]},
-
-			["praxin"] = {[[Praxin Douare
-(Spindleclutch II)]], [[
-]]},
-
-			["atronach_trio"] = {[[Flesh Atronach Trio
-(Spindleclutch II)]], [[
-]]},
-
-			["urvan"] = {[[Urvan Veleth
-(Spindleclutch II)]], [[
-]]},
-
-			["vorenor"] = {[[Vorenor Winterbourne
-(Spindleclutch II)
-Last Boss]], [[|cffcc66Hard Mode:
-- Do not let any of the sacrifices die.|r
-
-]]},
-},
-
-},
-
-
--------------------------------- Banished Cells II START ----------------------------
-
-	["auridon"] = {
-		["thebanishedcells_base"] = {
-			["areldur"] = {[[Keeper Areldur
-(Banished Cells II)]], [[Mechanics:
-- Flame atronachs explode for AoE damage on death.
-- Flame Wheel: this must be avoided as it will one-shot a healer or DPS.
-]]},
-
-			["maw"] = {[[Maw of the Infernal]], [[Mechanics:
-- Bite attack creates an area of flame on the ground which is permanent until the boss is killed. Therefore if the fight drags on too long the entire room can fill with fire. The tank should keep the boss still as much as possible, so that all the fire areas are stacked in few spots.
-]]},
-
-			["voranil"] = {[[Keeper Voranil
-(Banished Cells II)]], [[Mechanics:
-- Nothing notable.
-]]},
-
-			["imiril"] = {[[Keeper Imiril
-(Banished Cells II)]], [[Mechanics:
-- Repeatedly disappears into a blue orb. A wave of adds will spawn, along with 2 orbs. Then the boss reappears, causing large AoE damage.
-- The adds must be dealt with or they will overwhelm the group.
-]]},
-
-			["sisters"] = {[[Sister Vera and Sister Sihna
-(Banished Cells II)]], [[Mechanics:
-- Destroy the "feasts" (healing orbs) before they reach the bosses.
-]]},
-
-			["rilis"] = {[[High Kinlord Rilis]], [[|cffcc66Hard mode:
-- Leave 3 or more Daedroth alive until Rilis dies.|r
-
-Mechanics:
-- Destroy the "feasts" (healing orbs) before they reach the boss.
-- When he puts you in a levitation bubble, as soon as you land run to the rune with matching colour (red or blue). 
-]]},
-},
-
-},
-	
-
--------------------------------- Darkshade Caverns II START -------------------------
-
-	["deshaan"] = {
-		["darkshadecaverns_base"] = {
-			["foreman"] = {[[The Fallen Foreman]], [[Mechanics:
-- Spinning Flames: a "wall" of flame slowly rotates around him. Easily avoided, but can wipe the group if ignored.
-]]},
-
-			["hive_lord"] = {[[Transmuted Hive Lord]], [[Mechanics:
-- Scribs: interrupt these or they will pin (stun) players and drain their resources. Don't bother killing them as they will respawn.
-- Slam: at low health the boss gains a damage shield and starts slamming the ground, damaging all players regardless of distance. This continues until enough damage is done to destroy the shield. Can be a problem for low-DPS groups.
-]]},
-
-			["alit"] = {[[Transmuted Alit]], [[Mechanics:
-- Three bosses. When killed each Alit will revive after a delay, as long at least one of them is still alive. Therefore try to damage them "evenly".
-]]},
-
-			["grubull"] = {[[Grubull the Transmuted]], [[Mechanics:
-- While he is airborne, he has a Lightning Shield which blocks 90% of damage and reflects all projectile damage back at the attacker!
-- The only way to damage him is to kill the adds. Each time an add is killed, the boss is hit by a "charge". Once enough adds have been killed the boss will sit on the ground for 10 seconds, this is when he can be damaged.
-- Larger Netch adds hit hard - they must be taunted, or their attacks blocked.
-]]},
-
-			["garrison"] = {[[Engine Garrison]], [[Mechanics:
-- Don't pull enemies all at once or you will be overwhelmed.
-- Spider mechs create a lightning bubble which will boost the damage of other enemies.
-]]},
-
-			["guardian"] = {[[Engine Guardian]], [[|cffcc66Hard Mode:
-- Active by default, deactivated if any of the levers in the room are pulled.|r
-
-Mechanics:
-- Moves continuously. Taunting doesn't alter its behaviour.
-- Switches randomly between 3 phases: Poison, Fire and Lightning.
-- Poison: deals AoE damage throughout the room. Pulling one of the levers will remove all poison, but also deactivate Hard Mode.
-- Fire: projects a huge flamethrower. Stay far from the boss.
-- Lightning: zaps nearby players, again stay far from the boss. Three spheres will spawn - these must be taunted and killed, or they will overwhelm the group.
-]]},
-},
-
-},
-	
-	
--------------------------------- Elden Hollow II START --------------------------------
-	
-	["grahtwood"] = {
-		["eldenhollow_base"] = {
-			["dubroze"] = {[[Dubroze the Infestor
-(Elden Hollow II)]], [[
-]]},
-
-			["dark_root"] = {[[Dark Root
-(Elden Hollow II)]], [[
-]]},
-
-			["azura"] = {[[Azura the Frightener
-(Elden Hollow II)]], [[
-]]},
-
-			["shadow_guard"] = {[[Shadow Guard
-(Elden Hollow II)]], [[
-]]},
-},
-		["eldenhollowheroic1_base"] = {
-			["murklight"] = {[[Murklight
-(Elden Hollow II)]], [[
-]]},
-			
-			["bogdan"] = {[[Bogdan the Nightflame
-(Elden Hollow II)
-Last Boss]], [[|cffcc66Hard Mode:
-- The Opus of Torment. (Scroll)|r
-]]},
-},
-
-},
-
-
--------------------------------- Wayrest Sewers II START --------------------------------
-
-	["stormhaven"] = {
-		["wayrestsewers_base"] = {
-			["malubeth"] = {[[Malubeth the Scourger
-(Wayrest Sewers II)]], [[Mechanics:
--Occasionally the boss turns purple and resistant to damage, while draining the life of a random person. 
--TWO players need to interact with the altars on both sides of the room to stop this.
-]]},
-
-			["uulgarg"] = {[[Uulgarg the Risen
-(Wayrest Sewers II)]], [[
-]]},
-
-			["reaper"] = {[[Skull Reaper
-(Wayrest Sewers II)]], [[
-]]},
-
-			["garron"] = {[[Garron the Returned
-(Wayrest Sewers II)]], [[
-]]},
-
-			["lost_one"] = {[[The Lost One
-(Wayrest Sewers II)]], [[
-]]},
-
-			["pallingares"] = {[[Allene Pallingare & Varaine Pallingare
-(Wayrest Sewers II)
-Last Boss]], [[|cffcc66Hard Mode:
-- Kill at least 15 zombies during the fight.
-(Pull zombies from the sides and hallway to the west.)|r
-
-]]},
-},
-
-},
-	
-
--------------------------------- City of Ash II START --------------------------------
-
-	["greenshade"] = {
-		["vetcirtyash01_base"] = {
-			["rukan"] = {[[Xivilai Rukan
-(City of Ash II)]], [[
-]]},
-},
-		["vetcirtyash02_base"] = {
-			["urata"] = {[[Urata The Legion
-(City of Ash II)]], [[
-]]},
-
-			["horvantud"] = {[[Horvantud The Fire Maw
-(City of Ash II)]], [[
-]]},
-},
-		["vetcirtyash03_base"] = {
-			["ash_titan"] = {[[Ash Titan
-(City of Ash II)]], [[
-]]},
-},
-		["vetcirtyash04_base"] = {
-			["boltaic"] = {[[Xivilai Boltaic
-(City of Ash II)]], [[
-]]},
-
-			["fulminator"] = {[[Xivilai Fulminator
-(City of Ash II)]], [[
-]]},
-
-			["valkyn_skoria"] = {[[Valkyn Skoria
-(City of Ash II)
-Last Boss]], [[|cffcc66Hard Mode:
-- Frigid Tome. (Scroll)
-(This destroys 2 of the pads, leaving only 3.)|r
-
-]]},
-},
-
-},
-
-
--------------------------------- Crypt of Hearts II START --------------------------------
-
-
-	["rivenspire"] = {
-		["cryptofhearts_base"] = {
-			["ibelgast"] = {[[Ibelgast
-(Crypt of Hearts II)]], [[
-]]},
-
-            ["ruzozuzalpamaz"] = {[[Ruzozuzalpamaz
-(Crypt of Hearts II)]], [[
-]]},
-
-	        ["ilambris"] = {[[Illambris Amalgam
-(Crypt of Hearts II)]], [[
-]]},
-
-            ["mezeluth"] = {[[Mezeluth
-(Crypt of Hearts II)]], [[
-]]},
-},
-		["cryptofheartsheroic_base"] = {
-			["guardian"] = {[[Chamber Guardian
-(Crypt of Hearts II)]], [[
-]]},
-},
-		["cryptofheartsheroicboss_0"] = {
-			["nerien'eth"] = {[[Nerien'eth
-(Crypt of Hearts II)
-Last Boss]], [[|cffcc66Hard Mode: 
-- Leave 4 ghosts alive until Nerien'th reaches for the sword at 35% HP.
-- They die fairly easily, so have tank kite them away from the boss.|r
-]]},
-},
-
-},
-
-
-
-}	-- End Version II Dungeons
-
 
 local DHLocalizedHintData = {
     ["stonefalls"] = {
         ["balsunn_presenttown01_map"] = {
-            ["totem_puzzle"] = {"Totem Puzzle", "Solve to get a group damage buff for the rest of the dungeon."},
+            ["totem_puzzle"] = {[[Totem Puzzle]], [[Solve to get the |c00FF00Strength of the Ancestors|r group buff for the rest of the dungeon. This buff increases weapon and spell damage.]]},
+            ["laser_puzzle"] = {[[Laser Puzzle]], [[Solve to get the |c00FF00Ancestral Resolve|r group buff for the rest of the dungeon. This buff increases maximum health and reduces damage taken.]]},
         },
     },
 }   -- end hints
 
 
--- each of these functions returns a tuple: TITLE, description
+-- each of these functions returns a tuple: TITLE, description, idString
 
 function DH_GetLocalizedData(zone, subzone, bossId)
 	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedData[zone] and DHLocalizedData[zone][subzone] and DHLocalizedData[zone][subzone][bossId] then
-		return {DHLocalizedData[zone][subzone][bossId][1], DHLocalizedData[zone][subzone][bossId][2]}
+		return {DHLocalizedData[zone][subzone][bossId][1], DHLocalizedData[zone][subzone][bossId][2], bossId}
 	else
         return {tostring(bossId), "Localized data not found"}
     end
 end
 
-function DH_GetLocalizedDataOther (zone, subzone, bossId)
-	if type(zone) == "string" and type(subzone) == "string" and type(bossId) == "string" and DHLocalizedDataOther[zone] and DHLocalizedDataOther[zone][subzone] and DHLocalizedDataOther[zone][subzone][bossId] then
-		return {DHLocalizedDataOther[zone][subzone][bossId][1], DHLocalizedDataOther[zone][subzone][bossId][2]}
-	else
-        return {tostring(bossId), "Localized data not found"}
-	end	
-end
-
 function DH_GetLocalizedHintData (zone, subzone, hintId)
 	if type(zone) == "string" and type(subzone) == "string" and type(hintId) == "string" and DHLocalizedHintData[zone] and DHLocalizedHintData[zone][subzone] and DHLocalizedHintData[zone][subzone][hintId] then
-		return {DHLocalizedHintData[zone][subzone][hintId][1], DHLocalizedHintData[zone][subzone][hintId][2]}
+		return {DHLocalizedHintData[zone][subzone][hintId][1], DHLocalizedHintData[zone][subzone][hintId][2], hintId}
 	else
         return {tostring(hintId), "Localized data not found"}
 	end	
