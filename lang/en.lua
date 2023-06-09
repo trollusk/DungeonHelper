@@ -1266,26 +1266,59 @@ Mechanics:
     },
                         ---- Unhallowed Grave (DLC) ----
     ["unhallowedgravemap001"] = {
-        ["hakgrym"] = {[[Hakgrym the Howler]], [[]]},
+        ["hakgrym"] = {[[Hakgrym the Howler]], [[Mechanics:
+- He will sometimes summon a totem which will spam magic bolts at the group. Destroy the totem ASAP.
+- At 70% and 20% health he will unchain one of the 2 flesh abominations. 
+- Undead wolf adds will spawn throughout the fight.
+- When you "kill" the boss he transforms into a werewolf!
+- In wolf form he will periodically charge in a random direction, heavily damaging all players in his path and spawning undead adds.]]},
     },
     ["unhallowedgravemap001b"] = {
-        ["keeper"] = {[[Keeper of the Kiln]], [[]]},
-        ["aegis"] = {[[Eternal Aegis]], [[]]},
-        ["voria"] = {[[Voria the Heart-Thief]], [[]]},
+        ["keeper"] = {[[Keeper of the Kiln]], [[Mechanics:
+- At 80/70/60/50/40% health, one of the statues around the room will come to life and join the fight.
+- Be careful not to damage the boss too quickly, otherwise you will face multiple statues at once.
+- The Kiln: At 90/60/30% health, the room sets on fire. Four sigils appear on the floor. ONE of the 4 platforms above the room will have a sigil that must be activated to reveal which of the 4 sigils is "safe".
+- Therefore one or more players must quickly go up to the platforms using the grappling hook, and find and activate the sigil, watching out for archers.
+- When the sigil is activated, the boss must be positioned on the sigil that has a swirling effect. Then the group must break the boss' damage shield.
+- Once the shield is broken, the boss will stab his sword into the ground, and the fire will go out.]]},
+        ["aegis"] = {[[Eternal Aegis]], [[Mechanics:
+- At 90/70/50/30% health, he spawns 4 adds who have spin attacks.
+- The boss also has a spin attack. This attack (for both the boss and adds) has a gap in the middle where you will not take damage.]]},
+        ["voria"] = {[[Voria the Heart-Thief]], [[Mechanics:
+- At about 70% health she transforms into a bone goliath.
+- At 75% and 40% health she will try to escape by teleporting to the place where you entered the room. Use the grappling hook to get to her. Then break her shield and interrupt her. If you fail, she escapes and the fight is over!]]},
     },
     ["unhallowedgravemap001c"] = {
-        ["ondagore"] = {[[Ondagore the Mad]], [[]]},
-        ["masterpiece"] = {[[Voria's Masterpiece]], [[]]},
+        ["ondagore"] = {[[Ondagore the Mad]], [[Mechanics:
+- At 80% and 40% health, he becomes invulnerable and pulls poison gas from the edges to fill the room. Several ghosts spawn in the outer areas. Use the grappling hook to get to safety. Once you kill the ghosts, the poison will disappear.
+- At 60% and 20% health, he will spawn 4 mender ghosts who will buff him, and he will start to channel a large explosion. Hide behind the grappling hooks behind the pillars to shelter from the explosion.
+]]},
+        ["masterpiece"] = {[[Voria's Masterpiece]], [[Mechanics:
+- He is found inside Voria's Sanctum, which you cannot enter until you kill the other 2 secret bosses.
+- At 90% and 40% health he will stomp, causing a large damage AoE, and summoning skeletons. One of the skeletons has a 2-handed weapon - this skeleton can one-shot non-tanks so must be dealt with ASAP.
+- He will periodically punch the ground to summon goo adds. These start small, but as the fight goes on the summoned goos will have more and more health. 
+- You can grapple THROUGH a goo add to split it in 2!]]},
     },
     ["unhallowedgravemap002"] = {
     },
     ["unhallowedgravemap003"] = {
     },
     ["unhallowedgravemap004"] = {
-        ["nabor"] = {[[Nabor the Forgotten]], [[]]},
+        ["nabor"] = {[[Nabor the Forgotten]], [[Mechanics:
+- When he starts channeling, several platforms are about to explode (including the one you are on). Use the grappling hook to move to a safe platform.
+- At 75% health he will spawn archer adds. Their arrows can knock players off platforms. They must be dealt with, either interrupted or killed.]]},
     },
     ["unhallowedgravemap005"] = {
-        ["kjalnar"] = {[[Kjalnar Tombskald]], [[]]},
+        ["kjalnar"] = {[[Kjalnar Tombskald]], [[|cffcc66Hard Mode:
+- Yes
+- Cages: the boss will raise his hands and cause cages to appear on the ground. Get away from these before they explode.|r
+Mechanics:
+- The boss sometimes creates a skeletal hand which stuns the tank. The tank must break free ASAP.
+- The boss sometimes raises his hand and creates moving "grave dust" effects which cause high magic damage.
+- The boss will cast multiple bolts which will land, creating "horns" on the ground. Do not stand on them, they are landmines!
+- The boss will periodically summon a 2-hand-wielding skeleton, along with some blastbones skeletons. These adds try to get to runes on the ground, which will heal them and increase their power.
+- The boss will summon a gigantic bone colossus. He looks scary but the only important mechanic is his frost breath which should be avoided. 
+- ]]},
     },
     ["unhallowedgravesecret2map"] = {
     },
@@ -1298,29 +1331,42 @@ Mechanics:
 	
 							---- Blessed Crucible ----
 		["blessedcrucible1_base"] = {
-			["grunt"] = {[[Grunt the Clever]], [[
+			["grunt"] = {[[Grunt the Clever]], [[Mechanics:
+- When he roars to Fear the group: break free.
 ]]},
 },
 		["blessedcrucible2_base"] = {
-			["the_pack"] = {[[The Pack]], [[
+			["the_pack"] = {[[The Pack]], [[Mechanics:
+- The 4 bosses observe while you fight waves of adds, then join the fight.
+- Tank: keep the "nightblade" boss taunted at all times, he is the most dangerous of the 4.
+- At 30% health, the bosses transform into werewolves.
 ]]},
 },
 		["blessedcrucible3_base"] = {
-			["teranya"] = {[[Teranya the Faceless]], [[
+			["teranya"] = {[[Teranya the Faceless]], [[Mechanics:
+- Banekins spawn throughout the fight, and run at the group. Kill them before they explode.
 ]]},
 },
 		["blessedcrucible4_base"] = {
-			["beast_army"] = {[[Beast Army: Beetles & Singer & Troll King]], [[
+			["beast_army"] = {[[The Beast Master]], [[Mechanics:
+- Three successive bosses: fire beetles, scorpion, and troll king.
+- The scorpion sometimes plunges its stinger into the ground, causing a poison AoE to appear under a player.
+- Stay close: if a player moves too far away, the troll king will jump on them.
 ]]},
 },
 		["blessedcrucible5_base"] = {
-			["thoran"] = {[[Captain Thoran]], [[
+			["thoran"] = {[[Captain Thoran]], [[Mechanics:
+- At low health, a flame atronach spawns and gives the boss a damage shield. Kill the atronach to dispel the shield.
+- Remember that atronach corpses explode!
 ]]},
 },
 		["blessedcrucible6_base"] = {
-			["lava_queen"] = {[[Lava Queen
-Last Boss]], [[|cffcc66Hard Mode:
+			["lava_queen"] = {[[Lava Queen]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
+
+Mechanics:
+- Atronachs spawn throughout the fight and cast a beam at the boss, making her invulnerable. Kill the atronachs to get rid of the beams.
+- The Wheel: when the boss stabs her sword into the ground, move back and get ready to move sideways to dodge the small walls of fire which will emanate from her.
 ]]},
 },
 
@@ -1333,45 +1379,117 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Selene's Web ----
 		["selenesweb_base"] = {
-			["keminn"] = {[[Treethane Keminn]], [[
+			["keminn"] = {[[Treethane Keminn]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["longclaw"] = {[[Longclaw]], [[
+			["longclaw"] = {[[Longclaw]], [[Mechanics:
+- You initially face 4 panthers, while the boss fires arrows at you from a tree. He descends once the panthers are dead.
+- Do not attack the boss while he is in the tree - he is invulnerable and projectiles will be reflected back at you!
+- Spirit panthers will respawn whenever they are killed, so should be rooted or crowd-controlled rather than attacked.
 ]]},
 
-			["aklayah"] = {[[Queen Aklayah]], [[
+			["aklayah"] = {[[Queen Aklayah]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["foulhide"] = {[[Foulhide]], [[
+			["foulhide"] = {[[Foulhide]], [[Mechanics:
+- When he roars to Fear the group, break free.
 ]]},
 
-			["mennir"] = {[[Mennir Many-Legs]], [[
+			["mennir"] = {[[Mennir Many-Legs]], [[Mechanics:
+- Her "spell" attacks can be interrupted (curse DOT affecting one player, and lightning floor AoE).
 ]]},
 
-			["selene"] = {[[Selene
-Last Boss]], [[|cffcc66Hard Mode:
+			["selene"] = {[[Selene]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
+
+Mechanics:
+- Two phases: spider and human.
+- When the spider reaches low health, she will pull the group down through the web, to a lower area.
+- During the human phase, melee, archer and healer adds will join the fight. The melee adds have a strong heavy attack.
+- Keep close: if a player moves too far away, the boss will send a panther spirit to jump on them.
+- The boss sometimes summons a bear spirit who deals a strong heavy attack (like the Selene set effect). This must only hit the tank, it will one-shot non-tanks.
 ]]},
 },
 
 						---- Moon Hunter Keep (DLC) ----
     ["mhkmoonhunterkeep_base"] = {
-        ["melitus"] = {[[Jailer Melitus]], [[]]},
-        ["guardian"] = {[[Hedge Maze Guardian]], [[]]},
+        ["melitus"] = {[[Jailer Melitus]], [[Mechanics:
+- When he channels a growing floor AoE, it will burst and create multiple small moving AoEs, which must be avoided by moving sideways.
+- Spread out: he will create blood fountains at players' feet several times in a row, this will be fatal if players are stacked.
+- At 80/50/30% health, werewolf adds will spawn. They are dangerous and should be prioritized over the boss.
+- At 20% health, archer adds appear.
+- Healer/DPS: the boss will sometimes pin the tank and spend 2-3 channeling a heavy attack. This must be interrupted or the tank will be one-shot.
+]]},
+        ["guardian"] = {[[Hedge Maze Guardian]], [[Mechanics:
+- Strangler adds around the edges of the room: these pin players and drain their health until death. The DPSs should stick together so they can interrupt stranglers when this happens.
+- Spriggans heal the boss, so must be killed in order to defeat the boss. There are stranglers near each spriggan, so do not approach them alone.
+- When the boss roots all players to the ground, break free or dodge roll.
+]]},
     },
     ["mhkmoonhunterkeep2_base"] = {
-        ["mylenne"] = {[[Mylenne Moon-Caller]], [[]]},
-        ["ernarde"] = {[[Archivist Ernarde]], [[]]},
+        ["mylenne"] = {[[Mylenne Moon-Caller]], [[Mechanics:
+- When the boss pounces on a random player, interrupt or the player will be one-shot.
+- At 80/60/40/20% health, 3 wolves and 2 wardens will spawn. Prioritize them over the boss.
+- The wardens channel lightning from the sky. Each player will be targeted by several lightning strikes in succession. Spread out and keep moving while this is happening.
+- ]]},
+        ["ernarde"] = {[[Archivist Ernarde]], [[Mechanics:
+- The 2 adds are more dangerous than the boss, and should always be prioritized.
+- The adds respawn at 75/55/35% health. Do not damage the boss too fast, or you will face multiple waves of adds at once!
+- The boss sometimes raises a random player in the air and encases them in a shield. The shield must be broken by damaging it. If this is not done, the shield will explode and kill the player.
+- When the rune over the boss' head turns solid, 4 matching runes will light up around the edge of the room (corridor, beside the stairs, and at the top of the stairs).
+- When this happens, a DIFFERENT player must stand on each of the 4 glowing runes.]]},
     },
     ["mhkmoonhunterkeep3_base"] = {
-        ["vykosa"] = {[[Vykosa the Ascendant]], [[]]},
+        ["vykosa"] = {[[Vykosa the Ascendant]], [[Mechanics:
+- A complex fight with a ridiculous number of challenging adds.
+- The red and grey wolf pets should be prioritized over the boss. They are attached to a single chain, so when one moves forward the other is pulled back.
+- The boss sometimes places a totem which Fears players. Break free when this happens.
+- The boss sometimes pounces on the aggroed player. She must be interrupted or the player will die.
+- At about every 15% loss of health, 2 werewolf adds will spawn. These are very strong and must be prioritized. 
+- Do not damage the boss too fast, or you will be overwhelmed by werewolves.
+- At 70% health, numerous stranglers appear at the edges of the room. These pin and drain players, as seen in the Hedge Maze fight.
+- At 50/45/30/25% health, 2 wardens join the fight. They channel lightning, as seen in the Mylenne fight. They should be killed ASAP.
+- At 30% health, the ghost of Archivist Ernarde (previous boss) joins the fight, with all his mechanics including Rune Roulette!
+- At 20% health, both wolves will come off their leash!
+]]},
     },
     
                         ---- Maw of Lorkhaj (TRIAL) ----
     ["maw_of_lorkaj_base"] = {
-        ["zhajhassa"] = {[[Zhaj'hassa The Forgotten]], [[]]},
-        ["twins"] = {[[Vashai and S'kinrai - The Twins]], [[]]},
-        ["rakkhat"] = {[[Rakkhat]], [[]]},
+        ["zhajhassa"] = {[[Zhaj'hassa The Forgotten]], [[Mechanics:
+- Curse: there are 6 pads around the room. When the boss raises his hand, 3 players receive an AoE curse. They must go to a pad to be cleansed (avoiding other players). Each pad is on a 25 second cooldown.
+- Spread out so that when cursed, other players are not infected by your curse.
+- At each 20% loss of health, 4 cats spawn and attack random players. They cannot be taunted.
+- The boss will swing his hammer to spawn pillars throughout the fight. When he starts praying, all players must shelter behind a pillar or they will be killed by an explosion. The pillars are destroyed by the explosion.
+- As the fight goes on, fewer and fewer pillars spawn!
+- At 70% and 30% health, the boss gains a damage shield, and a pulsing damage AoE appears under each player. Spread out to avoid overlap, and destroy the shield quickly to get rid of the AoEs.]]},
+        ["twins"] = {[[Vashai and S'kinrai - The Twins]], [[Mechanics:
+- The group must split into 2 teams of 6 (tank, healer, 4 DPS).
+- Each team will get a colour over their heads (yellow or blue). If you touch someone of the other colour, you both explode!
+- You must only attack enemies of the OTHER colour. Enemies of the same colour only take 10% damage from you.
+- Tanks: you must remember the FIRST boss you fight!
+- The yellow and blue adds should be prioritized over the bosses.
+- Blue adds have a ranged attack, and must be chained in.
+- Yellow adds are melee, they have a reflective shield which must be purged, and a beam attack which must be interrupted.
+- The yellow boss (S'kinraj) has similar abilities to the yellow adds.
+- The blue boss (Vashai) sometimes casts a negate bubble, which can be moved out of.
+- The bosses will pray, and 3 members of each team will be notified that their colour is about to change. They must get away from other team members and get ready to move to the other team.
+- After colour-swapping, the bosses teleport to opposite sides of the room, then pray again. The room explodes and all colours disappear.
+- Tanks: at this point, you must remember the FIRST boss you fought, and move to THAT boss (don't taunt).
+- Everyone will now receive the colour of the boss they are nearest. Tanks should now taunt the opposite-colour boss.
+- Try to get both bosses to low health, then kill them quickly. When one boss dies, you only have 20 seconds before the other boss explodes and wipes the group!
+]]},
+        ["rakkhat"] = {[[Rakkhat]], [[Mechanics:
+- There are 8 pads around the room. Each DPS should be assigned a different pad.
+- Only the tank is allowed on gold pads. No-one should touch blue (curse) pads.
+- When the boss jumps high in the air, the tank must run clockwise to the next gold pad, as the one they are on is about to turn blue.
+- When the boss jumps at the tank, EVERYONE must block or be thrown across the room into random badness.
+- When the boss says "A storm approaches", the furthest players will be targeted by meteors. They should move away from the group and try to avoid being hit, then return.
+- Hulk adds: if they hit a tank 3x in a row the tank will die, hence the two tanks must pass the hulk between them via taunts to avoid this.
+- A lot more: Bombs, tethers, assassins, runners, lunar phase, execute phase...
+]]},
     },
     ["mawlorkajhall_base"] = {
     },
@@ -1389,32 +1507,42 @@ Last Boss]], [[|cffcc66Hard Mode:
 
 							---- Vaults of Madness ----
 		["vaultsofmadness1_base"] = {
-			["cursed_one"] = {[[Cursed One]], [[
+			["cursed_one"] = {[[The Cursed One]], [[Mechanics:
+- When the boss attaches a draining beam to a random player: STOP attacking the boss and wait for the beam to end. All damage to the boss while the beam is active, is transferred to the drained player!
 ]]},
 					
-			["ulguna"] = {[[Ulguna Soul-Reaver]], [[
+			["ulguna"] = {[[Ulguna Soul-Reaver]], [[Mechanics:
+- When she raises a player in the air, 4 healing orbs will travel slowly towards her. Destroy them to free the player.
 ]]},
 
-			["death_hand"] = {[[Death Hand]], [[
+			["death_head"] = {[[Death's Head]], [[Mechanics:
+- Exploding skeletons will spawn throughout the fight.
+- When he charges, he knocks down everyone in his way and leaves a trail of mines.
 ]]},
 
-			["grothdarr"] = {[[Grothdarr]], [[
+			["grothdarr"] = {[[Grothdarr]], [[Mechanics:
+- Two lava trails will snake around the room throughout the fight. Keep mobile to avoid these.
 ]]},
 
-			["archearaizur"] = {[[Archearaizur]], [[
+			["achaeraizur"] = {[[Achaeraizur]], [[Mechanics:
+- Nothing notable.
 ]]},
 
-			["ancient_one"] = {[[Ancient One]], [[
+			["ancient_one"] = {[[The Ancient One]], [[Mechanics:
+- He has a frontal beam attack similar to other watcher enemies.
+- He enrages at low health, dealing increased damage.
 ]]},
 
-			["iskra"] = {[[Iskra the Omen]], [[
+			["iskra"] = {[[Iskra the Omen]], [[Mechanics:
+- Keep close: He will sometimes leap to the furthest player. 
 ]]},
 },
 		["vaultsofmadness2_base"] = {
-			["architect"] = {[[Mad Architect
-Last Boss]], [[|cffcc66Hard Mode:
+			["architect"] = {[[Mad Architect]], [[|cffcc66Hard Mode:
 -Scroll of Glorious Battle.|r
 
+Mechanics:
+- When he creates a bubble around himself and the group, stay inside it.
 ]]},
 },
 

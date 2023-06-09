@@ -507,23 +507,23 @@ local DHData = {
 			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001", "hakgrym")}, --Hakgrym the Howler
         },
         ["unhallowedgravemap001b"] = {
-			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "keeper")}, --Keeper of the Kiln
+			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "keeper"), "PUGKILLER"}, --Keeper of the Kiln
 			{0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "aegis")}, --Eternal Aegis
-            {0.5, 0.7, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "voria")}, -- Voria the Heart-Thief
+            {0.5, 0.7, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "voria"), "SECRET"}, -- Voria the Heart-Thief
         },
         ["unhallowedgravemap001c"] = {
-			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "ondagore")}, --Ondagore the Mad
-    		{0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "masterpiece")}, -- Voria's Masterpiece
+			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "ondagore"), "PUGKILLER"}, --Ondagore the Mad
+    		{0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "masterpiece"), "SECRET"}, -- Voria's Masterpiece
         },
         ["unhallowedgravemap002"] = {
         },
         ["unhallowedgravemap003"] = {
         },
         ["unhallowedgravemap004"] = {
-			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap004", "nabor")}, -- Nabor the Forgotten
+			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap004", "nabor"), "SECRET"}, -- Nabor the Forgotten
         },
         ["unhallowedgravemap005"] = {
-			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap005", "kjalnar")}, -- Kjalnar Tombskald
+			{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap005", "kjalnar"), "FINAL"}, -- Kjalnar Tombskald
         },
         ["unhallowedgravesecret2map"] = {
         },
@@ -556,7 +556,7 @@ local DHData = {
 		},
 		
 		["blessedcrucible6_base"] = {
-			{0.4901234, 0.623456, DH_GetLocalizedData("therift", "blessedcrucible6_base", "lava_queen")}, --Lava Queen
+			{0.4901234, 0.623456, DH_GetLocalizedData("therift", "blessedcrucible6_base", "lava_queen"), "FINAL"}, --Lava Queen
 		},
 
 							---- Scrivener's Hall (DLC) ----
@@ -591,7 +591,7 @@ local DHData = {
 			{0.488888, 0.377777, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "aklayah")}, --Queen Aklayah
 			{0.700000, 0.444444, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "foulhide")}, --Foulhide
 			{0.490123, 0.404938, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "mennir")}, --Mennir Many-Legs
-			{0.234567, 0.125925, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "selene")}, --Selene
+			{0.234567, 0.125925, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "selene"), "FINAL"}, --Selene
 		},
 		
 							---- Moon Hunter Keep (DLC) ----
@@ -601,10 +601,10 @@ local DHData = {
 		},
 		["mhkmoonhunterkeep2_base"] = {
 			{0.5, 0.5, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "mylenne")}, --Mylenne Moon-Caller
-			{0.5, 0.6, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "ernarde")}, --Archivist Ernarde
+			{0.5, 0.6, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "ernarde"), "PUGKILLER"}, --Archivist Ernarde
 		},
 		["mhkmoonhunterkeep3_base"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep3_base", "vykosa")}, --Vykosa the Ascendant
+			{0.5, 0.5, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep3_base", "vykosa"), "FINAL PUGKILLER"}, --Vykosa the Ascendant
 		},
 		
 							---- Maw of Lorkhaj (TRIAL) ----
@@ -622,25 +622,25 @@ local DHData = {
     },	-- End Reaper's March
 
 	
-		-- Start Coldharbor
+		-- Start Coldharbour
 	["coldharbor"] = {
 	
 							---- Vaults of Madness ----
 		["vaultsofmadness1_base"] = {
 			{0.267901, 0.619753, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "cursed_one")}, --Cursed One
 			{0.266666, 0.546913, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ulguna")}, --Ulguna Soul-Reaver
-			{0.224691, 0.298765, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "death_hand")}, --Death Hand
+			{0.224691, 0.298765, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "death_head")}, --Death's Head
 			{0.413580, 0.206172, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "grothdarr")}, --Grothdarr
-			{0.627160, 0.139506, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "archearaizur")}, --Archearaizur
+			{0.627160, 0.139506, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "achaeraizur")}, --Achaeraizur
 			{0.677777, 0.407407, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ancient_one")}, --Ancient One
 			{0.682716, 0.508641, DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "iskra")}, --Iskra the Omen
 		},
 		
 		["vaultsofmadness2_base"] = {
-			{0.920987, 0.820987, DH_GetLocalizedData("coldharbor", "vaultsofmadness2_base", "architect")}, --Mad Architect
+			{0.920987, 0.820987, DH_GetLocalizedData("coldharbor", "vaultsofmadness2_base", "architect"), "FINAL"}, --Mad Architect
 		},
 		
-	},	-- End Coldharbor
+	},	-- End Coldharbour
 	
 	
 		-- Start Cyrodiil

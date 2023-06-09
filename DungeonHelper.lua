@@ -3,18 +3,30 @@ Author:  Ayantir, Tomkolp, Kenza, trollusk
 Filename: DungeonHelper.lua
 Version: 2.0.0
 
-Add new dungeons:
- - add each boss in the DHData table in BossList.lua, in the section for dungeon's zone
-   - the entry is {X, Y, DH_GetLocalizedData(zone, subzone, ID)}
+To add new dungeons:
+ - add each boss in the DHData table in BossList.lua, in the section for dungeon's world zone (eg stonefalls)
+   - the entry is {X, Y, DH_GetLocalizedData(zone, subzone, ID), "flags"}
      where ID is a string that must match an ID in the localized data table (see below)
      if the dungeon name ends in I or II, then the string must begin with I_ or II_
      (the I and II base game dungeons share maps)
+   - flags is an optional string containing one or more uppercase words denoting characteristics of the boss.
+     Some flags will cause the boss map icon to have a different appearance.
+     Currently recognized: 
+        FINAL (final boss of the dungeon)
+        PUGKILLER (Pickup group killer, i.e. very likely to defeat uncoordinated and inexperienced groups)
+        SECRET (secret boss)
+        DPSCHECK (DPS check - if the group has too low damage then the boss cannot be defeated or will wipe them)
  - add each hint in the DHHintData table in the same file
  - in lang/en.lua, in the DHLocalizedData table, find the same section and subsection.
    - for each boss added to DHData, add an entry [ID] = {TITLE, DESCR} 
  - do the same for hints, but add them to DH_GetLocalizedHintData
  - Surrounding some text with |cRRGGBB......|r will make it coloured. RRGGBB is the hex code
    of the colour.
+
+   When checking dungeons in game:
+   - Are all bosses showing up? (if none, then could be problem with misnamed map texture)
+   - Are bosses showing up with correct icons?
+   - Are any tooltips too long?
 ]] --
 -- Libraries
 local LMP = LibMapPins
