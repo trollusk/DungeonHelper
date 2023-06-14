@@ -1555,48 +1555,89 @@ Mechanics:
 
 							---- Imperial City Prison ----
 		["imperialprisondunint01_base"] = {
-			["overfiend"] = {[[Overfiend]], [[
+			["overfiend"] = {[[Overfiend]], [[Mechanics:
+- As the boss loses health, waves of adds spawn. These should be prioritized over the boss.
+- Do not damage the boss too quickly, or you will have to deal with mutiple waves of adds at once.
+- At 50% health, a harvester joins the fight. She will place AoEs under players' feet, which deal large amounts of damage.
 ]]},
 },
 		["imperialprisondunint02_base"] = {
-			["ibomez"] = {[[Ibomez The Flesh Sculptor]], [[
+			["ibomez"] = {[[Ibomez The Flesh Sculptor]], [[Mechanics:
+- When multiple inmates enter the room and head for the pool: pick up the green goo (synergy) and throw it at as many inmates as possible. If too many inmates reach the pool, a flesh atronach will spawn.
+- Any flesh atronachs that spawn should be prioritized. If they are not killed quickly, they enrage and become able to one-shot players.
+- When the boss "tenderizes" a player, interrupt or the player will die.
 ]]},
 },
 		["imperialprisondunint03_base"] = {
-			["sentry"] = {[[Gravelight Sentry]], [[
+			["sentry"] = {[[Gravelight Sentry]], [[Mechanics:
+- Each time one of the necromancers channels, they must be interrupted or a skeleton add will spawn.
+- Watch out for the poison splashes which emanate from the poison around the edge of the room.
 ]]},
 
-			["abomination"] = {[[Flesh Abomination]], [[
+			["abomination"] = {[[Flesh Abomination]], [[Mechanics:
+- The hoarvors should be killed ASAP as they leave very damaging poison AoEs on the floor.
+- When the boss goes to the centre of the room, spread out and avoid the 4 exploding hoarvors which will run at you.
+- When the boss puts poison AoEs on group members, spread out to avoid overlapping. They will explode and one player will have another AoE on them. This player must not touch the edge of the ring (fatal poison damage).
 ]]},
 },
 		["imperialprisondunint04_base"] = {
-			["bodyguards"] = {[[Lord Wardens Bodyguards]], [[
+			["bodyguards"] = {[[Lord Wardens Bodyguards]], [[Mechanics:
+- 4 bodyguard bosses and a necromancer, who summons skeletons and totems.
+- While a totem exists, enemies will only take 10% damage.
+- When each of the bosses is killed, it returns as an invulnerable ghost. Recommended to kill the healer last so his ghost cannot heal other enemies. 
+- Do not touch the portals until he jumps high in the air - at that point enter the portal to avoid a wipe when he lands.
+- At 65% and 35% health, the boss vanishes and 4 shadow versions appear. Only one will be solid at any one time. Only the solid shadow can be damaged.
+- The boss reappears once all shadows are dead.
 ]]},
 
-			["lord_warden"] = {[[Lord Warden Dusk
-Last Boss]], [[|cffcc66Hard Mode:
+			["lord_warden"] = {[[Lord Warden Dusk]], [[|cffcc66Hard Mode:
 - Warden's Tome. (Scroll)|r
+
+Mechanics:
+- The boss will place blue bubbles around the room, do not touch these as they will drain your health.
+- Meteors will fall occasionally, these can be blocked to avoid most of their damage.
+- When the boss starts to fire a "machine gun" attack at a player, the player must shelter behind the tank, who must block the attack.
 ]]},
 },
 
 
 							---- White-Gold Tower ----
 		["wgtimperialthroneroom_base"] = {
-			["adjudicator"] = {[[The Adjudicator]], [[
+			["adjudicator"] = {[[The Adjudicator]], [[Mechanics:
+- The boss will sometimes face a random player and send 3 waves of fire at them in a cone. 
+- The towers to the left and right of the boss will sometimes throw fire AoEs onto the floor.
+- The boss sometimes picks up a random player and throws them into a burning cage. To escape, you or another player must pick the lock.
 ]]},
 },
 		["wgtlibrarymain_base"] = {
-			["micella"] = {[[Micella Carlinus, Otho Numida & Cordius Pontifio]], [[
+			["micella"] = {[[The Elite Guards]], [[Mechanics:
+- Three bosses: Micella Carlinus (tank), Otho Numida (nightblade) and Cordius Pontifio (healer).
+- The tank boss is the highest priority, as she can buff other bosses.
+- Avoid standing near the banners placed by the tank and nightblade bosses.
+- The healer boss can be interrupted.
 ]]},
 },
 		["wgtvoid1_base"] = {
-			["inhibitor"] = {[[The Planar Inhibitor]], [[
+			["inhibitor"] = {[[The Planar Inhibitor]], [[Mechanics:
+- The only way to taunt the boss is to hold the pinion. Taunt abilities have no effect.
+- The player holding the pinion takes constant, ever-increasing fire damage.
+- Spread out, to avoid stacking multiple AoEs.
+- When the screen goes grey and you have a dark aura over your head: you must destroy portals (by attacking) before adds start coming through.
+- When the boss emerges from the ground covered in blue flames: going near her or touching her is fatal. The tank must kite her to one corner of the room, then another player must take the pinion and lead her to the opposite corner. Repeat until she dives back into the floor.
 ]]},
 },
 		["wgtpinnacleboss_base"] = {
-			["molag_kena"] = {[[Molag Kena
-Last Boss]], [[|cffcc66Hard Mode:
+			["molag_kena"] = {[[Molag Kena]], [[|cffcc66Hard Mode:
 - Obelisk Tome. (Scroll)|r
+
+Mechanics:
+- The ring of fire at the edge of the room is fatal if touched.
+- The boss is shielded by 4 adds, who must be killed in order to damage the boss.
+- On death, the adds explode in a large AoE that will one-shot any player caught in it.
+- At 50% and 25-30% health, the boss will return to the centre of the room and summon another 4 shielding adds.
+- The boss will sometimes spin around slowly while projecting a ray of lightning. Move carefully to avoid touching the ray.
+- When the boss summons a storm atronach, kill it ASAP. If it TOUCHES a player they will be stunned and explode, one-shotting the player and anyone caught in the blast.
+- When the boss jumps high in the air, go to the centre of the arena, otherwise you will be pushed into the flames.
 ]]},
 },
 	

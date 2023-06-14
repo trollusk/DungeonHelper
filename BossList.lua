@@ -659,7 +659,7 @@ local DHData = {
 		},	
 		["imperialprisondunint04_base"] = {
 			{0.654312, 0.589447, DH_GetLocalizedData("cyrodiil", "imperialprisondunint04_base", "bodyguards")}, -- Lord Wardens Bodyguards
-			{0.429495, 0.270988, DH_GetLocalizedData("cyrodiil", "imperialprisondunint04_base", "lord_warden")}, -- Lord Warden Dusk
+			{0.429495, 0.270988, DH_GetLocalizedData("cyrodiil", "imperialprisondunint04_base", "lord_warden"), "FINAL"}, -- Lord Warden Dusk
 		},	
 		
 		
@@ -671,10 +671,10 @@ local DHData = {
 			{0.459557, 0.537899, DH_GetLocalizedData("cyrodiil", "wgtlibrarymain_base", "micella")}, -- Micella Carlinus, Otho Numida & Cordius Pontifio
 		},	
 		["wgtvoid1_base"] = {
-			{0.464112, 0.258235, DH_GetLocalizedData("cyrodiil", "wgtvoid1_base", "inhibitor")}, -- The Planar Inhibitor
+			{0.464112, 0.258235, DH_GetLocalizedData("cyrodiil", "wgtvoid1_base", "inhibitor"), "PUGKILLER"}, -- The Planar Inhibitor
 		},	
 		["wgtpinnacleboss_base"] = {
-			{0.468666, 0.495995, DH_GetLocalizedData("cyrodiil", "wgtpinnacleboss_base", "molag_kena")}, -- Molag Kena
+			{0.468666, 0.495995, DH_GetLocalizedData("cyrodiil", "wgtpinnacleboss_base", "molag_kena"), "FINAL"}, -- Molag Kena
 		},	
 
 		
