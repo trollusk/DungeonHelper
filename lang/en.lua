@@ -2071,10 +2071,38 @@ Mechanics:
 
         ---- Cloudrest (TRIAL) ----
 ["cloudresttrial_base"] = {
-    ["siroria_silaeda"] = {[[Shades of Siroria and Silaeda]], [[]]},
-    ["relequen_belanaril"] = {[[Shades of Relequen and Belanaril]], [[]]},
-    ["galenwe_falarielle"] = {[[Shades of Galenwe and Falarielle]], [[]]},
-    ["zmaja"] = {[[Z'Maja]], [[]]},
+    ["siroria_silaeda"] = {[[Shades of Siroria and Silaeda]], [[Mechanics:
+- Tanks: keep the bosses apart at all times, or they will enrage.
+- When one player gets a yellow AoE under their feet, this will explode and kill them unless other players are standing close to them to share the damage.
+- Keep out of Siroria's banner area (keep her out of it as well.
+- At 50% health, Siroria will start "dragon leaping" around, creating dangerous tornados each time she lands.
+- When a portal appears in the centre of the room, a team of players should enter it and destroy crystals until an orb is revealed. At the same time a spear appears in the main room. Another player must synergize with the spear, which sends it inside the portal. Once this happens the team in the portal should interact with the orb and place it on the spear. This repeats 3x. The same team cannot go into the portal twice in a row as they will have a debuff after emerging.
+- Get both bosses to low health at the same time. Once one boss is killed, the other will start making creepers appear around the room.)]]},
+    ["relequen_belanaril"] = {[[Shades of Relequen and Belanaril]], [[Mechanics:
+- Most mechanics are the same as for the Siroria fight.
+- Relequen's channeled lightning attack can be interrupted.
+- When a player gets a blue beam of lightning on them, they will be affected by a very large lightning AoE. They can cure this by swapping bars!]]},
+    ["galenwe_falarielle"] = {[[Shades of Galenwe and Falarielle]], [[Mechanics:
+- Most mechanics are the same as for the Siroria fight.
+- Spread out when targeted by ice meteors, as overlapping explosions will be fatal.
+- Hoarfrost: a small ground AoE which deals constant damage to the group. Players can pick it up to stop the damage. After 6 seconds you can drop it again. Players must take turns to keep the hoarfrost off the floor as much as possible.]]},
+    ["zmaja"] = {[[Z'Maja]], [[|cffcc66Hard Mode:
+    - +1: one of the previous bosses joins the fight.
+    - +2: two previous bosses join the fight.
+    - +3: all three previous bosses join the fight.|r
+
+Mechanics:
+- She will teleport throughout the fight.
+- She will attack whoever she can SEE. Therefore the tank must keep her taunted, and other players should keep out of her line of sight.
+- When groups of orbs move toward the boss, destroy them ASAP or they will split into multiple smaller orbs which inflict stun.
+- Everyone: If a player dies, DO NOT RESURRECT until their "shadow" has been killed. Resurrecting with the shadow alive kills the rezzing player.
+- A dark beam attacks the two players furthest from the boss, regardless of taunts.
+- Portals: the same mechanic as the portal in the other fights. However, failing the portal mechanic causes a wipe! There is a very strong shade of Z'Maja in the downstairs area which should be taunted by the tanks.
+- At 60% health, the central portal will start firing cone AoEs. Players caught in an AoE are sent downstairs, giving them the debuff that prevents entry to the portal.
+- At 40% health, creepers start spawning.
+- When the boss is near death, the shade of Z'Maja appears from the portal. She has full health (but much less than the main boss).
+- At low health, the boss will place Marked Bane debuffs on 6 players. This halves their health and healing output. The debuff is dispelled once OTHER players heal them to full. 
+- ]]},
 },
 },  -- end Summerset
 
@@ -2100,12 +2128,28 @@ Mechanics:
 ["gravendeep_droptop_map"] = {
 },
 ["gravendeep_island_map"] = {
-    ["mzugru"] = {[[Mzugru, the Security Drone]], [[]]},
-    ["gatekeeper"] = {[[The Euphotic Gatekeeper]], [[]]},
-    ["xzyviian"] = {[[Xzyviian, Defense Crawler]], [[]]},
-    ["varzunon"] = {[[Varzunon]], [[]]},
-    ["chralzak"] = {[[Chralzak, Sphere 9402-A]], [[]]},
-    ["zelvraak"] = {[[Zelvraak the Unbreathing]], [[]]},
+    ["mzugru"] = {[[Mzugru, the Security Drone]], [[Mechanics:
+- When the boss enters an invulnerable "Shield" state, he will stay in this state and heal himself until all pylons are destroyed.]]},
+    ["gatekeeper"] = {[[The Euphotic Gatekeeper]], [[Mechanics:
+- Adds will continually spawn from the three burrows.
+- If you find a poison AoE attached to you, move to one of the burrows and use a synergy to plug the burrow and get rid of the AoE.
+- Tank: When the boss "flips out" and races all over the room, keep him taunted but do not chase him.
+- The boss sometimes summons a clone, who will explode after a short time.]]},
+    ["xzyviian"] = {[[Xzyviian, Defense Crawler]], [[Mechanics:
+- Nothing notable.]]},
+    ["varzunon"] = {[[Varzunon]], [[Mechanics:
+- The boss spawns blue skeletons that walk toward him. Each skeleton that reaches him makes him stronger and larger.
+- Skeleton adds will spawn throughout the fight, keep their population under control.]]},
+    ["chralzak"] = {[[Chralzak, Sphere 9402-A]], [[Mechanics:
+- Nothing notable.]]},
+    ["zelvraak"] = {[[Zelvraak the Unbreathing]], [[Mechanics:
+- Every so often a bubble will slowly fall from one of 4 holes in the ceiling. Once it reaches the floor it rises back to the ceiling.
+- Everyone: hit every bubble that appears. Once hit will destroy them, but if any return to the ceiling without being hit, THE ENTIRE GROUP WIPES.
+- The boss will sometimes "split", spawning an immobile ghost version of itself. 
+- Everyone: when the boss channels and a skull and black smoke appear, TURN AWAY. If you can see the boss you will be affected by an unbreakable Fear.
+- The boss sometimes pushes your soul out of your body. You will take damage over time until you catch your soul.
+- The boss sometimes transports all players to solo instances, where they must kill black ghosts, and heal by collecting white ghosts. After this phase ends a flesh abomination will spawn. (If the players kill a large number of black ghosts, it will be a weaker flesh atronache instead.)
+- At 75% and 25% health, the boss spawns 4 reflections who fire projectiles at the group.]]},
 },
 ["gravendeep_section2_map"] = {
 },
