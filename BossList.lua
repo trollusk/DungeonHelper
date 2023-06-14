@@ -1109,7 +1109,7 @@ local DHData = {
 			{0.5, 0.5, DH_GetLocalizedData("summerset", "cloudresttrial_base", "siroria_silaeda")}, -- Shades of Siroria and Silaeda
 			{0.5, 0.6, DH_GetLocalizedData("summerset", "cloudresttrial_base", "relequen_belanaril")}, -- Shades of Relequen and Belanaril
 			{0.5, 0.7, DH_GetLocalizedData("summerset", "cloudresttrial_base", "galenwe_falarielle")}, -- Shades of Galenwe and Falarielle
-			{0.5, 0.8, DH_GetLocalizedData("summerset", "cloudresttrial_base", "zmaja")}, -- Z'Maja
+			{0.5, 0.8, DH_GetLocalizedData("summerset", "cloudresttrial_base", "zmaja"), "FINAL"}, -- Z'Maja
         },
     },  -- end Summerset
 
@@ -1135,12 +1135,12 @@ local DHData = {
         ["gravendeep_droptop_map"] = {
         },
         ["gravendeep_island_map"] = {
-			{0.5, 0.5, DH_GetLocalizedData("systres", "gravendeep_island_map", "mzugru")}, -- Mzugru, the Security Drone
+			{0.5, 0.5, DH_GetLocalizedData("systres", "gravendeep_island_map", "mzugru"), "SECRET"}, -- Mzugru, the Security Drone
 			{0.5, 0.6, DH_GetLocalizedData("systres", "gravendeep_island_map", "gatekeeper")}, -- The Euphotic Gatekeeper
-			{0.5, 0.7, DH_GetLocalizedData("systres", "gravendeep_island_map", "xzyviian")}, -- Xzyviian, Defense Crawler
+			{0.5, 0.7, DH_GetLocalizedData("systres", "gravendeep_island_map", "xzyviian"), "SECRET"}, -- Xzyviian, Defense Crawler
 			{0.5, 0.8, DH_GetLocalizedData("systres", "gravendeep_island_map", "varzunon")}, -- Varzunon
-			{0.5, 0.9, DH_GetLocalizedData("systres", "gravendeep_island_map", "chralzak")}, -- Chralzak, Sphere 9402-A
-			{0.4, 0.5, DH_GetLocalizedData("systres", "gravendeep_island_map", "zelvraak")}, -- Zelvraak the Unbreathing
+			{0.5, 0.9, DH_GetLocalizedData("systres", "gravendeep_island_map", "chralzak"), "SECRET"}, -- Chralzak, Sphere 9402-A
+			{0.4, 0.5, DH_GetLocalizedData("systres", "gravendeep_island_map", "zelvraak"), "FINAL"}, -- Zelvraak the Unbreathing
         },
         ["gravendeep_section2_map"] = {
         },
