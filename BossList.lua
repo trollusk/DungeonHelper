@@ -689,7 +689,7 @@ local DHData = {
 			{0.5, 0.6, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "mammoth")}, -- Siege Mammoth
 			{0.5, 0.7, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "cernunnon")}, -- Cernunnon
 			{0.5, 0.8, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "deathlord")}, -- Deathlord Bjarfrud Skjoralmor
-			{0.5, 0.9, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "domihaus")}, -- Domihaus
+			{0.5, 0.9, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "domihaus"), "FINAL"}, -- Domihaus
 		},
 		["falkreathsdemise_i_base"] = {
 		},

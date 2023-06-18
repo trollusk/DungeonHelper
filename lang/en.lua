@@ -1650,11 +1650,28 @@ Mechanics:
 	["craglorn"] = {
         ---- Falkreath Hold ----
     ["falkreathsdemise_b_base"] = {
-        ["morrigh"] = {[[Morrigh Bullblood]], [[]]},
-        ["mammoth"] = {[[Siege Mammoth]], [[]]},
-        ["cernunnon"] = {[[Cernunnon]], [[]]},
-        ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[]]},
-        ["domihaus"] = {[[Domihaus]], [[]]},
+        ["morrigh"] = {[[Morrigh Bullblood]], [[Mechanics:
+- At 50% health, the boss creates a shield and the room is bombarded with AoEs. All players should get inside the shield and continue attacking the boss.]]},
+        ["mammoth"] = {[[Siege Mammoth]], [[Mechanics:
+- Tank: keep the boss facing towards the gate, to minimize the distance he travels with his charge.
+- Invulnerable adds will cast flame ground AoEs throughout the fight.
+- At around 50% health the boss will rear up for a big stomp. All players must block or be one-shot!]]},
+        ["cernunnon"] = {[[Cernunnon]], [[Mechanics:
+- Three mini-bosses (melee, magic, archer) must be defeated before the main boss will appear.
+- When each miniboss is defeated it sits down and a green circle appears. A player must pick up the circle and deposit it in one of the 3 lights. Once all lights are extinguished, the main boss appears.
+- At 50% health the main boss disappears, the 3 minibosses reappear, and you must defeat them again.
+- The boss will raise his hands and cause an AoE (ice comet) to attach to each player. Spread out and hold block until the comet hits.
+- Unkillable ghosts will spawn during the fight. They cause Fear if touched.
+]]},
+        ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[Mechanics:
+- When each add is killed, its corpse will produce a beam of light. A player must cleanse as many corpses as possible, using a synergy collected from the urns at the back of the room.
+- Once enough adds have spawned, the boss will channel and each player will get an AoE under their feet. Spread out. If more than 1-2 uncleansed corpses are present, the group is likely to wipe.]]},
+        ["domihaus"] = {[[Domihaus]], [[Mechanics:
+- The boss will "suck in" all players to his location in the centre of the room. Each player will then leave a trail of AoEs on the ground for a time. Players must move steadily away from the boss so that their AoEs do not stack (own or other players).
+- When the boss starts slamming the ground, hide behind a pillar.
+- At 70/50/30/10/5% health, the boss SHOUTS. Players must hide behind a pillar, but any pillar with a player behind it will be destroyed by the shout. Therefore coordinate so that only one pillar is lost with each shout.
+- The boss will turn to stone and 4 atronachs will spawn. Kill them ASAP before the boss wakes up.
+- At very low health the boss gains a damage shield and adds start spawning. The shield disappears periodically and the boss has to re-cast it.]]},
     },
     ["falkreathsdemise_i_base"] = {
     },
@@ -2144,7 +2161,7 @@ Mechanics:
 - Nothing notable.]]},
     ["zelvraak"] = {[[Zelvraak the Unbreathing]], [[Mechanics:
 - Every so often a bubble will slowly fall from one of 4 holes in the ceiling. Once it reaches the floor it rises back to the ceiling.
-- Everyone: hit every bubble that appears. Once hit will destroy them, but if any return to the ceiling without being hit, THE ENTIRE GROUP WIPES.
+- Everyone: hit every bubble that appears. One hit will destroy them, but if any return to the ceiling without being hit, THE ENTIRE GROUP WIPES.
 - The boss will sometimes "split", spawning an immobile ghost version of itself. 
 - Everyone: when the boss channels and a skull and black smoke appear, TURN AWAY. If you can see the boss you will be affected by an unbreakable Fear.
 - The boss sometimes pushes your soul out of your body. You will take damage over time until you catch your soul.
