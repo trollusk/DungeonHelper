@@ -1082,14 +1082,14 @@ local DHData = {
     ["summerset"] = {							
                             ---- Coral Aerie (DLC) ----
         ["coralaerie_b1_001"] = {
-			{0.5, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "sword_guardian")}, -- Sword Guardian
+			{0.5, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "sword_guardian"), "SECRET"}, -- Sword Guardian
 			{0.5, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "maligalig")}, -- Maligalig
-			{0.5, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "staff_guardian")}, -- Staff Guardian
+			{0.5, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "staff_guardian"), "SECRET"}, -- Staff Guardian
 			{0.5, 0.8, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "szarzo")}, -- S'zarzo the Bulwark
 			{0.5, 0.9, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "sarydil")}, -- Sarydil
-			{0.4, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "shield_guardian")}, -- Shield Guardian
-			{0.4, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "varallion")}, -- Varallion
-			{0.4, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "zbaza")}, -- Z'baza
+			{0.4, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "shield_guardian"), "SECRET"}, -- Shield Guardian
+			{0.4, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "varallion"), "FINAL"}, -- Varallion
+			{0.4, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "zbaza"), "SECRET"}, -- Z'baza
         },
         ["coralaerie_b2_001"] = {
         },
