@@ -1681,12 +1681,29 @@ Mechanics:
 
             ---- Bloodroot Forge ----
     ["bloodrootext1_base"] = {
-        ["mathgamain"] = {[[Mathgamain]], [[]]},
-        ["caillaoife"] = {[[Caillaoife]], [[]]},
-        ["stoneheart"] = {[[Stoneheart]], [[]]},
-        ["galchobhar"] = {[[Galchobhar]], [[]]},
-        ["gherig"] = {[[Gherig Bullblood]], [[]]},
-        ["earthgore"] = {[[Earthgore Amalgam]], [[]]},
+        ["mathgamain"] = {[[Mathgamain]], [[Mechanics:
+- At 75/50/25% health, waves of adds will spawn.]]},
+        ["caillaoife"] = {[[Caillaoife]], [[Mechanics:
+- At 75/50/25% health, the boss goes immune and starts casting a force field. Move away to avoid knockdown.
+- Once the force field is up (trees), adds will spawn. The bear is highest priority as it can one-shot non-tanks.
+- During this phase the boss cannot be taunted! Once her taunt expires she will target a random player with fast-moving cold AoEs.]]},
+        ["stoneheart"] = {[[Stoneheart]], [[Mechanics:
+- The boss sometimes fires red projectiles at one of the stone atronachs, then teleports away. The atronach must be killed quickly or it will enrage and start putting damaging AoEs at each player's feet.
+- At less than 25% health, the boss starts entangling players in vines. Dodge to break free before the vines explode.]]},
+        ["galchobhar"] = {[[Galchobhar]], [[Mechanics:
+- Tank: when the boss creates a volcanic eruption, you must stand on it and block.
+- Everyone: when flames appear at the edge of your screen, jump onto one of the lava platforms.
+- Everyone: when the boss pounds the ground with his weapon, jump onto one of the lava platforms, wait until all ground fire is GONE, then jump off the platform.
+- The platforms should each only have one player on them at a time. If they are overloaded they will break, dropping players into the lava. 
+- At 50% health, the boss will wake up the stone atronachs in the room. These have the same "enrage" mechanics as the Stoneheart fight.]]},
+        ["gherig"] = {[[Gherig Bullblood]], [[Mechanics:
+- Three bosses: bull, melee and ranged.
+- Everyone: when the minotaur chains two players and starts channeling, interrupt him. The players must also move out of the AoEs he created as they will still explode.
+- Everyone: interrupt the ranged boss to prevent her healing the other bosses.]]},
+        ["earthgore"] = {[[Earthgore Amalgam]], [[Mechanics:
+- The boss will plunge his fist into the ground and channel, causing a fire trail to move across the floor and create a pool of lava. The pool will fire projectiles at nearby players. Getting hit by 3 rocks will fossilize the player temporarily.
+- The boss will sometimes become invulnerable and create a rain of stones.
+- At 80% health the boss splits in two. At 50% health, a third boss appears. The three bosses have all the same mechanics as the original boss.]]},
     },
     ["bloodrootint1_base"] = {
     },
@@ -1695,10 +1712,23 @@ Mechanics:
 
             ---- Hel Ra Citadel (TRIAL) ----
     ["helracitadel_base"] = {
-        ["ra_kotu"] = {[[Ra Kotu]], [[]]},
-        ["rokdun"] = {[[Yokeda Rok'dun]], [[]]},
-        ["kai"] = {[[Yokeda Kai]], [[]]},
-        ["warrior"] = {[[The Warrior]], [[]]},
+        ["ra_kotu"] = {[[Ra Kotu]], [[Mechanics:
+- At 30% health, the boss sometimes creates a spreading ground AoE. When it reaches maximum size, he will spin all his swords around his body, likely one-shotting any nearby players.
+- The boss sometimes sends winds to chase random players. Spread out to avoid stacking.]]},
+        ["rokdun"] = {[[Yokeda Rok'dun]], [[Mechanics:
+- When a welwa add dies, the boss will move to its corpse to revive it.
+- He also teleports randomly around the arena every 30 seconds.]]},
+        ["kai"] = {[[Yokeda Kai]], [[Mechanics:
+- Everyone: interrupts are essential for this fight. Whenever an enemy starts channeling the "flame staff" ability, interrupt ASAP or the group will wipe.
+- All of the enemies in the fight can channel this ability.
+- Keep spread out, as the boss will sometimes target random players with meteors. When this happens, BLOCK, do not dodge.]]},
+        ["warrior"] = {[[The Warrior]], [[Mechanics:
+- When the boss creates a "strip" AoE, he is about to throw his shield like a boomerang. All players in the AoE should move out.
+- The boss will turn a random player to stone. If the player synergizes, they break out but create an explosion that kills all nearby players. Alternatively, the boss' thrown shield will free any player it hits.
+- In hard mode, gargoyle statues will come to life during the fight. This can be prevented by getting the boss to throw his shield at the statues, destroying them.
+- There are two large circles in the centre of the room: a healing circle (orange) and a damage boost circle (blue). These both affect players and enemies within their area.
+- At 85% and 70% health, the boss will move to each of the circles and destroy them.
+- At 35% health, the boss raises his sword in the air, killing all adds. From this point on, keep spread out, to avoid stacking when he hits players with magic damage.]]},
     },
     ["helracitadelentry_base"] = {
     },

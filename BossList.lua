@@ -701,10 +701,10 @@ local DHData = {
 		["bloodrootext1_base"] = {
 			{0.5, 0.5, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "mathgamain")}, -- Mathgamain
 			{0.5, 0.6, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "caillaoife")}, -- Caillaoife
-			{0.5, 0.7, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "stoneheart")}, -- Stoneheart
-			{0.5, 0.8, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "galchobhar")}, -- Galchobhar
+			{0.5, 0.7, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "stoneheart"), "DPSCHECK"}, -- Stoneheart
+			{0.5, 0.8, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "galchobhar"), "PUGKILLER DPSCHECK"}, -- Galchobhar
 			{0.5, 0.9, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "gherig")}, -- Gherig Bullblood
-			{0.6, 0.5, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "earthgore")}, -- Earthgore Amalgam
+			{0.6, 0.5, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "earthgore"), "FINAL"}, -- Earthgore Amalgam
 		},
 		["bloodrootint1_base"] = {
 		},
@@ -716,7 +716,7 @@ local DHData = {
 			{0.5, 0.5, DH_GetLocalizedData("craglorn", "helracitadel_base", "ra_kotu")}, -- Ra Kotu
 			{0.5, 0.6, DH_GetLocalizedData("craglorn", "helracitadel_base", "rokdun")}, -- Yokeda Rok'dun
 			{0.5, 0.7, DH_GetLocalizedData("craglorn", "helracitadel_base", "kai")}, -- Yokeda Kai
-			{0.5, 0.8, DH_GetLocalizedData("craglorn", "helracitadel_base", "warrior")}, -- The Warrior
+			{0.5, 0.8, DH_GetLocalizedData("craglorn", "helracitadel_base", "warrior"), "FINAL"}, -- The Warrior
         },
         ["helracitadelentry_base"] = {
         },
