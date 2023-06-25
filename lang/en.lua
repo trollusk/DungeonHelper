@@ -2068,11 +2068,27 @@ Mechanics:
 - When the flesh abomination plunges his fists into the ground, numerous ground AoEs will appear. Keep moving to avoid these.
 - When the flesh abomination creates a spreading ground AoE, move out of it or you will be one-shot.
 - Zakuryn will sometimes create a damage shield which makes him invulnerable. The flesh abomination's smash attack will break this shield, if it occurs nearby.]]},
-    ["xobutar"] = {[[Xobutar of His Deep Graces]], [[]]},
-    ["iozuzzunth"] = {[[Iozuzzunth]], [[]]},
+    ["xobutar"] = {[[Xobutar of His Deep Graces]], [[Mechanics:
+- The boss sometimes teleports, leaving a spirit behind. After a while a portal will appear, which you can use to move to the boss.
+- When the boss creates totems, destroy them ASAP or he will use them to heal.
+- Killing this boss gives you a buff: whenever you go through a portal, Xobutar will appear and help you fight for a short time.]]},
+    ["iozuzzunth"] = {[[Iozuzzunth]], [[Mechanics:
+- When an eye appears at the edge of the room, kill it ASAP or it will continually debuff you.
+- When the boss does his (interruptible) fire wave attack, stand behind the eye to make the wave hit it for huge damage.
+- Watchers will spawn on the upper level and fire greens lasers down at you. Take the portal to the upper level and kill them.]]},
 },
 ["vateshranritesmap05"] = {
-    ["maebroogha"] = {[[Maebroogha The Void Lich]], [[]]},
+    ["maebroogha"] = {[[Maebroogha The Void Lich]], [[Mechanics:
+- The adds are a higher priority than the boss (especially the shadow colossi).
+- If you move too far from the boss, she will teleport to your location and deal damage.
+- Sometimes a circle of shades will appear, linked by lasers. The shades walk towards the centre of the room, causing the circle to shrink.
+- Kill one of the shades and move out of the circle. Touching the lasers is fatal.
+- At 10% health, the boss will channel an explosion covering the entire floor. Grapple to one of 3 points around the room, take a synergy, and enter a portal.
+- Inside the portal, you will fight a simplified version of one of the bosses from each of the 3 previous areas (Zakuryn, Rahdgarak, Pyrelord).
+- When the Pyrelord summons a flame shaper add, you must interrupt it or it will constantly channel fire at you.
+- While you are fighting each miniboss, the main boss slowly heals. Defeat each miniboss quickly to minimise the healing that occurs. Once you get her back down to 10% health, you will need to enter another portal and defeat another miniboss.
+- After defeating each miniboss, its mechanic will be added to the main boss fight.
+]]},
 },
 },  -- end The Reach
 
