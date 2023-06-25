@@ -2033,17 +2033,41 @@ Mechanics:
 ["vateshranrites01a"] = {
 },
 ["vateshranritesmap02"] = {
-    ["shade"] = {[[Shade of the Grove]], [[]]},
-    ["keeper"] = {[[Leptfire Keeper]], [[]]},
-    ["rahdgarak"] = {[[Rahdgarak]], [[]]},
+    ["shade"] = {[[Shade of the Grove]], [[Mechanics:
+- Three bosses. Only one boss is vulnerable at any time. At various points in the fight, the boss will go to sleep and a different boss will become vulnerable.
+- Later in the fight, all 3 bosses will be active, but still only one can be damaged.
+- Interrupt the spriggans when they channel a beam at you, otherwise you will be cursed and unable to damage the boss.]]},
+    ["keeper"] = {[[Leptfire Keeper]], [[Mechanics:
+- Follow the boss from platform to platform using the grappling hook.
+- Killing this boss gives you a buff: when you use the grappling hook, any nearby enemies are automatically interrupted.]]},
+    ["rahdgarak"] = {[[Rahdgarak]], [[Mechanics:
+- His heavy attack will one-shot you unless blocked or dodged.
+- At 80% health the boss will become protected by either Cold or Fire. You must move to the platform of the opposite element and fight him there.
+- Whenever you move to a new platform, the boss will jump on you. Block to prevent damage and knockdown.
+- When the mages start channeling, you must travel around and interrupt all 4. Otherwise they will set a platform on fire, making it inaccessible.]]},
 },
 ["vateshranritesmap03"] = {
-    ["magma_queen"] = {[[Magma Queen]], [[]]},
-    ["metron"] = {[[Mynar Metron]], [[]]},
-    ["pyrelord"] = {[[The Pyrelord]], [[]]},
+    ["magma_queen"] = {[[Magma Queen]], [[Mechanics:
+- Kill any adds ASAP - they have low health but cause high damage (more than the boss) and leave fire AoEs on the ground.
+- When the iron atronach dies, pick up the synergy and throw it at the boss. She will be stunned for 10 seconds, allowing lots of free damage.
+- At low health, the boss starts creating walls of fire that cross the room.]]},
+    ["metron"] = {[[Mynar Metron]], [[Mechanics:
+- Heavy-attacking the orb in the middle of the room will allow you to temporarily walk on lava without damage.
+- Killing this boss gives you a buff: when you heavy-attack an orb, nearby enemies take damage.]]},
+    ["pyrelord"] = {[[The Pyrelord]], [[Mechanics:
+- He rotates through 4 phases: fire breath, spin, fire breath again, floor stab.
+- Do not get hit by his fire breath (it causes a long fire DOT).
+- When he raises his sword, three "spokes" of fire will spin slowly around him. Keep moving to avoid these.
+- When he plunges his sword into the ground, the floor will turn to lava. Quickly find the orb in one of the corners, and heavy-attack it to gain fire immunity. Then find the corner where a fire has started, and stand on it to extinguish the fire.
+- At 50% health, the boss will give himself a temporary buff that increases his damage.]]},
 },
 ["vateshranritesmap04"] = {
-    ["zakuryn"] = {[[Zakuryn the Sculptor]], [[]]},
+    ["zakuryn"] = {[[Zakuryn the Sculptor]], [[Mechanics:
+- Once one boss dies, the other enrages (increased damage) and partly heals. Therefore try to damage them evenly.
+- Interrupt Zakyrun when he channels with his staff.
+- When the flesh abomination plunges his fists into the ground, numerous ground AoEs will appear. Keep moving to avoid these.
+- When the flesh abomination creates a spreading ground AoE, move out of it or you will be one-shot.
+- Zakuryn will sometimes create a damage shield which makes him invulnerable. The flesh abomination's smash attack will break this shield, if it occurs nearby.]]},
     ["xobutar"] = {[[Xobutar of His Deep Graces]], [[]]},
     ["iozuzzunth"] = {[[Iozuzzunth]], [[]]},
 },
@@ -2185,12 +2209,40 @@ Mechanics:
 ["systres"] = {							
         ---- Earthen Root Enclave (DLC) ----
 ["ere_insidemap01"] = {
-    ["scaled_roots"] = {[[Scaled Roots]], [[]]},
-    ["corrupt_stone"] = {[[Corruption of Stone]], [[]]},
-    ["lutea"] = {[[Lutea]], [[]]},
-    ["corrupt_root"] = {[[Corruption of Root]], [[]]},
-    ["jodoro"] = {[[Jodoro]], [[]]},
-    ["devyric"] = {[[Archdruid Devyric]], [[]]},
+    ["scaled_roots"] = {[[Scaled Roots]], [[Mechanics:
+- Activate the boss fight by lighting 3 bonfires.
+- Everyone: watch your feet to see when you are being targeted by a meteor (block to mitigate damage).
+- Tank: when the boss hits you with a fire attack, move out of the fire AoE which it leaves on the ground. ]]},
+    ["corrupt_stone"] = {[[Corruption of Stone]], [[Mechanics:
+- Tank: every time you dodge, the boss enrages! Do not dodge!
+- Everyone: spread out to avoid stacking AoEs. Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
+- At 80/60/30% health, the boss will channel a huge AoE. One rock will be poking out of the ground - all players must hide behind it or the group will wipe. This will happen twice in a row at each health threshold.
+- After the above mechanic, atronach adds will spawn. They should be interrupted to prevent their channeled beams from turning players to stone.]]},
+    ["lutea"] = {[[Lutea]], [[Mechanics:
+- To spawn the boss, you must find and kill 3 pairs of spriggan minibosses. Each time a pair is killed, you can pick up a cup of tainted water. You must then find the 2 large glowing flowers within 60 seconds.
+- Once this has been done 3 times, the boss spawns from a geyser.
+- The boss sometimes teleports across the room, trapping players inside a donut AoE. You are safe inside the donut, but do not touch the edges.
+- The boss creates geysers under players' feet. Block to mitigate damage.]]},
+    ["corrupt_root"] = {[[Corruption of Root]], [[Mechanics:
+- There are lots of damaging ground AoEs during the fight, spread out and keep moving to avoid them. 
+- The boss sometimes splits into multiple clones. Once the clones are all killed, the boss reappears.]]},
+    ["jodoro"] = {[[Jodoro]], [[Mechanics:
+- To spawn the boss, find and activate three stone "donuts".
+- The boss channels a mind blast attack (interruptible) which will hit all players in the boss' line of sight.
+- Tank: it's very important to keep the boss facing away from the group.
+- The mind blast attack occurs straight after the boss teleports, so the tank must move quickly to taunt and position the boss when this happens.
+- Everyone: when you are targeted with a laser beam, keep moving until it disappears (and do NOT stack up).
+]]},
+    ["devyric"] = {[[Archdruid Devyric]], [[Mechanics:
+- When the lightning "shards" are present, they are the highest priority to kill.
+- Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
+- Keep out of the growing AoE created by totems, as the totems will explode and one-shot anyone inside.
+- After each totem explodes, a rock projectile fires at a player. Block to avoid damage.
+- If a "curse" symbol appears above your head, you are being chased by exploding wolves.
+- At 70% health, the boss transforms into a huge bear, and partly heals.
+- At 45% health he returns to human form. At 20% health he transforms into a bear again.
+- When the bear prepares to charge, move to make him charge into (and destroy) the totems.
+- At low health, the boss will rain lightning bolts on all players. These must be blocked.]]},
 },
 ["ere_outsidemap01"] = {
 },

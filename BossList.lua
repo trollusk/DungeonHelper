@@ -1022,21 +1022,21 @@ local DHData = {
         },
         ["vateshranritesmap02"] = {
 			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap02", "shade")}, -- Shade of the Grove
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap02", "keeper")}, -- Leptfire Keeper
+			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap02", "keeper"), "SECRET"}, -- Leptfire Keeper
 			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap02", "rahdgarak")}, -- Rahdgarak
         },
         ["vateshranritesmap03"] = {
 			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap03", "magma_queen")}, -- Magma Queen
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap03", "metron")}, -- Mynar Metron
+			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap03", "metron"), "SECRET"}, -- Mynar Metron
 			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap03", "pyrelord")}, -- The Pyrelord
         },
         ["vateshranritesmap04"] = {
 			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap04", "zakuryn")}, -- Zakuryn the Sculptor
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap04", "xobutar")}, -- Xobutar of His Deep Graces
+			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap04", "xobutar"), "SECRET"}, -- Xobutar of His Deep Graces
 			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap04", "iozuzzunth")}, -- Iozuzzunth
         },
         ["vateshranritesmap05"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap05", "maebroogha")}, -- Maebroogha The Void Lich
+			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap05", "maebroogha"), "FINAL"}, -- Maebroogha The Void Lich
         },
     },  -- end The Reach
 
@@ -1118,12 +1118,12 @@ local DHData = {
     ["systres"] = {							
                             ---- Earthen Root Enclave (DLC) ----
         ["ere_insidemap01"] = {
-			{0.5, 0.5, DH_GetLocalizedData("systres", "ere_insidemap01", "scaled_roots")}, -- Scaled Roots
-			{0.5, 0.6, DH_GetLocalizedData("systres", "ere_insidemap01", "corrupt_stone")}, -- Corruption of Stone
-			{0.5, 0.7, DH_GetLocalizedData("systres", "ere_insidemap01", "lutea")}, -- Lutea
+			{0.5, 0.5, DH_GetLocalizedData("systres", "ere_insidemap01", "scaled_roots"), "SECRET"}, -- Scaled Roots
+			{0.5, 0.6, DH_GetLocalizedData("systres", "ere_insidemap01", "corrupt_stone"), "PUGKILLER"}, -- Corruption of Stone
+			{0.5, 0.7, DH_GetLocalizedData("systres", "ere_insidemap01", "lutea"), "SECRET"}, -- Lutea
 			{0.5, 0.8, DH_GetLocalizedData("systres", "ere_insidemap01", "corrupt_root")}, -- Corruption of Root
-			{0.5, 0.9, DH_GetLocalizedData("systres", "ere_insidemap01", "jodoro")}, -- Jodoro
-			{0.4, 0.5, DH_GetLocalizedData("systres", "ere_insidemap01", "devyric")}, -- Archdruid Devyric
+			{0.5, 0.9, DH_GetLocalizedData("systres", "ere_insidemap01", "jodoro"), "SECRET"}, -- Jodoro
+			{0.4, 0.5, DH_GetLocalizedData("systres", "ere_insidemap01", "devyric"), "FINAL"}, -- Archdruid Devyric
         },
         ["ere_outsidemap01"] = {
         },
