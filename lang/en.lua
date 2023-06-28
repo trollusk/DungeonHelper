@@ -754,24 +754,22 @@ Mechanics:
     ["marchodsacrifices_base"] = {
         ["sisters"] = {[[Wyrd Sisters]], [[Mechanics:
 - Three bosses: a melee fighter, healer, and archer.
-- The melee boss should be the main focus.
-- The melee boss will charge random players, who should block or dodge.
 - Interrupt the healer boss when she is healing the other bosses.
 - The archer is surrounded by a blue aura of SILENCE which prevents ultimates and magicka-based abilities from working. For this reason, keep the archer away from the group!
-- Interrupt the archer when she charges up a powerful single target attack.]]}, 
+- Everyone: Interrupt the archer's channeled attack (one-shot).]]}, 
         ["aghaedh"] = {[[Aghaedh of the Solstice]], [[Mechanics:
 - At 75%, 50% and 25% health, a lurcher add will enter the fight. The lurchers must be taunted by the tank as their attacks will one-shot non-tanks.
-- When a lurcher dies it drops a synergy on the ground. Players must all interact with these synergies.
+- When a lurcher dies it drops an orange synergy on the ground. Players must all interact with these synergies.
 - At 25% health, the boss channels a large explosion. Any players who have not picked up lurcher synergies will die.]]}, 
         ["dagrund"] = {[[Dagrund the Bulky]], [[
-- When the boss jumps in the air, he will land with a large damage AoE, and 4x moving AoEs will spawn, each targeting a different player. Dodge roll through your AoE or it will kill you.
+- When the boss jumps high in the air, he will land with a large damage AoE, and 4x moving AoEs will spawn, each targeting a different player. Dodge roll through your AoE or it will kill you.
 - Every time the boss loses 10% health, more archers will spawn. These must be killed or the group will get overwhelmed.
 - Do not kill the boss too fast, to avoid dealing with multiple archer waves at once.
         ]]}, 
         ["tarcyr"] = {[[Tarcyr]], [[Mechanics:
 - Adds spawn throughout the fight. If not killed they will pin players. If the player is not freed (interact with green circle), they will be one-shot.
 - The boss will rear up and repeatedly stamp, sending out waves of lightning. This will continue until he is interrupted.
-- The Hunt: occurs at the start and 80%/50%/20% health. You must keep moving and stay hidden (sneak) throughout this phase. Do not use any abilities, they will break stealth! A wisp will move around the room, when it reaches you, activate a synergy to make it move on.
+- The Hunt: occurs at the start and 80%/50%/20% health. You must keep moving and stay hidden (sneak) throughout this phase. Do not use any abilities, they will break stealth! A wisp will move around the room, then land and create a green area. Go there and activate a synergy to make the wisp move on.
 - In the Hunt at 50% health, two players will get lightning AoEs that follow them. If this touches another player, they will be thrown out of stealth.
 - In the Hunt at 20% health, fast-moving fire floor AoEs must be avoided, in addition to the above mechanics.]]}, 
         ["balorgh"] = {[[Balorgh]], [[|cffcc66Hard Mode:
@@ -783,7 +781,7 @@ Mechanics:
 - When plants are on the islands, stay in the WATER.
 - When the boss is sending out lightning, stay on LAND (OUT of the water).
 - When the boss sends a homing fireball at you, dodge roll or die.
-- The Hunt: At 80%/60%/40%/20% health, he will turn into a shadow and pursue one player. That player will have a circle under their feet. To end this phase, the player must lead the shadow into a trap (the light).]]},
+- The Hunt: At 80%/60%/40%/20% health, the arena darkens and the boss turns into a shadow, pursuing one player. That player will have a circle under their feet. To end this phase, the boss must be lured into the blue-green ground area.]]},
     },
                     
 
