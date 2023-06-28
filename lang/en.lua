@@ -1679,12 +1679,29 @@ Mechanics:
 
             ---- Bloodroot Forge ----
     ["bloodrootext1_base"] = {
-        ["mathgamain"] = {[[Mathgamain]], [[]]},
-        ["caillaoife"] = {[[Caillaoife]], [[]]},
-        ["stoneheart"] = {[[Stoneheart]], [[]]},
-        ["galchobhar"] = {[[Galchobhar]], [[]]},
-        ["gherig"] = {[[Gherig Bullblood]], [[]]},
-        ["earthgore"] = {[[Earthgore Amalgam]], [[]]},
+        ["mathgamain"] = {[[Mathgamain]], [[Mechanics:
+- At 75/50/25% health, waves of adds will spawn.]]},
+        ["caillaoife"] = {[[Caillaoife]], [[Mechanics:
+- At 75/50/25% health, the boss goes immune and starts casting a force field. Move away to avoid knockdown.
+- Once the force field is up (trees), adds will spawn. The bear is highest priority as it can one-shot non-tanks.
+- During this phase the boss cannot be taunted! Once her taunt expires she will target a random player with fast-moving cold AoEs.]]},
+        ["stoneheart"] = {[[Stoneheart]], [[Mechanics:
+- The boss sometimes fires red projectiles at one of the stone atronachs, then teleports away. The atronach must be killed quickly or it will enrage and start putting damaging AoEs at each player's feet.
+- At less than 25% health, the boss starts entangling players in vines. Dodge to break free before the vines explode.]]},
+        ["galchobhar"] = {[[Galchobhar]], [[Mechanics:
+- Tank: when the boss creates a volcanic eruption, you must stand on it and block.
+- Everyone: when flames appear at the edge of your screen, jump onto one of the lava platforms.
+- Everyone: when the boss pounds the ground with his weapon, jump onto one of the lava platforms, wait until all ground fire is GONE, then jump off the platform.
+- The platforms should each only have one player on them at a time. If they are overloaded they will break, dropping players into the lava. 
+- At 50% health, the boss will wake up the stone atronachs in the room. These have the same "enrage" mechanics as the Stoneheart fight.]]},
+        ["gherig"] = {[[Gherig Bullblood]], [[Mechanics:
+- Three bosses: bull, melee and ranged.
+- Everyone: when the minotaur chains two players and starts channeling, interrupt him. The players must also move out of the AoEs he created as they will still explode.
+- Everyone: interrupt the ranged boss to prevent her healing the other bosses.]]},
+        ["earthgore"] = {[[Earthgore Amalgam]], [[Mechanics:
+- The boss will plunge his fist into the ground and channel, causing a fire trail to move across the floor and create a pool of lava. The pool will fire projectiles at nearby players. Getting hit by 3 rocks will fossilize the player temporarily.
+- The boss will sometimes become invulnerable and create a rain of stones.
+- At 80% health the boss splits in two. At 50% health, a third boss appears. The three bosses have all the same mechanics as the original boss.]]},
     },
     ["bloodrootint1_base"] = {
     },
@@ -1693,10 +1710,23 @@ Mechanics:
 
             ---- Hel Ra Citadel (TRIAL) ----
     ["helracitadel_base"] = {
-        ["ra_kotu"] = {[[Ra Kotu]], [[]]},
-        ["rokdun"] = {[[Yokeda Rok'dun]], [[]]},
-        ["kai"] = {[[Yokeda Kai]], [[]]},
-        ["warrior"] = {[[The Warrior]], [[]]},
+        ["ra_kotu"] = {[[Ra Kotu]], [[Mechanics:
+- At 30% health, the boss sometimes creates a spreading ground AoE. When it reaches maximum size, he will spin all his swords around his body, likely one-shotting any nearby players.
+- The boss sometimes sends winds to chase random players. Spread out to avoid stacking.]]},
+        ["rokdun"] = {[[Yokeda Rok'dun]], [[Mechanics:
+- When a welwa add dies, the boss will move to its corpse to revive it.
+- He also teleports randomly around the arena every 30 seconds.]]},
+        ["kai"] = {[[Yokeda Kai]], [[Mechanics:
+- Everyone: interrupts are essential for this fight. Whenever an enemy starts channeling the "flame staff" ability, interrupt ASAP or the group will wipe.
+- All of the enemies in the fight can channel this ability.
+- Keep spread out, as the boss will sometimes target random players with meteors. When this happens, BLOCK, do not dodge.]]},
+        ["warrior"] = {[[The Warrior]], [[Mechanics:
+- When the boss creates a "strip" AoE, he is about to throw his shield like a boomerang. All players in the AoE should move out.
+- The boss will turn a random player to stone. If the player synergizes, they break out but create an explosion that kills all nearby players. Alternatively, the boss' thrown shield will free any player it hits.
+- In hard mode, gargoyle statues will come to life during the fight. This can be prevented by getting the boss to throw his shield at the statues, destroying them.
+- There are two large circles in the centre of the room: a healing circle (orange) and a damage boost circle (blue). These both affect players and enemies within their area.
+- At 85% and 70% health, the boss will move to each of the circles and destroy them.
+- At 35% health, the boss raises his sword in the air, killing all adds. From this point on, keep spread out, to avoid stacking when he hits players with magic damage.]]},
     },
     ["helracitadelentry_base"] = {
     },
@@ -1867,15 +1897,54 @@ Mechanics:
 },
         ---- Maelstrom Arena (SOLO ARENA) ----
 ["arenasclockwork2_base"] = {
-    ["maxus"] = {[[Maxus the Many]], [[]]},
-    ["centurion"] = {[[Centurion Champion]], [[]]},
-    ["lamia"] = {[[Lamia Queen]], [[]]},
-    ["guardian"] = {[[The Control Guardian]], [[]]},
-    ["runa"] = {[[Matriarch Runa]], [[]]},
-    ["atrocity"] = {[[Champion of Atrocity]], [[]]},
-    ["behemoth"] = {[[Argonian Behemoth]], [[]]},
-    ["tephra"] = {[[Valkyn Tephra]], [[]]},
-    ["solkyn"] = {[[Voriak Solkyn]], [[]]},
+    ["maxus"] = {[[Maxus the Many]], [[Mechanics:
+- Each time the boss teleports, he will heal himself using any remaining adds. Therefore, kill adds to shorten the fight.]]},
+    ["centurion"] = {[[Centurion Champion]], [[Mechanics:
+- Three bosses. Only one is active at a time - the other two will sit down in an invulnerable state.]]},
+    ["lamia"] = {[[Lamia Queen]], [[Mechanics:
+- At 75/50/25% health, she spawns adds. Kill these to avoid being overwhelmed.
+- The boss sometimes screams in a frontal cone. This will stun you, allowing the boss and adds to damage you. Try to stay away from the front of the boss to avoid this.]]},
+    ["guardian"] = {[[The Control Guardian]], [[Mechanics:
+- Kill the sentries (small "ball" constructs) before they reach the central area. Otherwise they will become invulnerable and fire ground AoEs at you.
+- Stay under the boss while it is moving, to avoid lightning damage.
+- Do not go under the boss while it is still, to avoid fire damage.]]},
+    ["runa"] = {[[Matriarch Runa]], [[Mechanics:
+- The highest priority at all times is to interrupt the troll's smash attack, or it will destroy a platform and make it impossible to complete the fight.
+- At 80/60/40% health, the boss spawns a pair of adds (melee, archers, mages). You must kill these before continuing to attack the boss, or you will get overwhelmed.
+- At 75% and 50% health, the boss glows red and jumps on the platform she is standing on, destroying it. Get away from the platform or you will die!]]},
+    ["atrocity"] = {[[Champion of Atrocity]], [[Mechanics:
+- At 75% and 50% health, the boss will spawn a tiny version of herself. Kill this ASAP, as while it is alive the boss takes much less damage.
+- If you take the "reflection shield" synergy, the boss' poison balls will be reflected back at her.]]},
+    ["behemoth"] = {[[Argonian Behemoth]], [[Mechanics:
+- Kill ONE of the lightning mage adds. Keep the other one alive.
+- Starting when one of the lightning mages dies, the boss will sometimes scream. This will quickly kill you unless you shelter inside the shield created by the surviving lightning mage.
+- Do not interrupt the boss when he is screaming, or you will permanently enrage him.
+- If you are caught in a mushroom explosion, quickly cleanse yourself in one of the green pools.]]},
+    ["tephra"] = {[[Valkyn Tephra]], [[Mechanics:
+- You must kill the 3 totems in order to be able to damage the boss.
+- Try to kill all adds before killing the 3rd totem, so they do not distract you from damaging the boss.
+- Flame shaper adds must be killed or interrupted ASAP. Their channeled flame attack causes huge damage.]]},
+    ["solkyn"] = {[[Voriak Solkyn]], [[Mechanics:
+- You must block or dodge the boss' single skull projectile.
+- When the boss channels skulls at you, either interrupt him, or take the shield synergy to have them reflected back at the boss.
+- The boss teleports about every 20 seconds. Be aware of this when placing DOTs.
+- When a daedroth appears, kill it immediately and don't let it breathe on you. If it does, a flame DoT will be stuck to you until the daedroth is dead.
+
+Phase 1 (Downstairs): 
+- the boss uses his skull abilities and summons adds, including a daedroth.
+- At 75% health, the boss becomes invulnerable and goes up in the air.
+- To follow the boss, find the lit floor pad, kill the nearby clannfear, and activate the pad.
+
+Phase 2 (Upstairs):
+- Destroy the 3 crystals to move to the 3rd phase.
+- Keep moving to avoid meteors. Dodge or block the boss' skulls.
+- When the boss creates a moving wall, follow behind the wall to avoid being blown back downstairs.
+
+Phase 3 (final):
+- Collect 3 gold ghosts, and you will stun the boss.
+- Do NOT let the boss collect gold ghosts. If he collects 3, he explodes and you die!
+- Kill the daedroth and the slow-walking add ASAP when they appear. The slow walker will spawn a bone colossus if not killed.
+]]},
 },
 ["arenasclockworkint_base"] = {
 },
@@ -2001,22 +2070,62 @@ Mechanics:
 ["vateshranrites01a"] = {
 },
 ["vateshranritesmap02"] = {
-    ["shade"] = {[[Shade of the Grove]], [[]]},
-    ["keeper"] = {[[Leptfire Keeper]], [[]]},
-    ["rahdgarak"] = {[[Rahdgarak]], [[]]},
+    ["shade"] = {[[Shade of the Grove]], [[Mechanics:
+- Three bosses. Only one boss is vulnerable at any time. At various points in the fight, the boss will go to sleep and a different boss will become vulnerable.
+- Later in the fight, all 3 bosses will be active, but still only one can be damaged.
+- Interrupt the spriggans when they channel a beam at you, otherwise you will be cursed and unable to damage the boss.]]},
+    ["keeper"] = {[[Leptfire Keeper]], [[Mechanics:
+- Follow the boss from platform to platform using the grappling hook.
+- Killing this boss gives you a buff: when you use the grappling hook, any nearby enemies are automatically interrupted.]]},
+    ["rahdgarak"] = {[[Rahdgarak]], [[Mechanics:
+- His heavy attack will one-shot you unless blocked or dodged.
+- At 80% health the boss will become protected by either Cold or Fire. You must move to the platform of the opposite element and fight him there.
+- Whenever you move to a new platform, the boss will jump on you. Block to prevent damage and knockdown.
+- When the mages start channeling, you must travel around and interrupt all 4. Otherwise they will set a platform on fire, making it inaccessible.]]},
 },
 ["vateshranritesmap03"] = {
-    ["magma_queen"] = {[[Magma Queen]], [[]]},
-    ["metron"] = {[[Mynar Metron]], [[]]},
-    ["pyrelord"] = {[[The Pyrelord]], [[]]},
+    ["magma_queen"] = {[[Magma Queen]], [[Mechanics:
+- Kill any adds ASAP - they have low health but cause high damage (more than the boss) and leave fire AoEs on the ground.
+- When the iron atronach dies, pick up the synergy and throw it at the boss. She will be stunned for 10 seconds, allowing lots of free damage.
+- At low health, the boss starts creating walls of fire that cross the room.]]},
+    ["metron"] = {[[Mynar Metron]], [[Mechanics:
+- Heavy-attacking the orb in the middle of the room will allow you to temporarily walk on lava without damage.
+- Killing this boss gives you a buff: when you heavy-attack an orb, nearby enemies take damage.]]},
+    ["pyrelord"] = {[[The Pyrelord]], [[Mechanics:
+- He rotates through 4 phases: fire breath, spin, fire breath again, floor stab.
+- Do not get hit by his fire breath (it causes a long fire DOT).
+- When he raises his sword, three "spokes" of fire will spin slowly around him. Keep moving to avoid these.
+- When he plunges his sword into the ground, the floor will turn to lava. Quickly find the orb in one of the corners, and heavy-attack it to gain fire immunity. Then find the corner where a fire has started, and stand on it to extinguish the fire.
+- At 50% health, the boss will give himself a temporary buff that increases his damage.]]},
 },
 ["vateshranritesmap04"] = {
-    ["zakuryn"] = {[[Zakuryn the Sculptor]], [[]]},
-    ["xobutar"] = {[[Xobutar of His Deep Graces]], [[]]},
-    ["iozuzzunth"] = {[[Iozuzzunth]], [[]]},
+    ["zakuryn"] = {[[Zakuryn the Sculptor]], [[Mechanics:
+- Once one boss dies, the other enrages (increased damage) and partly heals. Therefore try to damage them evenly.
+- Interrupt Zakyrun when he channels with his staff.
+- When the flesh abomination plunges his fists into the ground, numerous ground AoEs will appear. Keep moving to avoid these.
+- When the flesh abomination creates a spreading ground AoE, move out of it or you will be one-shot.
+- Zakuryn will sometimes create a damage shield which makes him invulnerable. The flesh abomination's smash attack will break this shield, if it occurs nearby.]]},
+    ["xobutar"] = {[[Xobutar of His Deep Graces]], [[Mechanics:
+- The boss sometimes teleports, leaving a spirit behind. After a while a portal will appear, which you can use to move to the boss.
+- When the boss creates totems, destroy them ASAP or he will use them to heal.
+- Killing this boss gives you a buff: whenever you go through a portal, Xobutar will appear and help you fight for a short time.]]},
+    ["iozuzzunth"] = {[[Iozuzzunth]], [[Mechanics:
+- When an eye appears at the edge of the room, kill it ASAP or it will continually debuff you.
+- When the boss does his (interruptible) fire wave attack, stand behind the eye to make the wave hit it for huge damage.
+- Watchers will spawn on the upper level and fire greens lasers down at you. Take the portal to the upper level and kill them.]]},
 },
 ["vateshranritesmap05"] = {
-    ["maebroogha"] = {[[Maebroogha The Void Lich]], [[]]},
+    ["maebroogha"] = {[[Maebroogha The Void Lich]], [[Mechanics:
+- The adds are a higher priority than the boss (especially the shadow colossi).
+- If you move too far from the boss, she will teleport to your location and deal damage.
+- Sometimes a circle of shades will appear, linked by lasers. The shades walk towards the centre of the room, causing the circle to shrink.
+- Kill one of the shades and move out of the circle. Touching the lasers is fatal.
+- At 10% health, the boss will channel an explosion covering the entire floor. Grapple to one of 3 points around the room, take a synergy, and enter a portal.
+- Inside the portal, you will fight a simplified version of one of the bosses from each of the 3 previous areas (Zakuryn, Rahdgarak, Pyrelord).
+- When the Pyrelord summons a flame shaper add, you must interrupt it or it will constantly channel fire at you.
+- While you are fighting each miniboss, the main boss slowly heals. Defeat each miniboss quickly to minimise the healing that occurs. Once you get her back down to 10% health, you will need to enter another portal and defeat another miniboss.
+- After defeating each miniboss, its mechanic will be added to the main boss fight.
+]]},
 },
 },  -- end The Reach
 
@@ -2062,14 +2171,41 @@ Mechanics:
 ["summerset"] = {							
         ---- Coral Aerie (DLC) ----
 ["coralaerie_b1_001"] = {
-    ["sword_guardian"] = {[[Sword Guardian]], [[]]},
-    ["maligalig"] = {[[Maligalig]], [[]]},
-    ["staff_guardian"] = {[[Staff Guardian]], [[]]},
-    ["szarzo"] = {[[S'zarzo the Bulwark]], [[]]},
-    ["sarydil"] = {[[Sarydil]], [[]]},
-    ["shield_guardian"] = {[[Shield Guardian]], [[]]},
-    ["varallion"] = {[[Varallion]], [[]]},
-    ["zbaza"] = {[[Z'baza]], [[]]},
+    ["sword_guardian"] = {[[Sword Guardian]], [[Mechanics:
+- The boss will place a lightning DOT AoE on each player, which will last for the whole fight. 
+- Everyone: spread out, do not stack AoEs.
+- Healer: heal continually to counteract the DOTs on all players.]]},
+    ["maligalig"] = {[[Maligalig]], [[Mechanics:
+- Everyone: when an AoE attaches to you, look around for the "donut" on the floor, and move so your AoE is inside the donut.
+- Bugs will continually spawn, chase random players and explode (the player will have a target over their head, the bug will have a matching target).
+- At 65% and 35% health, the boss disappears and players enter a "whirlpool". Synergize to stop on one of the three pieces of land.
+- You must kill all adds on the three land areas, before the boss will reappear.]]},
+    ["staff_guardian"] = {[[Staff Guardian]], [[Mechanics:
+- Nothing notable.]]},
+    ["szarzo"] = {[[S'zarzo the Bulwark]], [[Mechanics:
+- At 50% health, he drops a banner. Keep out of the banner area and move the boss away from it as well.
+- Waves of adds including archers will spawn throughout the fight.
+- Everyone: When he points at the ground and channels, BLOCK to mitigate the three incoming AoE attacks.]]},
+    ["sarydil"] = {[[Sarydil]], [[Mechanics:
+- Tank: the boss must be taunted IMMEDIATELY at the start and each time she re-enters the fight.
+- At 75% and 40% health, the boss throws a smoke bomb and disappears, summoning 4 adds. Once the adds are dead the boss reappears and quickly teleport strikes the aggroed player.
+- Each time the boss disappears, a random player gets a mark over their head. This player will drop several mines at their location over a few seconds. This player should move away from the group, but not stand still as the stacked explosions will be fatal.
+- The boss sometimes disappears and is replaced by multiple shadows. All must be interrupted while channeling or they will all shoot a single player and kill them.
+- The boss' dagger throwing attack can be interrupted.
+]]},
+    ["shield_guardian"] = {[[Shield Guardian]], [[Mechanics:
+- AT 60% health the boss crouches and is protected by a shield. 3 adds channel energy into the shield. Kill the adds to remove the shield.]]},
+    ["varallion"] = {[[Varallion]], [[Mechanics:
+- The boss will create huge waves which move across the room, these must be avoided.
+- An orb will sometimes appear and move towards a random player (they will be marked with a symbol). Other players can stand near the orb and block to make it explode for minimal damage.
+- The boss sometimes places AoEs on all players. These will detach and become floor AoEs after a few seconds, so players should move to control where these are placed.
+- At 90/80/50% health, a gryphon will join the fight.
+- The lightning gryphon (Illialta) will channel a very large lightning AoE attached to a random player. This player must move away from the group, who must also avoid the AoE.]]},
+    ["zbaza"] = {[[Z'baza]], [[Mechanics:
+- Similar to the Z'Maja boss fight in the Cloudrest trial.
+- The boss will attack all players she can SEE with a powerful mind blast. Non-tanks must stay out of her line of sight.
+- At 75% and 25% health, the boss teleports to a tentacle and is protected by a shield. Kill the tentacle to remove the shield.
+- When the boss teleports she leaves a portal behind, which can be used to teleport to her.]]},
 },
 ["coralaerie_b2_001"] = {
 },
@@ -2126,12 +2262,40 @@ Mechanics:
 ["systres"] = {							
         ---- Earthen Root Enclave (DLC) ----
 ["ere_insidemap01"] = {
-    ["scaled_roots"] = {[[Scaled Roots]], [[]]},
-    ["corrupt_stone"] = {[[Corruption of Stone]], [[]]},
-    ["lutea"] = {[[Lutea]], [[]]},
-    ["corrupt_root"] = {[[Corruption of Root]], [[]]},
-    ["jodoro"] = {[[Jodoro]], [[]]},
-    ["devyric"] = {[[Archdruid Devyric]], [[]]},
+    ["scaled_roots"] = {[[Scaled Roots]], [[Mechanics:
+- Activate the boss fight by lighting 3 bonfires.
+- Everyone: watch your feet to see when you are being targeted by a meteor (block to mitigate damage).
+- Tank: when the boss hits you with a fire attack, move out of the fire AoE which it leaves on the ground. ]]},
+    ["corrupt_stone"] = {[[Corruption of Stone]], [[Mechanics:
+- Tank: every time you dodge, the boss enrages! Do not dodge!
+- Everyone: spread out to avoid stacking AoEs. Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
+- At 80/60/30% health, the boss will channel a huge AoE. One rock will be poking out of the ground - all players must hide behind it or the group will wipe. This will happen twice in a row at each health threshold.
+- After the above mechanic, atronach adds will spawn. They should be interrupted to prevent their channeled beams from turning players to stone.]]},
+    ["lutea"] = {[[Lutea]], [[Mechanics:
+- To spawn the boss, you must find and kill 3 pairs of spriggan minibosses. Each time a pair is killed, you can pick up a cup of tainted water. You must then find the 2 large glowing flowers within 60 seconds.
+- Once this has been done 3 times, the boss spawns from a geyser.
+- The boss sometimes teleports across the room, trapping players inside a donut AoE. You are safe inside the donut, but do not touch the edges.
+- The boss creates geysers under players' feet. Block to mitigate damage.]]},
+    ["corrupt_root"] = {[[Corruption of Root]], [[Mechanics:
+- There are lots of damaging ground AoEs during the fight, spread out and keep moving to avoid them. 
+- The boss sometimes splits into multiple clones. Once the clones are all killed, the boss reappears.]]},
+    ["jodoro"] = {[[Jodoro]], [[Mechanics:
+- To spawn the boss, find and activate three stone "donuts".
+- The boss channels a mind blast attack (interruptible) which will hit all players in the boss' line of sight.
+- Tank: it's very important to keep the boss facing away from the group.
+- The mind blast attack occurs straight after the boss teleports, so the tank must move quickly to taunt and position the boss when this happens.
+- Everyone: when you are targeted with a laser beam, keep moving until it disappears (and do NOT stack up).
+]]},
+    ["devyric"] = {[[Archdruid Devyric]], [[Mechanics:
+- When the lightning "shards" are present, they are the highest priority to kill.
+- Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
+- Keep out of the growing AoE created by totems, as the totems will explode and one-shot anyone inside.
+- After each totem explodes, a rock projectile fires at a player. Block to avoid damage.
+- If a "curse" symbol appears above your head, you are being chased by exploding wolves.
+- At 70% health, the boss transforms into a huge bear, and partly heals.
+- At 45% health he returns to human form. At 20% health he transforms into a bear again.
+- When the bear prepares to charge, move to make him charge into (and destroy) the totems.
+- At low health, the boss will rain lightning bolts on all players. These must be blocked.]]},
 },
 ["ere_outsidemap01"] = {
 },
