@@ -895,7 +895,7 @@ local DHData = {
 			{0.4, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "atrocity")}, -- Champion of Atrocity
 			{0.4, 0.6, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "behemoth")}, -- Argonian Behemoth
 			{0.4, 0.7, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "tephra")}, -- Valkyn Tephra
-			{0.4, 0.8, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "solkyn")}, -- Voriak Solkyn
+			{0.4, 0.8, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "solkyn"), "FINAL"}, -- Voriak Solkyn
         },
         ["arenasclockworkint_base"] = {
         },

@@ -1899,15 +1899,54 @@ Mechanics:
 },
         ---- Maelstrom Arena (SOLO ARENA) ----
 ["arenasclockwork2_base"] = {
-    ["maxus"] = {[[Maxus the Many]], [[]]},
-    ["centurion"] = {[[Centurion Champion]], [[]]},
-    ["lamia"] = {[[Lamia Queen]], [[]]},
-    ["guardian"] = {[[The Control Guardian]], [[]]},
-    ["runa"] = {[[Matriarch Runa]], [[]]},
-    ["atrocity"] = {[[Champion of Atrocity]], [[]]},
-    ["behemoth"] = {[[Argonian Behemoth]], [[]]},
-    ["tephra"] = {[[Valkyn Tephra]], [[]]},
-    ["solkyn"] = {[[Voriak Solkyn]], [[]]},
+    ["maxus"] = {[[Maxus the Many]], [[Mechanics:
+- Each time the boss teleports, he will heal himself using any remaining adds. Therefore, kill adds to shorten the fight.]]},
+    ["centurion"] = {[[Centurion Champion]], [[Mechanics:
+- Three bosses. Only one is active at a time - the other two will sit down in an invulnerable state.]]},
+    ["lamia"] = {[[Lamia Queen]], [[Mechanics:
+- At 75/50/25% health, she spawns adds. Kill these to avoid being overwhelmed.
+- The boss sometimes screams in a frontal cone. This will stun you, allowing the boss and adds to damage you. Try to stay away from the front of the boss to avoid this.]]},
+    ["guardian"] = {[[The Control Guardian]], [[Mechanics:
+- Kill the sentries (small "ball" constructs) before they reach the central area. Otherwise they will become invulnerable and fire ground AoEs at you.
+- Stay under the boss while it is moving, to avoid lightning damage.
+- Do not go under the boss while it is still, to avoid fire damage.]]},
+    ["runa"] = {[[Matriarch Runa]], [[Mechanics:
+- The highest priority at all times is to interrupt the troll's smash attack, or it will destroy a platform and make it impossible to complete the fight.
+- At 80/60/40% health, the boss spawns a pair of adds (melee, archers, mages). You must kill these before continuing to attack the boss, or you will get overwhelmed.
+- At 75% and 50% health, the boss glows red and jumps on the platform she is standing on, destroying it. Get away from the platform or you will die!]]},
+    ["atrocity"] = {[[Champion of Atrocity]], [[Mechanics:
+- At 75% and 50% health, the boss will spawn a tiny version of herself. Kill this ASAP, as while it is alive the boss takes much less damage.
+- If you take the "reflection shield" synergy, the boss' poison balls will be reflected back at her.]]},
+    ["behemoth"] = {[[Argonian Behemoth]], [[Mechanics:
+- Kill ONE of the lightning mage adds. Keep the other one alive.
+- Starting when one of the lightning mages dies, the boss will sometimes scream. This will quickly kill you unless you shelter inside the shield created by the surviving lightning mage.
+- Do not interrupt the boss when he is screaming, or you will permanently enrage him.
+- If you are caught in a mushroom explosion, quickly cleanse yourself in one of the green pools.]]},
+    ["tephra"] = {[[Valkyn Tephra]], [[Mechanics:
+- You must kill the 3 totems in order to be able to damage the boss.
+- Try to kill all adds before killing the 3rd totem, so they do not distract you from damaging the boss.
+- Flame shaper adds must be killed or interrupted ASAP. Their channeled flame attack causes huge damage.]]},
+    ["solkyn"] = {[[Voriak Solkyn]], [[Mechanics:
+- You must block or dodge the boss' single skull projectile.
+- When the boss channels skulls at you, either interrupt him, or take the shield synergy to have them reflected back at the boss.
+- The boss teleports about every 20 seconds. Be aware of this when placing DOTs.
+- When a daedroth appears, kill it immediately and don't let it breathe on you. If it does, a flame DoT will be stuck to you until the daedroth is dead.
+
+Phase 1 (Downstairs): 
+- the boss uses his skull abilities and summons adds, including a daedroth.
+- At 75% health, the boss becomes invulnerable and goes up in the air.
+- To follow the boss, find the lit floor pad, kill the nearby clannfear, and activate the pad.
+
+Phase 2 (Upstairs):
+- Destroy the 3 crystals to move to the 3rd phase.
+- Keep moving to avoid meteors. Dodge or block the boss' skulls.
+- When the boss creates a moving wall, follow behind the wall to avoid being blown back downstairs.
+
+Phase 3 (final):
+- Collect 3 gold ghosts, and you will stun the boss.
+- Do NOT let the boss collect gold ghosts. If he collects 3, he explodes and you die!
+- Kill the daedroth and the slow-walking add ASAP when they appear. The slow walker will spawn a bone colossus if not killed.
+]]},
 },
 ["arenasclockworkint_base"] = {
 },
