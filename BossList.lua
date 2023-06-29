@@ -885,35 +885,36 @@ local DHData = {
 			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "icereachpart2", "revenant")}, -- Stormborn Revenant
 			{0.5, 0.6, DH_GetLocalizedData("wrothgar", "icereachpart2", "ciannait")}, -- Mother Ciannait
         },
+
                             ---- Maelstrom Arena (SOLO ARENA) ----
         ["arenasclockwork2_base"] = {
-			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "maxus")}, -- Maxus the Many
-			{0.5, 0.6, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "centurion")}, -- Centurion Champion
-			{0.5, 0.7, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "lamia")}, -- Lamia Queen
-			{0.5, 0.8, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "guardian")}, -- The Control Guardian
-			{0.5, 0.9, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "runa")}, -- Matriarch Runa
-			{0.4, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "atrocity")}, -- Champion of Atrocity
-			{0.4, 0.6, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "behemoth")}, -- Argonian Behemoth
-			{0.4, 0.7, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "tephra")}, -- Valkyn Tephra
-			{0.4, 0.8, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "solkyn"), "FINAL"}, -- Voriak Solkyn
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "guardian")}, -- The Control Guardian
         },
         ["arenasclockworkint_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockworkint_base", "centurion")}, -- Centurion Champion
         },
         ["arenaslavacaveinterior_base"] = {
         },
         ["arenaslobbyexterior_base"] = {
         },
         ["arenasmephalaexterior_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasmephalaexterior_base", "atrocity")}, -- Champion of Atrocity
         },
         ["arenasmurkmirecaveint_base"] = {
+			{0.5, 0.6, DH_GetLocalizedData("wrothgar", "arenasmurkmirecaveint_base", "behemoth")}, -- Argonian Behemoth
+			{0.5, 0.7, DH_GetLocalizedData("wrothgar", "arenasmurkmirecaveint_base", "tephra")}, -- Valkyn Tephra
         },
         ["arenasmurkmireexterior_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasmurkmireexterior_base", "lamia")}, -- Lamia Queen
         },
         ["arenasoblivionexterior_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasoblivionexterior_base", "solkyn"), "FINAL"}, -- Voriak Solkyn
         },
         ["arenasshiveringisles_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasshiveringisles_base", "maxus")}, -- Maxus the Many
         },
         ["arenaswrothgarexterior_base"] = {
+			{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenaswrothgarexterior_base", "runa")}, -- Matriarch Runa
         },
     },  -- end Wrothgar
 
