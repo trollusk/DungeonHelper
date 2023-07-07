@@ -2065,25 +2065,11 @@ Phase 3 (final):
 -- start The Reach
 ["reach"] = {							
         ---- Vateshran Hollows (SOLO ARENA) ----
-["vateshranrites01"] = {
+["vateshransrites01"] = {
 },
-["vateshranrites01a"] = {
+["vateshransrites01a"] = {
 },
-["vateshranritesmap02"] = {
-    ["shade"] = {[[Shade of the Grove]], [[Mechanics:
-- Three bosses. Only one boss is vulnerable at any time. At various points in the fight, the boss will go to sleep and a different boss will become vulnerable.
-- Later in the fight, all 3 bosses will be active, but still only one can be damaged.
-- Interrupt the spriggans when they channel a beam at you, otherwise you will be cursed and unable to damage the boss.]]},
-    ["keeper"] = {[[Leptfire Keeper]], [[Mechanics:
-- Follow the boss from platform to platform using the grappling hook.
-- Killing this boss gives you a buff: when you use the grappling hook, any nearby enemies are automatically interrupted.]]},
-    ["rahdgarak"] = {[[Rahdgarak]], [[Mechanics:
-- His heavy attack will one-shot you unless blocked or dodged.
-- At 80% health the boss will become protected by either Cold or Fire. You must move to the platform of the opposite element and fight him there.
-- Whenever you move to a new platform, the boss will jump on you. Block to prevent damage and knockdown.
-- When the mages start channeling, you must travel around and interrupt all 4. Otherwise they will set a platform on fire, making it inaccessible.]]},
-},
-["vateshranritesmap03"] = {
+["vateshransritesmap02"] = {
     ["magma_queen"] = {[[Magma Queen]], [[Mechanics:
 - Kill any adds ASAP - they have low health but cause high damage (more than the boss) and leave fire AoEs on the ground.
 - When the iron atronach dies, pick up the synergy and throw it at the boss. She will be stunned for 10 seconds, allowing lots of free damage.
@@ -2098,7 +2084,21 @@ Phase 3 (final):
 - When he plunges his sword into the ground, the floor will turn to lava. Quickly find the orb in one of the corners, and heavy-attack it to gain fire immunity. Then find the corner where a fire has started, and stand on it to extinguish the fire.
 - At 50% health, the boss will give himself a temporary buff that increases his damage.]]},
 },
-["vateshranritesmap04"] = {
+["vateshransritesmap03"] = {        -- Hunter's Grotto
+["shade"] = {[[Shade of the Grove]], [[Mechanics:
+- Three bosses. Only one boss is vulnerable at any time. At various points in the fight, the boss will go to sleep and a different boss will become vulnerable.
+- Later in the fight, all 3 bosses will be active, but still only one can be damaged.
+- Interrupt the spriggans when they channel a beam at you, otherwise you will be cursed and unable to damage the boss.]]},
+    ["keeper"] = {[[Leptfire Keeper]], [[Mechanics:
+- Follow the boss from platform to platform using the grappling hook.
+- Killing this boss gives you a buff: when you use the grappling hook, any nearby enemies are automatically interrupted.]]},
+    ["rahdgarak"] = {[[Rahdgarak]], [[Mechanics:
+- His heavy attack will one-shot you unless blocked or dodged.
+- At 80% health the boss will become protected by either Cold or Fire. You must move to the platform of the opposite element and fight him there.
+- Whenever you move to a new platform, the boss will jump on you. Block to prevent damage and knockdown.
+- When the mages start channeling, you must travel around and interrupt all 4. Otherwise they will set a platform on fire, making it inaccessible.]]},
+},
+["vateshransritesmap04"] = {
     ["zakuryn"] = {[[Zakuryn the Sculptor]], [[Mechanics:
 - Once one boss dies, the other enrages (increased damage) and partly heals. Therefore try to damage them evenly.
 - Interrupt Zakyrun when he channels with his staff.
@@ -2114,7 +2114,7 @@ Phase 3 (final):
 - When the boss does his (interruptible) fire wave attack, stand behind the eye to make the wave hit it for huge damage.
 - Watchers will spawn on the upper level and fire greens lasers down at you. Take the portal to the upper level and kill them.]]},
 },
-["vateshranritesmap05"] = {
+["vateshransritesmap05"] = {
     ["maebroogha"] = {[[Maebroogha The Void Lich]], [[Mechanics:
 - The adds are a higher priority than the boss (especially the shadow colossi).
 - If you move too far from the boss, she will teleport to your location and deal damage.
@@ -2378,6 +2378,33 @@ local DHLocalizedHintData = {
             ["laser_puzzle"] = {[[Laser Puzzle]], [[Solve to get the |c00FF00Ancestral Resolve|r group buff for the rest of the dungeon. This buff increases maximum health and reduces damage taken.]]},
         },
     },
+    ["reach"] = {							
+        ---- Vateshran Hollows (SOLO ARENA) ----
+        ["vateshransrites01"] = {
+        },
+        ["vateshransrites01a"] = {
+        },
+        ["vateshransritesmap02"] = {
+            ["essence_magicka"] = {[[Essence of Magicka]], [[- Boosts your Magicka by +5000.
+- To reach this, you will need the grapple mechanic from the green portal zone (Hunter's Grotto).
+- Once you get this essence, other smaller "remnant" essences will spawn throughout the zone.
+- Each remnant gives an addition +1000 magicka, up to maximum +5000.]]},
+        },
+        ["vateshransritesmap03"] = {
+            ["essence_stamina"] = {[[Essence of Stamina]], [[- Boosts your Stamina by +5000.
+- To reach this, you will need the lava immunity mechanic from the red portal zone (Brimstone Den).
+- Once you get this essence, other smaller "remnant" essences will spawn throughout the zone.
+- Each remnant gives an addition +1000 stamina, up to maximum +5000.]]}, 
+        },
+        ["vateshransritesmap04"] = {
+            ["essence_health"] = {[[Essence of Health]], [[- Boosts your Health by +5000.
+- To reach this, you will need the portal mechanic from the blue portal zone (The Wounding).
+- Once you get this essence, other smaller "remnant" essences will spawn throughout the zone.
+- Each remnant gives an addition +1000 health, up to maximum +5000.]]}, 
+        },
+        ["vateshransritesmap05"] = {
+        },
+    },  -- end The Reach
 }   -- end hints
 
 

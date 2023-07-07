@@ -1017,27 +1017,27 @@ local DHData = {
     -- start The Reach
     ["reach"] = {							
                             ---- Vateshran Hollows (SOLO ARENA) ----
-        ["vateshranrites01"] = {
+        ["vateshransrites01"] = {
         },
-        ["vateshranrites01a"] = {
+        ["vateshransrites01a"] = {
         },
-        ["vateshranritesmap02"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap02", "shade")}, -- Shade of the Grove
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap02", "keeper"), "SECRET"}, -- Leptfire Keeper
-			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap02", "rahdgarak")}, -- Rahdgarak
+        ["vateshransritesmap02"] = {
+			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshransritesmap02", "magma_queen")}, -- Magma Queen
+			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshransritesmap02", "metron"), "SECRET"}, -- Mynar Metron
+			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshransritesmap02", "pyrelord")}, -- The Pyrelord
         },
-        ["vateshranritesmap03"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap03", "magma_queen")}, -- Magma Queen
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap03", "metron"), "SECRET"}, -- Mynar Metron
-			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap03", "pyrelord")}, -- The Pyrelord
+        ["vateshransritesmap03"] = {
+			{0.50, 0.52, DH_GetLocalizedData("reach", "vateshransritesmap03", "shade")}, -- Shade of the Grove
+			{0.23, 0.25, DH_GetLocalizedData("reach", "vateshransritesmap03", "keeper"), "SECRET"}, -- Leptfire Keeper
+			{0.50, 0.26, DH_GetLocalizedData("reach", "vateshransritesmap03", "rahdgarak")}, -- Rahdgarak
         },
-        ["vateshranritesmap04"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap04", "zakuryn")}, -- Zakuryn the Sculptor
-			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshranritesmap04", "xobutar"), "SECRET"}, -- Xobutar of His Deep Graces
-			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshranritesmap04", "iozuzzunth")}, -- Iozuzzunth
+        ["vateshransritesmap04"] = {
+			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshransritesmap04", "zakuryn")}, -- Zakuryn the Sculptor
+			{0.5, 0.6, DH_GetLocalizedData("reach", "vateshransritesmap04", "xobutar"), "SECRET"}, -- Xobutar of His Deep Graces
+			{0.5, 0.7, DH_GetLocalizedData("reach", "vateshransritesmap04", "iozuzzunth")}, -- Iozuzzunth
         },
-        ["vateshranritesmap05"] = {
-			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshranritesmap05", "maebroogha"), "FINAL"}, -- Maebroogha The Void Lich
+        ["vateshransritesmap05"] = {
+			{0.5, 0.5, DH_GetLocalizedData("reach", "vateshransritesmap05", "maebroogha"), "FINAL"}, -- Maebroogha The Void Lich
         },
     },  -- end The Reach
 
@@ -1046,7 +1046,7 @@ local DHData = {
     ["blackwood"] = {
             ---- The Dread Cellar (DLC) ----
         ["tdc_map_boss3rooms_001"] = {
-			{0.5, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "purgator")}, -- Purgator
+			{0.5, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "purgator"), "SECRET"}, -- Purgator
 			{0.5, 0.6, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "broodlord")}, -- Scorion Broodlord
 			{0.5, 0.7, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "undertaker")}, -- Undertaker
 			{0.5, 0.8, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "cyronin")}, -- Cyronin Artellian
@@ -1188,6 +1188,24 @@ local DHHintData = {
 			{0.513304, 0.753591, DH_GetLocalizedHintData("stonefalls", "balsunn_presenttown01", "laser_puzzle")}, 
         },
     },
+    ["reach"] = {							
+        ---- Vateshran Hollows (SOLO ARENA) ----
+        ["vateshransrites01"] = {
+        },
+        ["vateshransrites01a"] = {
+        },
+        ["vateshransritesmap02"] = {
+            {0.78, 0.79, DH_GetLocalizedHintData("reach", "vateshransritesmap02", "essence_magicka")}, -- Essence of MAgicka
+        },
+        ["vateshransritesmap03"] = {
+            {0.78, 0.79, DH_GetLocalizedHintData("reach", "vateshransritesmap03", "essence_stamina")}, -- Essence of Stamina
+        },
+        ["vateshransritesmap04"] = {
+            {0.78, 0.79, DH_GetLocalizedHintData("reach", "vateshransritesmap04", "essence_health")}, -- Essence of Health
+        },
+        ["vateshransritesmap05"] = {
+        },
+    },  -- end The Reach
 }
 
 
