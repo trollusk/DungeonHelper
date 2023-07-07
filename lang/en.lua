@@ -1815,11 +1815,33 @@ Mechanics:
 
             ---- Sanctum Ophidia (TRIAL) ----
     ["trl_so_map01_base"] = {
-        ["manticora"] = {[[Possessed Manticora]], [[]]},
-        ["stonebreaker"] = {[[Stonebreaker]], [[]]},
-        ["ozara"] = {[[Ozara]], [[]]},
-        ["serpent"] = {[[The Serpent]], [[]]},
-    },
+        ["manticora"] = {[[Possessed Manticora]], [[Mechanics:
+- Tanks: do not over-taunt the boss, or she will rampage around the room and attack random players.
+- Popcorn: when you see a growing AoE under your feet, two more static AoEs will get placed at your position, then all 3 will explode in succession. Therefore move away from the group so you don't get caught in all 3 explosions.
+- Everyone: when the boss stomps and an AoE fills the room, block or die. Then all players will be afflicted with a bleed DOT which must be healed through.
+
+- Portal will spawn on the floor. A DPS and tank should enter the portal, where they will find a side boss who must be killed within 100 seconds, or the main boss will enrage.
+- While the side boss is alive, the main boss does not do most of her mechanics. Consider killing the side boss slowly to lengthen this phase.
+- Shards/spears will be fired at the furthest players. Therefore one or more players should keep at a distance to attract the spears, otherwise they will hit the main group.
+- At low health the boss will flash red and deal escalating damage until killed.]]},
+        ["stonebreaker"] = {[[Stonebreaker]], [[Mechanics:
+- The boss throws a ball of poison at random players. This can be dodged, otherwise the player will receive a poison DOT which will spread to any players they touch!
+- At 75/50/25% health, the boss will spawn Overcharger adds.]]},
+        ["ozara"] = {[[Ozara]], [[Mechanics:
+- Pin: the boss casts a spell and pins group members. They must be freed by other players via a synergy.
+- All the adds in the fight will respawn if killed.
+- Overcharger adds enter the fight through a door to the right. These must be killed ASAP.
+- Kill the shaman's totem to make the Overcharger stay near the door, where it can be dealt with more easily. Do not kill the shaman or he will respawn and make another totem.
+]]},
+        ["serpent"] = {[[The Serpent]], [[Mechanics:
+- The boss will teleport to the centre of the room and generate a 10 second poison DOT throughout the room. Everyone should group close together so that healers can out-heal the damage.
+- The 2 lamia adds should be taunted and positioned away from the main fight by the off-tank. Do not kill them as they explode on death, one-shotting anyone caught in the explosion. 
+- Manticora adds will sometimes spawn after the poison phase. These have a stomp attack similar to the Possessed Manticora boss (everyone must block, then healers must out-heal the DOT.)
+- Various totems will spawn during the fight. Green totems buff the boss' poison damage.
+- Blue totems place a magicka bomb on a random player (blue glow). To survive the player must try to quickly empty their magicka bar to 0.
+- When the boss fires pink shards - each player should move to a different shard (there is 1 each), where they will get a protective bubble.
+- After firing the shards, the boss causes an explosion. Any players who do not have a bubble will die.]]},
+},
     ["trl_so_map02_base"] = {
     },
     ["trl_so_map03_base"] = {

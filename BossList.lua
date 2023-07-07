@@ -746,10 +746,10 @@ local DHData = {
 
 							---- Sanctum Ophidia (TRIAL) ----
         ["trl_so_map01_base"] = {
-			{0.5, 0.5, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "manticora")}, -- Possessed Manticora
+			{0.5, 0.5, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "manticora"), "DPSCHECK"}, -- Possessed Manticora
 			{0.5, 0.6, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "stonebreaker")}, -- Stonebreaker
-			{0.5, 0.7, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "ozara")}, -- Ozara
-			{0.5, 0.8, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "serpent")}, -- The Serpent
+			{0.5, 0.7, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "ozara"), "PUGKILLER"}, -- Ozara
+			{0.5, 0.8, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "serpent"), "FINAL"}, -- The Serpent
         },
         ["trl_so_map02_base"] = {
         },
