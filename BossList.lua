@@ -561,6 +561,9 @@ local DHData = {
 
 							---- Scrivener's Hall (DLC) ----
         ["u37_scrivenershall_boss3_map"] = {
+			{0.5, 0.5, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "naqri")},  -- Ritemaster Naqri
+			{0.5, 0.6, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "ozezan")},  -- Ozezan the Inferno
+			{0.5, 0.7, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "valinna"), "FINAL"},  -- Valinna
         },
         ["u37_scrivenershall_sect1_map"] = {
         },
@@ -727,8 +730,8 @@ local DHData = {
         ["aetherianarchivebottom_base"] = {
 			{0.5, 0.5, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "storm_atronach")}, -- Lightning Storm Atronach
 			{0.5, 0.6, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "stone_atronach")}, -- Foundation Stone Atronach
-			{0.5, 0.7, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "varlariel")}, -- Varlariel
-			{0.5, 0.8, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "mage")}, -- The Mage
+			{0.5, 0.7, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "varlariel"), "DPSCHECK"}, -- Varlariel
+			{0.5, 0.8, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "mage"), "FINAL DPSCHECK"}, -- The Mage
         },
         ["aetherianarchiveend_base"] = {
         },
@@ -1174,6 +1177,17 @@ local DHData = {
         },
                     
     },  -- end High Isle
+
+			-- start Telvanni Peninsula
+			-- TODO need correct zone/map names
+	["telvannipeninsula"] = {	
+						---- TODO Sanity's Edge (TRIAL) ----
+		["sanitysedgemap1"] = {
+			{0.5, 0.5, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "descender")},	-- Spiral Descender
+			{0.5, 0.6, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "yaselya")},	-- Exarchanic Yaselya
+			{0.5, 0.7, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "twelvane")},	-- Archwizard Twelvane and the Chimera
+			{0.5, 0.8, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "ansuul"), "FINAL"},	-- Ansuul the Tormentor
+	},
 } 	-- End Normal/DLC Dungons
 
 	
@@ -1188,6 +1202,29 @@ local DHHintData = {
 			{0.513304, 0.753591, DH_GetLocalizedHintData("stonefalls", "balsunn_presenttown01", "laser_puzzle")}, 
         },
     },
+
+	["therift"] = {
+		---- Scrivener's Hall (DLC) ----
+		["u37_scrivenershall_boss3_map"] = {
+			{0.7, 0.5, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp1")},  -- Cartoklept Scamp
+			{0.7, 0.6, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp2")},  -- Cartoklept Scamp
+		["u37_scrivenershall_sect1_map"] = {
+		},
+		["u37_scrivenershall_sect2a_map"] = {
+		},
+		["u37_scrivenershall_sect2b_map"] = {
+		},
+		["u37_scrivenershall_sect3a_map"] = {
+		},
+		["u37_scrivenershall_sect3b_map"] = {
+		},
+		["u37_scrivenershall_boss3int_ma"] = {
+		},
+		["u37_scrivenershall_sect1floor2"] = {
+		},
+		["u37_scrivenershall_sect1baseme"] = {
+		},
+	},
 }
 
 

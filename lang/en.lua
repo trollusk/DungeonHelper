@@ -303,7 +303,7 @@ Mechanics:
 ]]},
 
 			["II_rilis"] = {[[High Kinlord Rilis]], [[|cffcc66Hard mode:
-- Leave 3 or more Daedroth alive until Rilis dies.|r
+- Kill the boss while leaving 3 or more Daedroth alive.|r
 
 Mechanics:
 - Destroy the "feasts" (healing orbs) before they reach the boss.
@@ -1221,6 +1221,8 @@ Mechanics:
 
 Mechanics:
 - He sometimes curses a random player and turns them into a skeleton for 30 seconds. While a skeleton, all you can do is light or heavy attacks - no abilities.
+- Skeleton adds will constantly spawn, kill them or they will overwhelm you (especially when in skeleton form.)
+- This boss cannot be soloed, as he turn the player back into a skeleton every time the effects wear off.
 ]]},
 },
 
@@ -1366,6 +1368,48 @@ Mechanics:
 - Atronachs spawn throughout the fight and cast a beam at the boss, making her invulnerable. Kill the atronachs to get rid of the beams.
 - The Wheel: when the boss stabs her sword into the ground, move back and get ready to move sideways to dodge the small walls of fire which will emanate from her.
 ]]},
+},
+
+        ---- Scrivener's Hall (DLC) ----
+        ["u37_scrivenershall_boss3_map"] = {
+            ["naqri"] = {[[Ritemaster Naqri]], [[Mechanics:
+- At 80/55/35% health, the boss summons a large floating book. The colour of the rune above the book tells you which attack the book will direct at players. 
+- Red rune: an add.
+- Green rune: a ground AoE that follows players. Block to mitigate damage.
+- White rune: ghosts who use a charged heavy attack. Can be blocked but not dodged.
+- While these attacks continue, the book shoots bolts at 2 bookcases at the edge of the room. A player must go to these and destroy the 2 hidden tomes to end the attacks.
+- Tank: stand in the small green ground AoE when it appears. Otherwise it will explode and deal heavy damage to the group.
+- In hard mode, 2 of these AoEs will spawn at a time.]]},
+            ["ozezan"] = {[[Ozezan The Inferno]], [[Mechanics:
+- The boss sometimes burrows into the ground, reappearing somewhere else and leaving behind a permanent lava pool. As the fight progresses, more and more of the arena will become unusable.
+- Tank: try to lead the boss back to previous lava pools.
+- Broodling adds spawn continually during the fight. They are weak but should be killed so that they do not overwhelm the group.
+- Broodlings have an interruptible channeled attack that puts a DOT on all players.
+- Halfway through the fight, the boss will burrow to the centre of the room and create a large spreading AoE which takes up most of the room. Get out of this or you will die.]]},
+            ["valinna"] = {[[Valinna]], [[Mechanics:
+- At first you face Lamikhai (giant spider), then Valinna appears.
+- Everyone: when a red rune appears above your head, a meteor is about to hit you and leave a permanent ground AoE. Move to the edge of the room so that the AoEs do not fill the fight area.
+- Tank: when the spider turns red (enrages), lead it into the ice AoE created by the friendly NPC.
+- When the boss leaves the first room she will create a spreading fire AoE. Everyone must go through the gate to the second room or be one-shotted.
+- Ensnaring spiders spawn at the room's edges. They sometimes cocoon a player and pull the cocoon towards themselves. Kill the spider before the cocooned player reaches them, or the player will die.
+- When an expanding AoE appears under your feet, STAY IN IT until it explodes, otherwise you will die.
+- LArge glowing meteors sometimes land on the floor. Kill them before they explode.]]},
+},
+        ["u37_scrivenershall_sect1_map"] = {
+},
+        ["u37_scrivenershall_sect2a_map"] = {
+},
+        ["u37_scrivenershall_sect2b_map"] = {
+},
+        ["u37_scrivenershall_sect3a_map"] = {
+},
+        ["u37_scrivenershall_sect3b_map"] = {
+},
+        ["u37_scrivenershall_boss3int_ma"] = {
+},
+        ["u37_scrivenershall_sect1floor2"] = {
+},
+        ["u37_scrivenershall_sect1baseme"] = {
 },
 
 
@@ -1735,10 +1779,28 @@ Mechanics:
 
             ---- Aetherian Archive (TRIAL) ----
     ["aetherianarchivebottom_base"] = {
-        ["storm_atronach"] = {[[Lightning Storm Atronach]], [[]]},
-        ["stone_atronach"] = {[[Foundation Stone Atronach]], [[]]},
-        ["varlariel"] = {[[Varlariel]], [[]]},
-        ["mage"] = {[[The Mage]], [[]]},
+        ["storm_atronach"] = {[[Lightning Storm Atronach]], [[Mechanics:
+- Lightning strike: when the boss raises his hands and sky darkens, a yellow circle will appear on the ground. All players must stand in the circle ASAP or die from lightning strikes.
+- Everyone: stay near the centre of the area so you can get to the yellow circle quickly, wherever it spawns.
+- After the boss is defeated, you will see 12 platforms (3 groups of 4). Players must divide into 3 groups and stand on the platforms. The groups will be teleported to the next area. Each group will have to fight some mobs before the 3 groups can reunite.
+]]},
+        ["stone_atronach"] = {[[Foundation Stone Atronach]], [[Mechanics:
+- When the boss pounds the ground for 6 seconds, the damage cannot be avoided so must be healed through (players should group together so that healing AoEs can overlap.)
+- When the boss kneels, spread out, as he is about to throw boulders at random players. If the boulder damage stacks then players will die.
+- Chainspinner adds will place ground AoEs which must be avoided.
+- After the boss is defeated, you will again need to split into 3 groups and stand on platforms. The groups will again have to fight mobs separately before they can reunite.]]},
+        ["varlariel"] = {[[Varlariel]], [[Mechanics:
+- The boss will split into multiple clones - initially 3, then increasing each time up to a maximum of 6.
+- 20 seconds after the clones spawn, if any are still alive, the boss will explode, likely wiping the group.
+]]},
+        ["mage"] = {[[The Celestial Mage]], [[Mechanics:
+- You will initially face some trash mobs. The boss spawns immediately once these are defeated.
+- Keep spread out to avoid stacking damage from the boss' lightning attack.
+- The boss drops mines around the area. Run through them with a shield active to remove them.
+- Conjured axes must be taunted at all times.
+- Below 50% health, the Conjured Reflection add will spawn. This add steals life from random players using an AoE. Kill it ASAP.
+- At 15% health, the boss will do 4 knockdowns which will kill any remaining adds or axes. After this the boss will spam an AoE attack which gets stronger the longer the boss remains alive (DPS check).
+]]},
     },
     ["aetherianarchiveend_base"] = {
     },
@@ -2363,6 +2425,17 @@ Mechanics:
 },  -- end High Isle
 
 
+	        -- start Telvanni Peninsula
+			-- TODO need correct zone/map names
+["telvannipeninsula"] = {	
+                ---- TODO Sanity's Edge (TRIAL) ----
+["sanitysedgemap1"] = {
+    ["descender"] = {[[Spiral Descender]], [[]]},
+    ["yaselya"] = {[[Exarchanic Yaselya]], [[]]},
+    ["twelvane"] = {[[Archwizard Twelvane and the Chimera]], [[]]},
+    ["ansuul"] = {[[Ansuul the Tormentor]], [[]]},
+},					
+},  -- end Telvanni Peninsula
 
 } 	-- End Normal/DLC Dungons
 
@@ -2378,6 +2451,30 @@ local DHLocalizedHintData = {
             ["laser_puzzle"] = {[[Laser Puzzle]], [[Solve to get the |c00FF00Ancestral Resolve|r group buff for the rest of the dungeon. This buff increases maximum health and reduces damage taken.]]},
         },
     },
+	["therift"] = {
+		---- Scrivener's Hall (DLC) ----
+		["u37_scrivenershall_boss3_map"] = {
+            ["scamp1"] = {[[Cartoklept Scamp]], [[- Found in one of the green caves after the first boss.
+- Drops one of the 2 keys needed to unlock the vault at the start of the dungeon.]]},
+            ["scamp2"] = {[[Cartoklept Scamp]], [[- Found in the webbed area after the second boss.
+- Drops one of the 2 keys needed to unlock the vault at the start of the dungeon.]]},
+		["u37_scrivenershall_sect1_map"] = {
+		},
+		["u37_scrivenershall_sect2a_map"] = {
+		},
+		["u37_scrivenershall_sect2b_map"] = {
+		},
+		["u37_scrivenershall_sect3a_map"] = {
+		},
+		["u37_scrivenershall_sect3b_map"] = {
+		},
+		["u37_scrivenershall_boss3int_ma"] = {
+		},
+		["u37_scrivenershall_sect1floor2"] = {
+		},
+		["u37_scrivenershall_sect1baseme"] = {
+		},
+	},
 }   -- end hints
 
 
