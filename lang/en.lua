@@ -2423,11 +2423,44 @@ Mechanics:
 
         ---- Dreadsail Reef (TRIAL) ----
 ["dsr_b2_map"] = {
-    ["lylanar_turlassil"] = {[[Lylannar and Turlassil]], [[]]},
-    ["reef_guardian"] = {[[Reef Guardian]], [[]]},
-    ["bow_breaker"] = {[[Bow Breaker]], [[]]},
-    ["sail_ripper"] = {[[Sail Ripper]], [[]]},
-    ["taleria"] = {[[Tideborn Taleria]], [[]]},
+    ["lylanar_turlassil"] = {[[Lylannar and Turlassil]], [[Mechanics:
+- The fight starts with 3 flame hounds and 3 frost hounds. The two bosses join the fight later.
+- First one boss will fight, then the other, and finally both bosses at once.
+- There are 2 spheres (ice and fire) in the arena. Interacting with a sphere attaches a dome of that element to the player.
+- While the player carries a dome, they take increasing fire or frost damage.
+- If the 2 domes ever touch, both will explode.
+- Enemies must be inside the dome of the opposite element in order to damage them (otherwise they take 90% reduced damage).
+- The attacking players must ALSO be inside the same dome.
+- At 90% and 80% health, the boss will spawn atronachs of the same element.
+- At about 70% health, each boss will jump to each of 4 edge locations in the arena. In each location the boss will channel to fire projectiles at all players. This can be interrupted if the boss is inside the correct dome.
+- The boss' heavy attacks apply debuffs to the tanks.
+- Each boss sometimes gives the tank a 20 second Ice or Fire Fragility debuff. During this time any damage of that element will be greatly amplified and will likely one-shot the tank. Therefore another tank needs to take aggro until the debuff wears off.
+- When both bosses are present, 2 players will sometimes receive a firebrand and frostbrand. These 2 players must stack together before the brands detonate, otherwise both will die.
+- Once one boss dies, you have 15s to kill the other boss, or it will jump and wipe the group. Therefore, try to damage each boss evenly so they can be killed in quick succession.
+]]},
+    ["reef_guardian"] = {[[Reef Guardian]], [[Mechanics:
+- The arena consists of roofed safe areas where plants grow.
+- While players stay in a safe area, plants will spawn there. Once there are 6 plants, the centre plant starts spitting projectiles that deal oblivion damage (bypasses shields).
+- At 80% and 50% health, the boss creates smaller clones of itself.
+- These clones create even smaller clones at 50% health.
+- A boss will sometimes jump down a hole into the lower level, and start casting Heartburn for 60s on a Reef Heart. If the heart is not destroyed in time, the boss will enrage, and will wipe the group unless killed in 10 seconds. Therefore players must pursue the boss to the lower level.
+- To pursue the boss, enter the water in the middle of the arena. You will land in a whirlpool with 3 entrances. Each entrance leads to a different pair of reef hearts (cross/skull, anchor/wheel, chalice/crown).
+- After destroying a reef heart, you will have a parasite debuff for 40s that prevents you destroying another one.]]},
+    ["bow_breaker"] = {[[Bow Breaker
+(mini boss)]], [[Mechanics:
+- Plants will spit projectiles that deal stacking oblivion damage (Volatile Residue). The stacks will expire if you can avoid being hit by a projectile for a few seconds.]]},
+    ["sail_ripper"] = {[[Sail Ripper
+(mini boss)]], [[Mechanics:
+- Stay under the shelters to avoid gaining stacks of lightning damage.
+- Interrupt the boss when it channels its lightning attack.
+- One player will have a lightning AoE attach to them. The player must deposit it on a hollow circular area to get rid of it.]]},
+    ["taleria"] = {[[Tideborn Taleria]], [[Mechanics:
+- Portals open at 50%, 35% and 20% health.
+- When a portal opens, players must damage the channeler mage within to < 50% health, or the group will wipe.
+- When the boss places a Rapid Deluge bomb on players, the players should SWIM in water to get rid of it. They will take slaughterfish damage while in water.
+- Every 60s, a sea behemoth add spawns.
+- Every 30s, the boss spins for 6s, damaging all players. This cannot be blocked and must be out-healed.
+- When a moving wall of tornadoes appears, this must not be touched (one-shot).]]},
 },
 ["dsr_b2under_map"] = {
 },
@@ -2480,6 +2513,7 @@ local DHLocalizedHintData = {
 - Drops one of the 2 keys needed to unlock the vault at the start of the dungeon.]]},
             ["scamp2"] = {[[Cartoklept Scamp]], [[- Found in the webbed area after the second boss.
 - Drops one of the 2 keys needed to unlock the vault at the start of the dungeon.]]},
+        },
 		["u37_scrivenershall_sect1_map"] = {
 		},
 		["u37_scrivenershall_sect2a_map"] = {

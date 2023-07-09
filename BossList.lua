@@ -1159,7 +1159,7 @@ local DHData = {
 			{0.5, 0.6, DH_GetLocalizedData("systres", "dsr_b2_map", "reef_guardian")}, -- Reef Guardian
 			{0.5, 0.7, DH_GetLocalizedData("systres", "dsr_b2_map", "bow_breaker")}, -- Bow Breaker
 			{0.5, 0.8, DH_GetLocalizedData("systres", "dsr_b2_map", "sail_ripper")}, -- Sail Ripper
-			{0.5, 0.9, DH_GetLocalizedData("systres", "dsr_b2_map", "taleria")}, -- Tideborn Taleria
+			{0.5, 0.9, DH_GetLocalizedData("systres", "dsr_b2_map", "taleria"), "FINAL"}, -- Tideborn Taleria
         },
         ["dsr_b2under_map"] = {
         },
@@ -1187,8 +1187,9 @@ local DHData = {
 			{0.5, 0.6, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "yaselya")},	-- Exarchanic Yaselya
 			{0.5, 0.7, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "twelvane")},	-- Archwizard Twelvane and the Chimera
 			{0.5, 0.8, DH_GetLocalizedData("telvannipeninsula", "sanitysedgemap1", "ansuul"), "FINAL"},	-- Ansuul the Tormentor
+        },
 	},
-} 	-- End Normal/DLC Dungons
+} 	-- End Normal/DLC Dungeons
 
 	
 ------------------------------------------------------------------------------------
@@ -1208,6 +1209,7 @@ local DHHintData = {
 		["u37_scrivenershall_boss3_map"] = {
 			{0.7, 0.5, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp1")},  -- Cartoklept Scamp
 			{0.7, 0.6, DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp2")},  -- Cartoklept Scamp
+        },
 		["u37_scrivenershall_sect1_map"] = {
 		},
 		["u37_scrivenershall_sect2a_map"] = {
