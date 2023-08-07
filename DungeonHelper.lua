@@ -126,13 +126,14 @@ local function MapCallback_bosses_subtype(boss_type)
         local mapTexture = GetMapTileTexture():lower()
         mapTexture = mapTexture:gsub("ui_map_", "")
         zone, subzone = select(3, mapTexture:find("maps/([%w%-]+)/([%w%-]+_[%w%-]+)"))
-        d("After removing ui_map, mapTexture = <"..mapTexture.."> zone = <"..zone.."> subzone = <"..subzone..">")
+        d("After removing ui_map, mapTexture = <"..mapTexture..">")
     end
+    d("zone = <"..zone.."> subzone = <"..subzone..">")
 
     local pins = DH_GetLocalData(zone, subzone, BOSSES) -- returns table with entries {X, Y, {TITLE, DESCRIPTION} [, flagstring]}
 
     if pins ~= nil then
-        d("creating bosses of type "..boss_type.." for zone = <" .. zone .. ">, subzone: <"..subzone..">")
+        --d("creating bosses of type "..boss_type.." for zone = <" .. zone .. ">, subzone: <"..subzone..">")
         for _, pinData in ipairs(pins) do
             -- pinData = {X, Y, DESCR, FLAGSTRING}
             local main_type = BOSSES
@@ -141,8 +142,8 @@ local function MapCallback_bosses_subtype(boss_type)
             local boss_name = pinData[3][1]
             local wrong_dungeon_version = false
 
-            d("L4bosstype: "..tostring(boss_type).." dungeonVersion: "..tostring(dungeonVersion)..", boss_id = <"..tostring(boss_id)..">")
-            d("pinData: 1="..tostring(pinData[1]).." 2="..tostring(pinData[2]).." 3.1="..tostring(pinData[3][1]).." 3.2="..tostring(pinData[3][2]).." 3.3="..tostring(pinData[3][3]).." 4="..tostring(pinData[4]))
+            --d("L4bosstype: "..tostring(boss_type).." dungeonVersion: "..tostring(dungeonVersion)..", boss_id = <"..tostring(boss_id)..">")
+            --d("pinData: 1="..tostring(pinData[1]).." 2="..tostring(pinData[2]).." 3.1="..tostring(pinData[3][1]).." 3.2="..tostring(pinData[3][2]).." 3.3="..tostring(pinData[3][3]).." 4="..tostring(pinData[4]))
             if string.sub(boss_id,1,3) == "II_" and dungeonVersion ~= "II" then
                 wrong_dungeon_version = true
             elseif string.sub(boss_id,1,2) == "I_" and dungeonVersion ~= "I" then
@@ -150,7 +151,7 @@ local function MapCallback_bosses_subtype(boss_type)
             end
 
             if wrong_dungeon_version then
-                d("_bosses: "..tostring(boss_type)..": skipping "..tostring(boss_id).." because wrong dungeon version ("..tostring(dungeonVersion)..")")
+                --d("_bosses: "..tostring(boss_type)..": skipping "..tostring(boss_id).." because wrong dungeon version ("..tostring(dungeonVersion)..")")
             else
                 if type(flags) == "string" then
                     -- compute "most important" boss type, if it has several flags
@@ -160,10 +161,10 @@ local function MapCallback_bosses_subtype(boss_type)
                     if string.find(flags, "FINAL") then main_type = BOSSES_FINAL end
                 end
                 if boss_type == main_type then
-                    d("_bosses: "..boss_type..": creating pin for "..boss_id)
+                    --d("_bosses: "..boss_type..": creating pin for "..boss_id)
                     LMP:CreatePin(boss_type, pinData, pinData[1], pinData[2])
                 else
-                    d("_bosses: "..boss_type..": skipping "..boss_id)
+                    --d("_bosses: "..boss_type..": skipping "..boss_id)
                 end
             end
         end

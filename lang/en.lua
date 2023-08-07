@@ -85,13 +85,13 @@ Mechanics:
 },  -- end Fungal Grotto I & II
         ---- Bal Sunnar (DLC) ----
     ["balsunn_presenttown01"] = {       -- first map
-        ["kovan"] = {[[Kovan Giryon]], [[Mechanics:
-- He teleports around, leaving a poison AoE behind, and also summons poison AoEs under players. Keep spread out to avoid stacking AoEs.]]}, 
         ["urvel"] = {[[Urvel Drath]], [[Mechanics:
 - Nothing notable.
 - Defeating him bestows the |c00FF00Ancestral Vitality|r group buff.]]},
     },
-    ["balsunn_b1"] = {
+    ["balsunn_b1_map"] = {
+        ["kovan"] = {[[Kovan Giryon]], [[Mechanics:
+- He teleports around, leaving a poison AoE behind, and also summons poison AoEs under players. Keep spread out to avoid stacking AoEs.]]}, 
     },
     ["balsunn_b2"] = {
     },
@@ -1272,15 +1272,11 @@ Mechanics:
 - Undead wolf adds will spawn throughout the fight.
 - When you "kill" the boss he transforms into a werewolf!
 - In wolf form he will periodically charge in a random direction, heavily damaging all players in his path and spawning undead adds.]]},
+        ["nabor"] = {[[Nabor the Forgotten]], [[Mechanics:
+- When he starts channeling, several platforms are about to explode (including the one you are on). Use the grappling hook to move to a safe platform.
+- At 75% health he will spawn archer adds. Their arrows can knock players off platforms. They must be dealt with, either interrupted or killed.]]},
     },
     ["unhallowedgravemap001b"] = {
-        ["keeper"] = {[[Keeper of the Kiln]], [[Mechanics:
-- At 80/70/60/50/40% health, one of the statues around the room will come to life and join the fight.
-- Be careful not to damage the boss too quickly, otherwise you will face multiple statues at once.
-- The Kiln: At 90/60/30% health, the room sets on fire. Four sigils appear on the floor. ONE of the 4 platforms above the room will have a sigil that must be activated to reveal which of the 4 sigils is "safe".
-- Therefore one or more players must quickly go up to the platforms using the grappling hook, and find and activate the sigil, watching out for archers.
-- When the sigil is activated, the boss must be positioned on the sigil that has a swirling effect. Then the group must break the boss' damage shield.
-- Once the shield is broken, the boss will stab his sword into the ground, and the fire will go out.]]},
         ["aegis"] = {[[Eternal Aegis]], [[Mechanics:
 - At 90/70/50/30% health, he spawns 4 adds who have spin attacks.
 - The boss also has a spin attack. This attack (for both the boss and adds) has a gap in the middle where you will not take damage.]]},
@@ -1300,13 +1296,17 @@ Mechanics:
 - You can grapple THROUGH a goo add to split it in 2!]]},
     },
     ["unhallowedgravemap002"] = {
+        ["keeper"] = {[[Keeper of the Kiln]], [[Mechanics:
+- At 80/70/60/50/40% health, one of the statues around the room will come to life and join the fight.
+- Be careful not to damage the boss too quickly, otherwise you will face multiple statues at once.
+- The Kiln: At 90/60/30% health, the room sets on fire. Four sigils appear on the floor. ONE of the 4 platforms above the room will have a sigil that must be activated to reveal which of the 4 sigils is "safe".
+- Therefore one or more players must quickly go up to the platforms using the grappling hook, and find and activate the sigil, watching out for archers.
+- When the sigil is activated, the boss must be positioned on the sigil that has a swirling effect. Then the group must break the boss' damage shield.
+- Once the shield is broken, the boss will stab his sword into the ground, and the fire will go out.]]},
     },
     ["unhallowedgravemap003"] = {
     },
     ["unhallowedgravemap004"] = {
-        ["nabor"] = {[[Nabor the Forgotten]], [[Mechanics:
-- When he starts channeling, several platforms are about to explode (including the one you are on). Use the grappling hook to move to a safe platform.
-- At 75% health he will spawn archer adds. Their arrows can knock players off platforms. They must be dealt with, either interrupted or killed.]]},
     },
     ["unhallowedgravemap005"] = {
         ["kjalnar"] = {[[Kjalnar Tombskald]], [[|cffcc66Hard Mode:
@@ -1372,14 +1372,6 @@ Mechanics:
 
         ---- Scrivener's Hall (DLC) ----
         ["u37_scrivenershall_boss3_map"] = {
-            ["naqri"] = {[[Ritemaster Naqri]], [[Mechanics:
-- At 80/55/35% health, the boss summons a large floating book. The colour of the rune above the book tells you which attack the book will direct at players. 
-- Red rune: an add.
-- Green rune: a ground AoE that follows players. Block to mitigate damage.
-- White rune: ghosts who use a charged heavy attack. Can be blocked but not dodged.
-- While these attacks continue, the book shoots bolts at 2 bookcases at the edge of the room. A player must go to these and destroy the 2 hidden tomes to end the attacks.
-- Tank: stand in the small green ground AoE when it appears. Otherwise it will explode and deal heavy damage to the group.
-- In hard mode, 2 of these AoEs will spawn at a time.]]},
             ["ozezan"] = {[[Ozezan The Inferno]], [[Mechanics:
 - The boss sometimes burrows into the ground, reappearing somewhere else and leaving behind a permanent lava pool. As the fight progresses, more and more of the arena will become unusable.
 - Tank: try to lead the boss back to previous lava pools.
@@ -1396,6 +1388,14 @@ Mechanics:
 - LArge glowing meteors sometimes land on the floor. Kill them before they explode.]]},
 },
         ["u37_scrivenershall_sect1_map"] = {
+            ["naqri"] = {[[Ritemaster Naqri]], [[Mechanics:
+- At 80/55/35% health, the boss summons a large floating book. The colour of the rune above the book tells you which attack the book will direct at players. 
+- Red rune: an add.
+- Green rune: a ground AoE that follows players. Block to mitigate damage.
+- White rune: ghosts who use a charged heavy attack. Can be blocked but not dodged.
+- While these attacks continue, the book shoots bolts at 2 bookcases at the edge of the room. A player must go to these and destroy the 2 hidden tomes to end the attacks.
+- Tank: stand in the small green ground AoE when it appears. Otherwise it will explode and deal heavy damage to the group.
+- In hard mode, 2 of these AoEs will spawn at a time.]]},
 },
         ["u37_scrivenershall_sect2a_map"] = {
 },
@@ -1464,13 +1464,13 @@ Mechanics:
 - At 20% health, archer adds appear.
 - Healer/DPS: the boss will sometimes pin the tank and spend 2-3 channeling a heavy attack. This must be interrupted or the tank will be one-shot.
 ]]},
+    },
+    ["mhkmoonhunterkeep2_base"] = {
         ["guardian"] = {[[Hedge Maze Guardian]], [[Mechanics:
 - Strangler adds around the edges of the room: these pin players and drain their health until death. The DPSs should stick together so they can interrupt stranglers when this happens.
 - Spriggans heal the boss, so must be killed in order to defeat the boss. There are stranglers near each spriggan, so do not approach them alone.
 - When the boss roots all players to the ground, break free or dodge roll.
 ]]},
-    },
-    ["mhkmoonhunterkeep2_base"] = {
         ["mylenne"] = {[[Mylenne Moon-Caller]], [[Mechanics:
 - When the boss pounces on a random player, interrupt or the player will be one-shot.
 - At 80/60/40/20% health, 3 wolves and 2 wardens will spawn. Prioritize them over the boss.
@@ -1523,6 +1523,8 @@ Mechanics:
 - Everyone will now receive the colour of the boss they are nearest. Tanks should now taunt the opposite-colour boss.
 - Try to get both bosses to low health, then kill them quickly. When one boss dies, you only have 20 seconds before the other boss explodes and wipes the group!
 ]]},
+    },
+    ["mawlorkajhall_base"] = {
         ["rakkhat"] = {[[Rakkhat]], [[Mechanics:
 - There are 8 pads around the room. Each DPS should be assigned a different pad.
 - Only the tank is allowed on gold pads. No-one should touch blue (curse) pads.
@@ -1532,8 +1534,6 @@ Mechanics:
 - Hulk adds: if they hit a tank 3x in a row the tank will die, hence the two tanks must pass the hulk between them via taunts to avoid this.
 - A lot more: Bombs, tethers, assassins, runners, lunar phase, execute phase...
 ]]},
-    },
-    ["mawlorkajhall_base"] = {
     },
     ["mawlorkajsevenriddles_base"] = {
     },
@@ -1692,19 +1692,6 @@ Mechanics:
 	["craglorn"] = {
         ---- Falkreath Hold ----
     ["falkreathsdemise_b_base"] = {
-        ["morrigh"] = {[[Morrigh Bullblood]], [[Mechanics:
-- At 50% health, the boss creates a shield and the room is bombarded with AoEs. All players should get inside the shield and continue attacking the boss.]]},
-        ["mammoth"] = {[[Siege Mammoth]], [[Mechanics:
-- Tank: keep the boss facing towards the gate, to minimize the distance he travels with his charge.
-- Invulnerable adds will cast flame ground AoEs throughout the fight.
-- At around 50% health the boss will rear up for a big stomp. All players must block or be one-shot!]]},
-        ["cernunnon"] = {[[Cernunnon]], [[Mechanics:
-- Three mini-bosses (melee, magic, archer) must be defeated before the main boss will appear.
-- When each miniboss is defeated it sits down and a green circle appears. A player must pick up the circle and deposit it in one of the 3 lights. Once all lights are extinguished, the main boss appears.
-- At 50% health the main boss disappears, the 3 minibosses reappear, and you must defeat them again.
-- The boss will raise his hands and cause an AoE (ice comet) to attach to each player. Spread out and hold block until the comet hits.
-- Unkillable ghosts will spawn during the fight. They cause Fear if touched.
-]]},
         ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[Mechanics:
 - When each add is killed, its corpse will produce a beam of light. A player must cleanse as many corpses as possible, using a synergy collected from the urns at the back of the room.
 - Once enough adds have spawned, the boss will channel and each player will get an AoE under their feet. Spread out. If more than 1-2 uncleansed corpses are present, the group is likely to wipe.]]},
@@ -1718,6 +1705,19 @@ Mechanics:
     ["falkreathsdemise_i_base"] = {
     },
     ["falkreathsdemise_base"] = {
+        ["morrigh"] = {[[Morrigh Bullblood]], [[Mechanics:
+- At 50% health, the boss creates a shield and the room is bombarded with AoEs. All players should get inside the shield and continue attacking the boss.]]},
+        ["mammoth"] = {[[Siege Mammoth]], [[Mechanics:
+- Tank: keep the boss facing towards the gate, to minimize the distance he travels with his charge.
+- Invulnerable adds will cast flame ground AoEs throughout the fight.
+- At around 50% health the boss will rear up for a big stomp. All players must block or be one-shot!]]},
+        ["cernunnon"] = {[[Cernunnon]], [[Mechanics:
+- Three mini-bosses (melee, magic, archer) must be defeated before the main boss will appear.
+- When each miniboss is defeated it sits down and a green circle appears. A player must pick up the circle and deposit it in one of the 3 lights. Once all lights are extinguished, the main boss appears.
+- At 50% health the main boss disappears, the 3 minibosses reappear, and you must defeat them again.
+- The boss will raise his hands and cause an AoE (ice comet) to attach to each player. Spread out and hold block until the comet hits.
+- Unkillable ghosts will spawn during the fight. They cause Fear if touched.
+]]},
     },
 
 
@@ -1729,6 +1729,8 @@ Mechanics:
 - At 75/50/25% health, the boss goes immune and starts casting a force field. Move away to avoid knockdown.
 - Once the force field is up (trees), adds will spawn. The bear is highest priority as it can one-shot non-tanks.
 - During this phase the boss cannot be taunted! Once her taunt expires she will target a random player with fast-moving cold AoEs.]]},
+    },
+    ["bloodrootint1_base"] = {
         ["stoneheart"] = {[[Stoneheart]], [[Mechanics:
 - The boss sometimes fires red projectiles at one of the stone atronachs, then teleports away. The atronach must be killed quickly or it will enrage and start putting damaging AoEs at each player's feet.
 - At less than 25% health, the boss starts entangling players in vines. Dodge to break free before the vines explode.]]},
@@ -1747,8 +1749,6 @@ Mechanics:
 - The boss will sometimes become invulnerable and create a rain of stones.
 - At 80% health the boss splits in two. At 50% health, a third boss appears. The three bosses have all the same mechanics as the original boss.]]},
     },
-    ["bloodrootint1_base"] = {
-    },
     ["bloodrootint2_base"] = {
     },
 
@@ -1764,6 +1764,10 @@ Mechanics:
 - Everyone: interrupts are essential for this fight. Whenever an enemy starts channeling the "flame staff" ability, interrupt ASAP or the group will wipe.
 - All of the enemies in the fight can channel this ability.
 - Keep spread out, as the boss will sometimes target random players with meteors. When this happens, BLOCK, do not dodge.]]},
+    },
+    ["helracitadelentry_base"] = {
+    },
+    ["helracitadelhallofwarrior_base"] = {
         ["warrior"] = {[[The Warrior]], [[Mechanics:
 - When the boss creates a "strip" AoE, he is about to throw his shield like a boomerang. All players in the AoE should move out.
 - The boss will turn a random player to stone. If the player synergizes, they break out but create an explosion that kills all nearby players. Alternatively, the boss' thrown shield will free any player it hits.
@@ -1772,13 +1776,13 @@ Mechanics:
 - At 85% and 70% health, the boss will move to each of the circles and destroy them.
 - At 35% health, the boss raises his sword in the air, killing all adds. From this point on, keep spread out, to avoid stacking when he hits players with magic damage.]]},
     },
-    ["helracitadelentry_base"] = {
-    },
-    ["helracitadelhallofwarrior_base"] = {
-    },
 
             ---- Aetherian Archive (TRIAL) ----
     ["aetherianarchivebottom_base"] = {
+    },
+    ["aetherianarchiveend_base"] = {
+    },
+    ["aetherianarchiveislanda_base"] = {
         ["storm_atronach"] = {[[Lightning Storm Atronach]], [[Mechanics:
 - Lightning strike: when the boss raises his hands and sky darkens, a yellow circle will appear on the ground. All players must stand in the circle ASAP or die from lightning strikes.
 - Everyone: stay near the centre of the area so you can get to the yellow circle quickly, wherever it spawns.
@@ -1789,10 +1793,14 @@ Mechanics:
 - When the boss kneels, spread out, as he is about to throw boulders at random players. If the boulder damage stacks then players will die.
 - Chainspinner adds will place ground AoEs which must be avoided.
 - After the boss is defeated, you will again need to split into 3 groups and stand on platforms. The groups will again have to fight mobs separately before they can reunite.]]},
+    },
+    ["aetherianarchiveislandb_base"] = {
         ["varlariel"] = {[[Varlariel]], [[Mechanics:
 - The boss will split into multiple clones - initially 3, then increasing each time up to a maximum of 6.
 - 20 seconds after the clones spawn, if any are still alive, the boss will explode, likely wiping the group.
 ]]},
+    },
+    ["aetherianarchiveislandc_base"] = {
         ["mage"] = {[[The Celestial Mage]], [[Mechanics:
 - You will initially face some trash mobs. The boss spawns immediately once these are defeated.
 - Keep spread out to avoid stacking damage from the boss' lightning attack.
@@ -1801,14 +1809,6 @@ Mechanics:
 - Below 50% health, the Conjured Reflection add will spawn. This add steals life from random players using an AoE. Kill it ASAP.
 - At 15% health, the boss will do 4 knockdowns which will kill any remaining adds or axes. After this the boss will spam an AoE attack which gets stronger the longer the boss remains alive (DPS check).
 ]]},
-    },
-    ["aetherianarchiveend_base"] = {
-    },
-    ["aetherianarchiveislanda_base"] = {
-    },
-    ["aetherianarchiveislandb_base"] = {
-    },
-    ["aetherianarchiveislandc_base"] = {
     },
     ["aetherianarchivemiddle_base"] = {
     },
@@ -1827,6 +1827,8 @@ Mechanics:
         ["stonebreaker"] = {[[Stonebreaker]], [[Mechanics:
 - The boss throws a ball of poison at random players. This can be dodged, otherwise the player will receive a poison DOT which will spread to any players they touch!
 - At 75/50/25% health, the boss will spawn Overcharger adds.]]},
+},
+    ["trl_so_map02_base"] = {
         ["ozara"] = {[[Ozara]], [[Mechanics:
 - Pin: the boss casts a spell and pins group members. They must be freed by other players via a synergy.
 - All the adds in the fight will respawn if killed.
@@ -1841,8 +1843,6 @@ Mechanics:
 - Blue totems place a magicka bomb on a random player (blue glow). To survive the player must try to quickly empty their magicka bar to 0.
 - When the boss fires pink shards - each player should move to a different shard (there is 1 each), where they will get a protective bubble.
 - After firing the shards, the boss causes an explosion. Any players who do not have a bubble will die.]]},
-},
-    ["trl_so_map02_base"] = {
     },
     ["trl_so_map03_base"] = {
     },
@@ -1892,12 +1892,12 @@ Mechanics:
         ---- Depths of Malatar (DLC) ----
 ["domdepthsofmal_base"] = {
     ["maw"] = {[[The Scavenging Maw]], [[]]},
+},
+["domdepthsofmal2_base"] = {
     ["weeping"] = {[[The Weeping Woman]], [[]]},
     ["dark_orb"] = {[[The Dark Orb]], [[]]},
     ["narilmor"] = {[[King Narilmor]], [[]]},
     ["blades"] = {[[Symphony of Blades]], [[]]},
-},
-["domdepthsofmal2_base"] = {
 },
 ["domdepthsofmal3_base"] = {
 },
@@ -1907,16 +1907,16 @@ Mechanics:
 },
 
         ---- Black Drake Villa (DLC) ----
-["bdvilla_boss3map"] = {
-    ["zeal"] = {[[Avatar of Zeal]], [[]]},
+["bdvillamap1ext1"] = {     -- only the first map lacks an underscore
     ["kinras"] = {[[Kinras Ironeye]], [[]]},
+},
+["bdvilla_map2ext2"] = {
+    ["zeal"] = {[[Avatar of Zeal]], [[]]},
     ["vigor"] = {[[Avatar of Vigor]], [[]]},
     ["fortitude"] = {[[Avatar of Fortitude]], [[]]},
     ["geminus"] = {[[Captain Geminus]], [[]]},
     ["encratis"] = {[[Pyroturge Encratis]], [[]]},
     ["aksalaz"] = {[[Sentinel Aksalaz]], [[]]},
-},
-["bdvilla_map2ext2"] = {
 },
 ["bdvilla_map3ext1"] = {
 },
@@ -1935,9 +1935,6 @@ Mechanics:
 ["elsweyr"] = {							
         ---- Sunspire (TRIAL) ----
 ["sunspirehall001_base"] = {
-    ["lokkestiiz"] = {[[Lokkestiiz]], [[]]},
-    ["yolnahkriin"] = {[[Yolnahkriin]], [[]]},
-    ["nahviintaas"] = {[[Nahviintaas]], [[]]},
 },
 ["sunspirehall002_base"] = {
 },
@@ -1946,6 +1943,9 @@ Mechanics:
 ["sunspirehall004_base"] = {
 },
 ["sunspireoverworld_base"] = {
+    ["lokkestiiz"] = {[[Lokkestiiz]], [[]]},
+    ["yolnahkriin"] = {[[Yolnahkriin]], [[]]},
+    ["nahviintaas"] = {[[Nahviintaas]], [[]]},
 },
 ["sunspireroom001_base"] = {
 },
@@ -1959,8 +1959,14 @@ Mechanics:
         ---- Moongrave Fane (DLC) (actually located in Northern zone) ----
 ["moongravesection1_base"] = {
     ["ruins"] = {[[The Risen Ruins]], [[]]},
+},
+["moongravesection2_base"] = {
     ["drozakar"] = {[[Dro'zakar]], [[]]},
+},
+["moongravesection3_base"] = {
     ["kujo"] = {[[Kujo Kethba]], [[]]},
+},
+["moongravesection4_base"] = {
     ["nisaazda"] = {[[Nisaazda]], [[]]},
     ["grundwulf"] = {[[Grundwulf]], [[]]},
 },
@@ -2057,11 +2063,11 @@ Phase 3 (final):
 ["hofabriccaves_base"] = {
     ["fabricants"] = {[[Hunter-Killer Fabricants]], [[]]},
     ["factotum"] = {[[The Pinnacle Factotum]], [[]]},
+},
+["hofabrichall1_base"] = {
     ["archcustodian"] = {[[The Archcustodian]], [[]]},
     ["committee"] = {[[The Refabrication Committee]], [[]]},
     ["assembly"] = {[[The Assembly General]], [[]]},
-},
-["hofabrichall1_base"] = {
 },
 ["hofabricloop_base"] = {
 },
@@ -2078,11 +2084,11 @@ Phase 3 (final):
 ["clockwork"] = {							
         ---- Asylum Sanctorium (TRIAL) ----
 ["asylumsanctorum001_base"] = {
+},
+["asylumsanctorum002_base"] = {
     ["llothis"] = {[[Saint Llothis the Pious]], [[]]},
     ["felms"] = {[[Saint Felms the Bold]], [[]]},
     ["olms"] = {[[Saint Olms the Just]], [[]]},
-},
-["asylumsanctorum002_base"] = {
 },
 },  -- end Clockwork City
 
@@ -2117,8 +2123,8 @@ Phase 3 (final):
     ["talfyg"] = {[[Talfyg]], [[]]},
 },
 
-        ---- Stone Garden (DLC) ----
-["stonegarden01"] = {
+        ---- Stone Garden (DLC) (Greymoor Caverns) ----
+["stonegarden01_base"] = {
     ["kraglen"] = {[[Exarch Kraglen]], [[]]},
 },
 ["stonegarden02"] = {
@@ -2133,15 +2139,15 @@ Phase 3 (final):
 },
         ---- Kyne's Aegis (TRIAL) ----
 ["kynesaegisboss3floor001"] = {
-    ["yandir"] = {[[Yandir the Butcher]], [[]]},
-    ["vrol"] = {[[Captain Vrol]], [[]]},
-    ["falgravn"] = {[[Lord Falgravn]], [[]]},
 },
 ["kynesaegisboss3floor002"] = {
 },
 ["kynesaegisboss3floor003"] = {
 },
 ["kynesaegismap001"] = {
+    ["yandir"] = {[[Yandir the Butcher]], [[]]},
+    ["vrol"] = {[[Captain Vrol]], [[]]},
+    ["falgravn"] = {[[Lord Falgravn]], [[]]},
 },
 },  -- end Western Skyrim	
 
@@ -2221,7 +2227,6 @@ Mechanics:
 ---- The Dread Cellar (DLC) ----
 ["tdc_map_boss3rooms_001"] = {
     ["purgator"] = {[[Purgator]], [[]]},
-    ["broodlord"] = {[[Scorion Broodlord]], [[]]},
     ["undertaker"] = {[[Undertaker]], [[]]},
     ["cyronin"] = {[[Cyronin Artellian]], [[]]},
     ["warden"] = {[[Grim Warden]], [[]]},
@@ -2230,6 +2235,7 @@ Mechanics:
 ["tdc_map_inside_001"] = {
 },
 ["tdc_map_outside_001"] = {
+    ["broodlord"] = {[[Scorion Broodlord]], [[]]},
 },
 ["tdc_map_secret_001"] = {
 },
@@ -2517,6 +2523,7 @@ local DHLocalizedHintData = {
 - Drops one of the 2 keys needed to unlock the vault at the start of the dungeon.]]},
         },
 		["u37_scrivenershall_sect1_map"] = {
+            ["vault"] = {[[Vault]], [[- To enter, collect keys from Cartoklept Scamps.]]},
 		},
 		["u37_scrivenershall_sect2a_map"] = {
 		},

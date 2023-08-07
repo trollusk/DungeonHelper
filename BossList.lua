@@ -10,7 +10,7 @@ local DHData = {
     -- Start Stonefalls
     ["stonefalls"] = {
 
-        ---- Fungal Grotto I & II ----
+        -- == Fungal Grotto I & II ==--
         ["fungalgrotto_base"] = { -- Fungal Grotto I
         {0.625000, 0.835000, DH_GetLocalizedData("stonefalls", "fungalgrotto_base", "I_tazkad")}, -- Tazkad the Packmaster
         {0.802000, 0.626000, DH_GetLocalizedData("stonefalls", "fungalgrotto_base", "I_ozazai")}, -- Warchief Ozazai
@@ -29,10 +29,10 @@ local DHData = {
 
         ---- Bal Sunnar (DLC) ----
         ["balsunn_presenttown01"] = { -- first map
-        {0.5, 0.5, DH_GetLocalizedData("stonefalls", "balsunn_presenttown01", "kovan")}, -- Kovan Giryon
         {0.5, 0.6, DH_GetLocalizedData("stonefalls", "balsunn_presenttown01", "urvel"), "SECRET"} -- Urvel Drath
         },
-        ["balsunn_b1"] = {},
+        ["balsunn_b1_map"] = {{0.50, 0.35, DH_GetLocalizedData("stonefalls", "balsunn_b1_map", "kovan")} -- Kovan Giryon
+        },
         ["balsunn_b2"] = {},
         ["balsunn_b2trans"] = {},
         ["balsunn_b3"] = {},
@@ -48,7 +48,7 @@ local DHData = {
     -- Start Glenumbra
     ["glenumbra"] = {
 
-        ---- Spindleclutch I & II ----
+        -- == Spindleclutch I & II ==--
         ["spindleclutch_base"] = { -- Spindleclutch I
         {0.347000, 0.321000, DH_GetLocalizedData("glenumbra", "spindleclutch_base", "I_spindlekin")}, -- Spindlekin
         {0.625000, 0.225000, DH_GetLocalizedData("glenumbra", "spindleclutch_base", "I_swarm_mother")}, -- Swarm Mother
@@ -69,12 +69,13 @@ local DHData = {
         },
 
         ---- Red Petal Bastion (DLC) ----
-        ["rpb_map_ext001"] = {{0.5, 0.5, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "wraith_of_crows"), "SECRET"}, -- Wraith of Crows
-                              {0.5, 0.6, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "rogerain")}, -- Rogerain the Sly
-                              {0.5, 0.7, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "spider_daedra"), "SECRET"}, -- Spider Daedra
-                              {0.5, 0.8, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "artifact_bearers")}, -- Eliam Merick, Ihudir, and Liramindrel
-                              {0.5, 0.9, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "twilight"), "SECRET"}, -- Grievous Twilight
-                              {0.4, 0.5, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "thierric"), "FINAL"} -- Prior Thierric Sarazen
+        ["rpb_map_ext001"] = { -- first map
+        {0.5, 0.5, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "wraith_of_crows"), "SECRET"}, -- Wraith of Crows
+        {0.19, 0.44, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "rogerain")}, -- Rogerain the Sly
+        {0.5, 0.7, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "spider_daedra"), "SECRET"}, -- Spider Daedra
+        {0.5, 0.8, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "artifact_bearers")}, -- Eliam Merick, Ihudir, and Liramindrel
+        {0.5, 0.9, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "twilight"), "SECRET"}, -- Grievous Twilight
+        {0.4, 0.5, DH_GetLocalizedData("glenumbra", "rpb_map_ext001", "thierric"), "FINAL"} -- Prior Thierric Sarazen
         },
         ["rpb_map_int001"] = {},
         ["rpb_map_int002"] = {},
@@ -86,7 +87,7 @@ local DHData = {
     -- Start Auridon
     ["auridon"] = {
 
-        ---- Banished Cells I & II ----
+        -- == Banished Cells I & II ==--
         ["thebanishedcells_base"] = { -- Banished Cells I
         {0.825000, 0.752000, DH_GetLocalizedData("auridon", "thebanishedcells_base", "I_haunter")}, -- Cell Haunter
         {0.633000, 0.508000, DH_GetLocalizedData("auridon", "thebanishedcells_base", "I_shadowrend")}, -- Shadowrend
@@ -108,7 +109,7 @@ local DHData = {
     -- Start Deshaan
     ["deshaan"] = {
 
-        ---- Darkshade Caverns I & II ----
+        -- == Darkshade Caverns I & II ==--
         ["darkshadecaverns_base"] = { -- Darkshade Caverns I
         {0.529629, 0.159259, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "I_neloren")}, -- Head Shepherd Neloren
         {0.715000, 0.277000, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "I_llothan")}, -- Foreman Llothan
@@ -126,16 +127,17 @@ local DHData = {
         {0.184000, 0.537000, DH_GetLocalizedData("deshaan", "darkshadecaverns_base", "II_guardian"), "FINAL"} -- Engine Guardian
         },
 
-        ---- The Cauldron (DLC) ----
+        --== The Cauldron (DLC) ==--
         ["cauldronmapboss1"] = {},
         ["cauldronmapboss2"] = {},
         ["cauldronmapboss3"] = {},
         ["cauldronmapboss4"] = {},
-        ["cauldronmapboss5"] = {{0.1, 0.5, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "oxblood")}, -- Oxblood the Depraved
-                                {0.1, 0.6, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "viccia")}, -- Taskmaster Viccia
-                                {0.1, 0.7, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "molten_guardian")}, -- Molten Guardian
-                                {0.1, 0.8, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "rescue")}, -- Rescue Lyranth!
-                                {0.1, 0.9, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "zaudrus"), "FINAL"} -- Baron Zaudrus
+        ["cauldronmapboss5"] = { -- first map
+        {0.25, 0.63, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "oxblood")}, -- Oxblood the Depraved
+        {0.265, 0.40, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "viccia")}, -- Taskmaster Viccia
+        {0.68, 0.28, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "molten_guardian")}, -- Molten Guardian
+        {0.87, 0.52, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "rescue")}, -- Rescue Lyranth!
+        {0.72, 0.71, DH_GetLocalizedData("deshaan", "cauldronmapboss5", "zaudrus"), "FINAL"} -- Baron Zaudrus
         },
         ["cauldronmaplava"] = {},
         ["cauldronmapslav2"] = {},
@@ -146,7 +148,7 @@ local DHData = {
     -- Start Grahtwood
     ["grahtwood"] = {
 
-        ---- Elden Hollow I & II ----
+        --== Elden Hollow I & II ==--
         ["eldenhollow_base"] = { -- Elden Hollow I
         {0.720000, 0.640000, DH_GetLocalizedData("grahtwood", "eldenhollow_base", "I_akash")}, -- Akash gra-Mal
         {0.727160, 0.767901, DH_GetLocalizedData("grahtwood", "eldenhollow_base", "I_ancient_spriggan")}, -- Ancient Spriggan
@@ -169,17 +171,17 @@ local DHData = {
         },
 
         ---- Lair of Maarselok ----
-        ["maarscave1_base"] = {{0.5, 0.5, DH_GetLocalizedData("grahtwood", "maarscave1_base", "selene"), "PUGKILLER"}, -- Selene's Claws and Selene's Fangs
-                               {0.5, 0.6, DH_GetLocalizedData("grahtwood", "maarscave1_base", "lurcher")}, -- Azureblight Lurcher
-                               {0.5, 0.7, DH_GetLocalizedData("grahtwood", "maarscave1_base", "cancroid"), "PUGKILLER"}, -- Azurblight Cancroid
-                               {0.5, 0.8, DH_GetLocalizedData("grahtwood", "maarscave1_base", "maarselok"), "PUGKILLER"}, -- Maarselok
-                               {0.5, 0.9, DH_GetLocalizedData("grahtwood", "maarscave1_base", "maarselok_final"),
-                                "FINAL PUGKILLER"} -- Maarselok (Final Battle)
+        ["maarscave1_base"] = {  -- second area
+            {0.5, 0.5, DH_GetLocalizedData("grahtwood", "maarscave1_base", "selene"), "PUGKILLER"}, -- Selene's Claws and Selene's Fangs
+            {0.80, 0.23, DH_GetLocalizedData("grahtwood", "maarscave1_base", "lurcher")}, -- Azureblight Lurcher
+            {0.5, 0.7, DH_GetLocalizedData("grahtwood", "maarscave1_base", "cancroid"), "PUGKILLER"}, -- Azurblight Cancroid
+            {0.5, 0.8, DH_GetLocalizedData("grahtwood", "maarscave1_base", "maarselok"), "PUGKILLER"}, -- Maarselok
+            {0.5, 0.9, DH_GetLocalizedData("grahtwood", "maarscave1_base", "maarselok_final"), "FINAL PUGKILLER"} -- Maarselok (Final Battle)
         },
         ["maarsmap04_base"] = {},
         ["maarsmap05_base"] = {},
         ["maarsmap06_base"] = {},
-        ["maarsoutsidemap001_base"] = {},
+        ["maarsoutsidemap001_base"] = {}, -- entrance
         ["maarsoutsidemap003_base"] = {}
 
     }, -- End Grahtwood
@@ -187,7 +189,7 @@ local DHData = {
     -- Start Stormhaven
     ["stormhaven"] = {
 
-        ---- Wayrest Sewers I & II ----
+        --== Wayrest Sewers I & II ==--
         ["wayrestsewers_base"] = { -- Wayrest Sewers I
         {0.408641, 0.708641, DH_GetLocalizedData("stormhaven", "wayrestsewers_base", "I_slimecraw")}, -- Slimecrew
         {0.412000, 0.465000, DH_GetLocalizedData("stormhaven", "wayrestsewers_base", "I_garron")}, -- Investigator Garron
@@ -206,14 +208,14 @@ local DHData = {
         },
 
         ---- Scalecaller Peak (DLC) ----
-        ["scalecaller001_base"] = {{0.5, 0.5,
-                                    DH_GetLocalizedData("stormhaven", "scalecaller001_base", "orzun_rinaerus"),
-                                    "PUGKILLER"}, -- Orzun the Foul-Smelling and Rinaerus the Rancid
-        {0.5, 0.6, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "doyemish"), "PUGKILLER"}, -- Doyemish Ironheart
-                                   {0.5, 0.7, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "aldis"),
-                                    "PUGKILLER"}, -- Matriarch Aldis
-        {0.5, 0.8, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "mortieu")}, -- Plague Concocter Mortieu
-        {0.5, 0.9, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "zaan"), "FINAL PUGKILLER"} -- Zaan the Scalecaller
+        ["scalecaller001_base"] = {     -- first area
+            {0.37, 0.20, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "orzun_rinaerus"),
+                "PUGKILLER"}, -- Orzun the Foul-Smelling and Rinaerus the Rancid
+            {0.68, 0.46, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "doyemish"), "PUGKILLER"}, -- Doyemish Ironheart
+            {0.5, 0.7, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "aldis"),
+                "PUGKILLER"}, -- Matriarch Aldis
+            {0.5, 0.8, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "mortieu")}, -- Plague Concocter Mortieu
+            {0.5, 0.9, DH_GetLocalizedData("stormhaven", "scalecaller001_base", "zaan"), "FINAL PUGKILLER"} -- Zaan the Scalecaller
         },
         ["scalecaller002_base"] = {},
         ["scalecaller003_base"] = {},
@@ -224,7 +226,7 @@ local DHData = {
     -- Start Greenshade
     ["greenshade"] = {
 
-        ---- City of Ash I & II ----
+        --== City of Ash I & II ==--
         ["cityofashmain_base"] = { -- City of Ash I
         {0.456824, 0.194467, DH_GetLocalizedData("greenshade", "cityofashmain_base", "I_guardian")}, -- Infernal Guardian
         {0.231817, 0.662701, DH_GetLocalizedData("greenshade", "cityofashmain_base", "I_golor")}, -- Golor the Banekin Handler
@@ -269,7 +271,7 @@ local DHData = {
     -- Start Rivenspire
     ["rivenspire"] = {
 
-        ---- Crypt of Hearts I & II ----
+        --== Crypt of Hearts I & II ==--
         ["cryptofhearts_base"] = { -- Crypt of Hearts I
         {0.240015, 0.321091, DH_GetLocalizedData("rivenspire", "cryptofhearts_base", "I_mage_master")}, -- The Mage Master
         {0.498728, 0.208132, DH_GetLocalizedData("rivenspire", "cryptofhearts_base", "I_siniel")}, -- Archmaster Siniel
@@ -293,14 +295,14 @@ local DHData = {
                                           "FINAL"} -- Nerien'eth
         },
 
-        ---- Shipwright's Regret (DLC) ----
-        ["lostshipyard_map001"] = {{0.5, 0.5, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "maiden"),
+        --== Shipwright's Regret (DLC) ==--
+        ["lostshipyard_map001"] = {{0.55, 0.26, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "maiden"),
                                     "SECRET"}, -- Lost Maiden
-        {0.5, 0.6, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "bradiggan")}, -- Foreman Bradiggan
-        {0.5, 0.7, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "axeman")}, -- Shrouded Axeman
-        {0.5, 0.8, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "nazaray"), "DPSCHECK"}, -- Nazaray
-        {0.5, 0.9, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "sailor"), "SECRET"}, -- Storm-Cursed Sailor
-        {0.4, 0.5, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "numirril"), "FINAL"} -- Captain Numirril
+        {0.44, 0.33, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "bradiggan")}, -- Foreman Bradiggan
+        {0.29, 0.34, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "axeman")}, -- Shrouded Axeman
+        {0.44, 0.62, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "nazaray"), "DPSCHECK"}, -- Nazaray
+        {0.81, 0.70, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "sailor"), "SECRET"}, -- Storm-Cursed Sailor
+        {0.83, 0.55, DH_GetLocalizedData("rivenspire", "lostshipyard_map001", "numirril"), "FINAL"} -- Captain Numirril
         }
 
     }, -- End Rivenspire
@@ -308,7 +310,7 @@ local DHData = {
     -- Start Shadowfen
     ["shadowfen"] = {
 
-        ---- Arx Corinium ----
+        --== Arx Corinium ==--
         ["arxcorinium_base"] = {{0.507407, 0.556790,
                                  DH_GetLocalizedData("shadowfen", "arxcorinium_base", "fanged_menace")}, -- Fanged Menace
                                 {0.790123, 0.596296, DH_GetLocalizedData("shadowfen", "arxcorinium_base", "ganakton")}, -- Ganakton the Tempest
@@ -319,11 +321,12 @@ local DHData = {
                                  "FINAL"} -- Sellstrix the Lamia Queen
         },
 
-        ---- Ruins of Mazzatun (DLC) ----
-        ["mazzatunext_base"] = {{0.5, 0.5, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "zatzu")}, -- Zatzu
-        {0.5, 0.6, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "chudan")}, -- Mighty Chudan
-        {0.5, 0.7, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "xalnur")}, -- Xal-Nur the Slayer
-        {0.5, 0.8, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "kanesh"), "FINAL PUGKILLER"} -- Tree-Minder Ka-Nesh
+        --== Ruins of Mazzatun (DLC) ==--
+        ["mazzatunext_base"] = {        -- first area
+            {0.17, 0.32, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "zatzu")}, -- Zatzu
+            {0.65, 0.76, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "chudan")}, -- Mighty Chudan
+            {0.42, 0.34, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "xalnur")}, -- Xal-Nur the Slayer
+            {0.50, 0.51, DH_GetLocalizedData("shadowfen", "mazzatunext_base", "kanesh"), "FINAL PUGKILLER"} -- Tree-Minder Ka-Nesh
         },
         ["mazzatunint001_base"] = {},
         ["mazzatunint002_base"] = {},
@@ -355,7 +358,7 @@ local DHData = {
     -- Start Eastmarch
     ["eastmarch"] = {
 
-        ---- Direfrost Keep ----
+        --== Direfrost Keep ==--
         ["direfrostkeep_base"] = {{0.559259, 0.786419,
                                    DH_GetLocalizedData("eastmarch", "direfrostkeep_base", "teethnasher")}, -- Teethnasher the Frostbound
                                   {0.667901, 0.461728,
@@ -374,7 +377,8 @@ local DHData = {
         },
 
         ---- Frostvault ----
-        ["frvfrstvlt01_base"] = {{0.858557, 0.502372, DH_GetLocalizedData("eastmarch", "frvfrstvlt01_base", "troll")} -- Icestalker Troll
+        ["frvfrstvlt01_base"] = {   -- first area
+            {0.858557, 0.502372, DH_GetLocalizedData("eastmarch", "frvfrstvlt01_base", "troll")} -- Icestalker Troll
         },
         ["frvfrstvlt03_base"] = {{0.403077, 0.678187, DH_GetLocalizedData("eastmarch", "frvfrstvlt03_base", "tzogvin"),
                                   "PUGKILLER"}, -- Warlord Tzogvin
@@ -391,7 +395,7 @@ local DHData = {
 
     -- Start Malabal Tor
     ["malabaltor"] = {
-        ---- Tempest Island ----
+        --== Tempest Island ==--
         ["tempestisland_base"] = {{0.391358, 0.429629,
                                    DH_GetLocalizedData("malabaltor", "tempestisland_base", "valaran")}, -- Valaran Stormcaller 2
                                   {0.825925, 0.365432,
@@ -416,7 +420,7 @@ local DHData = {
     -- Start Alik'r
     ["alikr"] = {
 
-        ---- Volenfell (Part 1)----
+        --== Volenfell (Part 1) ==--
         ["volenfell_base"] = {{0.125925, 0.632098, DH_GetLocalizedData("alikr", "volenfell_base", "desert_lion")}, -- Desert Lion
                               {0.270370, 0.497530, DH_GetLocalizedData("alikr", "volenfell_base", "quintus_verres")}, -- Quintus Verres & Monsterous Gargoyle	
                               {0.764197, 0.603703, DH_GetLocalizedData("alikr", "volenfell_base", "tremorscale")} -- Tremorscale
@@ -434,12 +438,12 @@ local DHData = {
     -- Start Bangkorai
     ["bangkorai"] = {
 
-        ---- Volenfell (Part 2) ----
+        --== Volenfell (Part 2) ==--
         ["the_guardians"] = {{0.391358, 0.204938,
                               DH_GetLocalizedData("bangkorai", "the_guardians", "unstable_construct")} -- Unstable Construct
         },
 
-        ---- Blackheart Haven ----
+        --== Blackheart Haven ==--
 
         ["blackhearthavenarea1_base"] = {{0.802469, 0.567901,
                                           DH_GetLocalizedData("bangkorai", "blackhearthavenarea1_base", "ironheel")} -- Iron-Heel	
@@ -461,30 +465,34 @@ local DHData = {
                                           DH_GetLocalizedData("bangkorai", "blackhearthavenarea4_base", "blackheart"),
                                           "FINAL"} -- Captain Blackheart
         },
-        ---- Fang Lair (DLC) ----
-        ["fanglairext_base"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "fanglairext_base", "lizabet")}, -- Lizabet Charnis
-                                {0.5, 0.6, DH_GetLocalizedData("bangkorai", "fanglairext_base", "menagerie"),
+        --== Fang Lair (DLC) ==--
+        ["fanglairext_base"] = {{0.22, 0.52, DH_GetLocalizedData("bangkorai", "fanglairext_base", "lizabet")}, -- Lizabet Charnis
+                                {0.56, 0.185, DH_GetLocalizedData("bangkorai", "fanglairext_base", "menagerie"),
                                  "PUGKILLER"}, -- Cadaverous Menagerie
-        {0.5, 0.7, DH_GetLocalizedData("bangkorai", "fanglairext_base", "caluurion")}, -- Caluurion
-        {0.5, 0.8, DH_GetLocalizedData("bangkorai", "fanglairext_base", "ulfnor_sabina")}, -- Ulfnor and Sabina Cedus
-        {0.5, 0.9, DH_GetLocalizedData("bangkorai", "fanglairext_base", "thurvokun"), "FINAL PUGKILLER"} -- Thurvokun and Orryn the Black
+        {0.69, 0.465, DH_GetLocalizedData("bangkorai", "fanglairext_base", "caluurion")}, -- Caluurion
+        {0.54, 0.46, DH_GetLocalizedData("bangkorai", "fanglairext_base", "ulfnor_sabina")}, -- Ulfnor and Sabina Cedus
+        {0.80, 0.80, DH_GetLocalizedData("bangkorai", "fanglairext_base", "thurvokun"), "FINAL PUGKILLER"} -- Thurvokun and Orryn the Black
         },
         ---- Unhallowed Grave (DLC) ----
-        ["unhallowedgravemap001"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001", "hakgrym")} -- Hakgrym the Howler
+        ["unhallowedgravemap001"] = { -- first area
+            {0.40, 0.28, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001", "hakgrym")}, -- Hakgrym the Howler
+            {0.30, 0.28, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001", "nabor"), "SECRET"} -- Nabor the Forgotten
         },
-        ["unhallowedgravemap001b"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "keeper"),
-                                       "PUGKILLER"}, -- Keeper of the Kiln
-        {0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "aegis")}, -- Eternal Aegis
-        {0.5, 0.7, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "voria"), "SECRET"} -- Voria the Heart-Thief
+        ["unhallowedgravemap001b"] = {  -- second area
+            {0.56, 0.51, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "aegis")}, -- Eternal Aegis
+            {0.60, 0.266, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001b", "voria"), "SECRET"} -- Voria the Heart-Thief
         },
-        ["unhallowedgravemap001c"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "ondagore"),
-                                       "PUGKILLER"}, -- Ondagore the Mad
-        {0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "masterpiece"), "SECRET"} -- Voria's Masterpiece
+        ["unhallowedgravemap001c"] = {
+            {0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "ondagore"),
+                "PUGKILLER"}, -- Ondagore the Mad
+            {0.5, 0.6, DH_GetLocalizedData("bangkorai", "unhallowedgravemap001c", "masterpiece"), "SECRET"} -- Voria's Masterpiece
         },
-        ["unhallowedgravemap002"] = {},
+        ["unhallowedgravemap002"] = {
+            {0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap002", "keeper"),
+                "PUGKILLER"}, -- Keeper of the Kiln
+        },
         ["unhallowedgravemap003"] = {},
-        ["unhallowedgravemap004"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap004", "nabor"),
-                                      "SECRET"} -- Nabor the Forgotten
+        ["unhallowedgravemap004"] = {
         },
         ["unhallowedgravemap005"] = {{0.5, 0.5, DH_GetLocalizedData("bangkorai", "unhallowedgravemap005", "kjalnar"),
                                       "FINAL"} -- Kjalnar Tombskald
@@ -496,7 +504,7 @@ local DHData = {
     -- Start The Rift
     ["therift"] = {
 
-        ---- Blessed Crucible ----
+        --== Blessed Crucible ==--
         ["blessedcrucible1_base"] = {{0.4839506, 0.339506,
                                       DH_GetLocalizedData("therift", "blessedcrucible1_base", "grunt")} -- Grunt the Clever
         },
@@ -522,15 +530,16 @@ local DHData = {
         },
 
         ---- Scrivener's Hall (DLC) ----
-        ["u37_scrivenershall_boss3_map"] = {{0.5, 0.5,
-                                             DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "naqri")}, -- Ritemaster Naqri
-                                            {0.5, 0.6,
-                                             DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "ozezan")}, -- Ozezan the Inferno
-                                            {0.5, 0.7,
-                                             DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "valinna"),
-                                             "FINAL"} -- Valinna
+        ["u37_scrivenershall_boss3_map"] = {
+            {0.5, 0.6,
+                DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "ozezan")}, -- Ozezan the Inferno
+            {0.5, 0.7,
+                DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "valinna"),
+                "FINAL"} -- Valinna
         },
-        ["u37_scrivenershall_sect1_map"] = {},
+        ["u37_scrivenershall_sect1_map"] = {    -- second area (after entrance area, where there are no enemies)
+            {0.87, 0.61, DH_GetLocalizedData("therift", "u37_scrivenershall_sect1_map", "naqri")}, -- Ritemaster Naqri
+        },
         ["u37_scrivenershall_sect2a_map"] = {},
         ["u37_scrivenershall_sect2b_map"] = {},
         ["u37_scrivenershall_sect3a_map"] = {},
@@ -543,39 +552,38 @@ local DHData = {
     -- Start Reaper's March
     ["reapersmarch"] = {
 
-        ---- Selene's Web ----
-        ["selenesweb_base"] = {{0.488888, 0.675308, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "keminn")}, -- Treethane Keminn
-                               {0.266666, 0.345679, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "longclaw")}, -- Longclaw
-                               {0.488888, 0.377777, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "aklayah")}, -- Queen Aklayah
-                               {0.700000, 0.444444, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "foulhide")}, -- Foulhide
-                               {0.490123, 0.404938, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "mennir")}, -- Mennir Many-Legs
-                               {0.234567, 0.125925, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "selene"),
-                                "FINAL"} -- Selene
-        },
+        --== Selene's Web ==--
+        ["selenesweb_base"] = {
+            {0.488888, 0.675308, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "keminn")}, -- Treethane Keminn
+            {0.266666, 0.345679, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "longclaw")}, -- Longclaw
+            {0.488888, 0.377777, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "aklayah")}, -- Queen Aklayah
+            {0.700000, 0.444444, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "foulhide")}, -- Foulhide
+            {0.490123, 0.404938, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "mennir")}, -- Mennir Many-Legs
+            {0.234567, 0.125925, DH_GetLocalizedData("reapersmarch", "selenesweb_base", "selene"),
+            "FINAL"} -- Selene
+},
 
         ---- Moon Hunter Keep (DLC) ----
-        ["mhkmoonhunterkeep_base"] = {{0.5, 0.5,
-                                       DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep_base", "melitus")}, -- Jailer Melitus
-                                      {0.5, 0.6,
-                                       DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep_base", "guardian")} -- Hedge Maze Guardian
+        ["mhkmoonhunterkeep_base"] = { -- first area
+            {0.48, 0.62, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep_base", "melitus")}, -- Jailer Melitus
         },
-        ["mhkmoonhunterkeep2_base"] = {{0.5, 0.5,
-                                        DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "mylenne")}, -- Mylenne Moon-Caller
-                                       {0.5, 0.6,
-                                        DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "ernarde"),
-                                        "PUGKILLER"} -- Archivist Ernarde
+        ["mhkmoonhunterkeep2_base"] = {
+            {0.5, 0.6, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "guardian")}, -- Hedge Maze Guardian
+            {0.5, 0.5, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "mylenne")}, -- Mylenne Moon-Caller
+            {0.5, 0.6, DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep2_base", "ernarde"), "PUGKILLER"} -- Archivist Ernarde
         },
-        ["mhkmoonhunterkeep3_base"] = {{0.5, 0.5,
-                                        DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep3_base", "vykosa"),
-                                        "FINAL PUGKILLER"} -- Vykosa the Ascendant
+        ["mhkmoonhunterkeep3_base"] = {
+            {0.5, 0.5,  DH_GetLocalizedData("reapersmarch", "mhkmoonhunterkeep3_base", "vykosa"), "FINAL PUGKILLER"} -- Vykosa the Ascendant
         },
 
         ---- Maw of Lorkhaj (TRIAL) ----
-        ["maw_of_lorkaj_base"] = {{0.5, 0.5, DH_GetLocalizedData("reapersmarch", "maw_of_lorkaj_base", "zhajhassa")}, -- Zhaj'hassa The Forgotten
-                                  {0.5, 0.6, DH_GetLocalizedData("reapersmarch", "maw_of_lorkaj_base", "twins")}, -- Vashai and S'kinrai - The Twins
-                                  {0.5, 0.7, DH_GetLocalizedData("reapersmarch", "maw_of_lorkaj_base", "rakkhat")} -- Rakkhat
+        ["maw_of_lorkaj_base"] = {  -- first area
+            {0.60, 0.28, DH_GetLocalizedData("reapersmarch", "maw_of_lorkaj_base", "zhajhassa")}, -- Zhaj'hassa The Forgotten
+            {0.26, 0.51, DH_GetLocalizedData("reapersmarch", "maw_of_lorkaj_base", "twins")}, -- Vashai and S'kinrai - The Twins
         },
-        ["mawlorkajhall_base"] = {},
+        ["mawlorkajhall_base"] = {
+            {0.5, 0.7, DH_GetLocalizedData("reapersmarch", "mawlorkajhall_base", "rakkhat")} -- Rakkhat
+        },
         ["mawlorkajsevenriddles_base"] = {},
         ["mawlorkajsuthaysanctuary_base"] = {}
     }, -- End Reaper's March
@@ -583,21 +591,22 @@ local DHData = {
     -- Start Coldharbour
     ["coldharbor"] = {
 
-        ---- Vaults of Madness ----
-        ["vaultsofmadness1_base"] = {{0.267901, 0.619753,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "cursed_one")}, -- Cursed One
-                                     {0.266666, 0.546913,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ulguna")}, -- Ulguna Soul-Reaver
-                                     {0.224691, 0.298765,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "death_head")}, -- Death's Head
-                                     {0.413580, 0.206172,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "grothdarr")}, -- Grothdarr
-                                     {0.627160, 0.139506,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "achaeraizur")}, -- Achaeraizur
-                                     {0.677777, 0.407407,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ancient_one")}, -- Ancient One
-                                     {0.682716, 0.508641,
-                                      DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "iskra")} -- Iskra the Omen
+        --== Vaults of Madness ==--
+        ["vaultsofmadness1_base"] = {
+            {0.267901, 0.619753,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "cursed_one")}, -- Cursed One
+            {0.266666, 0.546913,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ulguna")}, -- Ulguna Soul-Reaver
+            {0.224691, 0.298765,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "death_head")}, -- Death's Head
+            {0.413580, 0.206172,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "grothdarr")}, -- Grothdarr
+            {0.627160, 0.139506,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "achaeraizur")}, -- Achaeraizur
+            {0.677777, 0.407407,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "ancient_one")}, -- Ancient One
+            {0.682716, 0.508641,
+            DH_GetLocalizedData("coldharbor", "vaultsofmadness1_base", "iskra")} -- Iskra the Omen
         },
 
         ["vaultsofmadness2_base"] = {{0.920987, 0.820987,
@@ -609,7 +618,7 @@ local DHData = {
     -- Start Cyrodiil
     ["cyrodiil"] = {
 
-        ---- Imperial City Prison ----
+        --== Imperial City Prison ==--
         ["imperialprisondunint01_base"] = {{0.122502, 0.417653,
                                             DH_GetLocalizedData("cyrodiil", "imperialprisondunint01_base", "overfiend")} -- Overfiend
         },
@@ -628,7 +637,7 @@ local DHData = {
                                             "FINAL"} -- Lord Warden Dusk
         },
 
-        ---- White-Gold Tower ----
+        --== White-Gold Tower ==--
         ["wgtimperialthroneroom_base"] = {{0.562495, 0.530612,
                                            DH_GetLocalizedData("cyrodiil", "wgtimperialthroneroom_base", "adjudicator")} -- The Adjudicator
         },
@@ -647,63 +656,66 @@ local DHData = {
     -- start Craglorn
     ["craglorn"] = {
         ---- Falkreath Hold ----
-        ["falkreathsdemise_b_base"] = {{0.5, 0.5, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "morrigh")}, -- Morrigh Bullblood
-                                       {0.5, 0.6, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "mammoth")}, -- Siege Mammoth
-                                       {0.5, 0.7,
-                                        DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "cernunnon")}, -- Cernunnon
-                                       {0.5, 0.8,
-                                        DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "deathlord")}, -- Deathlord Bjarfrud Skjoralmor
-                                       {0.5, 0.9,
-                                        DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "domihaus"), "FINAL"} -- Domihaus
+        ["falkreathsdemise_b_base"] = {
+            {0.5, 0.8, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "deathlord")}, -- Deathlord Bjarfrud Skjoralmor
+            {0.5, 0.9, DH_GetLocalizedData("craglorn", "falkreathsdemise_b_base", "domihaus"), "FINAL"} -- Domihaus
         },
         ["falkreathsdemise_i_base"] = {},
-        ["falkreathsdemise_base"] = {},
+        ["falkreathsdemise_base"] = {   -- first area
+            {0.60, 0.43, DH_GetLocalizedData("craglorn", "falkreathsdemise_base", "morrigh")}, -- Morrigh Bullblood
+            {0.43, 0.50, DH_GetLocalizedData("craglorn", "falkreathsdemise_base", "mammoth")}, -- Siege Mammoth
+            {0.23, 0.64, DH_GetLocalizedData("craglorn", "falkreathsdemise_base", "cernunnon")}, -- Cernunnon
+        },
 
         ---- Bloodroot Forge ----
-        ["bloodrootext1_base"] = {{0.5, 0.5, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "mathgamain")}, -- Mathgamain
-                                  {0.5, 0.6, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "caillaoife")}, -- Caillaoife
-                                  {0.5, 0.7, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "stoneheart"),
-                                   "DPSCHECK"}, -- Stoneheart
-        {0.5, 0.8, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "galchobhar"), "PUGKILLER DPSCHECK"}, -- Galchobhar
-                                  {0.5, 0.9, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "gherig")}, -- Gherig Bullblood
-                                  {0.6, 0.5, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "earthgore"), "FINAL"} -- Earthgore Amalgam
+        ["bloodrootext1_base"] = {  -- first area
+            {0.63, 0.58, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "mathgamain")}, -- Mathgamain
+            {0.42, 0.30, DH_GetLocalizedData("craglorn", "bloodrootext1_base", "caillaoife")}, -- Caillaoife
         },
-        ["bloodrootint1_base"] = {},
+        ["bloodrootint1_base"] = {
+            {0.5, 0.7, DH_GetLocalizedData("craglorn", "bloodrootint1_base", "stoneheart"), "DPSCHECK"}, -- Stoneheart
+            {0.5, 0.8, DH_GetLocalizedData("craglorn", "bloodrootint1_base", "galchobhar"), "PUGKILLER DPSCHECK"}, -- Galchobhar
+            {0.5, 0.9, DH_GetLocalizedData("craglorn", "bloodrootint1_base", "gherig")}, -- Gherig Bullblood
+            {0.6, 0.5, DH_GetLocalizedData("craglorn", "bloodrootint1_base", "earthgore"), "FINAL"} -- Earthgore Amalgam
+        },
         ["bloodrootint2_base"] = {},
 
-        ---- Hel Ra Citadel (TRIAL) ----
-        ["helracitadel_base"] = {{0.5, 0.5, DH_GetLocalizedData("craglorn", "helracitadel_base", "ra_kotu")}, -- Ra Kotu
-                                 {0.5, 0.6, DH_GetLocalizedData("craglorn", "helracitadel_base", "rokdun")}, -- Yokeda Rok'dun
-                                 {0.5, 0.7, DH_GetLocalizedData("craglorn", "helracitadel_base", "kai")}, -- Yokeda Kai
-        {0.5, 0.8, DH_GetLocalizedData("craglorn", "helracitadel_base", "warrior"), "FINAL"} -- The Warrior
+        --== Hel Ra Citadel (TRIAL) ==--
+        ["helracitadelentry_base"] = {},    -- non-combat entry area with quest givers
+        ["helracitadel_base"] = {   -- first area proper
+            {0.64, 0.45, DH_GetLocalizedData("craglorn", "helracitadel_base", "ra_kotu")}, -- Ra Kotu
+            {0.48, 0.655, DH_GetLocalizedData("craglorn", "helracitadel_base", "rokdun")}, -- Yokeda Rok'dun
+            {0.52, 0.77, DH_GetLocalizedData("craglorn", "helracitadel_base", "kai")}, -- Yokeda Kai
         },
-        ["helracitadelentry_base"] = {},
-        ["helracitadelhallofwarrior_base"] = {},
+        ["helracitadelhallofwarrior_base"] = {
+            {0.5, 0.2, DH_GetLocalizedData("craglorn", "helracitadelhallofwarrior_base", "warrior"), "FINAL"} -- The Warrior
+        },
 
-        ---- Aetherian Archive (TRIAL) ----
-        ["aetherianarchivebottom_base"] = {{0.5, 0.5,
-                                            DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base",
-            "storm_atronach")}, -- Lightning Storm Atronach
-        {0.5, 0.6, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "stone_atronach")}, -- Foundation Stone Atronach
-                                           {0.5, 0.7,
-                                            DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "varlariel"),
-                                            "DPSCHECK"}, -- Varlariel
-        {0.5, 0.8, DH_GetLocalizedData("craglorn", "aetherianarchivebottom_base", "mage"), "FINAL DPSCHECK"} -- The Mage
+        --== Aetherian Archive (TRIAL) ==--
+        ["aetherianarchivebottom_base"] = {
         },
         ["aetherianarchiveend_base"] = {},
-        ["aetherianarchiveislanda_base"] = {},
-        ["aetherianarchiveislandb_base"] = {},
-        ["aetherianarchiveislandc_base"] = {},
+        ["aetherianarchiveislanda_base"] = {    -- first boss area
+            {0.41, 0.35, DH_GetLocalizedData("craglorn", "aetherianarchiveislanda_base", "storm_atronach")}, -- Lightning Storm Atronach
+            {0.66, 0.66, DH_GetLocalizedData("craglorn", "aetherianarchiveislanda_base", "stone_atronach")}, -- Foundation Stone Atronach
+       },
+        ["aetherianarchiveislandb_base"] = {
+            {0.5, 0.66, DH_GetLocalizedData("craglorn", "aetherianarchiveislandb_base", "varlariel"), "DPSCHECK"}, -- Varlariel
+        },
+        ["aetherianarchiveislandc_base"] = {
+            {0.5, 0.5, DH_GetLocalizedData("craglorn", "aetherianarchiveislandc_base", "mage"), "FINAL DPSCHECK"} -- The Mage
+         },
         ["aetherianarchivemiddle_base"] = {},
 
         ---- Sanctum Ophidia (TRIAL) ----
-        ["trl_so_map01_base"] = {{0.5, 0.5, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "manticora"),
-                                  "DPSCHECK"}, -- Possessed Manticora
-        {0.5, 0.6, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "stonebreaker")}, -- Stonebreaker
-        {0.5, 0.7, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "ozara"), "PUGKILLER"}, -- Ozara
-        {0.5, 0.8, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "serpent"), "FINAL"} -- The Serpent
+        ["trl_so_map01_base"] = {   -- first area
+            {0.28, 0.64, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "manticora"), "DPSCHECK"}, -- Possessed Manticora
+            {0.465, 0.39, DH_GetLocalizedData("craglorn", "trl_so_map01_base", "stonebreaker")}, -- Stonebreaker
         },
-        ["trl_so_map02_base"] = {},
+        ["trl_so_map02_base"] = {
+            {0.5, 0.7, DH_GetLocalizedData("craglorn", "trl_so_map02_base", "ozara"), "PUGKILLER"}, -- Ozara
+            {0.5, 0.8, DH_GetLocalizedData("craglorn", "trl_so_map02_base", "serpent"), "FINAL"} -- The Serpent
+        },
         ["trl_so_map03_base"] = {},
         ["trl_so_map04_base"] = {},
 
@@ -738,27 +750,31 @@ local DHData = {
     -- start Gold Coast
     ["darkbrotherhood"] = {
         ---- Depths of Malatar (DLC) ----
-        ["domdepthsofmal_base"] = {{0.5, 0.5, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "maw")}, -- The Scavenging Maw
-                                   {0.5, 0.6, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "weeping")}, -- The Weeping Woman
-                                   {0.5, 0.7, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "dark_orb")}, -- The Dark Orb
-                                   {0.5, 0.8, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "narilmor")}, -- King Narilmor
-                                   {0.5, 0.9, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "blades")} -- Symphony of Blades
+        ["domdepthsofmal_base"] = { -- first area
+            {0.46, 0.31, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal_base", "maw")}, -- The Scavenging Maw
         },
-        ["domdepthsofmal2_base"] = {},
+        ["domdepthsofmal2_base"] = {
+            {0.5, 0.6, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal2_base", "weeping")}, -- The Weeping Woman
+            {0.5, 0.7, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal2_base", "dark_orb")}, -- The Dark Orb
+            {0.5, 0.8, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal2_base", "narilmor")}, -- King Narilmor
+            {0.5, 0.9, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal2_base", "blades")} -- Symphony of Blades
+        },
         ["domdepthsofmal3_base"] = {},
         ["domdepthsofmal4_base"] = {},
         ["domdepthsofmal5_base"] = {},
 
         ---- Black Drake Villa (DLC) ----
-        ["bdvilla_boss3map"] = {{0.5, 0.5, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "zeal")}, -- Avatar of Zeal
-                                {0.5, 0.6, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "kinras")}, -- Kinras Ironeye
-                                {0.5, 0.7, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "vigor")}, -- Avatar of Vigor
-                                {0.5, 0.8, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "fortitude")}, -- Avatar of Fortitude
-                                {0.5, 0.9, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "geminus")}, -- Captain Geminus
-                                {0.4, 0.5, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "encratis")}, -- Pyroturge Encratis
-                                {0.5, 0.6, DH_GetLocalizedData("darkbrotherhood", "bdvilla_boss3map", "aksalaz")} -- Sentinel Aksalaz
+        ["bdvillamap1ext1"] = {     -- only the first map lacks an underscore
+            {0.71, 0.455, DH_GetLocalizedData("darkbrotherhood", "bdvillamap1ext1", "kinras")}, -- Kinras Ironeye
         },
-        ["bdvilla_map2ext2"] = {},
+        ["bdvilla_map2ext2"] = {
+            {0.5, 0.5, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "zeal")}, -- Avatar of Zeal
+            {0.5, 0.7, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "vigor")}, -- Avatar of Vigor
+            {0.5, 0.8, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "fortitude")}, -- Avatar of Fortitude
+            {0.5, 0.9, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "geminus")}, -- Captain Geminus
+            {0.4, 0.5, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "encratis")}, -- Pyroturge Encratis
+            {0.5, 0.6, DH_GetLocalizedData("darkbrotherhood", "bdvilla_map2ext2", "aksalaz")} -- Sentinel Aksalaz
+},
         ["bdvilla_map3ext1"] = {},
         ["bdvilla_map3int1"] = {},
         ["bdvilla_mapsecret1"] = {},
@@ -768,15 +784,17 @@ local DHData = {
 
     -- start Northern Elsweyr
     ["elsweyr"] = {
-        ---- Sunspire (TRIAL) ----
-        ["sunspirehall001_base"] = {{0.5, 0.5, DH_GetLocalizedData("elsweyr", "sunspirehall001_base", "lokkestiiz")}, -- Lokkestiiz
-                                    {0.5, 0.6, DH_GetLocalizedData("elsweyr", "sunspirehall001_base", "yolnahkriin")}, -- Yolnahkriin
-                                    {0.5, 0.7, DH_GetLocalizedData("elsweyr", "sunspirehall001_base", "nahviintaas")} -- Nahviintaas
+        --== Sunspire (TRIAL) ==--
+        ["sunspirehall001_base"] = {
         },
         ["sunspirehall002_base"] = {},
         ["sunspirehall003_base"] = {},
         ["sunspirehall004_base"] = {},
-        ["sunspireoverworld_base"] = {},
+        ["sunspireoverworld_base"] = {  -- first area proper
+            {0.51, 0.43, DH_GetLocalizedData("elsweyr", "sunspireoverworld_base", "nahviintaas")}, -- Nahviintaas
+            {0.61, 0.59, DH_GetLocalizedData("elsweyr", "sunspireoverworld_base", "lokkestiiz")}, -- Lokkestiiz
+            {0.42, 0.63, DH_GetLocalizedData("elsweyr", "sunspireoverworld_base", "yolnahkriin")}, -- Yolnahkriin
+        },
         ["sunspireroom001_base"] = {},
         ["sunspireroom002_base"] = {}
     }, -- end Northern Elsweyr
@@ -784,31 +802,33 @@ local DHData = {
     -- start Southern Elsweyr
     ["southernelsweyr"] = {
         ---- Moongrave Fane (DLC) (actually located in Northern zone) ----
-        ["moongravesection1_base"] = {{0.5, 0.5,
-                                       DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "ruins")}, -- The Risen Ruins
-                                      {0.5, 0.6,
-                                       DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "drozakar")}, -- Dro'zakar
-                                      {0.5, 0.7,
-                                       DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "kujo")}, -- Kujo Kethba
-                                      {0.5, 0.8,
-                                       DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "nisaazda")}, -- Nisaazda
-                                      {0.5, 0.9,
-                                       DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "grundwulf")} -- Grundwulf
-        }
+        ["moongravesection1_base"] = {  -- first area
+            {0.31, 0.77, DH_GetLocalizedData("southernelsweyr", "moongravesection1_base", "ruins")}, -- The Risen Ruins
+        },
+        ["moongravesection2_base"] = {
+            {0.5, 0.6, DH_GetLocalizedData("southernelsweyr", "moongravesection2_base", "drozakar")}, -- Dro'zakar 
+        },
+        ["moongravesection3_base"] = {
+            {0.5, 0.7, DH_GetLocalizedData("southernelsweyr", "moongravesection3_base", "kujo")}, -- Kujo Kethba
+        },
+        ["moongravesection4_base"] = {
+            {0.5, 0.8, DH_GetLocalizedData("southernelsweyr", "moongravesection4_base", "nisaazda")}, -- Nisaazda
+            {0.5, 0.9, DH_GetLocalizedData("southernelsweyr", "moongravesection4_base", "grundwulf")} -- Grundwulf
+        },
     }, -- end Southern Elsweyr
 
     -- start Wrothgar
     ["wrothgar"] = {
-        ---- Icereach (DLC) ----
+        --== Icereach (DLC) ==--
         ["icereachpart1"] = {{0.379, 0.430, DH_GetLocalizedData("wrothgar", "icereachpart1", "kjarg")}, -- Kjarg the Tuskscraper
                              {0.684, 0.294, DH_GetLocalizedData("wrothgar", "icereachpart1", "skelga")}, -- Sister Skelga
                              {0.549, 0.082, DH_GetLocalizedData("wrothgar", "icereachpart1", "vearogh")} -- Vearogh The Shambler
         },
-        ["icereachpart2"] = {{0.5, 0.5, DH_GetLocalizedData("wrothgar", "icereachpart2", "revenant")}, -- Stormborn Revenant
-                             {0.5, 0.6, DH_GetLocalizedData("wrothgar", "icereachpart2", "ciannait")} -- Mother Ciannait
+        ["icereachpart2"] = {{0.3, 0.6, DH_GetLocalizedData("wrothgar", "icereachpart2", "revenant")}, -- Stormborn Revenant
+                             {0.2, 0.4, DH_GetLocalizedData("wrothgar", "icereachpart2", "ciannait")} -- Mother Ciannait
         },
 
-        ---- Maelstrom Arena (SOLO ARENA) ----
+        --== Maelstrom Arena (SOLO ARENA) ==--
         ["arenasclockwork2_base"] = {{0.5, 0.5, DH_GetLocalizedData("wrothgar", "arenasclockwork2_base", "guardian")} -- The Control Guardian
         },
         ["arenasclockworkint_base"] = {{0.5, 0.5,
@@ -842,13 +862,15 @@ local DHData = {
     -- start Vvardenfell
     ["vvardenfell"] = {
         ---- Halls of Fabrication (TRIAL) ----
-        ["hofabriccaves_base"] = {{0.5, 0.5, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "fabricants")}, -- Hunter-Killer Fabricants
-                                  {0.5, 0.6, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "factotum")}, -- The Pinnacle Factotum
-                                  {0.5, 0.7, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "archcustodian")}, -- The Archcustodian
-                                  {0.5, 0.8, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "committee")}, -- The Refabrication Committee
-                                  {0.5, 0.9, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "assembly")} -- The Assembly General
+        ["hofabriccaves_base"] = {  -- first area
+            {0.74, 0.57, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "fabricants")}, -- Hunter-Killer Fabricants
+            {0.75, 0.64, DH_GetLocalizedData("vvardenfell", "hofabriccaves_base", "factotum")}, -- The Pinnacle Factotum
         },
-        ["hofabrichall1_base"] = {},
+        ["hofabrichall1_base"] = {
+            {0.5, 0.7, DH_GetLocalizedData("vvardenfell", "hofabrichall1_base", "archcustodian")}, -- The Archcustodian
+            {0.5, 0.8, DH_GetLocalizedData("vvardenfell", "hofabrichall1_base", "committee")}, -- The Refabrication Committee
+            {0.5, 0.9, DH_GetLocalizedData("vvardenfell", "hofabrichall1_base", "assembly")} -- The Assembly General
+},
         ["hofabricloop_base"] = {},
         ["hofabricboss3_base"] = {},
         ["hofabricext1_base"] = {},
@@ -857,43 +879,47 @@ local DHData = {
 
     -- start Clockwork City
     ["clockwork"] = {
-        ---- Asylum Sanctorium (TRIAL) ----
-        ["asylumsanctorum001_base"] = {{0.5, 0.5,
-                                        DH_GetLocalizedData("vvardenfell", "asylumsanctorum001_base", "llothis")}, -- Saint Llothis the Pious
-                                       {0.5, 0.6, DH_GetLocalizedData("vvardenfell", "asylumsanctorum001_base", "felms")}, -- Saint Felms the Bold
-                                       {0.5, 0.7, DH_GetLocalizedData("vvardenfell", "asylumsanctorum001_base", "olms")} -- Saint Olms the Just
+        --== Asylum Sanctorium (TRIAL) ==--
+        ["asylumsanctorum001_base"] = {
         },
-        ["asylumsanctorum002_base"] = {}
+        ["asylumsanctorum002_base"] = {
+            {0.61, 0.19, DH_GetLocalizedData("vvardenfell", "asylumsanctorum002_base", "llothis")}, -- Saint Llothis the Pious
+            {0.61, 0.85, DH_GetLocalizedData("vvardenfell", "asylumsanctorum002_base", "felms")}, -- Saint Felms the Bold
+            {0.65, 0.52, DH_GetLocalizedData("vvardenfell", "asylumsanctorum002_base", "olms")} -- Saint Olms the Just
+        }
     }, -- end Clockwork City
 
     -- start Murkmire
     ["murkmire"] = {
-        ---- Blackrose Prison (GROUP ARENA) ----
-        ["blackroseprison01_base"] = {{0.5, 0.5, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "ennodius")}, -- Battlemage Ennodius
-                                      {0.5, 0.6,
-                                       DH_GetLocalizedData("murkmire", "blackroseprison01_base", "tames_the_beast")}, -- Tames-The-Beast
-                                      {0.5, 0.7, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "minara")}, -- Lady Minara
-                                      {0.5, 0.8,
-                                       DH_GetLocalizedData("murkmire", "blackroseprison01_base", "three_bosses")}, -- Ennodius, Minara and Tames-The-Beast
-                                      {0.5, 0.9, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "drakeeh")} -- Drakeeh the Unchained
+        --== Blackrose Prison (GROUP ARENA) ==--
+        ["blackroseprison01_base"] = {
+            {0.59, 0.83, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "ennodius")}, -- Battlemage Ennodius
+            {0.34, 0.75, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "tames_the_beast")}, -- Tames-The-Beast
+            {0.47, 0.48, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "minara")}, -- Lady Minara
+            {0.68, 0.26, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "three_bosses")}, -- Ennodius, Minara and Tames-The-Beast
+            {0.44, 0.13, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "drakeeh")} -- Drakeeh the Unchained
         }
     }, -- end Murkmire
 
     -- start Western Skyrim
     ["skyrim"] = {
         ---- Castle Thorn (DLC) ----
-        ["castlethorn_int_01"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "castlethorn_int_01", "twilight")} -- Blood Twilight
+        ["castlethornmap_001"] = {
+            {0.56, 0.51, DH_GetLocalizedData("skyrim", "castlethornmap_001", "tindulra")}, -- Dread Tindulra
+            {0.55, 0.225, DH_GetLocalizedData("skyrim", "castlethornmap_001", "vaduroth")}, -- Vaduroth
+            {0.695, 0.40, DH_GetLocalizedData("skyrim", "castlethornmap_001", "talfyg")} -- Talfyg
+        },
+        ["castlethorn_int_01"] = {
+            {0.5, 0.5, DH_GetLocalizedData("skyrim", "castlethorn_int_01", "twilight")} -- Blood Twilight
         },
         ["castlethorn_int_02"] = {},
-        ["castlethorn_int_03"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "castlethorn_int_03", "lady_thorn")} -- Lady Thorn
-        },
-        ["castlethornmap_001"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "castlethornmap_001", "tindulra")}, -- Dread Tindulra
-                                  {0.5, 0.6, DH_GetLocalizedData("skyrim", "castlethornmap_001", "vaduroth")}, -- Vaduroth
-                                  {0.5, 0.7, DH_GetLocalizedData("skyrim", "castlethornmap_001", "talfyg")} -- Talfyg
+        ["castlethorn_int_03"] = {
+            {0.5, 0.5, DH_GetLocalizedData("skyrim", "castlethorn_int_03", "lady_thorn")} -- Lady Thorn
         },
 
         ---- Stone Garden (DLC) ----
-        ["stonegarden01"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "stonegarden01", "kraglen")} -- Exarch Kraglen
+        ["stonegarden01_base"] = {
+            {0.66, 0.17, DH_GetLocalizedData("skyrim", "stonegarden01_base", "kraglen")} -- Exarch Kraglen
         },
         ["stonegarden02"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "stonegarden02", "behemoth")} -- Stone Behemoth
         },
@@ -901,24 +927,28 @@ local DHData = {
         ["stonegarden03"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "stonegarden03", "arkasis")} -- Arkasis the Mad Alchemist
         },
         ["stonegarden03b"] = {},
-        ---- Kyne's Aegis (TRIAL) ----
-        ["kynesaegisboss3floor001"] = {{0.5, 0.5, DH_GetLocalizedData("skyrim", "kynesaegisboss3floor001", "yandir")}, -- Yandir the Butcher
-                                       {0.5, 0.6, DH_GetLocalizedData("skyrim", "kynesaegisboss3floor001", "vrol")}, -- Captain Vrol
-                                       {0.5, 0.7, DH_GetLocalizedData("skyrim", "kynesaegisboss3floor001", "falgravn")} -- Lord Falgravn
+        
+        --== Kyne's Aegis (TRIAL) ==--
+        ["kynesaegisboss3floor001"] = {
         },
         ["kynesaegisboss3floor002"] = {},
         ["kynesaegisboss3floor003"] = {},
-        ["kynesaegismap001"] = {}
+        ["kynesaegismap001"] = {    -- first area
+            {0.23, 0.55, DH_GetLocalizedData("skyrim", "kynesaegismap001", "yandir")}, -- Yandir the Butcher
+            {0.57, 0.33, DH_GetLocalizedData("skyrim", "kynesaegismap001", "vrol")}, -- Captain Vrol
+            {0.30, 0.19, DH_GetLocalizedData("skyrim", "kynesaegismap001", "falgravn")} -- Lord Falgravn
+        }
     }, -- end Western Skyrim	
 
     -- start The Reach
     ["reach"] = {
-        --== Vateshran Hollows (SOLO ARENA) ==--
+        -- == Vateshran Hollows (SOLO ARENA) ==--
         ["vateshransrites01"] = {},
         ["vateshransrites01a"] = {},
         ["vateshransritesmap02"] = {{0.55, 0.24, DH_GetLocalizedData("reach", "vateshransritesmap02", "zakuryn")}, -- Zakuryn the Sculptor
-                                    {0.43, 0.76, DH_GetLocalizedData("reach", "vateshransritesmap02", "xobutar"), "SECRET"}, -- Xobutar of His Deep Graces
-                                    {0.52, 0.52, DH_GetLocalizedData("reach", "vateshransritesmap02", "iozuzzunth")} -- Iozuzzunth
+                                    {0.43, 0.76, DH_GetLocalizedData("reach", "vateshransritesmap02", "xobutar"),
+                                     "SECRET"}, -- Xobutar of His Deep Graces
+        {0.52, 0.52, DH_GetLocalizedData("reach", "vateshransritesmap02", "iozuzzunth")} -- Iozuzzunth
         },
         ["vateshransritesmap03"] = {{0.50, 0.52, DH_GetLocalizedData("reach", "vateshransritesmap03", "shade")}, -- Shade of the Grove
                                     {0.23, 0.25, DH_GetLocalizedData("reach", "vateshransritesmap03", "keeper"),
@@ -938,16 +968,17 @@ local DHData = {
     -- start Blackwood
     ["blackwood"] = {
         ---- The Dread Cellar (DLC) ----
-        ["tdc_map_boss3rooms_001"] = {{0.5, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "purgator"),
-                                       "SECRET"}, -- Purgator
-        {0.5, 0.6, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "broodlord")}, -- Scorion Broodlord
-        {0.5, 0.7, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "undertaker")}, -- Undertaker
-        {0.5, 0.8, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "cyronin")}, -- Cyronin Artellian
-        {0.5, 0.9, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "warden")}, -- Grim Warden
-        {0.4, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "magma_incarnate")} -- Magma Incarnate
+        ["tdc_map_boss3rooms_001"] = {
+            {0.5, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "purgator"), "SECRET"}, -- Purgator
+            {0.5, 0.7, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "undertaker")}, -- Undertaker
+            {0.5, 0.8, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "cyronin")}, -- Cyronin Artellian
+            {0.5, 0.9, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "warden")}, -- Grim Warden
+            {0.4, 0.5, DH_GetLocalizedData("blackwood", "tdc_map_boss3rooms_001", "magma_incarnate")} -- Magma Incarnate
         },
         ["tdc_map_inside_001"] = {},
-        ["tdc_map_outside_001"] = {},
+        ["tdc_map_outside_001"] = { -- first area
+            {0.20, 0.38, DH_GetLocalizedData("blackwood", "tdc_map_outside_001", "broodlord")}, -- Scorion Broodlord
+        },
         ["tdc_map_secret_001"] = {},
         ["tdc_map_secrethall_001"] = {},
         ["tdc_map_secrethall_002"] = {},
@@ -1062,12 +1093,15 @@ local DHHintData = {
 
     ["therift"] = {
         ---- Scrivener's Hall (DLC) ----
-        ["u37_scrivenershall_boss3_map"] = {{0.7, 0.5,
-                                             DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp1")}, -- Cartoklept Scamp
-                                            {0.7, 0.6,
-                                             DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp2")} -- Cartoklept Scamp
+        ["u37_scrivenershall_boss3_map"] = {
+            {0.7, 0.5,
+                DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp1")}, -- Cartoklept Scamp
+            {0.7, 0.6,
+                DH_GetLocalizedData("therift", "u37_scrivenershall_boss3_map", "scamp2")} -- Cartoklept Scamp
         },
-        ["u37_scrivenershall_sect1_map"] = {},
+        ["u37_scrivenershall_sect1_map"] = {
+            {0.10, 0.67, DH_GetLocalizedData("therift", "u37_scrivenershall_sect1_map", "vault")}
+        },
         ["u37_scrivenershall_sect2a_map"] = {},
         ["u37_scrivenershall_sect2b_map"] = {},
         ["u37_scrivenershall_sect3a_map"] = {},
