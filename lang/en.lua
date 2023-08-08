@@ -2248,13 +2248,13 @@ Mechanics:
 
 ---- Rockgrove (TRIAL) ----
 ["rg_map_inside_001"] = {
-    ["oaxiltso"] = {[[Oaxiltso]], [[]]},
-    ["bahsei"] = {[[Flame-Herald Bahsei]], [[]]},
-    ["xalvakka"] = {[[Xalvakka]], [[]]},
 },
 ["u30_rg_map_outside_001"] = {
+    ["oaxiltso"] = {[[Oaxiltso]], [[]]},
+    ["bahsei"] = {[[Flame-Herald Bahsei]], [[]]},
 },
 ["u30_rg_map_outside_002"] = {
+    ["xalvakka"] = {[[Xalvakka]], [[]]},
 },
 },  -- end Blackwood
 
@@ -2263,21 +2263,13 @@ Mechanics:
 ["summerset"] = {							
         ---- Coral Aerie (DLC) ----
 ["coralaerie_b1_001"] = {
-    ["sword_guardian"] = {[[Sword Guardian]], [[Mechanics:
-- The boss will place a lightning DOT AoE on each player, which will last for the whole fight. 
-- Everyone: spread out, do not stack AoEs.
-- Healer: heal continually to counteract the DOTs on all players.]]},
     ["maligalig"] = {[[Maligalig]], [[Mechanics:
 - Everyone: when an AoE attaches to you, look around for the "donut" on the floor, and move so your AoE is inside the donut.
 - Bugs will continually spawn, chase random players and explode (the player will have a target over their head, the bug will have a matching target).
 - At 65% and 35% health, the boss disappears and players enter a "whirlpool". Synergize to stop on one of the three pieces of land.
 - You must kill all adds on the three land areas, before the boss will reappear.]]},
-    ["staff_guardian"] = {[[Staff Guardian]], [[Mechanics:
-- Nothing notable.]]},
-    ["szarzo"] = {[[S'zarzo the Bulwark]], [[Mechanics:
-- At 50% health, he drops a banner. Keep out of the banner area and move the boss away from it as well.
-- Waves of adds including archers will spawn throughout the fight.
-- Everyone: When he points at the ground and channels, BLOCK to mitigate the three incoming AoE attacks.]]},
+},
+["coralaerie_b2_001"] = {
     ["sarydil"] = {[[Sarydil]], [[Mechanics:
 - Tank: the boss must be taunted IMMEDIATELY at the start and each time she re-enters the fight.
 - At 75% and 40% health, the boss throws a smoke bomb and disappears, summoning 4 adds. Once the adds are dead the boss reappears and quickly teleport strikes the aggroed player.
@@ -2285,31 +2277,39 @@ Mechanics:
 - The boss sometimes disappears and is replaced by multiple shadows. All must be interrupted while channeling or they will all shoot a single player and kill them.
 - The boss' dagger throwing attack can be interrupted.
 ]]},
+},
+["coralaerie_beach_001"] = {
+    ["sword_guardian"] = {[[Sword Guardian]], [[Mechanics:
+- The boss will place a lightning DOT AoE on each player, which will last for the whole fight. 
+- Everyone: spread out, do not stack AoEs.
+- Healer: heal continually to counteract the DOTs on all players.]]},
+},
+["coralaerie_mbwave_001"] = {
+    ["staff_guardian"] = {[[Staff Guardian]], [[Mechanics:
+- Nothing notable.]]},
+    ["szarzo"] = {[[S'zarzo the Bulwark]], [[Mechanics:
+- At 50% health, he drops a banner. Keep out of the banner area and move the boss away from it as well.
+- Waves of adds including archers will spawn throughout the fight.
+- Everyone: When he points at the ground and channels, BLOCK to mitigate the three incoming AoE attacks.]]},
+},
+["coralaerieaerie_001"] = {
     ["shield_guardian"] = {[[Shield Guardian]], [[Mechanics:
 - AT 60% health the boss crouches and is protected by a shield. 3 adds channel energy into the shield. Kill the adds to remove the shield.]]},
+},
+["coralaerieb3_001"] = {
     ["varallion"] = {[[Varallion]], [[Mechanics:
 - The boss will create huge waves which move across the room, these must be avoided.
 - An orb will sometimes appear and move towards a random player (they will be marked with a symbol). Other players can stand near the orb and block to make it explode for minimal damage.
 - The boss sometimes places AoEs on all players. These will detach and become floor AoEs after a few seconds, so players should move to control where these are placed.
 - At 90/80/50% health, a gryphon will join the fight.
 - The lightning gryphon (Illialta) will channel a very large lightning AoE attached to a random player. This player must move away from the group, who must also avoid the AoE.]]},
+},
+["coralaeriesecretmap001"] = {
     ["zbaza"] = {[[Z'baza]], [[Mechanics:
 - Similar to the Z'Maja boss fight in the Cloudrest trial.
 - The boss will attack all players she can SEE with a powerful mind blast. Non-tanks must stay out of her line of sight.
 - At 75% and 25% health, the boss teleports to a tentacle and is protected by a shield. Kill the tentacle to remove the shield.
 - When the boss teleports she leaves a portal behind, which can be used to teleport to her.]]},
-},
-["coralaerie_b2_001"] = {
-},
-["coralaerie_beach_001"] = {
-},
-["coralaerie_mbwave_001"] = {
-},
-["coralaerieaerie_001"] = {
-},
-["coralaerieb3_001"] = {
-},
-["coralaeriesecretmap001"] = {
 },
 
         ---- Cloudrest (TRIAL) ----

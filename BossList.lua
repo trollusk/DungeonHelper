@@ -984,43 +984,50 @@ local DHData = {
         ["tdc_map_secrethall_002"] = {},
         ["tdc_map_secrethall_003"] = {},
 
-        ---- Rockgrove (TRIAL) ----
-        ["rg_map_inside_001"] = {{0.5, 0.5, DH_GetLocalizedData("blackwood", "rg_map_inside_001", "oaxiltso")}, -- Oaxiltso
-                                 {0.5, 0.6, DH_GetLocalizedData("blackwood", "rg_map_inside_001", "bahsei")}, -- Flame-Herald Bahsei
-                                 {0.5, 0.7, DH_GetLocalizedData("blackwood", "rg_map_inside_001", "xalvakka")} -- Xalvakka
+        --== Rockgrove (TRIAL) ==--
+        ["rg_map_inside_001"] = {
         },
-        ["u30_rg_map_outside_001"] = {},
-        ["u30_rg_map_outside_002"] = {}
+        ["u30_rg_map_outside_001"] = {
+            {0.37, 0.46, DH_GetLocalizedData("blackwood", "u30_rg_map_outside_001", "oaxiltso")}, -- Oaxiltso
+            {0.50, 0.69, DH_GetLocalizedData("blackwood", "u30_rg_map_outside_001", "bahsei")}, -- Flame-Herald Bahsei
+        },
+        ["u30_rg_map_outside_002"] = {
+            {0.5, 0.5, DH_GetLocalizedData("blackwood", "u30_rg_map_outside_002", "xalvakka")} -- Xalvakka
+        }
     }, -- end Blackwood
 
     -- start Summerset
     ["summerset"] = {
-        ---- Coral Aerie (DLC) ----
-        ["coralaerie_b1_001"] = {{0.5, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "sword_guardian"),
-                                  "SECRET"}, -- Sword Guardian
-        {0.5, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "maligalig")}, -- Maligalig
-        {0.5, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "staff_guardian"), "SECRET"}, -- Staff Guardian
-                                 {0.5, 0.8, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "szarzo")}, -- S'zarzo the Bulwark
-                                 {0.5, 0.9, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "sarydil")}, -- Sarydil
-                                 {0.4, 0.5, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "shield_guardian"),
-                                  "SECRET"}, -- Shield Guardian
-        {0.4, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "varallion"), "FINAL"}, -- Varallion
-        {0.4, 0.7, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "zbaza"), "SECRET"} -- Z'baza
+        --== Coral Aerie (DLC) ==--
+        ["coralaerie_b1_001"] = {
+            {0.5, 0.6, DH_GetLocalizedData("summerset", "coralaerie_b1_001", "maligalig")}, -- Maligalig
         },
-        ["coralaerie_b2_001"] = {},
-        ["coralaerie_beach_001"] = {},
-        ["coralaerie_mbwave_001"] = {},
-        ["coralaerieaerie_001"] = {},
-        ["coralaerieb3_001"] = {},
-        ["coralaeriesecretmap001"] = {},
+        ["coralaerie_b2_001"] = {
+            {0.5, 0.9, DH_GetLocalizedData("summerset", "coralaerie_b2_001", "sarydil")}, -- Sarydil
+        },
+        ["coralaerie_beach_001"] = {
+            {0.51, 0.23, DH_GetLocalizedData("summerset", "coralaerie_beach_001", "sword_guardian"), "SECRET"}, -- Sword Guardian
+        },
+        ["coralaerie_mbwave_001"] = {
+            {0.9, 0.3, DH_GetLocalizedData("summerset", "coralaerie_mbwave_001", "staff_guardian"), "SECRET"}, -- Staff Guardian
+            {0.8, 0.4, DH_GetLocalizedData("summerset", "coralaerie_mbwave_001", "szarzo")}, -- S'zarzo the Bulwark
+        },
+        ["coralaerieaerie_001"] = {
+            {0.7, 0.7, DH_GetLocalizedData("summerset", "coralaerieaerie_001", "shield_guardian"), "SECRET"}, -- Shield Guardian
+        },
+        ["coralaerieb3_001"] = {
+            {0.4, 0.6, DH_GetLocalizedData("summerset", "coralaerieb3_001", "varallion"), "FINAL"}, -- Varallion
+        },
+        ["coralaeriesecretmap001"] = {
+            {0.4, 0.7, DH_GetLocalizedData("summerset", "coralaeriesecretmap001", "zbaza"), "SECRET"} -- Z'baza
+        },
 
-        ---- Cloudrest (TRIAL) ----
-        ["cloudresttrial_base"] = {{0.5, 0.5, DH_GetLocalizedData("summerset", "cloudresttrial_base", "siroria_silaeda")}, -- Shades of Siroria and Silaeda
-                                   {0.5, 0.6,
-                                    DH_GetLocalizedData("summerset", "cloudresttrial_base", "relequen_belanaril")}, -- Shades of Relequen and Belanaril
-                                   {0.5, 0.7,
-                                    DH_GetLocalizedData("summerset", "cloudresttrial_base", "galenwe_falarielle")}, -- Shades of Galenwe and Falarielle
-                                   {0.5, 0.8, DH_GetLocalizedData("summerset", "cloudresttrial_base", "zmaja"), "FINAL"} -- Z'Maja
+        --== Cloudrest (TRIAL) ==--
+        ["cloudresttrial_base"] = {
+            {0.43, 0.50, DH_GetLocalizedData("summerset", "cloudresttrial_base", "siroria_silaeda")}, -- Shades of Siroria and Silaeda
+            {0.44, 0.67, DH_GetLocalizedData("summerset", "cloudresttrial_base", "relequen_belanaril")}, -- Shades of Relequen and Belanaril
+            {0.61, 0.47, DH_GetLocalizedData("summerset", "cloudresttrial_base", "galenwe_falarielle")}, -- Shades of Galenwe and Falarielle
+            {0.53, 0.57, DH_GetLocalizedData("summerset", "cloudresttrial_base", "zmaja"), "FINAL"} -- Z'Maja
         }
     }, -- end Summerset
 
