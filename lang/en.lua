@@ -85,13 +85,10 @@ Mechanics:
 },  -- end Fungal Grotto I & II
         ---- Bal Sunnar (DLC) ----
     ["balsunn_presenttown01"] = {       -- first map
-        ["urvel"] = {[[Urvel Drath]], [[Mechanics:
-- Nothing notable.
-- Defeating him bestows the |c00FF00Ancestral Vitality|r group buff.]]},
+    ["kovan"] = {[[Kovan Giryon]], [[Mechanics:
+- He teleports around, leaving a poison AoE behind, and also summons poison AoEs under players. Keep spread out to avoid stacking AoEs.]]}, 
     },
     ["balsunn_b1_map"] = {
-        ["kovan"] = {[[Kovan Giryon]], [[Mechanics:
-- He teleports around, leaving a poison AoE behind, and also summons poison AoEs under players. Keep spread out to avoid stacking AoEs.]]}, 
     },
     ["balsunn_b2"] = {
     },
@@ -102,6 +99,9 @@ Mechanics:
     ["balsunn_b3trans"] = {
     },
     ["balsunn_caves"] = {
+        ["urvel"] = {[[Urvel Drath]], [[Mechanics:
+- Nothing notable.
+- Defeating him bestows the |c00FF00Ancestral Vitality|r group buff.]]},
         ["roksa"] = {[[Roksa the Warped]], [[Mechanics:
 - Summons orbs which will kill players if ignored.
 - At 70% and 40%, fires a beam at the aggroed player, who must block and heal to survive.]]},
@@ -212,8 +212,8 @@ Mechanics:
 Mechanics:
 - He will periodically turn one player into a goat. This can't be avoided.
 - As the goat, run around and collect sweetrolls to buff the group (increased healing, damage, and ultimate generation).]]},
-        ["spider_daedra"] = {[[Spider Daedra]], [[Mechanics:
-- Nothing special.]]},
+    },
+    ["rpb_map_int001"] = {
         ["artifact_bearers"] = {[[Eliam Merick, Ihudir, and Liramindrel]], [[|cffcc66Hard Mode:
 - Yes (?scroll)
 - Archer will maintain a shield on the boss which greatly reduces the damage he takes.
@@ -231,11 +231,11 @@ Mechanics:
 - Adds spawn in during the fight, these must be dealt with (including taunting) or the group will be overwhelmed.
 - Teleport Spike: when he teleports across the room and starts channeling, he MUST be interrupted or he will one-shot kill a random player.]]},
     },
-    ["rpb_map_int001"] = {
-    },
     ["rpb_map_int002"] = {
     },
     ["rpb_map_int003"] = {
+        ["spider_daedra"] = {[[Spider Daedra]], [[Mechanics:
+- Nothing special.]]},
     },
     ["rpb_map_secret001"] = {
     },
@@ -511,17 +511,13 @@ Mechanics:
 
             ---- Lair of Maarselok ----
     ["maarscave1_base"] = {
-        ["selene"] = {[[Selene's Claws and Selene's Fangs]], [[Mechanics:
-- Non-tanks: Both the bear's and spider's heavy attacks will one-shot you unless you |c00ff00dodge|r. Blocking will not save you.
-- The spider spawns once the bear is killed. - |c00FF00Stand back|r while it spawns to avoid being targeted by a heavy attack.
-- The spider will continually spawn spiderlings, which will overwhelm the group unless dealt with.
-- If caught in Selene's poison cone attack, stay still and block. The effect will follow you and damage other players if you move.
-- When Selene teleports and starts channeling, she must be - |c00FF00interrupted|r or the group will wipe.]]}, 
         ["lurcher"] = {[[Azureblight Lurcher]], [[Mechanics:
 - Must be reduced to 0 health three times.
 - During his 0% health immune phase, certain adds must be killed before he will emerge again.
 - If the boss touches Maarselok's breath trail, it will become stronger.
 - Non-tanks: the boss' heavy attack will one-shot you unless you - |c00FF00dodge|r (not block).]]}, 
+    },
+    ["maarsmap04_base"] = {
         ["cancroid"] = {[[Azurblight Cancroid]], [[Mechanics:
 - Tank: you must taunt the lurcher add at all times.
 - Every time the lurcher stomps, a damaging blue circle will remain on the ground until the fight is over.
@@ -529,12 +525,16 @@ Mechanics:
 - When the lurcher dies, it drops a seed and instantly spawns a new lurcher who will heavy attack immediately.
 - Someone must grab the seed, move to the blue circle around the tree, and use the synergy to throw the seed at the tree. This will remove the tree's shield for 20 seconds, allowing you to damage it.
 - Stranglers spawn around the periphery of the room. These will overwhelm the group unless dealt with.]]}, 
-        ["maarselok"] = {[[Maarselok]], [[
-- |c00FF00Everyone:|r prevent hoarvors from reaching Selene, as they will stun her and prolong the fight. They will explode if you stand next to them.
-- When Maarselok shouts Fus Ro Dah, block to avoid being stunned and hurled across the room.
-- Stranglers will continually spawn and attack the spiders. Stranglers must be killed to allow spiders to reach Maarselok.
-- Once enough spiders have damaged Maarselok, he descends for 20 seconds. This is when he can be damaged.
-        ]]}, 
+    },
+    ["maarsmap05_base"] = {
+        ["selene"] = {[[Selene's Claws and Selene's Fangs]], [[Mechanics:
+- Non-tanks: Both the bear's and spider's heavy attacks will one-shot you unless you |c00ff00dodge|r. Blocking will not save you.
+- The spider spawns once the bear is killed. - |c00FF00Stand back|r while it spawns to avoid being targeted by a heavy attack.
+- The spider will continually spawn spiderlings, which will overwhelm the group unless dealt with.
+- If caught in Selene's poison cone attack, stay still and block. The effect will follow you and damage other players if you move.
+- When Selene teleports and starts channeling, she must be - |c00FF00interrupted|r or the group will wipe.]]}, 
+    },
+    ["maarsmap06_base"] = {
         ["maarselok_final"] = {[[Maarselok (Final Battle)]], [[|cffcc66Hard Mode:
 - Selene joins the fight as an enemy, with the same mechanics as in her boss fight.
 - When Selene's shield is depleted, a seed spawns somewhere in the room. The 3 non-tanks must each synergize with the seed. Each player will see one of the three pads in the room light up (coordinate as the lit pad may not be the same for all players!). All players must go and cleanse on the pad which is lit up for the MAJORITY of players.
@@ -546,15 +546,15 @@ Mechanics:
 - Adds will spawn throughout the fight. Deal with them or be overwhelmed.
 - Non hard mode only: the boss can curse players, who have 20 seconds to cleanse or a lurcher will spawn.]]},
     },
-    ["maarsmap04_base"] = {
-    },
-    ["maarsmap05_base"] = {
-    },
-    ["maarsmap06_base"] = {
-    },
     ["maarsoutsidemap001_base"] = {
     },
     ["maarsoutsidemap003_base"] = {
+        ["maarselok"] = {[[Maarselok]], [[
+- |c00FF00Everyone:|r prevent hoarvors from reaching Selene, as they will stun her and prolong the fight. They will explode if you stand next to them.
+- When Maarselok shouts Fus Ro Dah, block to avoid being stunned and hurled across the room.
+- Stranglers will continually spawn and attack the spiders. Stranglers must be killed to allow spiders to reach Maarselok.
+- Once enough spiders have damaged Maarselok, he descends for 20 seconds. This is when he can be damaged.
+        ]]}, 
     },
                     
                     
@@ -644,6 +644,8 @@ Mechanics:
 - A sphere will spawn at 80%, 60%, 40% and 20% health. The sphere targets a random player, who will have a pulsing AoE under them. If it reaches the player they will be turned to stone.
 - Everyone: if the sphere targets you, move closer to the boss and tank so that other group members can attack the sphere and/or free you.
 - Everyone: if a player gets turned to stone, IMMEDIATELY free them with a synergy.]]},
+    },
+    ["scalecaller002_base"] = {
         ["aldis"] = {[[Matriarch Aldis]], [[Mechanics:
 - Every time the boss loses 10% health, a Leminid add will spawn, which must be killed quickly or it will produce a geyser that causes huge damage.
 - Therefore, do NOT kill the boss too fast, or you will have to deal with multiple Leminids at once.
@@ -651,6 +653,10 @@ Mechanics:
 - Tank: when the boss channels and a small spike starts to appear, stand on the spike to prevent huge group damage.
 - Everyone: if the boss fears you, break free before you are forced to run into the water!
 - Everyone: stay close to the boss, if you move too far away he will jump on you.]]},
+    },
+    ["scalecaller003_base"] = {
+    },
+    ["scalecaller004_base"] = {
         ["mortieu"] = {[[Plague Concocter Mortieu]], [[Mechanics:
 - Tank: Each time a grate starts spewing poison, stand on it and block. Then return to the middle of the room, so you can reach other grates.
 - When the boss channels, interrupt him or he is likely to one-shot a DPS or healer.
@@ -670,12 +676,6 @@ Mechanics:
 - When the statues are destroyed, the dragon statues breathe poison which coats the floor. To survive, everyone must stand in the shield dropped by the boss.
 - When the boss shouts "MY SHIELD!", leave her shield and the fight continues.
 - After the first 20% health, the dragon statues will continue to breathe poison cones periodically. You must avoid these or be one-shot.]]},
-    },
-    ["scalecaller002_base"] = {
-    },
-    ["scalecaller003_base"] = {
-    },
-    ["scalecaller004_base"] = {
     },
                     
 
@@ -961,28 +961,28 @@ Mechanics:
                         
                         ---- Cradle of Shadows (DLC) ----
     ["ui_cradleofshadowsint_001_base"] = {
-        ["sithera"] = {[[Sithera]], [[Mechanics:
-- Tank: keep the boss and spider adds in the light at all times. When in the dark they only take 10% damage.
-- At 50% and 30% health, a brazier will extinguish and players will need to light the next brazier and move the fight to it.
-- She sometimes channels an ability to make herself stronger. Interrupt her to prevent this.
-]]},
     },
     ["ui_cradleofshadowsint_002_base"] = {
         ["khephidaen"] = {[[Khephidaen the Spiderkith]], [[Mechanics:
 - Tank: keep the boss and spider adds in the light at all times. When in the dark they only take 10% damage.
 - She will sometimes teleport to a random brazier and extinguish it, creating shadow adds. Turn the brazier back on ASAP to get rid of the shadows.
 ]]},
+["sithera"] = {[[Sithera]], [[Mechanics:
+- Tank: keep the boss and spider adds in the light at all times. When in the dark they only take 10% damage.
+- At 50% and 30% health, a brazier will extinguish and players will need to light the next brazier and move the fight to it.
+- She sometimes channels an ability to make herself stronger. Interrupt her to prevent this.
+]]},
     },
     ["ui_cradleofshadowsint_003_base"] = {
         ["votary"] = {[[Votary of Velidreth]], [[Mechanics:
 - The boss will heal itself 10%/second by feeding off dead spiders. Interrupt ASAP.
 - The boss will create a huge floor AoE that explodes at its peak. This can kill even blocking tanks, so everyone should move out of it.]]},
-    },
-    ["ui_cradleofshadowsint_004_base"] = {
-        ["dranos"] = {[[Dranos Velandor]], [[Mechanics:
+["dranos"] = {[[Dranos Velandor]], [[Mechanics:
 - The boss will sometimes become invulnerable, the statue in the centre of the room will emit damage waves, and 3 shadow adds will spawn. Kill the shadows and collect the red orbs they drop to make the boss vulnerable again.
 - The boss will spawn 2 adds who pin the aggroed player to the ground. Other players must quickly kill or interrupt the adds, or the boss will one-shot the pinned player.
 - The boss sometimes teleports to each player in turn and attacks them, leaving behind a floor AoE. When this happens block, then move out of the AoE.]]},
+    },
+    ["ui_cradleofshadowsint_004_base"] = {
     },
     ["ui_cradleofshadowsint_005_base"] = {
         ["velidreth"] = {[[Velidreth]], [[
@@ -1372,20 +1372,6 @@ Mechanics:
 
         ---- Scrivener's Hall (DLC) ----
         ["u37_scrivenershall_boss3_map"] = {
-            ["ozezan"] = {[[Ozezan The Inferno]], [[Mechanics:
-- The boss sometimes burrows into the ground, reappearing somewhere else and leaving behind a permanent lava pool. As the fight progresses, more and more of the arena will become unusable.
-- Tank: try to lead the boss back to previous lava pools.
-- Broodling adds spawn continually during the fight. They are weak but should be killed so that they do not overwhelm the group.
-- Broodlings have an interruptible channeled attack that puts a DOT on all players.
-- Halfway through the fight, the boss will burrow to the centre of the room and create a large spreading AoE which takes up most of the room. Get out of this or you will die.]]},
-            ["valinna"] = {[[Valinna]], [[Mechanics:
-- At first you face Lamikhai (giant spider), then Valinna appears.
-- Everyone: when a red rune appears above your head, a meteor is about to hit you and leave a permanent ground AoE. Move to the edge of the room so that the AoEs do not fill the fight area.
-- Tank: when the spider turns red (enrages), lead it into the ice AoE created by the friendly NPC.
-- When the boss leaves the first room she will create a spreading fire AoE. Everyone must go through the gate to the second room or be one-shotted.
-- Ensnaring spiders spawn at the room's edges. They sometimes cocoon a player and pull the cocoon towards themselves. Kill the spider before the cocooned player reaches them, or the player will die.
-- When an expanding AoE appears under your feet, STAY IN IT until it explodes, otherwise you will die.
-- LArge glowing meteors sometimes land on the floor. Kill them before they explode.]]},
 },
         ["u37_scrivenershall_sect1_map"] = {
             ["naqri"] = {[[Ritemaster Naqri]], [[Mechanics:
@@ -1400,10 +1386,24 @@ Mechanics:
         ["u37_scrivenershall_sect2a_map"] = {
 },
         ["u37_scrivenershall_sect2b_map"] = {
+            ["ozezan"] = {[[Ozezan The Inferno]], [[Mechanics:
+- The boss sometimes burrows into the ground, reappearing somewhere else and leaving behind a permanent lava pool. As the fight progresses, more and more of the arena will become unusable.
+- Tank: try to lead the boss back to previous lava pools.
+- Broodling adds spawn continually during the fight. They are weak but should be killed so that they do not overwhelm the group.
+- Broodlings have an interruptible channeled attack that puts a DOT on all players.
+- Halfway through the fight, the boss will burrow to the centre of the room and create a large spreading AoE which takes up most of the room. Get out of this or you will die.]]},
 },
         ["u37_scrivenershall_sect3a_map"] = {
 },
         ["u37_scrivenershall_sect3b_map"] = {
+            ["valinna"] = {[[Valinna]], [[Mechanics:
+- At first you face Lamikhai (giant spider), then Valinna appears.
+- Everyone: when a red rune appears above your head, a meteor is about to hit you and leave a permanent ground AoE. Move to the edge of the room so that the AoEs do not fill the fight area.
+- Tank: when the spider turns red (enrages), lead it into the ice AoE created by the friendly NPC.
+- When the boss leaves the first room she will create a spreading fire AoE. Everyone must go through the gate to the second room or be one-shotted.
+- Ensnaring spiders spawn at the room's edges. They sometimes cocoon a player and pull the cocoon towards themselves. Kill the spider before the cocooned player reaches them, or the player will die.
+- When an expanding AoE appears under your feet, STAY IN IT until it explodes, otherwise you will die.
+- Large glowing meteors sometimes land on the floor. Kill them before they explode.]]},
 },
         ["u37_scrivenershall_boss3int_ma"] = {
 },
@@ -1471,6 +1471,8 @@ Mechanics:
 - Spriggans heal the boss, so must be killed in order to defeat the boss. There are stranglers near each spriggan, so do not approach them alone.
 - When the boss roots all players to the ground, break free or dodge roll.
 ]]},
+    },
+    ["mhkmoonhunterkeep3_base"] = {
         ["mylenne"] = {[[Mylenne Moon-Caller]], [[Mechanics:
 - When the boss pounces on a random player, interrupt or the player will be one-shot.
 - At 80/60/40/20% health, 3 wolves and 2 wardens will spawn. Prioritize them over the boss.
@@ -1482,8 +1484,6 @@ Mechanics:
 - The boss sometimes raises a random player in the air and encases them in a shield. The shield must be broken by damaging it. If this is not done, the shield will explode and kill the player.
 - When the rune over the boss' head turns solid, 4 matching runes will light up around the edge of the room (corridor, beside the stairs, and at the top of the stairs).
 - When this happens, a DIFFERENT player must stand on each of the 4 glowing runes.]]},
-    },
-    ["mhkmoonhunterkeep3_base"] = {
         ["vykosa"] = {[[Vykosa the Ascendant]], [[Mechanics:
 - A complex fight with a ridiculous number of challenging adds.
 - The red and grey wolf pets should be prioritized over the boss. They are attached to a single chain, so when one moves forward the other is pulled back.
@@ -1525,6 +1525,8 @@ Mechanics:
 ]]},
     },
     ["mawlorkajhall_base"] = {
+    },
+    ["mawlorkajsevenriddles_base"] = {
         ["rakkhat"] = {[[Rakkhat]], [[Mechanics:
 - There are 8 pads around the room. Each DPS should be assigned a different pad.
 - Only the tank is allowed on gold pads. No-one should touch blue (curse) pads.
@@ -1532,10 +1534,7 @@ Mechanics:
 - When the boss jumps at the tank, EVERYONE must block or be thrown across the room into random badness.
 - When the boss says "A storm approaches", the furthest players will be targeted by meteors. They should move away from the group and try to avoid being hit, then return.
 - Hulk adds: if they hit a tank 3x in a row the tank will die, hence the two tanks must pass the hulk between them via taunts to avoid this.
-- A lot more: Bombs, tethers, assassins, runners, lunar phase, execute phase...
-]]},
-    },
-    ["mawlorkajsevenriddles_base"] = {
+- A lot more: Bombs, tethers, assassins, runners, lunar phase, execute phase...]]},
     },
     ["mawlorkajsuthaysanctuary_base"] = {
     },
@@ -1692,9 +1691,6 @@ Mechanics:
 	["craglorn"] = {
         ---- Falkreath Hold ----
     ["falkreathsdemise_b_base"] = {
-        ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[Mechanics:
-- When each add is killed, its corpse will produce a beam of light. A player must cleanse as many corpses as possible, using a synergy collected from the urns at the back of the room.
-- Once enough adds have spawned, the boss will channel and each player will get an AoE under their feet. Spread out. If more than 1-2 uncleansed corpses are present, the group is likely to wipe.]]},
         ["domihaus"] = {[[Domihaus]], [[Mechanics:
 - The boss will "suck in" all players to his location in the centre of the room. Each player will then leave a trail of AoEs on the ground for a time. Players must move steadily away from the boss so that their AoEs do not stack (own or other players).
 - When the boss starts slamming the ground, hide behind a pillar.
@@ -1703,6 +1699,9 @@ Mechanics:
 - At very low health the boss gains a damage shield and adds start spawning. The shield disappears periodically and the boss has to re-cast it.]]},
     },
     ["falkreathsdemise_i_base"] = {
+        ["deathlord"] = {[[Deathlord Bjarfrud Skjoralmor]], [[Mechanics:
+- When each add is killed, its corpse will produce a beam of light. A player must cleanse as many corpses as possible, using a synergy collected from the urns at the back of the room.
+- Once enough adds have spawned, the boss will channel and each player will get an AoE under their feet. Spread out. If more than 1-2 uncleansed corpses are present, the group is likely to wipe.]]},
     },
     ["falkreathsdemise_base"] = {
         ["morrigh"] = {[[Morrigh Bullblood]], [[Mechanics:
@@ -1740,6 +1739,8 @@ Mechanics:
 - Everyone: when the boss pounds the ground with his weapon, jump onto one of the lava platforms, wait until all ground fire is GONE, then jump off the platform.
 - The platforms should each only have one player on them at a time. If they are overloaded they will break, dropping players into the lava. 
 - At 50% health, the boss will wake up the stone atronachs in the room. These have the same "enrage" mechanics as the Stoneheart fight.]]},
+    },
+    ["bloodrootint2_base"] = {
         ["gherig"] = {[[Gherig Bullblood]], [[Mechanics:
 - Three bosses: bull, melee and ranged.
 - Everyone: when the minotaur chains two players and starts channeling, interrupt him. The players must also move out of the AoEs he created as they will still explode.
@@ -1748,8 +1749,6 @@ Mechanics:
 - The boss will plunge his fist into the ground and channel, causing a fire trail to move across the floor and create a pool of lava. The pool will fire projectiles at nearby players. Getting hit by 3 rocks will fossilize the player temporarily.
 - The boss will sometimes become invulnerable and create a rain of stones.
 - At 80% health the boss splits in two. At 50% health, a third boss appears. The three bosses have all the same mechanics as the original boss.]]},
-    },
-    ["bloodrootint2_base"] = {
     },
 
             ---- Hel Ra Citadel (TRIAL) ----
@@ -1815,6 +1814,8 @@ Mechanics:
 
             ---- Sanctum Ophidia (TRIAL) ----
     ["trl_so_map01_base"] = {
+    },
+    ["trl_so_map02_base"] = {
         ["manticora"] = {[[Possessed Manticora]], [[Mechanics:
 - Tanks: do not over-taunt the boss, or she will rampage around the room and attack random players.
 - Popcorn: when you see a growing AoE under your feet, two more static AoEs will get placed at your position, then all 3 will explode in succession. Therefore move away from the group so you don't get caught in all 3 explosions.
@@ -1827,8 +1828,8 @@ Mechanics:
         ["stonebreaker"] = {[[Stonebreaker]], [[Mechanics:
 - The boss throws a ball of poison at random players. This can be dodged, otherwise the player will receive a poison DOT which will spread to any players they touch!
 - At 75/50/25% health, the boss will spawn Overcharger adds.]]},
-},
-    ["trl_so_map02_base"] = {
+    },
+    ["trl_so_map03_base"] = {
         ["ozara"] = {[[Ozara]], [[Mechanics:
 - Pin: the boss casts a spell and pins group members. They must be freed by other players via a synergy.
 - All the adds in the fight will respawn if killed.
@@ -1843,8 +1844,6 @@ Mechanics:
 - Blue totems place a magicka bomb on a random player (blue glow). To survive the player must try to quickly empty their magicka bar to 0.
 - When the boss fires pink shards - each player should move to a different shard (there is 1 each), where they will get a protective bubble.
 - After firing the shards, the boss causes an explosion. Any players who do not have a bubble will die.]]},
-    },
-    ["trl_so_map03_base"] = {
     },
     ["trl_so_map04_base"] = {
     },
@@ -1895,11 +1894,11 @@ Mechanics:
 },
 ["domdepthsofmal2_base"] = {
     ["weeping"] = {[[The Weeping Woman]], [[]]},
+},
+["domdepthsofmal3_base"] = {
     ["dark_orb"] = {[[The Dark Orb]], [[]]},
     ["narilmor"] = {[[King Narilmor]], [[]]},
     ["blades"] = {[[Symphony of Blades]], [[]]},
-},
-["domdepthsofmal3_base"] = {
 },
 ["domdepthsofmal4_base"] = {
 },
@@ -1911,22 +1910,22 @@ Mechanics:
     ["kinras"] = {[[Kinras Ironeye]], [[]]},
 },
 ["bdvilla_map2ext2"] = {
-    ["zeal"] = {[[Avatar of Zeal]], [[]]},
-    ["vigor"] = {[[Avatar of Vigor]], [[]]},
-    ["fortitude"] = {[[Avatar of Fortitude]], [[]]},
-    ["geminus"] = {[[Captain Geminus]], [[]]},
     ["encratis"] = {[[Pyroturge Encratis]], [[]]},
+},
+["bdvilla_boss3map"] = {
     ["aksalaz"] = {[[Sentinel Aksalaz]], [[]]},
 },
-["bdvilla_map3ext1"] = {
-},
 ["bdvilla_map3int1"] = {
+    ["geminus"] = {[[Captain Geminus]], [[]]},
 },
 ["bdvilla_mapsecret1"] = {
+    ["zeal"] = {[[Avatar of Zeal]], [[]]},
 },
 ["bdvilla_mapsecret2"] = {
+    ["vigor"] = {[[Avatar of Vigor]], [[]]},
 },
 ["bdvilla_mapsecret3"] = {
+    ["fortitude"] = {[[Avatar of Fortitude]], [[]]},
 },
 },	-- end Gold Coast	
 
@@ -1956,7 +1955,7 @@ Mechanics:
 
 -- start Southern Elsweyr
 ["southernelsweyr"] = {							
-        ---- Moongrave Fane (DLC) (actually located in Northern zone) ----
+        --== Moongrave Fane (DLC) (actually located in Northern zone) ==--
 ["moongravesection1_base"] = {
     ["ruins"] = {[[The Risen Ruins]], [[]]},
 },
@@ -2065,15 +2064,15 @@ Phase 3 (final):
     ["factotum"] = {[[The Pinnacle Factotum]], [[]]},
 },
 ["hofabrichall1_base"] = {
-    ["archcustodian"] = {[[The Archcustodian]], [[]]},
-    ["committee"] = {[[The Refabrication Committee]], [[]]},
-    ["assembly"] = {[[The Assembly General]], [[]]},
 },
 ["hofabricloop_base"] = {
+    ["archcustodian"] = {[[The Archcustodian]], [[]]},
 },
 ["hofabricboss3_base"] = {
+    ["assembly"] = {[[The Assembly General]], [[]]},
 },
 ["hofabricext1_base"] = {
+    ["committee"] = {[[The Refabrication Committee]], [[]]},
 },
 ["hofabrichall2_base"] = {
 },
@@ -2128,14 +2127,14 @@ Phase 3 (final):
     ["kraglen"] = {[[Exarch Kraglen]], [[]]},
 },
 ["stonegarden02"] = {
+},
+["stonegarden02b_base"] = {
     ["behemoth"] = {[[Stone Behemoth]], [[]]},
 },
-["stonegarden02b"] = {
-},
 ["stonegarden03"] = {
-    ["arkasis"] = {[[Arkasis the Mad Alchemist]], [[]]},
 },
-["stonegarden03b"] = {
+["stonegarden03b_base"] = {
+    ["arkasis"] = {[[Arkasis the Mad Alchemist]], [[]]},
 },
         ---- Kyne's Aegis (TRIAL) ----
 ["kynesaegisboss3floor001"] = {
@@ -2226,13 +2225,10 @@ Mechanics:
 ["blackwood"] = {
 ---- The Dread Cellar (DLC) ----
 ["tdc_map_boss3rooms_001"] = {
-    ["purgator"] = {[[Purgator]], [[]]},
-    ["undertaker"] = {[[Undertaker]], [[]]},
-    ["cyronin"] = {[[Cyronin Artellian]], [[]]},
-    ["warden"] = {[[Grim Warden]], [[]]},
-    ["magma_incarnate"] = {[[Magma Incarnate]], [[]]},
 },
 ["tdc_map_inside_001"] = {
+    ["cyronin"] = {[[Cyronin Artellian]], [[]]},
+    ["magma_incarnate"] = {[[Magma Incarnate]], [[]]},
 },
 ["tdc_map_outside_001"] = {
     ["broodlord"] = {[[Scorion Broodlord]], [[]]},
@@ -2240,10 +2236,13 @@ Mechanics:
 ["tdc_map_secret_001"] = {
 },
 ["tdc_map_secrethall_001"] = {
+    ["purgator"] = {[[Purgator]], [[]]},
 },
 ["tdc_map_secrethall_002"] = {
+    ["undertaker"] = {[[Undertaker]], [[]]},
 },
 ["tdc_map_secrethall_003"] = {
+    ["warden"] = {[[Grim Warden]], [[]]},
 },
 
 ---- Rockgrove (TRIAL) ----
@@ -2354,15 +2353,6 @@ Mechanics:
 ["systres"] = {							
         ---- Earthen Root Enclave (DLC) ----
 ["ere_insidemap01"] = {
-    ["scaled_roots"] = {[[Scaled Roots]], [[Mechanics:
-- Activate the boss fight by lighting 3 bonfires.
-- Everyone: watch your feet to see when you are being targeted by a meteor (block to mitigate damage).
-- Tank: when the boss hits you with a fire attack, move out of the fire AoE which it leaves on the ground. ]]},
-    ["corrupt_stone"] = {[[Corruption of Stone]], [[Mechanics:
-- Tank: every time you dodge, the boss enrages! Do not dodge!
-- Everyone: spread out to avoid stacking AoEs. Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
-- At 80/60/30% health, the boss will channel a huge AoE. One rock will be poking out of the ground - all players must hide behind it or the group will wipe. This will happen twice in a row at each health threshold.
-- After the above mechanic, atronach adds will spawn. They should be interrupted to prevent their channeled beams from turning players to stone.]]},
     ["lutea"] = {[[Lutea]], [[Mechanics:
 - To spawn the boss, you must find and kill 3 pairs of spriggan minibosses. Each time a pair is killed, you can pick up a cup of tainted water. You must then find the 2 large glowing flowers within 60 seconds.
 - Once this has been done 3 times, the boss spawns from a geyser.
@@ -2371,6 +2361,19 @@ Mechanics:
     ["corrupt_root"] = {[[Corruption of Root]], [[Mechanics:
 - There are lots of damaging ground AoEs during the fight, spread out and keep moving to avoid them. 
 - The boss sometimes splits into multiple clones. Once the clones are all killed, the boss reappears.]]},
+},
+["ere_outsidemap01"] = {
+    ["scalded_roots"] = {[[Scalded Roots]], [[Mechanics:
+- Activate the boss fight by lighting 3 bonfires.
+- Everyone: watch your feet to see when you are being targeted by a meteor (block to mitigate damage).
+- Tank: when the boss hits you with a fire attack, move out of the fire AoE which it leaves on the ground. ]]},
+    ["corrupt_stone"] = {[[Corruption of Stone]], [[Mechanics:
+- Tank: every time you dodge, the boss enrages! Do not dodge!
+- Everyone: spread out to avoid stacking AoEs. Keep moving, to avoid the exploding AoEs which constantly appear under your feet.
+- At 80/60/30% health, the boss will channel a huge AoE. One rock will be poking out of the ground - all players must hide behind it or the group will wipe. This will happen twice in a row at each health threshold.
+- After the above mechanic, atronach adds will spawn. They should be interrupted to prevent their channeled beams from turning players to stone.]]},
+},
+["ere_outsidemap02"] = {
     ["jodoro"] = {[[Jodoro]], [[Mechanics:
 - To spawn the boss, find and activate three stone "donuts".
 - The boss channels a mind blast attack (interruptible) which will hit all players in the boss' line of sight.
@@ -2389,10 +2392,6 @@ Mechanics:
 - When the bear prepares to charge, move to make him charge into (and destroy) the totems.
 - At low health, the boss will rain lightning bolts on all players. These must be blocked.]]},
 },
-["ere_outsidemap01"] = {
-},
-["ere_outsidemap02"] = {
-},
         ---- Graven Deep (DLC) ----
 ["gravendeep_dropbott_map"] = {
 },
@@ -2406,11 +2405,15 @@ Mechanics:
 - If you find a poison AoE attached to you, move to one of the burrows and use a synergy to plug the burrow and get rid of the AoE.
 - Tank: When the boss "flips out" and races all over the room, keep him taunted but do not chase him.
 - The boss sometimes summons a clone, who will explode after a short time.]]},
+},
+["gravendeep_section2_map"] = {
     ["xzyviian"] = {[[Xzyviian, Defense Crawler]], [[Mechanics:
 - Nothing notable.]]},
     ["varzunon"] = {[[Varzunon]], [[Mechanics:
 - The boss spawns blue skeletons that walk toward him. Each skeleton that reaches him makes him stronger and larger.
 - Skeleton adds will spawn throughout the fight, keep their population under control.]]},
+},
+["gravendeep_section3_map"] = {
     ["chralzak"] = {[[Chralzak, Sphere 9402-A]], [[Mechanics:
 - Nothing notable.]]},
     ["zelvraak"] = {[[Zelvraak the Unbreathing]], [[Mechanics:
@@ -2422,15 +2425,34 @@ Mechanics:
 - The boss sometimes transports all players to solo instances, where they must kill black ghosts, and heal by collecting white ghosts. After this phase ends a flesh abomination will spawn. (If the players kill a large number of black ghosts, it will be a weaker flesh atronache instead.)
 - At 75% and 25% health, the boss spawns 4 reflections who fire projectiles at the group.]]},
 },
-["gravendeep_section2_map"] = {
-},
-["gravendeep_section3_map"] = {
-},
 ["gravendeep_secret1_map"] = {
 },
 
         ---- Dreadsail Reef (TRIAL) ----
 ["dsr_b2_map"] = {
+    ["reef_guardian"] = {[[Reef Guardian]], [[Mechanics:
+- The arena consists of roofed safe areas where plants grow.
+- While players stay in a safe area, plants will spawn there. Once there are 6 plants, the centre plant starts spitting projectiles that deal oblivion damage (bypasses shields).
+- At 80% and 50% health, the boss creates smaller clones of itself.
+- These clones create even smaller clones at 50% health.
+- A boss will sometimes jump down a hole into the lower level, and start casting Heartburn for 60s on a Reef Heart. If the heart is not destroyed in time, the boss will enrage, and will wipe the group unless killed in 10 seconds. Therefore players must pursue the boss to the lower level.
+- To pursue the boss, enter the water in the middle of the arena. You will land in a whirlpool with 3 entrances. Each entrance leads to a different pair of reef hearts (cross/skull, anchor/wheel, chalice/crown).
+- After destroying a reef heart, you will have a parasite debuff for 40s that prevents you destroying another one.]]},
+},
+["dsr_b2under_map"] = {
+},
+["dsr_b3_map"] = {
+    ["taleria"] = {[[Tideborn Taleria]], [[Mechanics:
+- Portals open at 50%, 35% and 20% health.
+- When a portal opens, players must damage the channeler mage within to < 50% health, or the group will wipe.
+- When the boss places a Rapid Deluge bomb on players, the players should SWIM in water to get rid of it. They will take slaughterfish damage while in water.
+- Every 60s, a sea behemoth add spawns.
+- Every 30s, the boss spins for 6s, damaging all players. This cannot be blocked and must be out-healed.
+- When a moving wall of tornadoes appears, this must not be touched (one-shot).]]},
+},
+["dsr_beach_01"] = {
+},
+["dsr_boss1_map"] = {
     ["lylanar_turlassil"] = {[[Lylannar and Turlassil]], [[Mechanics:
 - The fight starts with 3 flame hounds and 3 frost hounds. The two bosses join the fight later.
 - First one boss will fight, then the other, and finally both bosses at once.
@@ -2446,58 +2468,45 @@ Mechanics:
 - When both bosses are present, 2 players will sometimes receive a firebrand and frostbrand. These 2 players must stack together before the brands detonate, otherwise both will die.
 - Once one boss dies, you have 15s to kill the other boss, or it will jump and wipe the group. Therefore, try to damage each boss evenly so they can be killed in quick succession.
 ]]},
-    ["reef_guardian"] = {[[Reef Guardian]], [[Mechanics:
-- The arena consists of roofed safe areas where plants grow.
-- While players stay in a safe area, plants will spawn there. Once there are 6 plants, the centre plant starts spitting projectiles that deal oblivion damage (bypasses shields).
-- At 80% and 50% health, the boss creates smaller clones of itself.
-- These clones create even smaller clones at 50% health.
-- A boss will sometimes jump down a hole into the lower level, and start casting Heartburn for 60s on a Reef Heart. If the heart is not destroyed in time, the boss will enrage, and will wipe the group unless killed in 10 seconds. Therefore players must pursue the boss to the lower level.
-- To pursue the boss, enter the water in the middle of the arena. You will land in a whirlpool with 3 entrances. Each entrance leads to a different pair of reef hearts (cross/skull, anchor/wheel, chalice/crown).
-- After destroying a reef heart, you will have a parasite debuff for 40s that prevents you destroying another one.]]},
-    ["bow_breaker"] = {[[Bow Breaker
-(mini boss)]], [[Mechanics:
-- Plants will spit projectiles that deal stacking oblivion damage (Volatile Residue). The stacks will expire if you can avoid being hit by a projectile for a few seconds.]]},
+},
+["dsr_doors_map"] = {
+},
+["dsr_e_map"] = {
     ["sail_ripper"] = {[[Sail Ripper
 (mini boss)]], [[Mechanics:
 - Stay under the shelters to avoid gaining stacks of lightning damage.
 - Interrupt the boss when it channels its lightning attack.
 - One player will have a lightning AoE attach to them. The player must deposit it on a hollow circular area to get rid of it.]]},
-    ["taleria"] = {[[Tideborn Taleria]], [[Mechanics:
-- Portals open at 50%, 35% and 20% health.
-- When a portal opens, players must damage the channeler mage within to < 50% health, or the group will wipe.
-- When the boss places a Rapid Deluge bomb on players, the players should SWIM in water to get rid of it. They will take slaughterfish damage while in water.
-- Every 60s, a sea behemoth add spawns.
-- Every 30s, the boss spins for 6s, damaging all players. This cannot be blocked and must be out-healed.
-- When a moving wall of tornadoes appears, this must not be touched (one-shot).]]},
-},
-["dsr_b2under_map"] = {
-},
-["dsr_b3_map"] = {
-},
-["dsr_beach_01"] = {
-},
-["dsr_boss1_map"] = {
-},
-["dsr_doors_map"] = {
-},
-["dsr_e_map"] = {
 },
 ["dsr_w_map"] = {
+},
+["dsr_v_map"] = {
+    ["bow_breaker"] = {[[Bow Breaker
+(mini boss)]], [[Mechanics:
+- Plants will spit projectiles that deal stacking oblivion damage (Volatile Residue). The stacks will expire if you can avoid being hit by a projectile for a few seconds.]]},
 },
 
 },  -- end High Isle
 
 
 	        -- start Telvanni Peninsula
-			-- TODO need correct zone/map names
-["telvannipeninsula"] = {	
-                ---- TODO Sanity's Edge (TRIAL) ----
-["sanitysedgemap1"] = {
+["telvanni"] = {	
+                ---- Sanity's Edge (TRIAL) ----
+["se_alinor"] = {
     ["descender"] = {[[Spiral Descender]], [[]]},
+},
+["se_orsinium"] = {
+    ["descender"] = {[[Spiral Descender]], [[Same as the mini-boss encountered in the first area.]]},
+},
+["sanitysedgeboss1_map"] = {
     ["yaselya"] = {[[Exarchanic Yaselya]], [[]]},
+},
+["sanitysedgeboss2_map"] = {
     ["twelvane"] = {[[Archwizard Twelvane and the Chimera]], [[]]},
+},
+["sanitysedgesection3"] = {
     ["ansuul"] = {[[Ansuul the Tormentor]], [[]]},
-},					
+}
 },  -- end Telvanni Peninsula
 
 } 	-- End Normal/DLC Dungons
