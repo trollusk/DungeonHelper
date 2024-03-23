@@ -2053,6 +2053,32 @@ Phase 3 (final):
 - At 80/60/40% health, the boss spawns a pair of adds (melee, archers, mages). You must kill these before continuing to attack the boss, or you will get overwhelmed.
 - At 75% and 50% health, the boss glows red and jumps on the platform she is standing on, destroying it. Get away from the platform or you will die!]]},
 },
+["bedlamveil"] = {
+	["shattered_champion"] = {[[Shattered Champion]], [[Mechanics:
+- Tank: don't dodge when then boss does a heavy attack, or he will enrage. This attack applies Hindered.
+Chain or taunt the adds to interrupt their 'salvo' ranged attack. (Can only be interrupted via taunting).
+- Healer: when the tank gets the Hindered debuff, heal them to remove it. Cleansing does not work.
+- Everyone: when the boss becomes immune to damage, focus or interrupt the adds to stop them channeling the protective spell.
+When the boss is about to drop a "sharp glass" AoE on you, move away from the centre of the fight, and dodge as it lands.]]},
+	["darkshard"] = {[[Darkshard]], [[Mechanics:
+- Accompanied by a "shade" who will copy some of its attacks, but directed at a random player.
+- Releases mini-bosses (from Maelstrom Arena) at 80%, 60% and 40% health.
+- When Champion of Atrocity enrages, kill hoarvors to unweb all 5 obelisks, which will stun her and remove the rage. Either kill them near obelisks, or pick up the item they drop and throw it at an obelisk.
+- When you are chased by a pack of spiderlings, move to the golden glowing obelisk.
+- Kill webspinner adds to prevent them webbing obelisks.
+- When the boss stuns you and casts an AOE around itself, break free and move away.
+- Don't kill the Argonian Minder. If the Behemoth screams, shelter inside the Argonian Minder's shield.
+- Kill the venomcaller adds to prevent them from causing Volatile Plants to explode.
+- If you are caught by a Volatile Plant explosion, run to a cleansing pool (blue glow).
+]]},
+	["the_blind"] = {[[The Blind]], [[Mechanics:
+- At 80/60/40/20% health, the boss adds Blind Shards (skeletons) to the fight. They cast Piercing Beam or Gleaming Deluge.
+- Gleaming Deluge: wave-like AOE that moves in a straight line. Use Ocular Disperser from puzzle 1 to protect yourself.
+- Piercing Beam: a straight "laser beam" that prevents you from using that part of the arena.
+- When an AOE starts forming under you, move away from the boss and dodge as it hits.
+- When the boss levitates, interrupt her using Catatonic Disruptor synergy from puzzle 3. Otherwise she will apply Hindered to the tank, which must be healed to be removed.
+- When the boss disappears, kill the glass remnant adds to make her return.]]},
+},
 },  -- end Wrothgar
 
 
@@ -2218,6 +2244,44 @@ Mechanics:
 - After defeating each miniboss, its mechanic will be added to the main boss fight.
 ]]},
 },
+["oathswornpit"] = {
+	["rethelros_malthil"] = {[[Packmaster Rethelros and Malthil]], [[Mechanics:
+- Keep the boss and the wolf apart - they will enrage when their auras intersect.
+- Avoid the bear traps that the boss throws onto the floor.
+- When the boss summons a totem, destroy it ASAP as while it exists the boss and wolf are invulnerable.
+- When the boss creates a red line between him and 3 players: move apart from the other players, block, and move away from the fire that the shot leaves behind.]]},
+	["anthelmir"] = {[[Anthelmir]], [[Mechanics:
+- At first you fight both Anthelmir and his Construct. At 70% health the two merge into a single boss.
+- Anthelmir will teleport, create a shield around himself, then start firing shards at players. To stop him, either destroy the shield or burn down the construct to 70% health.
+- Avoid the cindermoth adds as they explode on reaching a player.
+- Avoid letting enemy fire touch the explosive barrels, as if they explode they leave a ground AOE for the remainder of the fight.
+- When the construct extends its arm, an axe will fly to it from a corner of the room. Keep out of the way!
+- The construct will then start to throw the axe at a random player, who should dodge.
+]]},
+	["aradros"] = {[[Aradros The Awakened]], [[Mechanics:
+- The arena floor consists of a grid of tiles. The boss ignites various tiles during the fight. You can dodge roll through ignited tiles.
+- When he slams the floor he ignites the tiles around him, and also ignites the tiles under 2 random players. Keep moving and avoid other players.
+- He occasionally starts the furnace, which causes random tiles to ignite.
+- At 50% health he ignites the whole floor and opens the side boss doors. You will need to move to the new area and fight 1 (normal) or 2 (veteran) side bosses. These may include Faenalir, Nilborwen, Maeralor, or Stone Atronach.
+- Tank: block when the boss does his cone of fire attack. 
+
+Hard Mode:
+- You will need to fight 3 side bosses instead of 2.
+- Ignited tiles stay ignited for longer.]]},
+	["sluthrug"] = {[[Sluthrug the Bloodied]], [[Mechanics:
+- Gives buff: Bloodied Vitality (+10% healing done, -10% damage taken)
+- Activating his totem (red) gives +50% max health, and enemies near you take 20% of your max health as physical damage when you receive damage.]]},
+	["bolg"] = {[[Bolg of Wicked Barbs]], [[Mechanics:
+- To access, light two braziers to open a door, then activate his totem.
+- In veteran mode, he summons ghost adds which will heal him if they reach an unlit brazier. If you light the brazier, the ghosts will die when they reach it.
+- Gives buff: Conqueror's Vim (+30% magicka recovery and stamina recovery)
+- Activating his totem (yellow) restores 16 ultimate to you, and 8 to players near you, every 2 seconds.]]},
+	["grubduthag"] = {[[Grubduthag Many-Fates]], [[Mechanics:
+- You can use the forges around the room to summon friendly flame atronachs.
+- Gives buff: Warrior's Visage (+10% weapon and spell damage)
+- Activating his totem (blue) gives a large amount of bonus flame damage when you make a light or heavy attack.]]},
+},
+
 },  -- end The Reach
 
 
@@ -2548,6 +2612,25 @@ local DHLocalizedHintData = {
 		},
 		["u37_scrivenershall_sect1baseme"] = {
 		},
+	},
+	["wrothgar"] = {
+		---- Bedlam Veil (DLC) ----
+		["bedlamveil"] = {
+			["puzzle1"] = {[[First Puzzle]], [[- "Deactivate 2 lines, leaving 3 squares."
+- Deactivate the 2 lines forming a corner.
+- Gives buff: Zephyrys Obscuris
+			]]},
+			["puzzle2"] = {[[Second Puzzle]], [[- "Deactivate 2 lines, leaving 2 squares."
+- Deactivate the 2 lines that are part of the central cross. This creates a small square inside a larger square.
+- Gives buff: Ocular Disperser]]},
+			["puzzle3"] = {[[Third Puzzle]], [[- "Deactivate 3 lines, leaving 4 squares."
+- The solution depends on the arrangement of the puzzle (3 arrangements are possible).
+- Gold lines form a 'b' on the left side => deactivate the outer corner of the b, and the top middle line.
+- Gold lines all along the bottom => deactivate the lower outer corner, and the right middle line.
+- Horizontal gold lines top to bottom in the middle => deactivate those 3 lines.
+- Gives buff: Catatonic Disruptor
+]]},
+		}
 	},
     ["reach"] = {							
         ---- Vateshran Hollows (SOLO ARENA) ----

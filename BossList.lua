@@ -870,7 +870,12 @@ local DHData = {
         },
         ["arenaswrothgarexterior_base"] = {{0.5, 0.5,
                                             DH_GetLocalizedData("wrothgar", "arenaswrothgarexterior_base", "runa")} -- Matriarch Runa
-        }
+        },
+		-- Bedlam Veil (Scions of Ithelia DLC)
+		["bedlamveil"] = {{0.5, 0.5, DH_GetLocalizedData("wrothgar", "bedlamveil", "shattered_champion")},
+						  {0.5, 0.5, DH_GetLocalizedData("wrothgar", "bedlamveil", "darkshard")},
+						  {0.5, 0.5, DH_GetLocalizedData("wrothgar", "bedlamveil", "the_blind"), "FINAL"}
+		}
     }, -- end Wrothgar
 
     -- start Vvardenfell
@@ -983,7 +988,15 @@ local DHData = {
         },
         ["vateshransritesmap05"] = {{0.54, 0.46, DH_GetLocalizedData("reach", "vateshransritesmap05", "maebroogha"),
                                      "FINAL"} -- Maebroogha The Void Lich
-        }
+        },
+		-- Oathsworn Pit (Scions of Ithelia DLC)
+		["oathswornpit"] = {{0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "rethelros_malthil")},
+						    {0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "anthelmir")},
+						    {0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "aradros"), "FINAL"},
+							{0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "sluthrug"), "SECRET"},
+							{0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "bolg"), "SECRET"},
+							{0.5, 0.5, DH_GetLocalizedData("reach", "oathswornpit", "grubduthag"), "SECRET"},
+		}
     }, -- end The Reach
 
     -- start Blackwood
@@ -1160,6 +1173,14 @@ local DHHintData = {
         ["u37_scrivenershall_sect1floor2"] = {},
         ["u37_scrivenershall_sect1baseme"] = {}
     },
+	["wrothgar"] = {
+		---- Bedlam Veil (DLC) ----
+		["bedlamveil"] = {
+		{0.7, 0.5, DH_GetLocalizedData("wrothgar", "bedlamveil", "puzzle1")},
+		{0.7, 0.7, DH_GetLocalizedData("wrothgar", "bedlamveil", "puzzle2")},
+		{0.5, 0.5, DH_GetLocalizedData("wrothgar", "bedlamveil", "puzzle3")}
+		}
+	},
     ["reach"] = {
         ---- Vateshran Hollows (SOLO ARENA) ----
         ["vateshransrites01"] = {},

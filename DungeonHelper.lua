@@ -122,13 +122,13 @@ local function MapCallback_bosses_subtype(boss_type)
     -- eg zone might be "shadowfen" and subzone might be "arxcorinium_base"
     -- if the subzone begins with "ui_map_" this will be removed.
     local zone, subzone = LMP:GetZoneAndSubzone()
-    if string.sub(subzone,1,6) == "ui_map" then
+    if subzone and string.sub(subzone,1,6) == "ui_map" then
         local mapTexture = GetMapTileTexture():lower()
         mapTexture = mapTexture:gsub("ui_map_", "")
         zone, subzone = select(3, mapTexture:find("maps/([%w%-]+)/([%w%-]+_[%w%-]+)"))
-        d("After removing ui_map, mapTexture = <"..mapTexture..">")
+        -- d("After removing ui_map, mapTexture = <"..mapTexture..">")
     end
-    d("zone = <"..zone.."> subzone = <"..subzone..">")
+    -- d("zone = <"..zone.."> subzone = <"..subzone..">")
 
     local pins = DH_GetLocalData(zone, subzone, BOSSES) -- returns table with entries {X, Y, {TITLE, DESCRIPTION} [, flagstring]}
 
@@ -199,6 +199,7 @@ local function MapCallback_hints()
     local typeof = HINTS
     if LMP:IsEnabled(typeof) then
         local zone, subzone = LMP:GetZoneAndSubzone()
+		d("DungeonHelper: zone='"..tostring(zone).."', subzone='"..tostring(subzone).."'")
         if subzone == "ui_map" then
             local mapTexture = GetMapTileTexture():lower()
             mapTexture = mapTexture:gsub("ui_map_", "")
