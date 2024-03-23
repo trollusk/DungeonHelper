@@ -1976,13 +1976,34 @@ Mechanics:
 ["wrothgar"] = {							
         ---- Icereach (DLC) ----
 ["icereachpart1"] = {
-    ["kjarg"] = {[[Kjarg the Tuskscraper]], [[]]},
-    ["skelga"] = {[[Sister Skelga]], [[]]},
-    ["vearogh"] = {[[Vearogh The Shambler]], [[]]},
+    ["kjarg"] = {[[Kjarg the Tuskscraper]], [[Mechanics:
+- An ice tornado will follow a random player, who should kite it.
+- Non-tanks should stand behind the boss to avoid his cone attack.
+- Tank: keep him facing away from the group. When he enrages (red glow), kite him to avoid taking damage.]]},
+    ["skelga"] = {[[Sister Skelga]], [[Mechanics:
+- If you get a fire ground AoE centred on you: avoid other players, and stand near the boss (the fire will damage her) or the strangler adds (to unfreeze them, making them vulnerable to damage.)
+- Stand behind the boss to avoid her ice cone attacks.
+- Tank: keep her facing away from the group. Don't try to cleanse her draining beams, you will only take more damage.]]},
+    ["vearogh"] = {[[Vearogh The Shambler]], [[Mechanics:
+- Stand behind the boss. Avoid the slow-moving fire AOEs.
+- When skeletons target you with a blue beam, kill them to stop them draining you.
+- Kill any wraiths quickly to stop them spawning skeletons.
+    ]]},
 },
 ["icereachpart2"] = {
-    ["revenant"] = {[[Stormborn Revenant]], [[]]},
-    ["ciannait"] = {[[Mother Ciannait]], [[]]},
+    ["revenant"] = {[[Stormborn Revenant]], [[Mechanics:
+- Kill the storm atronachs that spawn at the edge of the area, to stop them empowering the boss.
+- When he raises his sword and summons an ice storm, stay together so the healer can outheal the damage from this more easily.
+- Tank: dodge his heavy attack.]]},
+    ["ciannait"] = {[[Mother Ciannait]], [[Mechanics:
+- Only one witch can be damaged at any time. That witch will have no shield (bubble), and will be enraged.
+- Tank: you MUST keep the enraged witch taunted or she will one-shot other group members.
+- Tank: kite the Giant to avoid taking too much damage.
+- The player with the fire AOE must go to the stranglers to 'unfreeze' them, making them vulnerable to damage.
+- Kill any wraiths to stop them spawning other adds.
+- Keep mobile to avoid the various AOEs. Stay away from the player with the fire AOE.
+- Interrupt witches when they are channeling.
+- Once Mother Ciannait appears, she will channel a black orb that does more and more damage with each pulse. Kill her ASAP or the damage will become unsurvivable.]]},
 },
         ---- Maelstrom Arena (SOLO ARENA) ----
 ["arenasclockwork2_base"] = {
@@ -2571,6 +2592,32 @@ Mechanics:
 ["sanitysedgesection3"] = {
     ["ansuul"] = {[[Ansuul the Tormentor]], [[]]},
 }
+                ---- Bastion Nymic ----
+["bastion_nymic"] = {
+    ["vhogor"] = {[[Vhogor the Pestilent]], [[Mechanics:
+- When the boss slams the ground, he may either spawn adds or become enraged.
+- Kill the adds quickly, as the boss is invulnerable (and channels poison) while they are alive.
+- Be aware of the poison ground AOEs that will become more numerous during the fight.]]},
+    ["strix"] = {[[Kynemaster Strix]], [[Mechanics:
+- When it sends out a fan of projectiles, avoid them as each hit will create a ground AOE.
+- The boss sometimes teleports around, leaving clones behind that can use the same skills. 
+- Once the clones are killed, the real boss will reappear and deliver a heavy attack (block this).]]},
+    ["eater"] = {[[Eater of Secrets]], [[Mechanics:
+- It has two watcher minions, Enigma and Conundrum. Concentrate on killing these before the main boss.
+- Keep the number of adds under control during the fight, to avoid being overwhelmed.
+- When the main boss stomps on the ground, move away to avoid being stunned by the shockwave.]]},
+    ["herald"] = {[[The Herald]], [[Mechanics:
+    
+Irrefutable Herald:
+- Devour Brain (signalled by a yellow beam above its head) - break free or interrupt to avoid being one-shot.
+
+Noxious Herald:
+- If you are affected by the red sigil, move to the sides of the area.
+
+Dreadful Herald:
+- The first time you defeat the boss, a Nightmare will appear. You will need to defeat it, then defeat the boss once more.
+- The boss uses a "Teleport Strike" ability, and charges across the arena leaving a ground AoE behind.]]}
+}
 },  -- end Telvanni Peninsula
 
 } 	-- End Normal/DLC Dungons
@@ -2659,6 +2706,22 @@ local DHLocalizedHintData = {
         ["vateshransritesmap05"] = {
         },
     },  -- end The Reach
+    ["telvanni"] = {
+        ["bastion_nymic"] = {
+            ["puzzle_sw"] = {[[Fate's Puzzle]], [[- Look for 4 books with strange symbols.
+- Look for 4 pillars with symbols floating above them.
+- Match the symbols on the pillars with the symbols on the books.
+- Then interact with an arcane device and complete a memory test (copy the pattern of lit floor tiles).
+- Success grants access to a treasure chest.]]},
+            ["puzzle_se"] = {[[Pestilence's Puzzle]], [[- Collect 3 chalices of the *same* colour.
+- Then return to Peryite's statue room and interact with the statue.
+- A passage will open. Follow it and defeat the enemies to gain access to a chest.]]},
+            ["puzzle_n"] = {[[Nightmare's Puzzle]], [[- Look for floating purple flames. Approach them and defeat the Nightmare that spawns.
+- Synergize with the fissure, this will make you translucent and allow you to find Dark Portents.
+- Look for Dark Portents (orbs inside pillars). Interact to destroy them (you will lose the translucent buff).
+- Do this 4 times, and you will be able to enter the treasure vault.]]}
+        }
+            }
 }   -- end hints
 
 

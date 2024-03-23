@@ -839,7 +839,7 @@ local DHData = {
                              {0.549, 0.082, DH_GetLocalizedData("wrothgar", "icereachpart1", "vearogh")} -- Vearogh The Shambler
         },
         ["icereachpart2"] = {{0.3, 0.6, DH_GetLocalizedData("wrothgar", "icereachpart2", "revenant")}, -- Stormborn Revenant
-                             {0.2, 0.4, DH_GetLocalizedData("wrothgar", "icereachpart2", "ciannait")} -- Mother Ciannait
+                             {0.2, 0.4, DH_GetLocalizedData("wrothgar", "icereachpart2", "ciannait"), "FINAL DPSCHECK"} -- Mother Ciannait
         },
 
         --== Maelstrom Arena (SOLO ARENA) ==--
@@ -1141,6 +1141,12 @@ local DHData = {
         },
         ["sanitysedgesection3"] = {
             {0.5, 0.8, DH_GetLocalizedData("telvanni", "sanitysedgesection3", "ansuul"), "FINAL"} -- Ansuul the Tormentor
+        },
+        ["bastion_nymic"] = {
+            {0.5, 0.25, DH_GetLocalizedData("telvanni", "bastion_nymic", "strix")}, -- Kynemaster Strix
+            {0.25, 0.75, DH_GetLocalizedData("telvanni", "bastion_nymic", "eater")}, -- Eater of Secrets
+            {0.75, 0.75, DH_GetLocalizedData("telvanni", "bastion_nymic", "vhogor")}, -- Vhogor the Pestilent
+            {0.5, 0.5, DH_GetLocalizedData("telvanni", "bastion_nymic", "herald"), "FINAL"} -- The Herald
         }
     }
 } -- End Normal/DLC Dungeons
@@ -1195,7 +1201,14 @@ local DHHintData = {
                                      DH_GetLocalizedHintData("reach", "vateshransritesmap04", "essence_health")} -- Essence of Health
         },
         ["vateshransritesmap05"] = {}
-    } -- end The Reach
+    }, -- end The Reach
+    ["telvanni"] = {
+        ["bastion_nymic"] = {
+            {0.5, 0.25, DH_GetLocalizedData("telvanni", "bastion_nymic", "puzzle_n")},
+            {0.25, 0.75, DH_GetLocalizedData("telvanni", "bastion_nymic", "puzzle_sw")}, 
+            {0.75, 0.75, DH_GetLocalizedData("telvanni", "bastion_nymic", "puzzle_se")}, 
+        }
+    }
 }
 
 -- Constants
