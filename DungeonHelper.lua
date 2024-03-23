@@ -122,7 +122,7 @@ local function MapCallback_bosses_subtype(boss_type)
     -- eg zone might be "shadowfen" and subzone might be "arxcorinium_base"
     -- if the subzone begins with "ui_map_" this will be removed.
     local zone, subzone = LMP:GetZoneAndSubzone()
-    if subzone and string.sub(subzone,1,6) == "ui_map" then
+    if type(subzone) == "string" and string.sub(subzone,1,6) == "ui_map" then
         local mapTexture = GetMapTileTexture():lower()
         mapTexture = mapTexture:gsub("ui_map_", "")
         zone, subzone = select(3, mapTexture:find("maps/([%w%-]+)/([%w%-]+_[%w%-]+)"))

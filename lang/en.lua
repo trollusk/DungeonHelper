@@ -2053,7 +2053,7 @@ Phase 3 (final):
 - At 80/60/40% health, the boss spawns a pair of adds (melee, archers, mages). You must kill these before continuing to attack the boss, or you will get overwhelmed.
 - At 75% and 50% health, the boss glows red and jumps on the platform she is standing on, destroying it. Get away from the platform or you will die!]]},
 },
-["bedlamveil"] = {
+["u41_bv_sc1_map"] = {
 	["shattered_champion"] = {[[Shattered Champion]], [[Mechanics:
 - Tank: don't dodge when then boss does a heavy attack, or he will enrage. This attack applies Hindered.
 Chain or taunt the adds to interrupt their 'salvo' ranged attack. (Can only be interrupted via taunting).
