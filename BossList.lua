@@ -767,7 +767,7 @@ local DHData = {
         ["domdepthsofmal3_base"] = {
             {0.3, 0.3, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal3_base", "dark_orb")}, -- The Dark Orb
             {0.3, 0.65, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal3_base", "narilmor")}, -- King Narilmor
-            {0.8, 0.5, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal3_base", "blades")} -- Symphony of Blades
+            {0.8, 0.5, DH_GetLocalizedData("darkbrotherhood", "domdepthsofmal3_base", "blades"), "FINAL"} -- Symphony of Blades
         },
         ["domdepthsofmal4_base"] = {},
         ["domdepthsofmal5_base"] = {},

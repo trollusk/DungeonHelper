@@ -38,10 +38,7 @@ local DHLocalizedData = {
 - Nothing special.
 ]]},
 
-			["I_kra'gh"] = {[[Kra'gh The Dreugh King]], [[|cffcc66Hard Mode:
-- Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_kra'gh"] = {[[Kra'gh The Dreugh King]], [[Mechanics:
 - When he channels Lightning Field (large ground AoE), get out of the way or you will die.
 - Lunging Strike will kill non-tanks if they are not blocking.
 ]]},
@@ -107,10 +104,7 @@ Mechanics:
 - At 70% and 40%, fires a beam at the aggroed player, who must block and heal to survive.]]},
     },
     ["balsunn_deidric"] = {
-        ["lladi"] = {[[Lladi Telvanni]], [[|cffcc66Hard Mode:
-- Yes|r
-
-Mechanics:
+        ["lladi"] = {[[Lladi Telvanni]], [[Mechanics:
 - Summons skeevers who apply a fatal debuff if they manage to reach the targeted player.
 - While she is invulnerable, the minions she spawns can be "frozen" by activating the Shards of Time.]]},
     },
@@ -152,10 +146,7 @@ Mechanics:
 
 			["I_whisperer"] = {[[The Whisperer
 (Spindleclutch I)
-Last Boss]], [[|cffcc66Hard Mode:
-- Scroll of Glorious Battle.|r
-
-Mechanics:
+Last Boss]], [[Mechanics:
 - Adds can be pulled and killed before aggroing the boss.
 - When she turns to look at you, DODGE or you will be feared, and probably killed.
 - DPS/healers should spread out behind/beside her so it's easier to see who she is looking at.
@@ -206,16 +197,12 @@ Mechanics:
     ["rpb_map_ext001"] = {
         ["wraith_of_crows"] = {[[Wraith of Crows]], [[Mechanics:
 - Nothing special.]]},
-        ["rogerain"] = {[[Rogerain the Sly]], [[|cffcc66Hard Mode:
-- Yes (?scroll)|r
-
-Mechanics:
+        ["rogerain"] = {[[Rogerain the Sly]], [[Mechanics:
 - He will periodically turn one player into a goat. This can't be avoided.
 - As the goat, run around and collect sweetrolls to buff the group (increased healing, damage, and ultimate generation).]]},
     },
     ["rpb_map_int001"] = {
         ["artifact_bearers"] = {[[Eliam Merick, Ihudir, and Liramindrel]], [[|cffcc66Hard Mode:
-- Yes (?scroll)
 - Archer will maintain a shield on the boss which greatly reduces the damage he takes.
 - When the archer and fighter re-enter the fight at 30% health, they will both be invulnerable, so must be managed by taunting.|r
 
@@ -224,10 +211,7 @@ Mechanics:
 - At 80% health the archer joins the fight. At 50%, the melee fighter joins. At 30%, both re-enter the fight.]]},
         ["twilight"] = {[[Grievous Twilight]], [[Mechanics:
 - He will sometimes cast meteors (dodgeable) from the sky at each player simultaneously. Keep spread out for this reason.]]}, 
-        ["thierric"] = {[[Prior Thierric Sarazen]], [[|cffcc66Hard Mode:
-- Yes (?scroll)|r
-
-Mechanics:
+        ["thierric"] = {[[Prior Thierric Sarazen]], [[Mechanics:
 - Adds spawn in during the fight, these must be dealt with (including taunting) or the group will be overwhelmed.
 - Teleport Spike: when he teleports across the room and starts channeling, he MUST be interrupted or he will one-shot kill a random player.]]},
     },
@@ -269,10 +253,7 @@ Mechanics:
 - Kill scamps before focusing on the boss.
 ]]},
 
-			["I_rilis"] = {[[High Kinlord Rilis]], [[|cffcc66Hard Mode:
-- Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_rilis"] = {[[High Kinlord Rilis]], [[Mechanics:
 - Pull him to one of the far corners of the room.
 - Kill Feasts before they reach him.
 - When he raises his sword, he will use Ghost Fire x4. Just step out of them.
@@ -342,10 +323,7 @@ Mechanics:
 - His spin attack needs to be blocked by the tank, it will kill non-tanks.
 ]]},
 
-			["I_sentinel"] = {[[Sentinel of Rkugamz]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_sentinel"] = {[[Sentinel of Rkugamz]], [[Mechanics:
 - Decapitate: must be blocked by the tank, or they will be one-shot.
 - Spin: directed at a random player. Likely fatal if you are caught because it also applies a snare. The target should kite the boss carefully during this attack, avoiding the other players.
 ]]},
@@ -416,10 +394,7 @@ Mechanics:
 - Use the oil/fuel synergy to link each conduit to the centre structure. Lightning will strike, destroying the conduit and spawning adds.
 - The archer adds hit with very strong DOT attacks. Kill them quickly, or they will even manage to kill the tank.]]}, 
 
-        ["zaudrus"] = {[[Baron Zaudrus]], [[|cffcc66Hard Mode:
-- Yes|r
-        
-Mechanics:
+        ["zaudrus"] = {[[Baron Zaudrus]], [[Mechanics:
 - His cone attack will attach a lightning AoE to each player caught in the cone. |c00FF00Spread out|r to avoid stacking damage.
 - His rotating fire walls are instantly fatal. At 50% health he spawns 2 walls, at 25% health 4 walls.
 - When he spawns boulders these can block you from evading the fire walls.
@@ -590,10 +565,7 @@ Mechanics:
 - Nothing notable.
 ]]},
 
-			["I_allene"] = {[[Allene Pallingare]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_allene"] = {[[Allene Pallingare]], [[Mechanics:
 - Teleport Strike: this can target anyone. When she teleports, turn around quickly and block!
 - She periodically disappears and spawns several bats. Once these are killed she reappears and immediately hits the aggroed player with a heavy attack.
 - The red "heavy attack" visual effect can be seen before she becomes visible again.
@@ -664,7 +636,6 @@ Mechanics:
 - Once the potion is made, a healing/buffing floor AoE will appear. Stand in it to be cleansed of poison and receive a strong buff.
 - Tank: When the potion is finished, a guard add enters the room. Position him near the boss so both are damaged together.]]},
         ["zaan"] = {[[Zaan the Scalecaller]], [[|cffcc66Hard Mode:
-- Yes (?scroll)
 - When poison covers the floor, each group member must move to a DIFFERENT floor AoE (geyser, ice, laser, or the boss' shield).|r
 
 Mechanics:
@@ -707,10 +678,7 @@ Mechanics:
 - Nothing notable.
 ]]},
 
-			["I_erthas"] = {[[Razor Master Erthas]], [[|cffcc66Hard Mode: 
-- Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_erthas"] = {[[Razor Master Erthas]], [[Mechanics:
 - He will periodically summon a flame atronach (When below 25% health he will spawn 3!). Deal with these to avoid getting overwhelmed.
 - Everyone: if you are hit with a flame DOT, enter the water and it will be extinguished.
 ]]},
@@ -773,7 +741,6 @@ Mechanics:
 - In the Hunt at 50% health, two players will get lightning AoEs that follow them. If this touches another player, they will be thrown out of stealth.
 - In the Hunt at 20% health, fast-moving fire floor AoEs must be avoided, in addition to the above mechanics.]]}, 
         ["balorgh"] = {[[Balorgh]], [[|cffcc66Hard Mode:
-- Yes (?Scroll)
 - During the Hunt, the boss turns into 4 shadows instead of 1.|r
 
 Mechanics:
@@ -814,10 +781,7 @@ Mechanics:
 - HE will sometimes stun the group and lifesteal for a few seconds. Players can break free from this, or block.
 ]]},
 
-			["I_ilambris"] = {[[Ilambris Twins - Zaven & Athor]], [[|cffcc66Hard Mode: 
-- Scroll of Glorious Battle.|r
-
-Mechanics:
+			["I_ilambris"] = {[[Ilambris Twins - Zaven & Athor]], [[Mechanics:
 - A pair of bosses (blue and red).
 - Killing one boss enrages the other, so try to get them both to low health, them kill both quickly.
 - It is best to kill the red boss first, so the room does not get filled with fire.
@@ -925,10 +889,7 @@ Mechanics:
 ]]},
 
 			["sellistrix"] = {[[Sellstrix the Lamia Queen
-Last Boss]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+Last Boss]], [[Mechanics:
 - Tank: keep her on an island (not in the water) at all times. If she touches the water she sends electricity through it to damage all players standing in water.
 - Move into the water when she calls down lightning strikes.
 - Keep close, or she will charge at you.
@@ -1027,10 +988,7 @@ Mechanics:
 ]]},
 },
 		["direfrostkeepsummit_base"] = {
-			["drodda"] = {[[Drodda of Icereach]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["drodda"] = {[[Drodda of Icereach]], [[Mechanics:
 - Most of her attacks target random players, ignoring taunts.
 - She sometimes teleports and creates a spreading ground AoE. At its peak, ice shards explode from the ground, one-shotting any non-tank standing in the AoE.
 - Tank: when she spawns ice wraiths and frost atronachs, keep them taunted and stacked on the boss.
@@ -1075,7 +1033,7 @@ Mechanics:
 },
 		["frvfrstvlt04_base"] = {
 			["stonekeeper"] = {[[The Stonekeeper]], [[|cffcc66Hard Mode:
-- Little button on the left, before the boss platform.
+- Press the little button on the left, before the boss platform.
 - The floor will be covered in steam, dealing DOT throughout the fight.|r
 
 Mechanics:
@@ -1107,10 +1065,7 @@ Mechanics:
 - Below 25% health, he enrages and starts creating lightning AoEs.
 ]]},
 
-			["neidir"] = {[[Stormreeve Neidir]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r 
-
-Mechanics:
+			["neidir"] = {[[Stormreeve Neidir]], [[Mechanics:
 - Most of her attacks target random players, ignoring taunts. Spread out so you can tell who she is targeting.
 - When she raises her staff and LOOKS AT YOU, block!
 - Keep close - if a player moves too far away she will one-shot them with a punch attack!
@@ -1159,10 +1114,7 @@ Mechanics:
 ]]},
 },
 		["eyeschamber_base"] = {
-			["constructs"] = {[[Guardian Constructs]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["constructs"] = {[[Guardian Constructs]], [[Mechanics:
 - Three dwemer constructs: red, yellow and blue. They share a health bar.
 - The blue boss raises his cannon to rain lightning blasts onto the ground.
 - The yellow boss has a "Decapitate" cone attack, which will one-shot any non-tanks caught in the cone.
@@ -1216,10 +1168,7 @@ Mechanics:
 ]]},
 },
 		["blackhearthavenarea4_base"] = {
-			["blackheart"] = {[[Captain Blackheart]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["blackheart"] = {[[Captain Blackheart]], [[Mechanics:
 - He sometimes curses a random player and turns them into a skeleton for 30 seconds. While a skeleton, all you can do is light or heavy attacks - no abilities.
 - Skeleton adds will constantly spawn, kill them or they will overwhelm you (especially when in skeleton form.)
 - This boss cannot be soloed, as he turn the player back into a skeleton every time the effects wear off.
@@ -1246,10 +1195,7 @@ Mechanics:
 - The boss will sometimes channel and fire multiple floor AoEs at players. Keep spread out and move left and right to avoid the AoEs.
 - The ghost will sometimes pull a player across the room, then the boss walks slowly towards them. Kill the ghost before the boss reaches the player, otherwise they will be one-shot.
 - At 25% health, the boss will repeat this mechanic, but this time the BOSS must be killed before he reaches the player.]]},
-        ["thurvokun"] = {[[Thurvokun and Orryn the Black]], [[|cffcc66Hard Mode:
-- Yes|r
-
-Mechanics:
+        ["thurvokun"] = {[[Thurvokun and Orryn the Black]], [[Mechanics:
 - A difficult and very complex fight.
 - A mage (the main boss) and a bone dragon.
 - Each player should take a position near a different crystal, and should keep to that position as much as possible.
@@ -1310,8 +1256,8 @@ Mechanics:
     },
     ["unhallowedgravemap005"] = {
         ["kjalnar"] = {[[Kjalnar Tombskald]], [[|cffcc66Hard Mode:
-- Yes
 - Cages: the boss will raise his hands and cause cages to appear on the ground. Get away from these before they explode.|r
+
 Mechanics:
 - The boss sometimes creates a skeletal hand which stuns the tank. The tank must break free ASAP.
 - The boss sometimes raises his hand and creates moving "grave dust" effects which cause high magic damage.
@@ -1361,10 +1307,7 @@ Mechanics:
 ]]},
 },
 		["blessedcrucible6_base"] = {
-			["lava_queen"] = {[[Lava Queen]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["lava_queen"] = {[[Lava Queen]], [[Mechanics:
 - Atronachs spawn throughout the fight and cast a beam at the boss, making her invulnerable. Kill the atronachs to get rid of the beams.
 - The Wheel: when the boss stabs her sword into the ground, move back and get ready to move sideways to dodge the small walls of fire which will emanate from her.
 ]]},
@@ -1443,10 +1386,7 @@ Mechanics:
 - Her "spell" attacks can be interrupted (curse DOT affecting one player, and lightning floor AoE).
 ]]},
 
-			["selene"] = {[[Selene]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["selene"] = {[[Selene]], [[Mechanics:
 - Two phases: spider and human.
 - When the spider reaches low health, she will pull the group down through the web, to a lower area.
 - During the human phase, melee, archer and healer adds will join the fight. The melee adds have a strong heavy attack.
@@ -1579,10 +1519,7 @@ Mechanics:
 ]]},
 },
 		["vaultsofmadness2_base"] = {
-			["architect"] = {[[Mad Architect]], [[|cffcc66Hard Mode:
--Scroll of Glorious Battle.|r
-
-Mechanics:
+			["architect"] = {[[Mad Architect]], [[Mechanics:
 - When he creates a bubble around himself and the group, stay inside it.
 ]]},
 },
@@ -1890,15 +1827,34 @@ Mechanics:
 ["darkbrotherhood"] = {
         ---- Depths of Malatar (DLC) ----
 ["domdepthsofmal_base"] = {
-    ["maw"] = {[[The Scavenging Maw]], [[]]},
+    ["maw"] = {[[The Scavenging Maw]], [[Mechanics:
+- Tank: keep the boss facing away from the group, to protect them from his cone attack.
+- Everyone: when the boss hides, you must search for him AS A GROUP, as when found he will jump on a player and kill them unless interrupted.]]},
 },
 ["domdepthsofmal2_base"] = {
-    ["weeping"] = {[[The Weeping Woman]], [[]]},
+    ["weeping"] = {[[The Weeping Woman]], [[Mechanics:
+- Everyone: this fight involves lots of AOEs, both static and moving.
+- The boss will create a growing "disease geyser" beneath each group member. Players should move away from these before they turn into fountains.
+- Tank: when she creates an ice spike AOE at her feet, move out of it.]]},
 },
 ["domdepthsofmal3_base"] = {
-    ["dark_orb"] = {[[The Dark Orb]], [[]]},
-    ["narilmor"] = {[[King Narilmor]], [[]]},
-    ["blades"] = {[[Symphony of Blades]], [[]]},
+    ["dark_orb"] = {[[The Dark Orb]], [[Mechanics:
+- Each time the orb pulses,  it heals its radiant auroran adds.
+- Everyone: destroy radiant orbs that appear at the edges of the arena, to prevent them empowering other adds.
+    ]]},
+    ["narilmor"] = {[[King Narilmor]], [[Mechanics:
+- The boss frequently teleports and creates copies of himself which need to be killed.
+- Healer: protect and heal the female NPC in the corner of the arena. If she dies, the boss copies will gain damage shields and be very difficult to defeat.]]},
+    ["blades"] = {[[Symphony of Blades]], [[Mechanics:
+- When the boss spawns a wall of yellow ghosts, you must kill one of them to create a gap in the wall.
+- A random player will sometimes get affected by a red AoE - when it reaches maximum size it will stun the player, who should break free.
+- 4 adds will spawn in the corners of the area and move toward the boss. If they reach him they will add additional mechanics to the fight (ice pillar, call lightning, meteor, radiant oppression).
+- At 10% health, the boss teleports to a new arena and heals to 25% health. He now has all the added mechanics (above) and will spawn another ghost wall.
+- Block the falling meteors, they deal a lot of damage.
+
+|cffcc66Hard Mode
+- During both phases, orbs will spawn which will empower the added mechanics if they are not destroyed.
+- In the second area, the boss heals to 50%.|r]]},
 },
 ["domdepthsofmal4_base"] = {
 },
@@ -2286,9 +2242,9 @@ Mechanics:
 - At 50% health he ignites the whole floor and opens the side boss doors. You will need to move to the new area and fight 1 (normal) or 2 (veteran) side bosses. These may include Faenalir, Nilborwen, Maeralor, or Stone Atronach.
 - Tank: block when the boss does his cone of fire attack. 
 
-Hard Mode:
+|cffcc66Hard Mode:
 - You will need to fight 3 side bosses instead of 2.
-- Ignited tiles stay ignited for longer.]]},
+- Ignited tiles stay ignited for longer.|r]]},
 	["sluthrug"] = {[[Sluthrug the Bloodied]], [[Mechanics:
 - Gives buff: Bloodied Vitality (+10% healing done, -10% damage taken)
 - Activating his totem (red) gives +50% max health, and enemies near you take 20% of your max health as physical damage when you receive damage.]]},
