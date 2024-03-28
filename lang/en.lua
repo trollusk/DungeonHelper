@@ -1999,11 +1999,36 @@ When the boss is about to drop a "sharp glass" AoE on you, move away from the ce
     ["murkmire"] = {
         ---- Blackrose Prison (GROUP ARENA) ----
         ["blackroseprison01_base"] = {
-            ["ennodius"] = {[[Battlemage Ennodius]], [[]]},
-            ["tames_the_beast"] = {[[Tames-The-Beast]], [[]]},
-            ["minara"] = {[[Lady Minara]], [[]]},
-            ["three_bosses"] = {[[Ennodius, Minara and Tames-The-Beast]], [[]]},
-            ["drakeeh"] = {[[Drakeeh the Unchained]], [[]]}
+            ["ennodius"] = {[[Battlemage Ennodius]], [[Mechanics:
+- Tank: keep the boss still and facing away from the group. Never stop blocking.
+- Tank: range taunt the flame atronach adds to take pressure off the group.
+- Everyone: when a meteor is incoming, block and spread out to avoid stacking AoEs.]]},
+            ["tames_the_beast"] = {[[Tames-The-Beast]], [[
+- Tank: keep the boss near the middle of the arena, and maintain taunt at all times.
+- Tank: also taunt the large adds (troll, haj mota, wamasu).
+- Everyone: adds are higher priority than the boss, as they will overwhelm the group if not dealt with.
+- Everyone: when a player is targeted by a swarm of bees, other players should move near them to "share" the damage.
+- Everyone: when the boss charges an orange snipe ability, this MUST be interrupted.
+- Everyone: when the boss roots you to the spot, quickly cleanse or dodge, or you will die. 
+- Everyone: keep your distance from the wamasu add, in order to avoid its moving AoEs.]]},
+            ["minara"] = {[[Lady Minara]], [[Mechanics:
+- Tank: keep the boss near the middle of the area and facing away from the group. Maintain taunt at all times.
+- Tank: you must also taunt the bone colossus, and block its attacks.
+- Everyone: if the boss tethers you, run to a portal to cleanse within 5s or you will die!
+- When a bone colossus spawns, the boss will be invulnerable until it is killed.
+- Everyone: interrupt the boss when she starts draining life from a player.
+- At low health the boss will spawn infuser adds, they must be interrupted when channeling or they will enrage all enemies.]]},
+            ["three_bosses"] = {[[Ennodius, Minara and Tames-The-Beast]], [[Mechanics:
+- Tank: keep the bosses near the middle of the area. Maintain taunt on all 3 bosses at all times.
+- The fight begins with Ennodius, then when he is < 35% health, Tames-The-Beast will spawn (65% health).
+- At 60% health, Tames spawns a wamasu. At 50% health, Minara spawns. At 35% health, a haj mota spawns.
+- Tip: kill Ennodius before attacking Tames. Each time an add appears, kill it before returning to Tames.]]},
+            ["drakeeh"] = {[[Drakeeh the Unchained]], [[Mechanics:
+- DPS/Healers: before the fight starts, allocate one pad to each player for the "ghost" mechanic.
+- Tank: when the boss creates a negate bubble, kite him out of it.
+- Prioritise destroying the totems and shadows when they spawn. Interrupt the shadows when they channel.
+- DPS/Healers: When the boss raises his hand, collect 2-3 ghosts, then each move to a DIFFERENT pad to "cleanse" them. He will then create an explosion - if you have not collected enough ghosts, you will die.
+]]}
         }
     }, -- end Murkmire
 

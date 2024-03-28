@@ -904,7 +904,7 @@ local DHData = {
                                       {0.47, 0.48, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "minara")}, -- Lady Minara
                                       {0.68, 0.26,
                                        DH_GetLocalizedData("murkmire", "blackroseprison01_base", "three_bosses")}, -- Ennodius, Minara and Tames-The-Beast
-                                      {0.44, 0.13, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "drakeeh")} -- Drakeeh the Unchained
+                                      {0.44, 0.13, DH_GetLocalizedData("murkmire", "blackroseprison01_base", "drakeeh"), "FINAL PUGKILLER"} -- Drakeeh the Unchained
         }
     }, -- end Murkmire
 

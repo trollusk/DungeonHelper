@@ -4,7 +4,7 @@ Addon for The Elder Scrolls Online MMORPG. Annotates in-game maps, adding locati
 
 ## Features
 
-Add icons to the map in all dungeons, arenas and trials, showing:
+Adds icons to the local map in all dungeons, arenas and trials, showing:
 
 - Boss locations
 - Locations of puzzles or other important points of interest
@@ -43,4 +43,4 @@ Trials:
 
 Arenas:
 
-- [ ] Blackrose Prison
+- [X] Blackrose Prison
