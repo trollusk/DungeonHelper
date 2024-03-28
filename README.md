@@ -24,26 +24,23 @@ The icon for each boss has a different appearance depending on special character
 
 Dungeons:
 
-- Bal Sunnar
-- Depths of Malatar
-- Black Drake Villa
-- Moongrave Fane
-- Castle Thorn
-- Stone Garden
-- Dread Cellar
+- [ ] Bal Sunnar
+- [X] Depths of Malatar
+- [ ] Black Drake Villa
+- [ ] Moongrave Fane
+- [X] Castle Thorn
+- [ ] Stone Garden
+- [X] Dread Cellar
 
 Trials:
 
-- Sunspire
-- Halls of Fabrication
-- Asylum Sanctorium
-- Kyne's Aegis
-- Rockgrove
-- Sanity's Edge
+- [ ] Sunspire
+- [ ] Halls of Fabrication
+- [ ] Asylum Sanctorium
+- [ ] Kyne's Aegis
+- [ ] Rockgrove
+- [ ] Sanity's Edge
 
 Arenas:
 
-- Blackrose Prison
-
-Get correct subzone name for Oathsworn Pit.
-
+- [ ] Blackrose Prison
